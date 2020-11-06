@@ -1,0 +1,14 @@
+Catatan Penting:
+1. h1..h5 -> digunakan untuk membuat tulisan menjadi lebih besar.
+2. p -> digunakan untuk membuat sebuah paragraf.
+3. section -> digunakan untuk membuat sebuah bagian" halaman website.
+4. ol -> digunakan untuk membuat sebuah sebuah ordered list.
+5. ul -> merupakan sub dari li (list).
+6. nav -> digunakan untuk membuat sebuah navigasi halaman seperti tab layout.
+7. footer digunakan untuk membuat tulisan seperti copyright
+8. table -> digunakan untuk membuat sebuah tables
+    - tr -> (table row) membuat sebuah baris
+    - td -> (table data) anak dari th digunakan untuk membuat banyak data
+    - th -> (table hover) isi dari table row
+
+9. font -> untuk mengubah warna text
