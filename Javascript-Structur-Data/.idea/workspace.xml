@@ -19,7 +19,9 @@
     <select />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="83e450a4-bed9-4615-bc3b-aa05a7ae5daf" name="Default Changelist" comment="" />
+    <list default="true" id="83e450a4-bed9-4615-bc3b-aa05a7ae5daf" name="Default Changelist" comment="">
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+    </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -59,7 +61,8 @@
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
       <updated>1604905998176</updated>
-      <workItem from="1604906000877" duration="3708000" />
+      <workItem from="1604906000877" duration="5904000" />
+      <workItem from="1604948708285" duration="2365000" />
     </task>
     <servers />
   </component>
@@ -76,6 +79,7 @@
         </entry>
       </map>
     </option>
+    <option name="oldMeFiltersMigrated" value="true" />
   </component>
   <component name="WindowStateProjectService">
     <state x="263" y="94" key="#com.intellij.execution.impl.EditConfigurationsDialog" timestamp="1604906082366">
