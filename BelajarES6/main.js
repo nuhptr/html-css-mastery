@@ -24,8 +24,7 @@ console.log("=======")
 const array = ["adi", "nugraha", "putra"]
 
 // looping the value of array
-for (let index = 0; index <
-    array.length; index++) {
+for (let index = 0; index < array.length; index++) {
     console.log(array[index]);
 }
 
