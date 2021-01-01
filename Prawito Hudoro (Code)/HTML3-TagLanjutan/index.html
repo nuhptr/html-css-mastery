@@ -4,9 +4,13 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Tutorial - HTML 3</title>
+    <link rel="stylesheet" href="css/index.css">
   </head>
   <body>
-    <center><h1>Laporan Keuangan Sekolah Dasar XYZ</h1></center>
+    <center><h1 
+      style="color: gray;">
+      Laporan Keuangan Sekolah Dasar XYZ</h1>
+    </center>
     <center>
       <img
         src="logosd.jpg"
@@ -18,19 +22,19 @@
 
     <p>List Keuangan Tahunan</p>
     <ul>
-      <li>Tahun 2018</li>
-      <li>Tahun 2019</li>
-      <li>tahun 2020</li>
+      <li class="keuangan">Tahun 2018</li>
+      <li class="keuangan">Tahun 2019</li>
+      <li class="keuangan">tahun 2020</li>
     </ul>
 
     <p>List Guru Sekolah XYZ</p>
     <ol>
-      <li>Kepala Sekolah - Prawito Hudoro 
+      <li class="list-guru">Kepala Sekolah - Prawito Hudoro 
           <a href="detailAdi.html"> Detail
       </a>
     </li>
-      <li>Bendahara Sekolah - Milhya</li>
-      <li>tahun 2020 - Pak Eko</li>
+      <li class="list-guru">Bendahara Sekolah - Milhya</li>
+      <li class="list-guru guru-mtk">tahun 2020 - Pak Eko</li>
     </ol>
 
     <p>Laporan Nilai Siswa</p>
@@ -58,22 +62,49 @@
       </tr>
     </table>
 
+    <!-- label and button -->
     <p>Masukan Nilai Siswa</p>
-    <label for="nama">Nama</label>
-    <input type="text" placeholder="Nama" /> <br />
-    <label for="nilai">Nilai</label>
-    <input type="number" /> <br />
-    <label for="kelas">Kelas</label>
-    <input type="text" placeholder="Kelas" /> <br />
-    <button>simpan</button>
+    <div class="form-wrapper">
+      <label for="nama" class="label">Nama</label>
+      <input 
+      type="text" 
+      placeholder="Nama" 
+      class="input-form"
+      id="input-nama"/> <br />
+    </div>
+    <div class="form-wrapper">
+      <label for="nilai" class="label">Nilai</label>
+      <input type="number" 
+      class="input-form" 
+      id="input-nilai" /> <br />
+    </div>
+    <div class="form-wrapper">
+      <label for="kelas" class="label">Kelas</label>
+      <input 
+      type="text" 
+      placeholder="Kelas"
+      class="input-form"
+      id="input-kelas" /> <br />
+    </div>
+    <div>
+      <button class="button" id="simpan">simpan</button>
+    </div>
     <br />
     <br />
 
+    <!-- option button -->
     <label for="">Provinsi Lampung</label>
     <select name="" id="">
       <option value="1">Jawa Barat</option>
       <option value="2">Jawa Tengah</option>
       <option value="3">Jawa Timur</option>
     </select>
+    
+    <hr>
+    <p>Nama : <span id="target-nama"></span></p>
+    <p>Nilai : <span id="target-nilai"></span></p>
+    <p>Kelas : <span id="target-kelas"></span></p>
+
+    <script src="js/index.js"></script>
   </body>
 </html>

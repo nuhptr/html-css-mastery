@@ -1,0 +1,44 @@
+.list-guru {
+  background: orange;
+  max-width: 200px;
+  margin-bottom: 10px;
+  padding: 10px 10px;
+  border-radius: 5px;
+  box-shadow: black;
+  opacity: 60%;
+}
+
+.guru-mtk {
+  background: green;
+}
+
+.keuangan {
+  background: white;
+  padding: 10px 10px;
+  border-radius: 5px;
+  box-shadow: 2px 2px black;
+  opacity: 60%;
+  margin-bottom: 10px;
+  max-width: 150px;
+}
+
+.input-form {
+  padding: 10px 10px;
+  outline: none;
+}
+
+.form-wrapper {
+  margin-bottom: 10px;
+}
+
+.label {
+  width: 200px;
+  display: block;
+  margin-bottom: 10px;
+}
+
+.button {
+  padding: 10px 10px;
+  border-radius: 8px;
+  background: orange;
+}
