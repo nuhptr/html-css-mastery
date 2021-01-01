@@ -1,0 +1,14 @@
+p {
+  margin-top: 0px;
+  margin-bottom: 0px;
+}
+
+.box {
+  border: 1px solid black;
+  padding: 10px 40px;
+  margin: 10px;
+}
+
+.tittle {
+  color: red;
+}
