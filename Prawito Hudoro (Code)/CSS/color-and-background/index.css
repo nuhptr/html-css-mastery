@@ -7,8 +7,65 @@ p {
   border: 1px solid black;
   padding: 10px 40px;
   margin: 10px;
+  background: aliceblue;
 }
 
 .tittle {
   color: red;
+}
+
+.header {
+  height: 250px;
+  width: 100%;
+  background: red;
+  background-image: url(./mobil.jpg);
+  background-position: center;
+  background-size: cover;
+  position: relative;
+  box-shadow: 0rem;
+}
+
+.profile {
+  width: 100px;
+  height: 100px;
+  background: red;
+  border-radius: 100%;
+  background-image: url(./mobil.jpg);
+  background-size: cover;
+  position: absolute;
+  left: 20px;
+  top: 20px;
+}
+
+.profile-name {
+  color: white;
+  font-size: 24px;
+  position: absolute;
+  left: 140px;
+  top: 60px;
+  font-family: sans-serif;
+}
+
+.content {
+  height: 150px;
+  overflow: scroll;
+  background-color: blanchedalmond;
+  margin-top: 20px;
+  position: relative;
+}
+
+.menu {
+  width: 80px;
+  height: 80px;
+  background: red;
+  border-radius: 100%;
+  position: fixed;
+  bottom: 40px;
+  right: 40px;
+}
+
+.menu p {
+  color: white;
+  text-align: center;
+  line-height: 80px;
 }
