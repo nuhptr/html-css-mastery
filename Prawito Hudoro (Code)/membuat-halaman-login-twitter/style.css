@@ -40,6 +40,9 @@ body,
 .login-right {
   width: 50%;
   background: white;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
 }
 
 .link-terkait {
@@ -81,27 +84,6 @@ body,
   margin-bottom: 5px;
 }
 
-.btn-outline {
-  height: 40px;
-  padding: 10px 16px;
-  border: 1px solid #1da1f2;
-  color: #1da1f2;
-  background: white;
-  border-radius: 5px;
-}
-
-.btn-outline:hover {
-  background: #1da1f2;
-  color: white;
-}
-
-.login-action {
-  display: flex;
-  justify-content: center;
-  align-items: flex-start;
-  margin-top: 20px;
-}
-
 .form-group {
   display: flex;
   flex-direction: column;
@@ -115,4 +97,66 @@ body,
 
 .form-group a:hover {
   text-decoration: underline;
+}
+
+.btn-outline {
+  height: 40px;
+  padding: 10px 24px;
+  border-radius: 5px;
+  border: 1px solid #1da1f2;
+  color: #1da1f2;
+  background: white;
+}
+
+.btn-outline:hover {
+  background: #1da1f2;
+  color: white;
+}
+
+.btn {
+  height: 40px;
+  padding: 10px 24px;
+  background: #1da1f2;
+  color: white;
+  border: 1px solid #1da1f2;
+}
+
+.btn-full {
+  width: 100%;
+  margin-bottom: 10px;
+  padding: 5px 20px;
+  border-radius: 100px;
+}
+
+.login-action {
+  display: flex;
+  justify-content: center;
+  align-items: flex-start;
+  margin-top: 20px;
+}
+
+.icon-logo {
+  width: 50px;
+  height: 50px;
+}
+
+.icon-logo img {
+  height: 100%;
+}
+
+.action-wrapper {
+  width: 50%;
+  margin-top: 10%;
+}
+
+.action-wrapper h1 {
+  font-size: 24px;
+  font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+}
+
+.action-wrapper h3 {
+  font-size: 14px;
+  margin-top: 45px;
+  font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+  opacity: 70%;
 }
