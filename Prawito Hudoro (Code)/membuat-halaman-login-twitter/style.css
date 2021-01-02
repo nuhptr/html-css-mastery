@@ -71,7 +71,48 @@ body,
 }
 
 .form {
-  border: 1px solid grey;
+  width: 200px;
+  height: 20px;
+  border: 1px solid #edecf0;
   border-radius: 4px;
   color: grey;
+  padding: 10px;
+  outline: none;
+  margin-bottom: 5px;
+}
+
+.btn-outline {
+  height: 40px;
+  padding: 10px 16px;
+  border: 1px solid #1da1f2;
+  color: #1da1f2;
+  background: white;
+  border-radius: 5px;
+}
+
+.btn-outline:hover {
+  background: #1da1f2;
+  color: white;
+}
+
+.login-action {
+  display: flex;
+  justify-content: center;
+  align-items: flex-start;
+  margin-top: 20px;
+}
+
+.form-group {
+  display: flex;
+  flex-direction: column;
+  margin-right: 10px;
+}
+
+.form-group a {
+  text-decoration: none;
+  color: gray;
+}
+
+.form-group a:hover {
+  text-decoration: underline;
 }
