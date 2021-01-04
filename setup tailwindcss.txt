@@ -31,4 +31,12 @@ jika menggunakan webpacker
 // app.js
 import "tailwindcss/tailwind.css"
 
+// install nodemon
+npm install nodemon
+// lalu tambahkan scripts
+"watch:tailwind": "nodemon --watch src/style.css -x \"npm run build:css\"",
+"serve": "npm run watch:tailwind",
+
+run npm run serve
+
 ready to go~
