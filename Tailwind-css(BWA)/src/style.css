@@ -1,0 +1,19 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+.btn-info {
+  @apply text-white bg-blue-500 transition duration-150 cursor-pointer py-2 px-8 rounded;
+}
+
+.btn-info:hover {
+  @apply bg-blue-700;
+}
+
+.btn-coklat {
+  @apply bg-yellow-500 text-white transition duration-150 cursor-pointer py-2 px-8 rounded;
+}
+
+.btn-coklat:hover {
+  @apply bg-yellow-900;
+}
