@@ -1,0 +1,34 @@
+setup taildwind
+1. npm init
+2. npm install tailwindcss@latest postcss@latest autoprefixer@latest
+
+buat file
+// postcss.config.js
+module.exports = {
+  plugins: {
+    tailwindcss: {},
+    autoprefixer: {},
+  }
+}
+4. tambahkan file ini di package.json
+"build:css": "tailwindcss build src/style.css -o dist/style.css",
+
+5. buat konfiguration file 
+npx tailwindcss init
+
+6. buat di css foldermu
+/* ./your-css-folder/styles.css */
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+atau
+@import "tailwindcss/base";
+@import "tailwindcss/components";
+@import "tailwindcss/utilities";
+jika menggunakan webpacker
+
+// app.js
+import "tailwindcss/tailwind.css"
+
+ready to go~
