@@ -1,3 +1,0 @@
-// catatan selector
-id lebih menang dari class
-class lebih menang dari element
