@@ -11,13 +11,13 @@ let lastName = "Sanderson";
 let fullName = firstName + " " + lastName;
 console.log(fullName); // Brandon Sanderson
 
-// Getting character
+// TODO: Getting character
 console.log(fullName[2]); // a
 
-// String Length
+// TODO: String Length
 console.log(fullName.length); // 17
 
-// String method
+// TODO: String method
 let capital = fullName.toUpperCase();
 console.log(capital); // to upper
 let result = fullName.toLowerCase();

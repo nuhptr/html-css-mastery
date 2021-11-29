@@ -11,7 +11,7 @@ console.log(random);
 
 console.log(ninjas.length);
 
-// array method
+// TODO: array method
 let join = ninjas.join("-");
 console.log(join); // shaun-ryu-chun-li
 

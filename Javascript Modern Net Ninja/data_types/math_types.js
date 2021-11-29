@@ -9,7 +9,7 @@ console.log(result); // 1
 let result2 = 5 * (10 - 3) ** 2;
 console.log(result2); // 245
 
-// increment
+// TODO: increment and decrement
 let likes = 10;
 // likes++;
 // likes--;

@@ -1,7 +1,7 @@
 let age = 25;
 let year = 2019;
 
-// log thing to console
+// TODO: log thing to console
 console.log(age, year); // 25 2019
 
 /**
