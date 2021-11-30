@@ -29,6 +29,6 @@ const orang = {
   umur: 30,
 };
 
-console.info(`Nama: ${orang.nama}`);
-console.info(`Alamat: ${orang.alamat}`);
-console.info(`Umur: ${orang.umur}`);
+console.info(`Nama: ${orang.nama}`); // Eko Kurniawan
+console.info(`Alamat: ${orang.alamat}`); // Indonesia
+console.info(`Umur: ${orang.umur}`); // 30
