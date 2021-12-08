@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+  </head>
+  <script>
+    function getProductsUrl(keyword) {
+      return `https://www.blibli.com/backend/search/products?searchTerm=${keyword}`;
+    }
+
+    function getProducts(keyword) {
+      return new Promise(function (resolve, reject) {
+        const ajax = new XMLHttpRequest();
+        ajax.onload = function () {
+          if (ajax.status === 200) {
+            const data = JSON.parse(ajax.responseText);
+            resolve(data);
+          } else {
+            reject(Error(ajax.statusText));
+          }
+        };
+        ajax.open("GET", getProductsUrl(keyword));
+        ajax.send();
+      });
+    }
+
+    function clearProducts() {
+      const productUl = document.getElementById("products");
+      productUl.textContent = "";
+    }
+
+    function displayProducts(data) {
+      data.data.products.forEach((product) => displayProduct(product));
+    }
+
+    function displayProduct(product) {
+      const productLi = document.createElement("li");
+      productLi.textContent = product.name;
+
+      const productUl = document.getElementById("products");
+      productUl.appendChild(productLi);
+    }
+
+    // TODO: Async await Here!
+    async function buttonClick() {
+      // Code Async Await Here!
+      try {
+        const value = await getProducts(
+          document.getElementById("keyword").value
+        );
+        const products = value.data.products;
+
+        clearProducts();
+        products.forEach((products) => {
+          displayProduct(products);
+        });
+      } catch (error) {
+        alert(error.message);
+      }
+    }
+  </script>
+
+  <body>
+    <input type="text" id="keyword" />
+    <button onclick="buttonClick()">Search Products</button>
+    <ul id="products"></ul>
+  </body>
+</html>

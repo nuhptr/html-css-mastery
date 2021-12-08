@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <title>Set Timeout</title>
+    <meta name="description" content="" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <link rel="stylesheet" href="" />
+  </head>
+  <body>
+    <button onclick="buttonClick()">Click Me</button>
+
+    <!-- Javascript Code -->
+    <script>
+      function callback() {
+        console.log("hello world");
+      }
+
+      function buttonClick() {
+        //   Async method with setTimeout
+        setTimeout(function () {
+          // todo something
+          callback();
+        }, 3000);
+
+        // TODO: async with interval
+        // setInterval(function() {
+        // callback();
+        // }, 200);
+        // })
+
+        // call first then after 3 second append callback
+        console.log("success click button");
+      }
+    </script>
+  </body>
+</html>

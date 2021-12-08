@@ -1,0 +1,115 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Belajar Ajax</title>
+  </head>
+
+  <!-- Html code -->
+  <body>
+    <input type="text" id="keyword" />
+    <button onclick="buttonClick()">search product</button>
+    <ul id="products"></ul>
+    <div id="table-products"></div>
+  </body>
+
+  <!-- Javascript code -->
+  <script>
+    function getProductsUrl(keyword) {
+      return `https://www.blibli.com/backend/search/products?searchTerm=${keyword}`;
+    }
+
+    function getProducts(keyword, callbackSuccess, callbackError) {
+      //   code AJAX Here!
+      const ajax = new XMLHttpRequest();
+      ajax.onload = function () {
+        if (ajax.status === 200) {
+          const data = JSON.parse(ajax.responseText);
+          // membuat supaya dynamic callback
+          callbackSuccess(data);
+        } else {
+          callbackError();
+        }
+      };
+
+      const url = getProductsUrl(keyword);
+      ajax.open("GET", url);
+      ajax.send();
+
+      //   tidak bisa secara sync
+      //   const response = JSON.parse(ajax.responseText);
+      //   console.log(response);
+    }
+
+    function clearTableProduct() {
+      const productUl = document.getElementById("table-products");
+      productUl.textContent = "";
+    }
+
+    function displayTableProducts(data) {
+      const table = document.createElement("table");
+      table.setAttribute("border", 1);
+
+      let index = 0;
+      data.data.products.forEach((product) => {
+        table.insertRow(index).insertCell(0).innerText = product.name;
+        index++;
+      });
+
+      const tableProduct = document.getElementById("table-products");
+      tableProduct.appendChild(table);
+    }
+
+    function getProductError() {
+      console.log("Error get products");
+      alert("error get product");
+    }
+
+    function clearProducts() {
+      const productUL = document.getElementById("products");
+      productUL.textContent = "";
+    }
+
+    function displayProduct(product) {
+      const productLi = document.createElement("li");
+      productLi.textContent = product.name;
+
+      const productUL = document.getElementById("products");
+      productUL.appendChild(productLi);
+    }
+
+    function displayProducts(data) {
+      data.data.products.forEach((product) => {
+        displayProduct(product);
+      });
+    }
+
+    function buttonClick() {
+      // List
+      getProducts(
+        document.getElementById("keyword").value,
+        function (data) {
+          clearProducts();
+          displayProducts(data);
+        },
+        function () {
+          getProductError();
+        }
+      );
+
+      // Table
+      getProducts(
+        document.getElementById("keyword").value,
+        function (data) {
+          clearTableProduct();
+          displayTableProducts(data);
+        },
+        function () {
+          getProductError();
+        }
+      );
+    }
+  </script>
+</html>
