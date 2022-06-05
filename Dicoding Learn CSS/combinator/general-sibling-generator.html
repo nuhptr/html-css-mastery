@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>General Sibling Generator</title>
+    <style>
+      /* TODO: Style akan diterapkan pada img dan paragraf di mana saja */
+      img ~ p {
+        color: green;
+      }
+    </style>
+  </head>
+  <body>
+    <p>
+      Ini merupakan paragraf pertama. Rule styling tidak akan diterapkan pada
+      elemen paragraf ini.
+    </p>
+    <img
+      src="https://images.unsplash.com/photo-1651307315890-1dee7b91ce43?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=687&q=80"
+      alt="Dicoding logo"
+      height="200px"
+    />
+    <p>
+      Ini merupakan paragraf kedua dan ditetapkan setelah elemen gambar. Maka
+      paragraf ini menerapkan rule dengan menampilkan teks berwarna hijau.
+    </p>
+    <div>
+      <p>
+        Ini merupakan paragraf ketiga, letaknya setelah elemen gambar, namun
+        paragraf ini dibungkus di dalam div sehingga paragraf ini tidak akan
+        menerapkan rule styling karena tidak memiliki induk yang sama.
+      </p>
+    </div>
+    <p>
+      Ini merupakan paragraf empat. Letaknya memang setelah elemen gambar dan
+      memiliki induk yang sama seperti elemen gambar, sehingga elemen ini akan
+      menerapkan rule dengan menampilkan teks berwarna hijau.
+    </p>
+  </body>
+</html>

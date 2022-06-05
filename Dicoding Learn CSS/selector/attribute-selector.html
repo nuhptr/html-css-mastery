@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Attribute Selector</title>
+    <link rel="stylesheet" href="" />
+    <style>
+      /* <a> element yang menerapkan href attribut */
+      a[href] {
+        color: blue;
+      }
+
+      /* <a> element yang menerapkan nilai pada href dengan awalan "#" */
+      a[href^="#"] {
+        background-color: gold;
+      }
+
+      /* <a> element yang menerapkan nilai pada href yang mengandung teks "example" */
+      a[href*="example"] {
+        background-color: silver;
+      }
+
+      /* <a> element yang menerapkan nilai pada href yang mengandung teks "insensitive" tidak mementingkan huruf kapital */
+      a[href*="insensitive" i] {
+        color: cyan;
+      }
+
+      /* <a> element yang menerapkan nilai pada href dengan akhiran ".org" */
+      a[href$=".org"] {
+        color: red;
+      }
+
+      /* TODO: penjelasan lainnya
+      [attr]       : menargetkan elemen yang menerapkan atribute attr.
+      [attr=value] : menargetkan elemen yang menerapkan atribut attr dengan nilai value.
+      [attr~=value]: menargetkan elemen yang menerapkan atribut attr dengan salah satu nilainya adalah value.
+      [attr^=value]: menargetkan elemen yang menerapkan attribut attr yang nilainya diawali nilai value.
+      [attr$=value]: menargetkan elemen yang menerapkan attribut attr yang nilainya diakhiri dengan value.
+      [attr*=value]: menargetkan elemen yang menerapkan attribut attr yang nilainya mengandung value.
+       */
+    </style>
+  </head>
+  <body>
+    <ul>
+      <ul>
+        <li><a href="#internal">Internal link</a></li>
+        <li><a href="http://example.com">Example link</a></li>
+        <li><a href="#InSensitive">Insensitive internal link</a></li>
+        <li><a href="http://example.com">Example org link</a></li>
+      </ul>
+    </ul>
+  </body>
+</html>

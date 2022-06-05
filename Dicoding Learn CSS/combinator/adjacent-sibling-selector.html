@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Combinators</title>
+    <style>
+      /* TODO: Rule akan diterapkan pada elemen paragraf yang berada tepat setelah elemen img */
+      img + p {
+        color: green;
+      }
+    </style>
+  </head>
+  <body>
+    <p>
+      Ini merupakan paragraf pertama. rule styling tidak akan diterapkan pada
+      elemen paragraf ini
+    </p>
+
+    <img
+      src="https://images.unsplash.com/photo-1651216897436-8a42d42326a4?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=2031&q=80"
+      alt="Dicoding logo"
+      height="300px"
+    />
+
+    <p>
+      Ini merupakan paragraf kedua dan ditetapkan setelah elemen gambar. Maka
+      paragraf ini seharusnya menerapkan rule dengan menampilkan teks berwarna
+      hijau
+    </p>
+    <p>
+      Ini merupakan paragraf ketiga. Letaknya memang setelah elemen gambar,
+      namun tidak diletakkan persis setelahnya, sehingga rule tidak akan
+      diterapkan pada elemen ini.
+    </p>
+  </body>
+</html>
