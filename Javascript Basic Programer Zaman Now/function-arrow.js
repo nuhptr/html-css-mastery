@@ -6,7 +6,7 @@ const sayHello = (name) => {
 sayHello("Adi");
 
 // Tanpa kode block
-const sayHello = (name) => console.log(`hello ${name}`);
+const sayHi = (name) => console.log(`hello ${name}`);
 sayHello("adi");
 
 // return value
