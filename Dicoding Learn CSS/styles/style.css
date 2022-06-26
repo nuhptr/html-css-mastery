@@ -1,13 +1,15 @@
 body {
-    font-family: sans-serif;
+  font-family: sans-serif;
 }
 
-h2, h3 {
-    color: #00a2c6;
+h2,
+h3 {
+  color: #00a2c6;
 }
 
 footer {
-    padding: 20px;
-    color: white;
-    background-color: #00a2c6;
+  padding: 20px;
+  color: white;
+  background-color: #00a2c6;
+  border-radius: 10px;
 }
