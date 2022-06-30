@@ -2,14 +2,14 @@ Elemen dan Atribut pada table
 
 Table   : Menetapkan elemen table
 td      : Menetapkan sebuah sel dalam baris table
-    colspan="number"        : jumlah kolom yang dicakup oleh sel
-    rowspan="number"        : jumlah baris yang dicakup oleh sel
-    headers="nama header"   : mengasosiasikan header dengan header lain
+            colspan="number"                  : jumlah kolom yang dicakup oleh sel
+            rowspan="number"                  : jumlah baris yang dicakup oleh sel
+            headers="nama header"             : mengasosiasikan header dengan header lain
 th      : Menetapkan header yang terkait dengan baris dan kolom 
-    colspan="number"        : jumlah kolom yang dicakup oleh sel
-    rowspan="number"        : jumlah baris yang dicakup oleh sel
-    headers="nama headers"  : mengasosiasikan header dengan header lain
-    scope:"row|col|rowgroup|colgroup" : Mengasosiasikan header dengan baris, kelompok baris, kolom atau kelompok kolom.
+            colspan="number"                  : jumlah kolom yang dicakup oleh sel
+            rowspan="number"                  : jumlah baris yang dicakup oleh sel
+            headers="nama headers"            : mengasosiasikan header dengan header lain
+            scope:"row|col|rowgroup|colgroup" : Mengasosiasikan header dengan baris, kelompok baris, kolom atau kelompok kolom.
 tr      : menetapkan sebuah baris pada table
 caption : memberikan judul pada sebuah table
 col     : menetapkan sebuah kolom
