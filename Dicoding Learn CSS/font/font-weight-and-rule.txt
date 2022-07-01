@@ -9,8 +9,7 @@
    membuat teks menjadi kapital dengan ukuran kecil dengan value (small-caps).
 
 
-Shorthand
-
+TODO: Shorthand
 target {
     font : style weight variant size font-family
 }
