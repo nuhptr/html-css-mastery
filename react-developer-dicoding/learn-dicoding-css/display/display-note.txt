@@ -1,0 +1,11 @@
+1. Inline Element
+   - Elemen html yang secara default tidak menambahkan baris baru ketika dibuat
+   - nilai lebar dan tinggi elemen inline sebesar konten didalamnya
+   - margin dan padding hanya berlaku secara horizontal bukan vertical
+
+2. Block Element
+   - element html secara default menambah baris baru
+   - jika tidak diatur lebarnya, lebar dari elemen block akan memenuhi lebar dari
+   browser atau elemen yang menaunginya
+   - kita dapat mengatur dimensi dari elemen block
+   - didalam elemen block, kita dapat menyimpan tag elemen HTML lainnya
