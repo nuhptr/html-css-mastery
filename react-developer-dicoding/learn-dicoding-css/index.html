@@ -9,11 +9,14 @@
   </head>
   <body>
     <header>
-      <h1>Bandung</h1>
-      <p>
-        Kota metropolitan terbesar di Provinsi Jawa Barat, sekaligus menjadi ibu
-        kota provinsi tersebut
-      </p>
+      <div class="jumbotron">
+        <h1>Bandung</h1>
+        <p>
+          Kota metropolitan terbesar di Provinsi Jawa Barat, sekaligus menjadi
+          ibu kota provinsi tersebut
+        </p>
+      </div>
+
       <nav>
         <ul>
           <li><a href="#sejarah">Sejarah</a></li>
@@ -25,9 +28,9 @@
 
     <main>
       <div id="content">
-        <article id="sejarah">
+        <article id="sejarah" class="card">
           <h2>Sejarah</h2>
-          <img src="/image/history.jpg" alt="history" />
+          <img src="image/history.jpg" class="featured-image" alt="history" />
           <p>
             Lorem Ipsum is simply dummy text of the printing and typesetting
             industry. Lorem Ipsum has been the industry's standard dummy text
@@ -38,9 +41,13 @@
           </p>
         </article>
 
-        <article id="geografis">
+        <article id="geografis" class="card">
           <h2>Geografis</h2>
-          <img src="/image/geografis.jpg" alt="geografis" />
+          <img
+            src="image/geografis.jpg"
+            class="featured-image"
+            alt="geografis"
+          />
           <p>
             Lorem Ipsum is simply dummy text of the printing and typesetting
             industry. Lorem Ipsum has been the industry's standard dummy text
@@ -51,7 +58,7 @@
           </p>
         </article>
 
-        <article id="wisata">
+        <article id="wisata" class="card">
           <h2>Wisata</h2>
           <p>
             Lorem Ipsum is simply dummy text of the printing and typesetting
@@ -64,7 +71,11 @@
 
           <section>
             <h3>Farm House Lembang</h3>
-            <img src="/image/farm-house.jpg" alt="farm house" />
+            <img
+              src="image/farm-house.jpg"
+              class="featured-image"
+              alt="farm house"
+            />
             <p>
               Berada di jalur utama Bandung-Lembang, Farm House menjadi objek
               wisata yang tidak pernah sepi pengunjung. Selain karena letaknya
@@ -75,7 +86,7 @@
 
           <section>
             <h3>Observatorium Bosscha</h3>
-            <img src="/image/bosscha.jpg" alt="bosscha" />
+            <img src="image/bosscha.jpg" class="featured-image" alt="bosscha" />
             <p>
               Memiliki beberapa teleskop, antara lain, Refraktor Ganda Zeiss,
               Schmidt Bimasakti, Refraktor Bamberg, Cassegrain GOTO, dan
@@ -93,12 +104,12 @@
       </div>
 
       <aside>
-        <article class="profile">
+        <article class="profile card">
           <header>
             <h2>Kota Bandung</h2>
             <p>Kota Kembang Paris van Java</p>
             <figure>
-              <img src="/image/bandung-badge.png" />
+              <img src="image/bandung-badge.png" />
               <figcaption>Logo</figcaption>
             </figure>
           </header>
