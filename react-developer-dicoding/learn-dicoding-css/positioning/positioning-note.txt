@@ -1,0 +1,14 @@
+1. Normal Flow
+Merupakan default behaviour yang dimiliki elemen, dimana setiap 
+elemen atau block akan ditampilkan dalam baris baru ketika dibuat. sehingga setiap elemen block
+selalu muncul di bawah dari block elemen sebelumnya. bahkan jika masih terdapat ruang kosong
+pada samping elemennya, mereka tidak akan nampak bersebelahan.
+
+2. Relative Positioning
+Membuat elemen bisa berpindah posisi ke atas, kanan, bawah maupun kiri dari posisi semula.
+perpindahan posisi ini tidak akan berpengaruh terhadap posisi elemen disekitarnya,
+karena ketika menggunakan relative elemen akan dipindahkan dari normal flow.
+
+3. Absolute Positioning
+sama seperti relative, elemen akan dipindahkan keluar dari normal flow
+sehingga kita bisa memindahkan 

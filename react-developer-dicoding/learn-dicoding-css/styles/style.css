@@ -2,6 +2,12 @@
 
 body {
   font-family: "Quicksand", sans-serif;
+  margin: 0;
+  padding: 0;
+}
+
+main {
+  padding: 20px;
 }
 
 h2,
@@ -17,7 +23,14 @@ footer {
   text-align: left;
   font-weight: bold;
 
-  margin: 10px 20px 10px 20px;
+  margin-left: 20px;
+  margin-right: 20px;
+  margin-bottom: 20px;
+}
+
+nav {
+  background-color: #00a2c6;
+  padding: 5px;
 }
 
 nav li {
@@ -30,6 +43,7 @@ nav a {
   font-size: 18px;
   font-weight: 400;
   text-decoration: none;
+  color: white;
 }
 
 nav a:hover {
@@ -56,13 +70,11 @@ nav a:hover {
   box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
   border-radius: 5px;
   padding: 20px;
-  margin: 10px 20px 20px 20px;
+  margin-top: 20px;
 }
 
 .jumbotron {
   padding: 60px;
-  margin-left: 20px;
-  margin-right: 20px;
   text-align: center;
   background-color: #00c8eb;
   font-size: 20px;
