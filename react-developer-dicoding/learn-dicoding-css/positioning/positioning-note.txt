@@ -9,7 +9,8 @@ pada samping elemennya, MEREKA TIDAK AKAN NAMPAK BERSEBELAHAN.
 2. Relative Positioning
 Membuat elemen bisa berpindah posisi ke atas, kanan, bawah maupun kiri dari posisi semula.
 perpindahan posisi ini tidak akan berpengaruh terhadap posisi elemen disekitarnya,
-karena KETIKA MENGGUNAKAN RELATIVE, ELEMEN AKAN DIPINDAHKAN DARI NORMAL FLOW.
+karena KETIKA MENGGUNAKAN RELATIVE, ELEMEN AKAN DIPINDAHKAN DARI NORMAL FLOW,
+tetapi posisi BAWAHNYA TIDAK MENGISI POSISI ATASNYA.
 
 3. Absolute Positioning
 sama seperti relative, elemen akan dipindahkan keluar dari normal flow
