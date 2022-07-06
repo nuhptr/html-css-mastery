@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Flex Direction</title>
+    <style>
+      /* row : merupakan nilai default, di mana deretan flex-item pada container ditampilkan secara horizontal.
+        row-reverse : memiliki sifat yang sama seperti row, namun urutan flex item-nya ditukar.
+        column : Deretan flex-item pada container ditampilkan secara vertikal.
+        column-reverse : memiliki sifat yang sama seperti column, namun urutan flex item-nya ditukar. 
+        */
+
+      .container {
+        display: flex;
+        /* untuk menampilkan display flex secara vertical */
+        flex-direction: column;
+
+        /* properti lainnya */
+        width: 800px;
+        height: 250px;
+        background-color: #11c5c6;
+        border: 2px solid black;
+        padding: 20px;
+        border-radius: 10px;
+        margin: 0 auto;
+      }
+
+      .box {
+        /* properti lainnya */
+        margin: 5px;
+        background-color: #fbdd1c;
+        border: 2px solid black;
+        border-radius: 10px;
+      }
+
+      .first {
+        flex-grow: 3;
+      }
+
+      .second {
+        flex-grow: 2;
+      }
+
+      .third {
+        flex-grow: 1;
+      }
+    </style>
+    <script></script>
+    <link rel="stylesheet" href="" />
+  </head>
+  <body>
+    <div class="container">
+      <div class="box first">Flex Grow 3</div>
+      <div class="box second">Flex Grow 2</div>
+      <div class="box third">Flex Grow 1</div>
+    </div>
+  </body>
+</html>
