@@ -8,9 +8,9 @@ ex (font-height)    : Satuan relatif terhadap tinggi font saat ini, satuan ini s
 rem (font-size)     : Mirip seperti em, tetapi rem merupakan satuan relatif terhadap ukuran
                       font dari root element.
 ch (font-width)     : Satuan relatif terhadap lebar dari karakter "0" nol.
-vw (viewport width) : Satuan relatif terhadap 1% lebar viewport. contoh 1vw = 1% dari lebar 
+vw (viewport width) : Satuan relatif terhadap 1% lebar viewport (area yang terlihat user). contoh 1vw = 1% dari lebar 
                       viewport. satuan ini tidak didukung pada browser IE8 ke bawah.
-vh (viewport height): Satuan relatif terhadap 1% tinggi viewport. Contoh 1vh = 1% dari tinggi viewport.
+vh (viewport height): Satuan relatif terhadap 1% tinggi viewport (area yang terlihat user). Contoh 1vh = 1% dari tinggi viewport.
                       satuan ini tidak didukung pada browser IE8 kebawah.
 
 Absolute Unit

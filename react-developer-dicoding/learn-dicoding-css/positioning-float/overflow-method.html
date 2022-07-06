@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Overflow Method</title>
+    <style>
+      .container {
+        width: 800px;
+        border: 2px solid black;
+        /* pada elemen yang menampung float supaya bisa menyesuaikan ukuran
+        elemen turunan yang menggunakan float */
+        overflow: auto;
+      }
+
+      img {
+        float: left;
+        margin: 10px;
+      }
+    </style>
+    <script></script>
+    <link rel="stylesheet" href="" />
+  </head>
+  <body>
+    <div class="container">
+      <img
+        src="https://images.unsplash.com/photo-1523050854058-8df90110c9f1?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1470&q=80"
+        alt="Graduation"
+        width="200px"
+      />
+      <p>
+        Lorem ipsum dolor sit amet consectetur adipisicing elit. Doloribus iure,
+        minima voluptate placeat, eos sint expedita molestiae ea, itaque facilis
+        voluptatibus dolores sit suscipit perferendis sapiente quas debitis
+        autem voluptas.
+      </p>
+    </div>
+  </body>
+</html>

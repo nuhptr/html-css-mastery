@@ -22,6 +22,10 @@ INDUK ELEMEN JUGA BERADA DI LUAR DARI NORMAL FLOW.
 merupakan Absolute position namun posisinya selalu relatif pada jendela browser. 
 BAHKAN KETIKA PENGGUNA SCROLLING PUN, POSISINYA DILAYAR AKAN TETAP TAK BERUBAH.
 
+5. Stiky Positioning
+merupakan perpaduan antara relative dan fixed positioning, dimana ketika di SCROLLING
+masih akan mudah dicakup (mengambang) dan akan kembali lagi keposisi semula ketika discroll balik keatas
+
 
 B. Perbedaan Static flow dan non-static-flow
 - static flow adalah tampilan yang tersusun dan hanya bisa dipindahkan melalui margin
