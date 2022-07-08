@@ -28,13 +28,20 @@
       }
 
       .box {
-        flex-grow: 1;
+        /* dengan menggunakan flex basis maka akan membuat 
+        lebar 25% per box dari 100% lebar parent elemen */
+
+        flex-basis: 25%;
         background-color: cornflowerblue;
         border: 2px solid black;
         padding: 40px;
         text-align: center;
         color: white;
         font-size: 1.5em;
+      }
+
+      .double {
+        flex-basis: 50%;
       }
     </style>
     <script src="" async defer></script>
@@ -52,7 +59,7 @@
         <div class="flex-row">
           <div class="box">5</div>
           <div class="box">6</div>
-          <div class="box">7</div>
+          <div class="box double">7</div>
         </div>
       </div>
     </div>
