@@ -1,0 +1,2 @@
+// Statement
+alert("Terimakasih");
