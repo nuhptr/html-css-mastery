@@ -22,15 +22,15 @@ const user = {
 };
 
 if (user.language === "English") {
-  alert("Nice to meet you " + user.name.first + " " + user.name.last + "!");
+  alert("Nice to meet you " + user.name.first + "" + user.name.last + "!");
 } else if (user.language === "French") {
   alert(
-    "Ravi de vous rencontrer " + user.name.first + " " + user.name.last + "!"
+    "Ravi de vous rencontrer " + user.name.first + "" + user.name.last + "!"
   );
 } else if (user.language === "Japanese") {
-  alert("Hajimemashite, " + user.name.first + " " + user.name.last + "!");
+  alert("Hajimemashite, " + user.name.first + "" + user.name.last + "!");
 } else {
   alert(
-    "Senang bertemu dengan anda " + user.name.first + " " + user.name.last + "!"
+    "Senang bertemu dengan anda " + user.name.first + "" + user.name.last + "!"
   );
 }

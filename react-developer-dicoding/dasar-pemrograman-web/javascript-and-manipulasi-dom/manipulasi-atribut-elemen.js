@@ -5,7 +5,7 @@ image.setAttribute("src", "https://i.ibb.co/55VG7vL/three-cat.jpg");
 
 let changeCaption;
 changeCaption = document.querySelector("#caption");
-changeCaption.innerHTML = "<em>Tiga anak kucing</em>";
+changeCaption.innerHTML = "<p>Tiga anak kucing</p>";
 
 // membuat elemen baru
 let newElement;
