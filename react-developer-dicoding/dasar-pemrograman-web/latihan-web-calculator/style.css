@@ -39,12 +39,6 @@ body {
   cursor: pointer;
 }
 
-@media screen and (max-width: 513px) {
-  .button {
-    padding: 10px;
-  }
-}
-
 .button:hover {
   font-weight: bold;
 }
@@ -66,4 +60,37 @@ body {
 .negative,
 .equals {
   background: orange;
+}
+
+/* History */
+.history {
+  width: 80%;
+  margin: 30px auto 0 auto;
+  overflow: auto;
+}
+
+table {
+  border-collapse: collapse;
+  border-spacing: 0;
+  width: 100%;
+  border: 1px solid;
+  border-color: transparent;
+}
+
+th,
+td {
+  text-align: center;
+  padding: 16;
+}
+
+th {
+  background-color: orange;
+  color: white;
+}
+
+/* Responsive */
+@media screen and (max-width: 513px) {
+  .button {
+    padding: 10px;
+  }
 }
