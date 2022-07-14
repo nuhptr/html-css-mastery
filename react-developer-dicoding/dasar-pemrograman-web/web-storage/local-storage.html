@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html>
+  <!-- Head of html -->
+  <head>
+    <meta charset="utf-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <title></title>
+    <meta name="description" content="" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <link rel="stylesheet" href="" />
+  </head>
+
+  <!-- Body of html -->
+  <body>
+    <p>Anda sudah menekan tombol sebanyak <span id="count">0</span> kali</p>
+    <button id="button">Click disini</button>
+    <button id="clear">Hapus Storage</button>
+
+    <!-- Javascript -->
+    <script>
+      const cacheKey = "NUMBER";
+
+      if (typeof Storage !== "undefined") {
+        //  Pengecekan apakah data localStorage dengan key NUMBER sudah tersedia atau belum
+        if (localStorage.getItem(cacheKey) === "undefined") {
+          // Jika belum maka atur dengan nilai awal yakni 0
+          localStorage.setItem(cacheKey, 0);
+        }
+
+        const button = document.querySelector("button");
+        const clearButton = document.querySelector("#clear");
+        const count = document.querySelector("#count");
+
+        button.addEventListener("click", function (event) {
+          let number = localStorage.getItem(cacheKey);
+          number++;
+          localStorage.setItem(cacheKey, number);
+          count.innerText = localStorage.getItem(cacheKey);
+        });
+
+        clearButton.addEventListener("click", function (event) {
+          localStorage.removeItem(cacheKey);
+        });
+      } else {
+        alert("browser tidak mendukung");
+      }
+    </script>
+  </body>
+</html>
