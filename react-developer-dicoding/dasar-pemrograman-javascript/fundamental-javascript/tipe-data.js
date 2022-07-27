@@ -63,3 +63,25 @@ let biodata = names + age; // andi 20th
 // string interpolation
 const myName = "zsazsa";
 console.log(`Hello, my name is ${myName}`);
+
+// TODO: Boolean
+let logic1 = true;
+let logic2 = false;
+
+console.log(logic1);
+console.log(logic2);
+
+// operator komparasi
+const a = 10;
+const b = 5;
+
+let isGrater = a > b;
+let isLess = b < a;
+
+// TODO: null
+let someData = null;
+console.log(someData); // null
+
+// TODO: Symbol
+// variable tidak sama walaupun symbolnya sama 
+
