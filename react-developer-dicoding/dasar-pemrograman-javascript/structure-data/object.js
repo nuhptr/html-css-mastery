@@ -31,7 +31,7 @@ console.log(spaceship); // object manufacturer menghilang
 /* 
 {
   name: 'Millenium Falcon',
-  // manufacturer: 'Corellian Engineering Corporation',
+  manufacturer: 'Corellian Engineering Corporation',
   maxSpeed: 1300,
   color: 'Glossy Red',
   class : 'Light freighter'
