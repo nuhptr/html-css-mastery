@@ -8,7 +8,7 @@ const profile = {
 const { firstName, lastName, age } = profile;
 console.log(firstName, lastName, age); // Jhon Doe 18
 
-// Destructuring Assignment
+// TODO: Destructuring Assignment
 const namePerson = {
   first: "Melia",
   second: "Doe",
@@ -22,3 +22,21 @@ let ageNumber = 20;
 ({ first, ageNumber } = namePerson);
 console.log(first); // Melia
 console.log(ageNumber); // 20
+
+// TODO: Default values
+const car = {
+  brand: "Toyota",
+  price: 10000000000,
+  tires: 4,
+};
+
+const { brand, price, isNew = true } = car;
+console.log(brand); // Toyota
+console.log(price); // 10000000000
+console.log(isNew); // true
+
+// TODO: Assigning to Different local variable names
+const { brand: localBrand, price: normalPrice, tires: numberOfTires } = car;
+console.log(brand); // Toyota
+console.log(price); // 10000000000
+console.log(numberOfTires); // 4
