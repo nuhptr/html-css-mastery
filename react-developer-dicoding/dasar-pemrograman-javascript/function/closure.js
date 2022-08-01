@@ -1,3 +1,18 @@
+// Example 1 :
+let add = () => {
+  let counter = 0;
+  return () => {
+    return ++counter;
+  };
+};
+
+let addCounter = add();
+
+console.log(addCounter()); // 1
+console.log(addCounter()); // 2
+console.log(addCounter()); // 3
+
+// Example 2 :
 function init() {
   let name = "Obi Wan"; // Variable lokal didalam scope fungsi init
 
@@ -9,5 +24,4 @@ function init() {
   greet();
 }
 
-let myFunction = init(); 
-myFunction(); // Halo, Obi Wan
+init(); // Halo, Obi Wan
