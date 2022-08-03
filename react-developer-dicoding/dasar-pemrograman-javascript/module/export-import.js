@@ -1,4 +1,5 @@
 const coffeStock = require("./state");
+const isCoffeMachineReady = require("./state");
 
 const makeCoffe = (type, miligrams) => {
   if (coffeStock[type] >= miligrams) {
@@ -9,3 +10,5 @@ const makeCoffe = (type, miligrams) => {
 };
 
 makeCoffe("robusta", 80); // Kopi berhasil dibuat!
+console.log(coffeStock);
+console.log(isCoffeMachineReady);

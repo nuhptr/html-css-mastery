@@ -1,12 +1,13 @@
 {
-  "name": "module",
+  "name": "coffemachine",
   "version": "1.0.0",
   "description": "",
-  "main": "export-import.js",
+  "main": "es6-module.js",
+  "type": "module",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1"
   },
   "keywords": [],
-  "author": "",
+  "author": "Adi Nugraha Putra",
   "license": "ISC"
 }

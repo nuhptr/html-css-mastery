@@ -1,4 +1,4 @@
-const coffeStock = {
+const coffeeStock = {
   arabica: 100,
   robusta: 150,
   liberica: 200,
@@ -6,4 +6,4 @@ const coffeStock = {
 
 const isCoffeMachineReady = true;
 
-module.exports = { coffeStock, isCoffeMachineReady };
+export { coffeeStock, isCoffeMachineReady };
