@@ -6,8 +6,8 @@ let json = {
 try {
   let user = JSON.parse(JSON.stringify(json));
 
-  console.log(user.name);
-  // console.log(user.age);
+  console.log(user.name); // Yoda
+  console.log(user.age); // 20
 } catch (error) {
   console.log(error.message);
   console.log(error.name);
