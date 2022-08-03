@@ -4,10 +4,10 @@ let json = {
 };
 
 try {
-  let user = JSON.parse(json);
+  let user = JSON.parse(JSON.stringify(json));
 
   console.log(user.name);
-  console.log(user.age);
+  // console.log(user.age);
 } catch (error) {
   console.log(error.message);
   console.log(error.name);
