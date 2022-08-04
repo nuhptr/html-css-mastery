@@ -1,0 +1,10 @@
+- Synchronous program, kode dijalankan secara berurutan dari atas ke bawah. 
+Artinya jika kita menuliskan dua baris kode, maka baris kode kedua tidak bisa dieksekusi 
+sebelum kode baris pertama selesai. Kita bisa bayangkan ini dalam kehidupan nyata ketika 
+mengantri membeli kopi di sebuah kedai kopi.
+
+- Asynchronous program, jika kita menuliskan dua code, kita dapat membuat baris kode
+kedua dieksekusi tanpa harus menunggu kode pada baris pertama selesai dieksekusi.
+dalam dunia nyata kita bisa membayangkan dengan memesan kopi, tetapi pemesanannya
+melalui pelayan. Sembari menunggu pesannya datang, kita dapat melakukan aktivitas lain
+seperti membuka laptop, menulis, hinga kopi itu datang dengan sendirinya.
