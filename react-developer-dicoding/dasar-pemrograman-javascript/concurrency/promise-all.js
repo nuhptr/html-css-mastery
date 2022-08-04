@@ -72,31 +72,19 @@ const brewCoffe = () => {
 };
 
 // Run first time
-function makeExpresso() {
-  checkAvailability()
-    .then((value) => {
-      console.log(value);
-      return checkStock();
-    })
-    .then((value) => {
-      console.log(value);
-      // TODO: Process in one time
-      const promises = [boilWater(), grindCoffeBeans()];
-
-      return Promise.all(promises);
-    })
-    .then((value) => {
-      console.log(value);
-      return brewCoffe();
-    })
-    .then((value) => {
-      console.log(value);
-      state.isCoffeMachineBusy = false;
-    })
-    .catch((rejectedReason) => {
-      console.log(rejectedReason);
-      state.isCoffeMachineBusy = false;
-    });
+async function makeExpresso() {
+  try {
+    const check = await checkAvailability();
+    console.log(check);
+    const stock = await checkStock();
+    console.log(stock);
+    const promise = await Promise.all([boilWater(), grindCoffeBeans()]);
+    console.log(promise);
+    const coffe = await brewCoffe();
+    console.log(coffe);
+  } catch (rejectedReason) {
+    console.log(rejectedReason);
+  }
 }
 
 makeExpresso();

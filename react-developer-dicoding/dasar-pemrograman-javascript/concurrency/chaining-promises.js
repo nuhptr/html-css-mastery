@@ -44,25 +44,18 @@ const brewCoffe = () => {
 };
 
 // call func makeExpresso first
-function makeEspresso() {
-  checkAvailability()
-    .then((value) => {
-      console.log(value);
-      return checkStock();
-    })
-    .then((value) => {
-      console.log(value);
-      return brewCoffe();
-    })
-    .then((value) => {
-      console.log(value);
-      state.isCoffeMachineBusy = false;
-    })
-    .catch((rejectedReason) => {
-      // Menangkap jika ada error program
-      console.log(rejectedReason);
-      state.isCoffeMachineBusy = false;
-    });
+// async-await method
+async function makeEspresso() {
+  try {
+    const available = await checkAvailability();
+    console.log(available);
+    const check = await checkStock();
+    console.log(check);
+    const coffe = await brewCoffe();
+    console.log(coffe);
+  } catch (rejectedReason) {
+    console.log(rejectedReason);
+  }
 }
 
 makeEspresso();
