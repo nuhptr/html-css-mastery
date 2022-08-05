@@ -1,0 +1,10 @@
+- init => membuat berkas package.json
+- install<package-name> => memasang dan mendaftarkan package pada berkas package.json=
+- run-script<command> => menjalankn perintah yang terdapat pada object script di berkas package.json
+- uninstall<package-name> => manghapus and mengeluarkan package from berkas
+
+- untuk memasang package sebagai dev-dependencies
+npm install <package-name> --save-dev
+
+- untuk menguninstall package
+npm uninstall <package-name> / npm uninstall <package-name> --save-dev
