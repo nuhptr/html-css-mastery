@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <title>Mengubah Konten HTML</title>
+    <meta name="description" content="" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <link rel="stylesheet" href="" />
+    <style>
+      button {
+        width: 200px;
+        font-size: 15px;
+        margin: 8px;
+        padding: 3px;
+      }
+
+      main {
+        margin: 2px;
+      }
+    </style>
+  </head>
+  <body>
+    <div id="main" align="center">
+      <h2>Its Cube Time</h2>
+      <img
+        id="gambar"
+        src="https://dicoding-web-img.sgp1.cdn.digitaloceanspaces.com/original/commons/homepage-dicoding-challenge-illustration.png"
+        alt="Its a rubiks cube!"
+        width="150"
+        height="100"
+      />
+      <p id="caption">
+        <strong
+          >Sudah siap untuk memecahkan teka-teki permainan tersebut?</strong
+        >
+      </p>
+
+      <div class="button-group">
+        <div class="button">
+          <button>Sejarah</button>
+        </div>
+        <div class="button">
+          <button>Permainan</button>
+        </div>
+        <div class="button">
+          <button>
+            <em>Fun fact</em>
+          </button>
+        </div>
+        <div class="button">
+          <button>Play (Coming Soon)</button>
+        </div>
+        <div class="button">
+          <button>Exit</button>
+        </div>
+      </div>
+    </div>
+
+    <hr size="2" width="95%" color="black" />
+    <div id="links">
+      <p>Situs lainnya yang tidak kalah menarik:</p>
+      <ul>
+        <li>
+          <a href="http://www.dicoding.com" id="dicodingLink">Dicoding</a>
+        </li>
+        <li>
+          <a href="http://www.google.com" id="googleLink">Google</a>
+        </li>
+      </ul>
+    </div>
+
+    <script>
+      const gambar = document.getElementById("gambar");
+      gambar.setAttribute("width", 300);
+      gambar.setAttribute("height", 215);
+
+      const buttons = document.querySelectorAll(".button");
+
+      const playButton = buttons[3];
+      const playButtonElement = playButton.children[0];
+      playButtonElement.setAttribute("type", "submit");
+    </script>
+  </body>
+</html>

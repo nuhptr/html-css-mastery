@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <title>Create Element</title>
+    <meta name="description" content="" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <link rel="stylesheet" href="" />
+  </head>
+  <body>
+    <p class="change"></p>
+    <script>
+      // Jalanin kode di console browser
+      let change = document.querySelector(".change");
+      const paragraph = document.createElement("p");
+      paragraph.innerHTML = "Selamat datang di Javascript Learn!";
+      change = paragraph;
+
+      // Untuk gambar
+      const image = document.createElement("img");
+      image.setAttribute("src", "https://picsum.photos/200/300");
+    </script>
+  </body>
+</html>
