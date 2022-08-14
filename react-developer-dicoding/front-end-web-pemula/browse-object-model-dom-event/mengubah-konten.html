@@ -7,6 +7,7 @@
     <meta name="description" content="" />
     <meta name="viewport" content="width=device-width, initial-scale=1" />
     <link rel="stylesheet" href="" />
+    <!-- CSS -->
     <style>
       button {
         width: 200px;
@@ -20,6 +21,8 @@
       }
     </style>
   </head>
+
+  <!-- Html -->
   <body>
     <!-- Illegal class in html -->
     <div id="main" align="center">
@@ -41,17 +44,21 @@
         <div class="button">
           <button>Sejarah</button>
         </div>
+
         <div class="button">
           <button>Permainan</button>
         </div>
+
         <div class="button">
           <button>
             <em>Fun fact</em>
           </button>
         </div>
+
         <div class="button">
-          <button>Play (Coming Soon)</button>
+          <button disabled="disabled">Play (Coming Soon)</button>
         </div>
+
         <div class="button">
           <button>Exit</button>
         </div>
@@ -80,8 +87,21 @@
       const buttons = document.querySelectorAll(".button");
 
       const playButton = buttons[3];
-      const playButtonElement = playButton.children[0];
+      const playButtonElement = playButton.children[0]; // anak dari button ketiga
+      // Membuat tombol play menjadi type submit
       playButtonElement.setAttribute("type", "submit");
+
+      // Manipulasi teks dengan innerText
+      const dicoding = document.getElementById("dicodingLink");
+      dicoding.innerText = "Belajar pemrograman di Dicoding";
+
+      // dengan innerHtml
+      dicoding.innerHTML = "<em>Belajar Programming di Dicoding</em>";
+
+      const classButton = document.getElementsByClassName("button");
+      for (const button of classButton) {
+        button.children[0].style.borderRadius = "6px";
+      }
     </script>
   </body>
 </html>
