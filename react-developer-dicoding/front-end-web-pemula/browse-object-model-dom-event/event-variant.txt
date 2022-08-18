@@ -1,0 +1,67 @@
+// TODO Windows Event
+1. onload => (
+  event ini akan terjadi setelah halaman web selesai diunduh dan ditampilkan;
+)
+
+2. onpageshow => 
+event ini akan terjadi jika halaman web kembali dikunjungi kembali (
+  berbeda dengan onload, karena event onload tidak akan terjadi jika
+  halaman web diambil dari cache;
+)
+
+3. onresize => (
+  event ini akan terjadi jika windows browser di resize oleh 
+  user atau oleh hal lainnya;
+)
+
+// TODO Form Events
+1. onreset => (
+  event ini akan terjadi ketika user menekan tombol 
+  'reset' pada elemen form;
+)
+
+2. onsubmit => (
+  event ini akan terjadi user menekan tombol submit pada form;
+)
+
+// TODO Keyboard Events
+1. onkeydown => ( 
+  event ini akan terjadi ketika sebuah tombol pada Keyboard ditekan;
+)
+
+2. onkeypress => (
+  event ini terjadi setelah onkeydown, dimana tombol masih dalam keadaan
+  ditekan. event ini tidak dapat mendeteksi tombol fungsi seperti CTRL, SHIFT, ALT,
+  ESC, BACKSPACE, dan sebagainya;
+)
+
+3. onkeyup => (
+  event ini akan terjadi ketika sebuah tombol pada keyboard dilepas;
+)
+
+// TODO Clipboard Events
+1. oncopy => (
+  event ini akan terjadi ketika kita melakukan proses copy;
+)
+
+2. oncut => (
+  Event ini akan terjadi ketika kita melakukan proses cut;
+)
+
+3. onpaste => (
+  Event ini akan terjadi ketika kita melakukan proses paste.
+)
+
+// TODO Mouse Events
+1. onclick => (
+  Event ini akan terjadi ketika kita menekan elemen tertentu dengan cursor;
+)
+
+2. ondblclick => (
+  Event ini akan terjadi ketika kita menekan elemen tertentu dua kali 
+  berturut-turut dengan cursor;
+)
+
+3. onmouseover => (
+  Event ini akan terjadi cursor kita berada di atas sebuah elemen tertentu;
+)

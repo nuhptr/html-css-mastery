@@ -1,0 +1,117 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <title>Event Handler</title>
+    <meta name="description" content="" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <link rel="stylesheet" href="" />
+    <!-- CSS -->
+    <style>
+      .contents {
+        position: fixed;
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+        border: 2px solid black;
+        padding: 15px;
+      }
+
+      #generateButton {
+        margin-top: 5px;
+        margin-bottom: 15px;
+      }
+    </style>
+  </head>
+  <!-- Inline event handler -->
+  <body onload="welcome()">
+    <!-- HTML -->
+    <!-- style in css recommended -->
+    <div class="contents" align="center" hidden>
+
+      <!-- Inline event handler -->
+      <button id="incrementButton" onclick="increment()">Press Me :)</button>
+      <button id="decrementButton" onclick="decrement()">Lower Me :)</button>
+      <h3>
+        Kamu sudah menekan tombol diatas sebanyak <span id="count">0</span>
+      </h3>
+    </div>
+
+    <!-- Javascript -->
+    <script>
+      function welcome() {
+        alert("Keluarlah wahai elemen HTML");
+        const contents = document.querySelector(".contents");
+        contents.removeAttribute("hidden");
+      }
+
+      function increment() {
+        document.getElementById("count").innerText++;
+
+        if (document.getElementById("count").innerText == 7) {
+          const hiddenMessage = document.createElement("h4");
+
+          hiddenMessage.setAttribute("id", "message");
+          hiddenMessage.innerText =
+            "Selamat! Anda menemukan hadiah tersembunyi";
+
+          const image = document.createElement("img");
+          image.setAttribute("src", "https://i.ibb.co/0V49VRZ/catto.jpg");
+          image.setAttribute("id", "catImage");
+          image.setAttribute("width", 200);
+
+          const contents = document.querySelector(".contents");
+          contents.appendChild(hiddenMessage);
+          contents.appendChild(image);
+        } else if (document.getElementById("count").innerText > 7) {
+          const contents = document.querySelector(".contents");
+          const message = document.getElementById("message");
+          const image = document.getElementById("catImage");
+
+          contents.removeChild(message);
+          contents.removeChild(image);
+        }
+      }
+
+      function decrement() {
+        document.getElementById("count").innerText--;
+
+        if (document.getElementById("count").innerText == 7) {
+          const hiddenMessage = document.createElement("h4");
+          hiddenMessage.setAttribute("id", "message");
+          hiddenMessage.innerText =
+            "Selamat! Anda menemukan hadiah tersembunyi";
+
+          const image = document.createElement("img");
+          image.setAttribute("src", "https://i.ibb.co/0V49VRZ/catto.jpg");
+          image.setAttribute("id", "catImage");
+          image.setAttribute("width", 200);
+
+          const contents = document.querySelector(".contents");
+          contents.appendChild(hiddenMessage);
+          contents.appendChild(image);
+        } else if (document.getElementById("count").innerText < 7) {
+          const contents = document.querySelector(".contents");
+          const message = document.getElementById("message");
+          const image = document.getElementById("catImage");
+
+          contents.removeChild(message);
+          contents.removeChild(image);
+        }
+      }
+
+      // TODO addEventListenerCode
+      
+
+      // memberi event pada body untuk diload ke browser
+      // document.body.onload = welcome;
+
+      // memberi event pada button id incrementButton
+      // document.getElementById("incrementButton").onclick = increment;
+
+      // memberi event pada button id decrementButton
+      // document.getElementById("decrementButton").onclick = decrement;
+    </script>
+  </body>
+</html>
