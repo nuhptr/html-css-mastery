@@ -1,0 +1,6 @@
+1. Fenomena bubbling adalah ketika sebuah event terjadi pada sebuah element,
+maka event handler milik element tersebut akan dijalankan terlebih dahulu
+yang diikuti event handler elemet parentnya, dan seterusnya sampai elemen paling atas.
+
+
+2. Fenomena Capturing : Capturing adalah penumpukan element yang dimulai dari lapisan terluar.

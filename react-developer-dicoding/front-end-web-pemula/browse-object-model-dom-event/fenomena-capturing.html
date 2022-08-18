@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <title>Fenomena Capturing</title>
+    <meta name="description" content="" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <link rel="stylesheet" href="" />
+    <!-- CSS -->
+    <style>
+      body * {
+        margin: 8px;
+        padding: 5px;
+        border: 2px solid black;
+        width: 50%;
+      }
+    </style>
+  </head>
+  <body>
+    <!-- HTML -->
+
+    <!-- Capturing adalah penumpukan element yang dimulai dari lapisan terluar -->
+    <div align="center" id="langit">
+      Langit
+      <div align="center" id="luar">
+        Luar
+        <div align="center" id="tengah">
+          Tengah
+          <div align="center" id="Dalam">Dalam</div>
+        </div>
+      </div>
+    </div>
+
+    <!-- Javascript -->
+    <script>
+      const divs = document.getElementsByTagName("div");
+
+      for (let element of divs) {
+        element.addEventListener(
+          "click",
+          function () {
+            alert(`Element ${element.getAttribute("id").toUpperCase()}`);
+          },
+          true
+        );
+      }
+    </script>
+  </body>
+</html>

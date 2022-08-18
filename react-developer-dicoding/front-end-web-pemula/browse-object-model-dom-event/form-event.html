@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <title>Form Event</title>
+    <meta name="description" content="" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <link rel="stylesheet" href="" />
+    <!-- CSS -->
+    <style>
+      .contents {
+        position: fixed;
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+        border: 2px solid black;
+        padding: 15px;
+      }
+
+      .form-element {
+        margin: 8px;
+        text-align: left;
+      }
+    </style>
+  </head>
+  <body>
+    <!-- HTML -->
+    <div class="contents">
+      <h2 align="center">Isi data diri</h2>
+      <div class="formContent" align="center">
+        <form id="formDataDiri">
+          <!-- Element Pertama -->
+          <div class="form-element">
+            <label for="inputNama">Nama : </label> <br />
+            <input
+              type="text"
+              id="inputNama"
+              name="nama"
+              placeholder="Nama Anda"
+              required
+            />
+            <br />
+          </div>
+
+          <!-- Element Kedua -->
+          <div class="form-element">
+            <label for="inputDomisili">Domisili : </label> <br />
+            <input
+              type="text"
+              id="inputDomisili"
+              name="domisili"
+              placeholder="Domisili Anda"
+              required
+            />
+            <br />
+          </div>
+
+          <!-- Element ketiga -->
+          <div class="form-element">
+            <input type="submit" value="Submit Data" />
+          </div>
+        </form>
+      </div>
+      <h4 id="messageAfterSubmit"></h4>
+    </div>
+
+    <!-- Javascript -->
+    <script>
+      // onSubmit
+      const submitAction = document.getElementById("formDataDiri");
+
+      submitAction.addEventListener("submit", function (event) {
+        const inputNama = document.getElementById("inputNama").value;
+        const inputDomisili = document.getElementById("inputDomisili").value;
+        const hiddenMessage = `Halo ${inputNama}, bagaimana cuacanya di ${inputDomisili} ?`;
+
+        document.getElementById("messageAfterSubmit").innerText = hiddenMessage;
+        // Mencegah proses refresh
+        event.preventDefault();
+      });
+    </script>
+  </body>
+</html>

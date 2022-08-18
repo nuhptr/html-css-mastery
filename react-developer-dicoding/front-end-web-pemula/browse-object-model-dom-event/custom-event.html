@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <title>Custom Event</title>
+    <meta name="description" content="" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <link rel="stylesheet" href="" />
+    <!-- CSS -->
+    <style>
+      .buttons {
+        position: fixed;
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+        border: 2px solid black;
+        padding: 15px;
+      }
+
+      .button {
+        margin: 8px;
+        height: 40px;
+      }
+    </style>
+  </head>
+  <body>
+    <!-- HTML -->
+    <div class="buttons" align="center">
+      <h3 id="caption">Silahkan tekan salah satu tombol dibawah...</h3>
+      <button class="button" id="tombol">Tombol Custom Event</button>
+    </div>
+
+    <!-- Javascript -->
+    <script>
+      // Define a custom event
+      const changeCaption = new Event("changeCaption");
+
+      window.addEventListener("load", function () {
+        const tombol = document.getElementById("tombol");
+
+        tombol.addEventListener("changeCaption", customEventHandler);
+        tombol.addEventListener("click", function () {
+          tombol.dispatchEvent(changeCaption);
+        });
+      });
+
+      function customEventHandler(event) {
+        console.log(`Event ${event.type} telah dijalankan`);
+
+        const caption = document.getElementById("caption");
+        caption.innerText = "Anda telah membangkitkan custom event";
+      }
+    </script>
+  </body>
+</html>

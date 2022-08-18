@@ -1,0 +1,31 @@
+1. onsubmit => (
+  Event ini akan terjadi ketika kita menekan tombol submit
+  milik sebuah form.
+)
+
+2. oninput => (
+  event ini akan terjadi jika kita memberikan input melalui field.
+)
+
+3. onchange => (
+  event ini akan terjadi jika kita sudah selesai memberikan input melalui field.
+  bisa juga diaplikasikan ke element select(dropdown menu);
+)
+
+4. oncopy => (
+  event ini akan terjadi jika kita menyalin(copy) isi dari sebuah elemen.
+)
+
+5. onpaste => (
+  Event ini akan terjadi jika kita menempel (paste) 
+  isi dari hasil salin (copy) pada sebuah teks.
+)
+
+6. onfocus => (
+  Event ini akan terjadi jika sebuah elemen pada form dipilih untuk dilakukan proses input.
+)
+
+7. onblur => (
+  Event ini akan terjadi jika sebuah elemen pada form 
+  tidak dipilih lagi untuk dilakukan proses input.
+)
