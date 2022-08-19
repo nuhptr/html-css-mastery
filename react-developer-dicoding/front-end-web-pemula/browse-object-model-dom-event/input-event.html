@@ -1,0 +1,108 @@
+<!DOCTYPE html>
+
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <title>Input Event</title>
+    <meta name="description" content="" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <link rel="stylesheet" href="" />
+    <!-- CSS -->
+    <style>
+      .contents {
+        border: 2px solid black;
+        padding: 8px;
+        position: fixed;
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+      }
+
+      .form-element {
+        margin: 8px;
+        text-align: left;
+      }
+
+      #notifikasiSisaKarakter {
+        visibility: hidden;
+      }
+    </style>
+  </head>
+  <body>
+    <!-- HTML -->
+    <div class="contents">
+      <h2 align="center"><strong>Input Event Form</strong></h2>
+      <div class="formContent">
+        <form id="formDataDiri" autocomplete="off">
+          <!-- Element 1 -->
+          <div class="form-element" id="fieldName">
+            <label for="inputNama">Nama Panggilan : </label><br />
+            <input
+              type="text"
+              id="inputNama"
+              name="nama"
+              placeholder="Nama panggilan anda"
+              maxlength="15"
+            />
+            <label id="notifikasiSisaKarakter"
+              >Sisa Karakter : <span id="sisaKarakter"></span>
+            </label>
+          </div>
+
+          <!-- Element 2 -->
+          <div class="form-element" id="fieldCopy">
+            <label for="inputCopy"><em>Copy</em> Tulisan ini : </label><br />
+            <input
+              type="text"
+              id="inputCopy"
+              name="copy"
+              value="Hello World"
+              readonly
+            />
+          </div>
+
+          <!-- Element 3 -->
+          <div class="form-element" id="fieldPaste">
+            <label for="inputPaste"><em>Paste</em> tulisan disini</label> <br />
+            <input
+              type="text"
+              id="inputPaste"
+              name="paste"
+              placeholder="Paste Something in here!"
+            />
+          </div>
+
+          <!-- Element 4 -->
+          <div class="form-element" id="fieldCaptcha">
+            <label for="inputCaptcha">Tulis <em>captcha</em> berikut : </label>
+            <br />
+            <img src="https://i.ibb.co/yy59QPB/Captcha.png" alt="captcha" />
+            <br />
+            <input
+              type="text"
+              id="inputCatcha"
+              name="captcha"
+              placeholder="Tulis captcha disini"
+            />
+            <br />
+            <p>Tekan enter jika sudah selesai menulis <em>Captcha</em></p>
+          </div>
+
+          <!-- Element 5 -->
+          <div class="form-element" align="center">
+            <input
+              type="submit"
+              id="submitButton"
+              value="Submit Data"
+              disabled
+            />
+          </div>
+        </form>
+      </div>
+    </div>
+
+    <!-- Javascript -->
+    <script></script>
+  </body>
+</html>
