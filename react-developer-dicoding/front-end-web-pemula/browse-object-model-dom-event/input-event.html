@@ -45,8 +45,9 @@
               placeholder="Nama panggilan anda"
               maxlength="15"
             />
+            <br />
             <label id="notifikasiSisaKarakter"
-              >Sisa Karakter : <span id="sisaKarakter"></span>
+              >Sisa Karakter : <span id="sisaKarakter">0</span>
             </label>
           </div>
 
@@ -109,7 +110,52 @@
           document.getElementById("inputNama").maxLength;
         document.getElementById("sisaKarakter").innerText =
           inputMaxLengthOnLoad;
-      }); 
+      });
+
+      // TODO : Event input => ketika kita menginput sesuatu
+      document
+        .getElementById("inputNama")
+        .addEventListener("input", function () {
+          const jumlahKarakterDiketik =
+            document.getElementById("inputNama").value.length;
+          const jumlahKarakterMaksimal =
+            document.getElementById("inputNama").maxLength;
+
+          console.log(`Jumlah karakter diketik ${jumlahKarakterDiketik}`);
+          console.log(`Jumlah karakter maksimal ${jumlahKarakterMaksimal}`);
+
+          const sisaKarakterUpdate =
+            jumlahKarakterMaksimal - jumlahKarakterDiketik;
+          document.getElementById("sisaKarakter").innerText =
+            sisaKarakterUpdate.toString();
+
+          if (sisaKarakterUpdate === 0) {
+            document.getElementById("sisaKarakter").innerText =
+              "Batas maksimal tercapai!";
+          } else if (sisaKarakterUpdate <= 5) {
+            document.getElementById("sisaKarakter").style.color = "red";
+          } else {
+            document.getElementById("sisaKarakter").style.color = "black";
+          }
+        });
+
+      // TODO : Event focus => ketika kita mengeklik sesuatu element
+      document
+        .getElementById("inputNama")
+        .addEventListener("focus", function () {
+          console.log("Input nama : focus");
+          document.getElementById("notifikasiSisaKarakter").style.visibility =
+            "visible";
+        });
+
+      // TODO : Event blur => ketika kita meninggalkan fokus sesuatu element
+      document
+        .getElementById("inputNama")
+        .addEventListener("blur", function () {
+          console.log("input nama : blur");
+          document.getElementById("notifikasiSisaKarakter").style.visibility =
+            "hidden";
+        });
     </script>
   </body>
 </html>
