@@ -1,0 +1,110 @@
+h1,
+h2,
+h3,
+h4,
+p,
+li {
+  font-family: sans-serif;
+}
+
+h1,
+h2,
+h3 {
+  color: #14213d;
+}
+
+h1 {
+  font-size: 30px;
+  text-transform: uppercase;
+  font-style: italic;
+}
+
+h2 {
+  font-size: 26px;
+}
+
+h3 {
+  font-size: 22px;
+  font-family: sans-serif;
+}
+
+h4 {
+  font-size: 20px;
+  text-transform: uppercase;
+  text-align: center;
+}
+
+p {
+  font-size: 16px;
+  line-height: 1.5;
+}
+
+li {
+  font-size: 16px;
+  line-height: 1.8;
+}
+
+/* TODO Using id selector : bad practice */
+#author {
+  font-size: 14px;
+  font-style: italic;
+}
+
+#copyright {
+  font-size: 14px;
+}
+
+/* TODO Using class selector : best practice */
+.related-author {
+  font-size: 14px;
+  font-weight: bold;
+}
+
+.related {
+  list-style: none;
+}
+
+.header-section {
+  background-color: #ededed;
+}
+
+aside {
+  background-color: #ededed;
+  border-top: 5px solid #7b75f4;
+  border-bottom: 5px solid #7b75f4;
+}
+
+/* TODO Pseudoclass */
+li:first-child {
+  font-weight: bold;
+}
+
+li:last-child {
+  font-style: italic;
+}
+
+/* bisa gunakan odd or even */
+li:nth-child(2) {
+  /* color: red; */
+}
+
+/* TODO Styling links */
+a:link {
+  color: black;
+  text-decoration: none;
+}
+
+a:visited {
+  color: grey;
+}
+
+a:hover {
+  color: #fca311;
+  font-weight: bold;
+  text-decoration: underline #fca311;
+}
+
+a:active {
+  background-color: black;
+  font-style: italic;
+}
