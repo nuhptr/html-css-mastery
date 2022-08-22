@@ -99,7 +99,7 @@ article {
 
 .header-section {
   background-color: #ededed;
-  padding: 40px 100px;
+  padding: 40px 30px;
   margin: 0 0 40px 0;
 }
 
@@ -158,4 +158,18 @@ a:hover {
 a:active {
   background-color: black;
   font-style: italic;
+}
+
+/* Pseudo-elements */
+h1::first-letter {
+  font-style: normal;
+  margin-right: 5px;
+}
+
+h2::first-letter {
+  font-size: 50px;
+}
+
+p::first-line {
+  /* color: red; */
 }
