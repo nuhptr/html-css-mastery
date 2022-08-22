@@ -1,3 +1,8 @@
+* {
+  margin: 0;
+  padding: 0;
+}
+
 body {
   color: #14213d;
   font-family: sans-serif;
@@ -26,11 +31,13 @@ h1 {
 
 h2 {
   font-size: 26px;
+  margin-bottom: 30px;
 }
 
 h3 {
   font-size: 22px;
   font-family: sans-serif;
+  margin: 40px 0 15px 0;
 }
 
 h4 {
@@ -42,11 +49,25 @@ h4 {
 p {
   font-size: 16px;
   line-height: 1.5;
+  margin-bottom: 15px;
+}
+
+ul,
+ol {
+  margin-left: 50px;
 }
 
 li {
   font-size: 16px;
   line-height: 1.8;
+}
+
+article {
+  margin: 0 0 40px 0px;
+}
+
+.end-article {
+  margin: 30px 0 0 0;
 }
 
 /* TODO Using id selector : bad practice */
@@ -57,6 +78,13 @@ li {
 
 #copyright {
   font-size: 14px;
+  margin: 0 0 30px 0;
+}
+
+.container {
+  width: 900px;
+  /* centering page */
+  margin: 0 auto;
 }
 
 /* TODO Using class selector : best practice */
@@ -71,12 +99,30 @@ li {
 
 .header-section {
   background-color: #ededed;
+  padding: 40px 100px;
+  margin: 0 0 40px 0;
+}
+
+.header-section h1 {
+  margin-bottom: 10px;
+}
+
+.post-header {
+  margin-bottom: 40px;
+}
+
+.post-image {
+  width: 100%;
+  height: auto;
 }
 
 aside {
   background-color: #ededed;
   border-top: 5px solid #7b75f4;
   border-bottom: 5px solid #7b75f4;
+  padding: 50px 0;
+  margin: 0 0 30px 0;
+  width: 500px;
 }
 
 /* TODO Pseudoclass */
