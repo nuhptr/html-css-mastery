@@ -1,0 +1,109 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Float and Alignment</title>
+    <link rel="stylesheet" href="" />
+    <!-- Internal CSS -->
+    <style>
+      * {
+        margin: 0;
+        padding: 0;
+        box-sizing: border-box;
+      }
+
+      body {
+        font-family: serif;
+        line-height: 2em;
+      }
+
+      .container {
+        max-width: 960px;
+        margin: 50px auto;
+      }
+
+      .box {
+        background-color: #f4f4f4;
+        border: 1px solid #333;
+        padding: 20px;
+        margin-bottom: 30px;
+        border-radius: 10px;
+      }
+
+      .box h3 {
+        text-align: justify;
+      }
+
+      .box p {
+        /* Text Align */
+        text-align: justify;
+      }
+
+      /* Tidy the layout */
+      .clr {
+        clear: both;
+      }
+
+      #box-2 {
+        float: left;
+        width: 65%;
+      }
+
+      #box-3 {
+        float: right;
+        width: 30%;
+      }
+    </style>
+  </head>
+  <body>
+    <!-- HTML -->
+    <div class="container">
+      <div class="box" id="box-1">
+        <h3>Heading</h3>
+        <p>
+          Lorem ipsum dolor sit amet, consectetur adipisicing elit. Rem ipsa
+          pariatur laudantium officiis eveniet porro repellendus aspernatur
+          facere culpa non eligendi assumenda, voluptatum quas architecto
+          inventore a unde earum nulla!
+        </p>
+      </div>
+
+      <div class="box" id="box-2">
+        <h3>Heading</h3>
+        <p>
+          Lorem ipsum dolor sit amet, consectetur adipisicing elit. Rem ipsa
+          pariatur laudantium officiis eveniet porro repellendus aspernatur
+          facere culpa non eligendi assumenda, voluptatum quas architecto
+          inventore a unde earum nulla!
+        </p>
+      </div>
+
+      <div class="box" id="box-3">
+        <h3>Heading</h3>
+        <p>
+          Lorem ipsum dolor sit amet, consectetur adipisicing elit. Rem ipsa
+          pariatur laudantium officiis eveniet porro repellendus aspernatur
+          facere culpa non eligendi assumenda, voluptatum quas architecto
+          inventore a unde earum nulla!
+        </p>
+      </div>
+
+      <div class="clr"></div>
+
+      <div class="box" id="box-4">
+        <h3>Heading</h3>
+        <p>
+          Lorem ipsum dolor sit amet, consectetur adipisicing elit. Rem ipsa
+          pariatur laudantium officiis eveniet porro repellendus aspernatur
+          facere culpa non eligendi assumenda, voluptatum quas architecto
+          inventore a unde earum nulla!
+        </p>
+      </div>
+    </div>
+
+    <!-- Javascript -->
+    <script></script>
+  </body>
+</html>

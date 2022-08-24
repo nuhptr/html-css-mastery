@@ -9,6 +9,6 @@
 2. CSS Unit Relative
   - % = to parent element
   - em = to Font size parent element
-  - rem = ro font size root element
+  - rem = to font size root element
   - vw = to 1% of viewport width 
   - vh = to 1% of viewport height
