@@ -1,0 +1,24 @@
+1. React makes building complex, interactive and reactive user 
+interfaces simpler.
+- React is all about "components"
+
+2. What is components?
+reusable block in your user interface.
+
+3. Why components?
+- Reusability (don't repeat yourself)
+- Separations of concerns (don't do too many things in one and 
+  the same place (function))
+
+"Split big chunks of code into multiple smaller functions"
+
+4. How components built?
+combining from html and javascript and least css
+
+"React allows you to create re-usable and reactive components
+consisting of HTML and Javascript (and CSS)" 
+=> 
+Declarative Approach
+Define the desired target state(s) and let React figure out the
+actual javascript DOM Instruction.
+
