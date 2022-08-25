@@ -1,0 +1,105 @@
+/* Font */
+@import url("https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:ital,wght@0,300;0,400;0,500;0,600;0,700;0,800;1,400&display=swap");
+
+/* Reset */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+/* main styling */
+html,
+body {
+  font-family: "Plus Jakarta Sans", sans-serif;
+  line-height: 2em;
+}
+
+h1,
+h2,
+h3 {
+  padding-bottom: 20px;
+}
+
+p {
+  margin: 10px 0;
+}
+
+/* Utility classes */
+.container {
+  margin: auto;
+  max-width: 1100px;
+  overflow: auto;
+  padding: 0 20px;
+}
+
+.text-primary {
+  color: #f7c08a;
+}
+
+.lead {
+  font-size: 18px;
+}
+
+/* navbar */
+#navbar {
+  background: #817b7b;
+  overflow: auto;
+}
+
+#navbar a {
+  color: #fff;
+  text-decoration: none;
+}
+
+#navbar h1 {
+  float: left;
+  padding: 20px 0;
+}
+
+#navbar ul {
+  list-style: none;
+  float: right;
+}
+
+#navbar ul li {
+  float: left;
+}
+
+#navbar ul li a {
+  padding: 20px;
+  display: block;
+  text-align: center;
+}
+
+#navbar ul li a:hover {
+  background: white;
+  color: #f7c08a;
+}
+
+/* Showcase */
+#showcase {
+  background: url("../img/showcase.jpg") no-repeat center center/cover;
+  height: 620px;
+}
+
+#showcase .showcase-content {
+  color: #fff;
+  text-align: center;
+  padding-top: 170px;
+}
+
+#showcase .showcase-content h1 {
+  font-size: 55px;
+  line-height: 1.2em;
+}
+
+#showcase .showcase-content p {
+  padding-bottom: 20px;
+  line-height: 2em;
+}
+
+.showcase-content .btn {
+  text-decoration: none;
+  color: #333;
+}
