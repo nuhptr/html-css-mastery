@@ -1,10 +1,11 @@
-import "../components/ExpenseItem.css";
+import React from "react";
+import "../Expenses/ExpenseItem.css";
 
-import Card from "./Card";
+import Card from "../UI/Card";
 import ExpenseDate from "./ExpenseDate";
 
 export default function ExpenseItem(props) {
-  //   Hardcode variable
+  //   Hardcode constanta
   //   const expenseDate = new Date(2021, 2, 28);
   //   const expenseTitle = "Car Insurance";
   //   const expenseAmount = 294.67;
