@@ -82,7 +82,7 @@
             <br />
             <input
               type="text"
-              id="inputCatcha"
+              id="inputCaptcha"
               name="captcha"
               placeholder="Tulis captcha disini"
             />
@@ -105,7 +105,7 @@
 
     <!-- Javascript -->
     <script>
-      // Meload content di document
+      // TODO: Meload content di document
       document.addEventListener("DOMContentLoaded", function () {
         const inputMaxLengthOnLoad =
           document.getElementById("inputNama").maxLength;
@@ -156,6 +156,48 @@
           console.log("input nama : blur");
           document.getElementById("notifikasiSisaKarakter").style.visibility =
             "hidden";
+        });
+
+      // TODO: Event change => akan terjadi jika terdeteksi adanya perubahan nilai yang dimasukkan
+      document
+        .getElementById("inputCaptcha")
+        .addEventListener("change", function () {
+          console.log("input captcha : change");
+          const inputCaptcha = document.getElementById("inputCaptcha").value;
+          const submitButtonStatus = document.getElementById("submitButton");
+
+          if (inputCaptcha === "PRNU") {
+            submitButtonStatus.removeAttribute("disabled");
+          } else {
+            submitButtonStatus.setAttribute("disabled", "");
+          }
+        });
+
+      document
+        .getElementById("formDataDiri")
+        .addEventListener("submit", function (event) {
+          const inputCaptcha = document.getElementById("inputCaptcha").value;
+
+          if (inputCaptcha === "PRNU") {
+            alert("Selamat! captcha anda lolos :)");
+          } else {
+            alert("captcha anda belum tepat :(");
+          }
+
+          event.preventDefault;
+        });
+
+      // TODO: event onCopy
+      document
+        .getElementById("inputCopy")
+        .addEventListener("copy", function () {
+          alert("Berhasil mengcopy sesuatu...");
+        });
+
+      document
+        .getElementById("inputPaste")
+        .addEventListener("paste", function () {
+          alert("Berhasil mempaste teks..");
         });
     </script>
   </body>
