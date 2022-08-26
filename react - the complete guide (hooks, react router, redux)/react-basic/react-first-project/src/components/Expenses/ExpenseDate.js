@@ -1,5 +1,5 @@
 import React from "react";
-import "../components/ExpenseDate.css";
+import "../Expenses/ExpenseDate.css";
 
 export default function ExpenseDate(props) {
   // TODO: using props to catch passing data
