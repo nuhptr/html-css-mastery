@@ -17,6 +17,7 @@ body {
   border: 4px solid black;
   width: 825px;
   margin: 50px auto;
+  position: relative;
 }
 
 .product-title {
@@ -25,6 +26,20 @@ body {
   text-transform: uppercase;
   background-color: #f7f7f7;
   padding: 15px;
+}
+
+.sale {
+  text-transform: uppercase;
+  display: inline-block;
+  position: absolute;
+  top: -25px;
+  left: -25px;
+  font-size: 12px;
+  background-color: red;
+  color: white;
+  padding: 0.25rem 0.75rem;
+  border-radius: 5px;
+  letter-spacing: 2px;
 }
 
 /* Product Information */
@@ -39,9 +54,38 @@ body {
   margin-bottom: 30px;
 }
 
+.color {
+  background-color: black;
+  height: 22px;
+  width: 22px;
+  display: inline-block;
+}
+
+.color-blue {
+  background-color: blue;
+}
+
+.color-red {
+  background-color: red;
+}
+
+.color-green {
+  background-color: green;
+}
+
+.color-purple {
+  background-color: purple;
+}
+
+.color-orange {
+  background-color: orange;
+}
+
 .more-info:link,
 .more-info:visited {
   color: black;
+  margin-bottom: 30px;
+  display: inline-block;
 }
 
 .more-info:hover,
