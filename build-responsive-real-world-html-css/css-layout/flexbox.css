@@ -1,0 +1,13 @@
+/* STARTER */
+.container {
+  font-family: sans-serif;
+  background-color: #ddd;
+  font-size: 40px;
+  margin: 40px;
+  
+  /* FLEXBOX */
+  display: flex;
+}
+
+
+
