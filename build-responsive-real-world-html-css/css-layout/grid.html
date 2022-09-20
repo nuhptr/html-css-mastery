@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <title>CSS Grid</title>
+    <meta name="description" content="" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <link rel="stylesheet" href="" />
+    <!-- CSS -->
+    <style>
+      .el--1 {
+        background-color: orange;
+      }
+
+      .el--2 {
+        background-color: red;
+      }
+
+      .el--3 {
+        background-color: green;
+        height: 150px;
+      }
+
+      .el--4 {
+        background-color: gray;
+      }
+
+      .el--5 {
+        background-color: pink;
+      }
+
+      .el--6 {
+        background-color: blue;
+      }
+
+      .el--7 {
+        background-color: aqua;
+      }
+
+      .el--8 {
+        background-color: purple;
+      }
+
+      .container-1 {
+        /* Starter */
+        font-family: sans-serif;
+        background-color: #ddd;
+        font-size: 40px;
+        margin: 40px;
+
+        /* CSS Grid */
+        display: grid;
+        grid-template-columns: 200px 200px 100px 100px;
+        grid-template-rows: 200px 200px;
+        
+        /* gap: 30px; */
+        column-gap: 30px;
+        row-gap: 40px;
+      }
+      
+
+      .container-2 {
+        display: none;
+        /* Starter */
+        font-family: sans-serif;
+        background-color: #000;
+        font-size: 40px;
+        margin: 100px;
+
+        width: 1000px;
+        height: 1000px;
+
+        /* CSS Grid */
+      }
+    </style>
+  </head>
+  <body>
+    <!-- HTML -->
+    <div class="container-1">
+      <div class="el el--1">(1) HTML</div>
+      <div class="el el--2">(2) and</div>
+      <div class="el el--3">(3) CSS</div>
+      <div class="el el--4">(4) are</div>
+      <div class="el el--5">(5) amazing</div>
+      <div class="el el--6">(6) languages</div>
+      <div class="el el--7">(7) to</div>
+      <div class="el el--8">(8) learn</div>
+    </div>
+
+    <div class="container-2">
+      <div class="el el--1">(1)</div>
+      <div class="el el--3">(3)</div>
+      <div class="el el--4">(4)</div>
+      <div class="el el--5">(5)</div>
+      <div class="el el--6">(6)</div>
+      <div class="el el--7">(7)</div>
+    </div>
+
+    <!-- Javascript -->
+    <script src=""></script>
+  </body>
+</html>

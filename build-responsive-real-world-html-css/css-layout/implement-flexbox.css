@@ -11,7 +11,7 @@ body {
 
 h1,
 h2,
-h3,w
+h3,
 h4,
 p,
 li {
@@ -27,7 +27,7 @@ h3 {
 h1 {
   font-size: 30px;
   text-transform: uppercase;
-  font-style: italic;
+  /* font-style: italic; */
 }
 
 h2 {
@@ -63,29 +63,25 @@ li {
   line-height: 1.8;
 }
 
-article {
-  margin: 0 0 40px 0px;
-}
-
-.end-article {
-  margin: 30px 0 0 0;
-}
-
 /* TODO Using id selector : bad practice */
-#author {
-  font-size: 14px;
-  font-style: italic;
-}
 
 #copyright {
   font-size: 14px;
   margin: 0 0 30px 0;
 }
 
+/* TODO: FLEXBOX */
 .container {
   width: 1200px;
   /* centering page */
   margin: 0 auto;
+}
+
+.row {
+  display: flex;
+  gap: 75px;
+  margin-bottom: 20px;
+  align-items: flex-start;
 }
 
 /* TODO Using class selector : best practice */
@@ -94,14 +90,43 @@ article {
   font-weight: bold;
 }
 
+.author-box {
+  display: flex;
+  align-items: center;
+  margin-bottom: 15px;
+}
+
+.author {
+  margin-bottom: 0;
+  margin-left: 15px;
+  font-style: italic;
+  font-size: 14px;
+}
+
 .related {
   list-style: none;
 }
 
+.related-post {
+  display: flex;
+  align-items: center;
+  gap: 30px;
+  margin-top: 30px;
+  margin-right: 30px;
+}
+
+.related-author {
+  margin-bottom: 0;
+  font-size: 14px;
+  font-weight: normal;
+  font-style: italic;
+}
+
 .header-section {
-  background-color: #ededed;
-  padding: 40px 30px;
-  margin: 0 0 40px 0;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  margin: 40px 0px;
 }
 
 .header-section h1 {
@@ -122,16 +147,29 @@ article {
   height: auto;
 }
 
+article {
+  flex: 1;
+  margin-bottom: 0;
+}
+
 aside {
   background-color: #ededed;
   border-top: 5px solid #7b75f4;
   border-bottom: 5px solid #7b75f4;
-  padding: 50px 0;
-  margin: 0 0 30px 0;
-  width: 500px;
+  padding: 50px 0 50px 0;
+
+  /* 
+  Default 
+  flex-grow: 0;
+  flex-shrink: 1;
+  flex-basis: auto;
+  */
+
+  flex: 0 0 350px;
 }
 
 /* TODO Pseudoclass */
+/* 
 li:first-child {
   font-weight: bold;
 }
@@ -140,10 +178,10 @@ li:last-child {
   font-style: italic;
 }
 
-/* bisa gunakan odd or even */
+/* bisa gunakan odd or even 
 li:nth-child(2) {
-  /* color: red; */
-}
+  /* color: red; 
+} */
 
 /* TODO Styling links */
 a:link {
@@ -166,7 +204,7 @@ a:active {
   font-style: italic;
 }
 
-/* TODO: Pseudo-elements */
+/* TODO: Pseudo-elements
 h1::first-letter {
   font-style: normal;
   margin-right: 5px;
@@ -177,8 +215,8 @@ h2::first-letter {
 }
 
 p::first-line {
-  /* color: red; */
-}
+  /* color: red; 
+} */
 
 h2 {
   position: relative;
