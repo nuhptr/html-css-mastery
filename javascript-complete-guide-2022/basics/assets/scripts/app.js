@@ -1,15 +1,17 @@
 // alert("this is works");
 
+// TODO: Global Scope
 const defaultResult = 0;
 let currentResult = defaultResult;
 
-function add(num1, num2) {
-  const result = num1 + num2;
+function add() {
+  // TODO: Local Scope
+  currentResult += userInput.value;
+  outputResult(currentResult, "");
   // Returning values
-  return result;
+  // return result;
 }
 
-currentResult = add(37, 37);
+addBtn.addEventListener("click", add);
 
-let calculationDescription = `(${defaultResult} + 10) * 3 / 3`;
-outputResult(currentResult, calculationDescription);
+// let calculationDescription = `(${defaultResult} + 10) * 3 / 3`;
