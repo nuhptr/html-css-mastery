@@ -16,7 +16,7 @@ let battleLog = [];
 function getMaxLifeValues() {
   const enteredValue = prompt(
     "Maximum life for you and the monster",
-    "enter valid number!"
+    "Input number!"
   );
 
   const parsedValue = parseInt(enteredValue);
@@ -26,13 +26,22 @@ function getMaxLifeValues() {
   return parsedValue;
 }
 
-let choosenMaxLife = getMaxLifeValues();
+let choosenMaxLife;
+
+// TODO: Handling user error input using try-catch
+try {
+  choosenMaxLife = getMaxLifeValues();
+} catch (error) {
+  console.log(error);
+  choosenMaxLife = 100;
+  alert("You entered something wrong, default value of 100 was used.");
+}
 
 let currentMonsterHealth = choosenMaxLife;
 let currentPlayerHealth = choosenMaxLife;
 let hasBonusLife = true;
 
-// Log battle
+// TODO: Log battle
 function writeToLog(ev, val, monsterHealth, playerHealth) {
   let logEntry = {
     event: ev,
@@ -85,7 +94,7 @@ function endRound() {
     currentPlayerHealth
   );
 
-  // bonus life
+  // TODO: bonus life
   if (currentPlayerHealth <= 0 && hasBonusLife) {
     hasBonusLife = false;
     removeBonusLife();
@@ -120,12 +129,13 @@ function endRound() {
     );
   }
 
-  // Reset the game
+  // TODO: Reset the game
   if (currentMonsterHealth <= 0 || currentPlayerHealth <= 0) {
     reset();
   }
 }
 
+// TODO: Attack to monster
 function attackMonster(mode) {
   let maxDamage = mode === MODE_ATTACK ? ATTACK_VALUE : STRONG_ATTACK_VALUE;
   let logEvent =
@@ -147,6 +157,7 @@ function strongAttackHandler() {
   attackMonster(MODE_STRONG_ATTACK);
 }
 
+// TODO: Heal player function
 function healPlayerHandler() {
   let healValue;
   if (currentPlayerHealth >= choosenMaxLife - HEAL_VALUE) {
