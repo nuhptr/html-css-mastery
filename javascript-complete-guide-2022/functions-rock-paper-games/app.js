@@ -23,6 +23,7 @@ constructor : ƒ startGame()
 [[Prototype]] : Object 
 */
 
+// TODO: Player choice
 const getPlayerChoice = () => {
   const selection = prompt(
     `${ROCK}, ${PAPER} or ${SCISSORS}?`,
@@ -30,11 +31,12 @@ const getPlayerChoice = () => {
   ).toUpperCase();
   if (selection !== ROCK && selection !== PAPER && selection !== SCISSORS) {
     alert(`invalid choice! We choose ${ROCK} for you!`);
-    return DEFAULT_USER_CHOICE;
+    return;
   }
   return selection;
 };
 
+// TODO: Computer choice
 const getComputerChoice = () => {
   const randomValue = Math.random();
   if (randomValue <= 0.34) {
@@ -46,7 +48,8 @@ const getComputerChoice = () => {
   }
 };
 
-const getWinner = (cChoice, pChoice) => {
+// TODO: Get Winner
+const getWinner = (cChoice, pChoice = DEFAULT_USER_CHOICE) => {
   if (cChoice === pChoice) {
     return RESULT_DRAW;
   } else if (
@@ -68,16 +71,25 @@ startGameBtn.addEventListener("click", function () {
   gameIsRunning = true;
 
   console.log("Game is starting...");
-  const playerSelection = getPlayerChoice();
+  const playerChoice = getPlayerChoice();
   const computerChoice = getComputerChoice();
-  const winner = getWinner(computerChoice, playerSelection);
-  let message = `You picked ${playerSelection} and computer picked ${computerChoice}`;
+  
+  let winner;
+  if (playerChoice) {
+    winner = getWinner(computerChoice, playerChoice);
+  } else {
+    winner = getWinner(computerChoice);
+  }
+
+  let message = `You picked ${
+    playerChoice || DEFAULT_USER_CHOICE
+  } and computer picked ${computerChoice}.`;
   if (winner === RESULT_DRAW) {
     message = message + " Had a draw";
   } else if (winner === RESULT_PLAYER_WINS) {
-    message = message + " Won.";
+    message = message + " You Won.";
   } else {
-    message = message + " Lost.";
+    message = message + " You Lost.";
   }
   alert(message);
 
