@@ -13,7 +13,8 @@ const getUserNumberInput = () => {
 // create output result and description
 const createAndWriteOutput = (operator, resultBeforeCalc, calcNumber) => {
   const calcDescription = `${resultBeforeCalc} ${operator} ${calcNumber}`;
-  outputResult(currentResult, calcDescription); // from vendor file
+  // from vendor file
+  outputResult(currentResult, calcDescription);
 };
 
 const writeToLog = (
@@ -34,43 +35,31 @@ const writeToLog = (
   console.log(logEntry);
 };
 
-const add = () => {
-  // TODO: Local Scope
+function calculate(operation) {
   const enteredNumber = getUserNumberInput();
   const initialResult = currentResult;
-  currentResult += enteredNumber;
-  createAndWriteOutput("+", initialResult, enteredNumber);
-  writeToLog("Add", initialResult, enteredNumber, currentResult);
+  let operator;
 
-  // Returning values
-  // return result;
-};
+  if (operation === "ADD") {
+    currentResult += enteredNumber;
+    operator = "+";
+  } else if (operation === "SUBTRACT") {
+    currentResult -= enteredNumber;
+    operator = "-";
+  } else if (operation === "MULTIPLY") {
+    currentResult *= enteredNumber;
+    operator = "*";
+  } else if (operation === "DIVIDE") {
+    currentResult /= enteredNumber;
+    operator = "/";
+  }
 
-const subtract = () => {
-  const enteredNumber = getUserNumberInput();
-  const initialResult = currentResult;
-  currentResult -= enteredNumber;
-  createAndWriteOutput("-", initialResult, enteredNumber);
-  writeToLog("Substract", initialResult, enteredNumber, currentResult);
-};
+  createAndWriteOutput(operator, initialResult, enteredNumber);
+  writeToLog(operation, initialResult, enteredNumber, currentResult);
+}
 
-const multiply = () => {
-  const enteredNumber = getUserNumberInput();
-  const initialResult = currentResult;
-  currentResult *= enteredNumber;
-  createAndWriteOutput("*", initialResult, enteredNumber);
-  writeToLog("Multiply", initialResult, enteredNumber, currentResult);
-};
-
-const divide = () => {
-  const enteredNumber = getUserNumberInput();
-  const initialResult = currentResult;
-  currentResult /= enteredNumber;
-  createAndWriteOutput("/", initialResult, enteredNumber);
-  writeToLog("Divide", initialResult, enteredNumber, currentResult);
-};
-
-addBtn.addEventListener("click", add);
-subtractBtn.addEventListener("click", subtract);
-multiplyBtn.addEventListener("click", multiply);
-divideBtn.addEventListener("click", divide);
+// TODO: Adding bind method to eventListener
+addBtn.addEventListener("click", calculate.bind(this, "ADD"));
+subtractBtn.addEventListener("click", calculate.bind(this, "SUBTRACT"));
+multiplyBtn.addEventListener("click", calculate.bind(this, "MULTIPLY"));
+divideBtn.addEventListener("click", calculate.bind(this, "DIVIDE"));
