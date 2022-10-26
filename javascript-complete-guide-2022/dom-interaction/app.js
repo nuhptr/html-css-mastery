@@ -16,6 +16,27 @@ const body = document.body;
 
 const listItemElements = document.getElementsByTagName("li");
 
-for (const listItemEl of listItemElements) {
-  console.dir(listItemEl);
-}
+// for (const listItemEl of listItemElements) {
+//   console.dir(listItemEl);
+// }
+
+// next element sibling
+const ul = document.body.firstElementChild.nextElementSibling; // section element
+const firstLi = ul.firstElementChild; // ul
+
+console.log(firstLi);
+
+// Style the DOM
+const section = document.querySelector("section");
+const button = document.querySelector("button");
+
+// section.style.backgroundColor = "blue";
+section.className = "red-bg";
+
+button.addEventListener("click", () => {
+  if (section.className === "red-bg visible") {
+    section.className = "red-bg invisible";
+  } else {
+    section.className = "red-bg visible";
+  }
+});

@@ -6,8 +6,21 @@
     <meta name="viewport" content="width=device-width, initial-scale=1" />
     <meta name="description" content="" />
     <title>DOM Interaction</title>
-    <link rel="stylesheet" href="index.css" />
 
+    <style>
+      .red-bg {
+        background-color: red;
+        color: white;
+      }
+
+      .visible {
+        display: block;
+      }
+
+      .invisible {
+        display: none;
+      }
+    </style>
     <script src="app.js" defer></script>
   </head>
   <body>
@@ -15,12 +28,16 @@
       <h1>Dive into the DOM!</h1>
     </header>
 
-    <ul>
-      <li>Item 1</li>
-      <li class="list-item">Item 2</li>
-      <li class="list-item">Item 3</li>
-    </ul>
+    <!-- The problem here if using sibling, if we are add some new element the structure change -->
+    <section class="red-bg">
+      <ul>
+        <li>Item 1</li>
+        <li class="list-item">Item 2</li>
+        <li class="list-item">Item 3</li>
+      </ul>
+    </section>
 
+    <button>Toogle Visibility!</button>
     <input type="text" value="Default Text" class="input" />
   </body>
 </html>
