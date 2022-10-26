@@ -26,7 +26,7 @@ const firstLi = ul.firstElementChild; // ul
 
 console.log(firstLi);
 
-// Style the DOM
+// TODO: Style the DOM
 const section = document.querySelector("section");
 const button = document.querySelector("button");
 
@@ -40,3 +40,13 @@ button.addEventListener("click", () => {
     section.className = "red-bg visible";
   }
 });
+
+// TODO: Adding element
+const list = document.querySelector("ul");
+const div = document.querySelector("div");
+
+list.innerHTML = list.innerHTML + "<li>Item 4</li>";
+list.innerHTML = list.innerHTML + "<li>Item 5</li>";
+
+div.innerHTML = div.innerHTML + "<p>Thats great</p>";
+div.insertAdjacentHTML("beforeend", "<p> Something went wrong!</p>");
