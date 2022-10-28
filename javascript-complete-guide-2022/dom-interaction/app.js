@@ -3,6 +3,7 @@
   console.dir(window.document);
  */
 
+// TODO: h1
 const h1 = document.querySelector("h1");
 
 h1.textContent = "Some New Title";
@@ -50,3 +51,16 @@ list.innerHTML = list.innerHTML + "<li>Item 5</li>";
 
 div.innerHTML = div.innerHTML + "<p>Thats great</p>";
 div.insertAdjacentHTML("beforeend", "<p> Something went wrong!</p>");
+
+// TODO: creating element via createElement()
+const otherList = document.querySelector("ul");
+const newLi = document.createElement("li");
+
+// otherList.appendChild(newLi); // create new li
+otherList.append(newLi);
+newLi.textContent = "Item 6";
+newLi.style.backgroundColor = "blue";
+
+// TODO: clone node
+const newLi2 = newLi.cloneNode(true);
+list.append(newLi, newLi2);
