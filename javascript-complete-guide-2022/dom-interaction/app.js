@@ -64,3 +64,7 @@ newLi.style.backgroundColor = "blue";
 // TODO: clone node
 const newLi2 = newLi.cloneNode(true);
 list.append(newLi, newLi2);
+
+// TODO: removing element
+// list.remove();
+newLi.remove();
