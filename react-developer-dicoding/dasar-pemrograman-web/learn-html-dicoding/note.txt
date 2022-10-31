@@ -1,3 +1,0 @@
-Catatan penting untuk HMTL :
-    1. Atribut adalah kode tambahan yang ada dalam suatu tag elemen
-    2. Tag elemen ada kode pembuka suatu konten ex. <p> </p>

@@ -1,4 +1,0 @@
-Keduanya sama sama mengeluarkan isi konten elemen yang dituju,
-bedanya :
-- innerHtml : mengambil semua isi konten yang dituju beserta tag-tag html yang ada.
-- innerText : Hanya mengambil teks tanpa tag - tag html yang ada.

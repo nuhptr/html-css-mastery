@@ -1,4 +1,0 @@
-menginstal ReactApp
-- npx create-react-app nama_app
-cd nama_app
-npm start

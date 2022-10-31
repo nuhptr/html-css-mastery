@@ -1,2 +1,0 @@
-// Statement
-alert("Terimakasih");

@@ -1,8 +1,0 @@
-1.  Object adalah tipe data kompleks untuk menyimpan banyak data dengan 
-    format key-value. Key pada object harus berupa string.
-
-2.  Array digunakan untuk menyimpan banyak data. Data pada array disusun secara berurutan dan diakses menggunakan index.
-
-3.  Map menyimpan banyak data dengan format key-value seperti object. Namun, key pada Map dapat bertipe apa pun.
-
-4.  Set digunakan untuk menyimpan banyak data secara unik, tidak ada duplikasi, tidak berurutan, dan tidak diindeks.
