@@ -4,4 +4,3 @@ Repository about Javascript Proggramming Language
 - HTML
 - CSS
 - Javascript
-- React JS
