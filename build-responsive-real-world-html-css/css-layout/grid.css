@@ -1,0 +1,64 @@
+.container-1 {
+  /* Starter */
+  font-family: sans-serif;
+  background-color: #ddd;
+  font-size: 40px;
+  margin: 40px;
+
+  /* CSS Grid */
+  display: grid;
+  /* grid-template-columns: 200px 200px 1fr 1fr; */
+  grid-template-columns: 1fr 1fr 1fr 1fr;
+  grid-template-rows: 200px 200px;
+
+  /* gap: 30px; */
+  column-gap: 10px;
+  row-gap: 40px;
+}
+
+.container-2 {
+  display: none;
+  /* Starter */
+  font-family: sans-serif;
+  background-color: #000;
+  font-size: 40px;
+  margin: 100px;
+
+  width: 1000px;
+  height: 1000px;
+
+  /* CSS Grid */
+}
+
+.el--1 {
+  background-color: orange;
+}
+
+.el--2 {
+  background-color: red;
+}
+
+.el--3 {
+  background-color: green;
+  height: 150px;
+}
+
+.el--4 {
+  background-color: gray;
+}
+
+.el--5 {
+  background-color: pink;
+}
+
+.el--6 {
+  background-color: blue;
+}
+
+.el--7 {
+  background-color: aqua;
+}
+
+.el--8 {
+  background-color: purple;
+}
