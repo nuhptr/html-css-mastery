@@ -4,18 +4,12 @@ const ROCK = "ROCK";
 const PAPER = "PAPER";
 const SCISSORS = "SCISSORS";
 const DEFAULT_USER_CHOICE = ROCK;
+
 const RESULT_DRAW = "DRAW";
 const RESULT_PLAYER_WINS = "PLAYER_WINS";
 const RESULT_COMPUTER_WINS = "COMPUTER_WINS";
 
 let gameIsRunning = false;
-
-/* 
-Storing function in variable
-const start = function () {
-  console.log("Game is starting!");
-}; 
-*/
 
 /* 
 console.dir(start);  Functions are objects
@@ -73,7 +67,7 @@ startGameBtn.addEventListener("click", function () {
   console.log("Game is starting...");
   const playerChoice = getPlayerChoice();
   const computerChoice = getComputerChoice();
-  
+
   let winner;
   if (playerChoice) {
     winner = getWinner(computerChoice, playerChoice);
