@@ -14,5 +14,8 @@ console.log(eat);
 eat[1] = "Fried Rice";
 console.log(eat);
 
+// TODO: remove basic on index and how many delete, if need add item after delete
 eat.splice(1, 0, "Good Food");
 console.log(eat);
+
+// TODO: slice
