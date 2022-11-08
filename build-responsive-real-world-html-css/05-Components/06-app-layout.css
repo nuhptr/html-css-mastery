@@ -59,6 +59,23 @@ button:last-child {
 
 section {
   background-color: #e9ecef;
+  padding: 40px;
+
+  display: flex;
+  flex-direction: column;
+  gap: 40px;
+
+  overflow: scroll;
+}
+
+.email {
+  background-color: #adb5bd;
+  height: 96px;
+
+  display: flex;
+  flex-shrink: 0;
+  align-items: center;
+  justify-content: center;
 }
 
 aside {
