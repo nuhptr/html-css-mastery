@@ -1,4 +1,4 @@
-# Javascript-Journey
+# HTML-CSS-Javascript-Learn-Udemy
 
 Repository about Javascript Proggramming Language
 
