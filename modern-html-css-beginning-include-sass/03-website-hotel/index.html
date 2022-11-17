@@ -13,12 +13,10 @@
       content="hotel, pringsewu hotel, indonesia, english hotel"
     />
     <title>Urban Hotel | Welcome</title>
-    <!-- CSS -->
-    <link rel="stylesheet" href="./css/index.css" />
+
+    <link rel="stylesheet" href="css/index.css" />
   </head>
   <body>
-    <!-- HTML -->
-
     <!-- Header -->
     <header>
       <nav id="navbar">
@@ -28,7 +26,7 @@
           </h1>
           <!-- links -->
           <ul>
-            <li><a href="index.html">Home</a></li>
+            <li><a class="current" href="index.html">Home</a></li>
             <li><a href="about.html">About</a></li>
             <li><a href="contact.html">Contact</a></li>
           </ul>
@@ -36,26 +34,39 @@
       </nav>
     </header>
 
-    <!-- Showcase -->
-    <div id="showcase">
-      <div class="container">
-        <div class="showcase-content">
-          <h1>
-            <span class="text-primary">Enjoy</span>
-            Your Stay
-          </h1>
-          <p class="lead">
-            Lorem ipsum dolor, sit amet consectetur adipisicing elit. Quos,
-            recusandae illum maxime hic fugiat qui similique et quis. Veniam
-            tempora illo dicta optio laudantium obcaecati corrupti modi
-            reiciendis ea culpa!
-          </p>
-          <a class="btn" href="about.html">About Our Hotel</a>
+    <main>
+      <!-- Hero -->
+      <section id="showcase">
+        <div class="container">
+          <div class="showcase-content">
+            <h1>
+              <span class="text-primary">Enjoy</span>
+              Your Stay
+            </h1>
+            <p class="lead">
+              Lorem ipsum dolor, sit amet consectetur adipisicing elit. Quos,
+              recusandae illum maxime hic fugiat qui similique et quis. Veniam
+              tempora illo dicta optio laudantium obcaecati corrupti modi
+              reiciendis ea culpa!
+            </p>
+            <a class="btn" href="about.html">About Our Hotel</a>
+          </div>
         </div>
-      </div>
-    </div>
+      </section>
 
-    <!-- Javascript -->
-    <script src="/website-hotel/js/index.js"></script>
+      <!-- Home Info -->
+      <section id="home-info" class="bg-dark">
+        <div class="info-img"></div>
+        <div class="info-content">
+          <h2><span class="text-primary">The History </span> Of Our Hotel</h2>
+          <p>
+            Lorem ipsum dolor sit, amet consectetur adipisicing elit. Sapiente,
+            fugit dolorem. Dolore illum eaque ea ipsam animi voluptates autem
+            eveniet itaque quia, temporibus perferendis tempora, architecto
+            laborum necessitatibus eligendi a?
+          </p>
+        </div>
+      </section>
+    </main>
   </body>
 </html>
