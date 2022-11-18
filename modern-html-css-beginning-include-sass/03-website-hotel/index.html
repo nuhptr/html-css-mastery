@@ -15,6 +15,16 @@
     <title>Urban Hotel | Welcome</title>
 
     <link rel="stylesheet" href="css/index.css" />
+    <link rel="stylesheet" href="css/utilities.css">
+
+    <script
+      type="module"
+      src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.esm.js"
+    ></script>
+    <script
+      nomodule
+      src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.js"
+    ></script>
   </head>
   <body>
     <!-- Header -->
@@ -37,20 +47,18 @@
     <main>
       <!-- Hero -->
       <section id="showcase">
-        <div class="container">
-          <div class="showcase-content">
-            <h1>
-              <span class="text-primary">Enjoy</span>
-              Your Stay
-            </h1>
-            <p class="lead">
-              Lorem ipsum dolor, sit amet consectetur adipisicing elit. Quos,
-              recusandae illum maxime hic fugiat qui similique et quis. Veniam
-              tempora illo dicta optio laudantium obcaecati corrupti modi
-              reiciendis ea culpa!
-            </p>
-            <a class="btn" href="about.html">About Our Hotel</a>
-          </div>
+        <div class="showcase-content container">
+          <h1>
+            <span class="text-primary">Enjoy</span>
+            Your Stay
+          </h1>
+          <p class="lead">
+            Lorem ipsum dolor, sit amet consectetur adipisicing elit. Quos,
+            recusandae illum maxime hic fugiat qui similique et quis. Veniam
+            tempora illo dicta optio laudantium obcaecati corrupti modi
+            reiciendis ea culpa!
+          </p>
+          <a href="about.html" class="btn btn-primary">About Our Hotel</a>
         </div>
       </section>
 
@@ -65,8 +73,35 @@
             eveniet itaque quia, temporibus perferendis tempora, architecto
             laborum necessitatibus eligendi a?
           </p>
+          <a href="about.html" class="btn btn-light">Read More</a>
+        </div>
+      </section>
+
+      <!-- Features -->
+      <section id="features container">
+        <div class="box bg-light">
+          <ion-icon class="box-icon" name="business-outline"></ion-icon>
+          <h3>Great Location</h3>
+          <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit.</p>
+        </div>
+        <div class="box bg-primary">
+          <ion-icon class="box-icon" name="restaurant-outline"></ion-icon>
+          <h3>Free Meals</h3>
+          <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit.</p>
+        </div>
+        <div class="box bg-light">
+          <ion-icon class="box-icon" name="fitness-outline"></ion-icon>
+          <h3>Fitness Room</h3>
+          <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit.</p>
         </div>
       </section>
     </main>
+
+    <div class="clr"></div>
+
+    <!-- Footer -->
+    <footer id="main-footer">
+      <p>Hotel Urban &copy; 2022, All right reserved</p>
+    </footer>
   </body>
 </html>
