@@ -19,9 +19,9 @@
       nomodule
       src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.js"
     ></script>
-    <script src="#" defer></script>
+    <script src="script.js" defer></script>
   </head>
-  <body>
+  <body id="home">
     <header class="hero">
       <div id="navbar" class="navbar">
         <h1 class="logo">
@@ -45,9 +45,217 @@
         <h1>The Sky Is The Limit</h1>
         <p>We provide world class financial assistant</p>
         <a href="#about" class="btn">
-          <ion-icon name="chevron-forward-outline"></ion-icon> Read More
+          <ion-icon class="chevron" name="chevron-forward-outline"></ion-icon>
+          Read More
         </a>
       </div>
     </header>
+
+    <main>
+      <!-- About -->
+      <section id="about" class="icons bg-light">
+        <div class="flex-items">
+          <div>
+            <ion-icon class="icon" name="business-outline"></ion-icon>
+            <div>
+              <h3>Investment Banking</h3>
+              <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit.</p>
+            </div>
+          </div>
+
+          <div>
+            <ion-icon class="icon" name="bookmarks-outline"></ion-icon>
+            <div>
+              <h3>Portfolio Manager</h3>
+              <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit.</p>
+            </div>
+          </div>
+
+          <div>
+            <ion-icon class="icon" name="analytics-outline"></ion-icon>
+            <div>
+              <h3>Tax & Custodial</h3>
+              <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit.</p>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!-- Solutions -->
+      <section class="solutions flex-columns">
+        <div class="row">
+          <div class="column">
+            <!-- img -->
+            <div class="column-1">
+              <img src="./img/home/people.jpg" alt="picture of people's" />
+            </div>
+          </div>
+          <div class="column">
+            <!-- description -->
+            <div class="column-2 bg-primary">
+              <h4>What are you looking for</h4>
+              <h2>We provide bespoke solutions</h2>
+              <p>
+                Lorem ipsum dolor, sit amet consectetur adipisicing elit. Eos
+                incidunt aliquam quam ex non quidem sint quo velit earum soluta
+                nostrum odit natus inventore, quod nobis molestiae officiis quia
+                cupiditate?
+              </p>
+              <a href="#" class="btn btn-outline">
+                <ion-icon class="chevron" name="chevron-forward-outline">
+                </ion-icon>
+                Read More
+              </a>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!-- Cases -->
+      <section id="cases" class="cases flex-grid section-padding">
+        <header class="section-header">
+          <h4>This is what we do</h4>
+          <h2>Business Cases</h2>
+          <p>
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Vitae
+            libero, laborum temporibus consequuntur quibusdam modi adipisci rem
+            quasi qui repellendus dicta! Harum sunt quasi tenetur neque quod!
+            Odio, vel officia!
+          </p>
+          <div class="row">
+            <div class="column">
+              <img src="img/cases/cases1.jpg" alt="cases 1" />
+              <img src="img/cases/cases2.jpg" alt="cases 2" />
+            </div>
+            <div class="column">
+              <img src="img/cases/cases3.jpg" alt="cases 3" />
+              <img src="img/cases/cases4.jpg" alt="cases 4" />
+            </div>
+            <div class="column">
+              <img src="img/cases/cases5.jpg" alt="cases 5" />
+              <img src="img/cases/cases6.jpg" alt="cases 6" />
+            </div>
+            <div class="column">
+              <img src="img/cases/cases7.jpg" alt="cases 7" />
+              <img src="img/cases/cases8.jpg" alt="cases 8" />
+            </div>
+          </div>
+        </header>
+      </section>
+
+      <!-- Blog -->
+      <section id="blog" class="blog flex-columns flex-reverse">
+        <div class="row">
+          <div class="column">
+            <div class="column-1">
+              <img src="./img/home/blog.jpg" alt="picture of people's" />
+            </div>
+          </div>
+          <div class="column">
+            <div class="column-2 bg-secondary">
+              <h4>April 16 2022</h4>
+              <h2>Blog Post One</h2>
+              <p>
+                Lorem ipsum dolor, sit amet consectetur adipisicing elit. Eos
+                incidunt aliquam quam ex non quidem sint quo velit earum soluta
+                nostrum odit natus inventore, quod nobis molestiae officiis quia
+                cupiditate?
+              </p>
+              <a href="#" class="btn btn-outline">
+                <ion-icon class="chevron" name="chevron-forward-outline">
+                </ion-icon>
+                Read Our Blog
+              </a>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!-- Teams -->
+      <section id="team" class="team section-padding">
+        <header class="section-header">
+          <h4>Who we are</h4>
+          <h2>Our Professional Team</h2>
+          <p>
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Vitae
+            libero, laborum temporibus consequuntur quibusdam modi adipisci rem
+            quasi qui repellendus dicta! Harum sunt quasi tenetur neque quod!
+            Odio, vel officia!
+          </p>
+        </header>
+        <div class="flex-items">
+          <div>
+            <img src="img/team/person1.jpg" alt="person team 1" />
+            <h4>John Doe</h4>
+            <p>President</p>
+          </div>
+
+          <div>
+            <img src="img/team/person2.jpg" alt="person team 1" />
+            <h4>Jessica Valley</h4>
+            <p>Vice President</p>
+          </div>
+
+          <div>
+            <img src="img/team/person3.jpg" alt="person team 1" />
+            <h4>Steve Smith</h4>
+            <p>Marketing Head</p>
+          </div>
+        </div>
+      </section>
+
+      <!-- Contact -->
+      <section id="contact" class="contact flex-columns">
+        <div class="row">
+          <div class="column">
+            <!-- img -->
+            <div class="column-1">
+              <img src="./img/home/contact.jpg" alt="picture of people's" />
+            </div>
+          </div>
+          <div class="column">
+            <!-- description -->
+            <div class="column-2 bg-light">
+              <h2>Request Callback</h2>
+              <form action="" class="callback-form" autocomplete="off">
+                <div class="form-control">
+                  <label for="name">Name</label>
+                  <input
+                    type="text"
+                    name="name"
+                    id="name"
+                    required
+                    placeholder="Input your name"
+                  />
+                </div>
+
+                <div class="form-control">
+                  <label for="email">Email</label>
+                  <input
+                    type="email"
+                    name="email"
+                    id="email"
+                    required
+                    placeholder="Input your email"
+                  />
+                </div>
+
+                <div class="form-control">
+                  <label for="phone">Phone</label>
+                  <input
+                    type="text"
+                    name="phone"
+                    id="phone"
+                    required
+                    placeholder="Input your mobile phone"
+                  />
+                </div>
+                <input type="submit" value="Send" id="submit" class="btn" />
+              </form>
+            </div>
+          </div>
+        </div>
+      </section>
+    </main>
   </body>
 </html>
