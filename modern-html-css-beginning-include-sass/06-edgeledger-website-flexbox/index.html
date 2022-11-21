@@ -8,6 +8,26 @@
     <meta name="keywords" content="flexbox, EdgeLedger, financial" />
     <title>EdgeLedger Website</title>
 
+    <link rel="shortcut icon" href="./img/favicon.ico" type="image/x-icon" />
+    <link
+      rel="shortcut icon"
+      href="./img/android-chrome-192x192.png"
+      type="image/x-icon"
+    />
+    <link
+      rel="shortcut icon"
+      href="./img/android-chrome-512x512.png"
+      type="image/x-icon"
+    />
+    <link
+      rel="shortcut icon"
+      href="./img/apple-touch-icon.png"
+      type="image/x-icon"
+    />
+
+    <link rel="stylesheet" type="text" href="site.webmanifest" />
+
+    <link rel="stylesheet" href="css/lightbox.min.css" />
     <link rel="stylesheet" href="css/style.css" />
     <link rel="stylesheet" href="css/utilities.css" />
 
@@ -19,11 +39,10 @@
       nomodule
       src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.js"
     ></script>
-    <script src="script.js" defer></script>
   </head>
   <body id="home">
     <header class="hero">
-      <div id="navbar" class="navbar">
+      <div id="navbar" class="navbar top">
         <h1 class="logo">
           <span class="text-primary">
             <ion-icon class="nav-icon" name="book-outline"></ion-icon>
@@ -124,20 +143,67 @@
           </p>
           <div class="row">
             <div class="column">
-              <img src="img/cases/cases1.jpg" alt="cases 1" />
-              <img src="img/cases/cases2.jpg" alt="cases 2" />
+              <a
+                href="img/cases/cases1.jpg"
+                data-lightbox="cases"
+                data-title="lorem ipsum dolor sit amet"
+              >
+                <img src="img/cases/cases1.jpg" alt="cases 1" />
+              </a>
+              <a
+                href="img/cases/cases2.jpg"
+                data-lightbox="cases"
+                data-title="lorem ipsum dolor sit amet"
+              >
+                <img src="img/cases/cases2.jpg" alt="cases 2" />
+              </a>
             </div>
             <div class="column">
-              <img src="img/cases/cases3.jpg" alt="cases 3" />
-              <img src="img/cases/cases4.jpg" alt="cases 4" />
+              <a
+                href="img/cases/cases3.jpg"
+                data-lightbox="cases"
+                data-title="lorem ipsum dolor sit amet"
+              >
+                <img src="img/cases/cases3.jpg" alt="cases 3" /> </a
+              ><a
+                href="img/cases/cases4.jpg"
+                data-lightbox="cases"
+                data-title="lorem ipsum dolor sit amet"
+              >
+                <img src="img/cases/cases4.jpg" alt="cases 4" />
+              </a>
             </div>
             <div class="column">
-              <img src="img/cases/cases5.jpg" alt="cases 5" />
-              <img src="img/cases/cases6.jpg" alt="cases 6" />
+              <a
+                href="img/cases/cases5.jpg"
+                data-lightbox="cases"
+                data-title="lorem ipsum dolor sit amet"
+              >
+                <img src="img/cases/cases5.jpg" alt="cases 5" />
+              </a>
+              <a
+                href="img/cases/cases6.jpg"
+                data-lightbox="cases"
+                data-title="lorem ipsum dolor sit amet"
+              >
+                <img src="img/cases/cases6.jpg" alt="cases 6" />
+              </a>
             </div>
             <div class="column">
-              <img src="img/cases/cases7.jpg" alt="cases 7" />
-              <img src="img/cases/cases8.jpg" alt="cases 8" />
+              <a
+                href="img/cases/cases7.jpg"
+                data-lightbox="cases"
+                data-title="lorem ipsum dolor sit amet"
+              >
+                <img src="img/cases/cases7.jpg" alt="cases 7" />
+              </a>
+              <a
+                href="img/cases/cases8.jpg"
+                data-lightbox="cases"
+                data-title="lorem ipsum dolor sit amet"
+              >
+                <img src="img/cases/cases8.jpg" alt="cases 8" />
+              </a>
             </div>
           </div>
         </header>
@@ -161,9 +227,11 @@
                 nostrum odit natus inventore, quod nobis molestiae officiis quia
                 cupiditate?
               </p>
-              <a href="#" class="btn btn-outline">
-                <ion-icon class="chevron" name="chevron-forward-outline">
-                </ion-icon>
+              <a href="blog.html" class="btn btn-outline">
+                <span>
+                  <ion-icon class="chevron" name="chevron-forward-outline">
+                  </ion-icon>
+                </span>
                 Read Our Blog
               </a>
             </div>
@@ -214,7 +282,7 @@
             </div>
           </div>
           <div class="column">
-            <!-- description -->
+            <!-- Form -->
             <div class="column-2 bg-light">
               <h2>Request Callback</h2>
               <form action="" class="callback-form" autocomplete="off">
@@ -257,5 +325,68 @@
         </div>
       </section>
     </main>
+
+    <footer class="footer bg-dark">
+      <div class="social">
+        <a href="#">
+          <ion-icon class="footer-logo" name="logo-facebook"></ion-icon>
+        </a>
+        <a href="#">
+          <ion-icon class="footer-logo" name="logo-twitter"></ion-icon>
+        </a>
+        <a href="#">
+          <ion-icon class="footer-logo" name="logo-youtube"></ion-icon>
+        </a>
+        <a href="#">
+          <ion-icon class="footer-logo" name="logo-linkedin"></ion-icon>
+        </a>
+      </div>
+      <p>Copyright &copy; 2022 - Edgeledger</p>
+    </footer>
+
+    <script
+      src="https://code.jquery.com/jquery-3.6.1.min.js"
+      integrity="sha256-o88AwQnZB+VDvE9tvIXrMQaPlFFSUTR+nldQm1LuPXQ="
+      crossorigin="anonymous"
+    ></script>
+    <script src="js/lightbox.min.js"></script>
+
+    <script>
+      const navbar = document.getElementById("navbar");
+      let scrolled = false;
+
+      window.onscroll = function () {
+        if (window.pageYOffset > 100) {
+          navbar.classList.remove("top");
+          if (!scrolled) {
+            navbar.style.transform = "translateY(-70px)";
+          }
+
+          setTimeout(() => {
+            navbar.style.transform = "translateY(0)";
+            scrolled = true;
+          }, 200);
+        } else {
+          navbar.classList.add("top");
+          scrolled = false;
+        }
+      };
+
+      // Smooth scrolling
+      $("#navbar a, .btn").on("click", function (e) {
+        if (this.hash !== "") {
+          e.preventDefault();
+
+          const hash = this.hash;
+
+          $("html, body").animate(
+            {
+              scrollTop: $(hash).offset().top - 100,
+            },
+            800
+          );
+        }
+      });
+    </script>
   </body>
 </html>
