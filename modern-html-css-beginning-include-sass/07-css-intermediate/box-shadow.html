@@ -7,7 +7,29 @@
     <meta name="keywords" content="html, css, boxshadow" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Box Shadows</title>
-    <style></style>
+    <style>
+      .container {
+        display: flex;
+      }
+
+      .box {
+        padding: 1rem;
+        margin: 1rem;
+        background: coral;
+        color: #fff;
+        border-radius: 10px;
+
+        /* TODO: 
+        Box Shadow 
+        inset | offset x | offset y | blur 
+        | spread (optional) | color
+
+        inset: to create inner shadow and opposite real value
+        (can negative values)
+        */
+        box-shadow: 0 20px 30px rgba(0, 0, 0, 0.2);
+      }
+    </style>
   </head>
   <body>
     <div class="container">
