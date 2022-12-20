@@ -1,6 +1,6 @@
 # HTML-CSS-Javascript-Learn-Udemy
 
-Repository about Javascript Proggramming Language
+Repository about HTML, CSS, Javascript Proggramming Language
 
 - build-responsive-real-world-html-css[done]
 - javascript-complete-guide-2022 [on-going]
