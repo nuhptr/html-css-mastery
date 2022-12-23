@@ -9,11 +9,61 @@
     <meta name="description" content="html css to create dropdown menu" />
     <link rel="stylesheet" href="index.css" />
 
-    <title>CSS Quick Dropdown Menus</title>
+    <title>CSS Dropdown Menus</title>
   </head>
   <body>
     <!-- HTML -->
+    <nav id="navbar">
+      <ul>
+        <li><a href="#">Home</a></li>
+        <li><a href="#">About</a></li>
+        <li>
+          Services <ion-icon name="chevron-down-outline"></ion-icon>
+          <ul>
+            <li><a href="#">Web Development</a></li>
+            <li><a href="#">Website Design</a></li>
+            <li><a href="#">Mobile Development</a></li>
+            <li><a href="#">SEO</a></li>
+          </ul>
+        </li>
+        <li>
+          Blog <ion-icon name="chevron-down-outline"></ion-icon>
+          <ul>
+            <a href="#">HTML</a>
+            <span>22 Posts</span>
+          </ul>
+          <ul>
+            <a href="#">CSS</a>
+            <span>16 Posts</span>
+          </ul>
+          <ul>
+            <a href="#">Javascript</a>
+            <span>10 Posts</span>
+          </ul>
+          <ul>
+            <a href="#">Python</a>
+            <span>13 Posts</span>
+          </ul>
+          <ul>
+            <a href="#">PHP</a>
+            <span>10 Posts</span>
+          </ul>
+          <ul>
+            <a href="#">Design</a>
+            <span>21 Posts</span>
+          </ul>
+        </li>
+      </ul>
+    </nav>
 
     <!-- Javascript -->
+    <script
+      type="module"
+      src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.esm.js"
+    ></script>
+    <script
+      nomodule
+      src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.js"
+    ></script>
   </body>
 </html>
