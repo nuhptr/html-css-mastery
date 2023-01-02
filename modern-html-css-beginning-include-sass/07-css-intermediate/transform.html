@@ -1,57 +1,60 @@
 <!DOCTYPE html>
 <html lang="en">
-  <head>
-    <meta charset="UTF-8" />
-    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
 
-    <meta name="description" content="learn transform property" />
-    <meta name="keywords" content="" />
-    <link rel="stylesheet" href="#" />
+<head>
+  <meta charset="UTF-8" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
 
-    <title>Transform Property</title>
-    <style>
-      :root {
-        --bg-color: #333;
-        --white-color: #fff;
-        --flex: flex;
-        --center: center;
+  <meta name="description" content="learn transform property" />
+  <meta name="keywords" content="" />
+  <link rel="stylesheet" href="#" />
 
-        --box-width: 300px;
-        --box-height: 300px;
-      }
+  <title>Transform Property</title>
+  <style>
+    :root {
+      --bg-color: #333;
+      --white-color: #fff;
+      --flex: flex;
+      --center: center;
 
-      body {
-        background-color: var(--bg-color);
-        display: var(--flex);
-        align-items: var(--center);
-        justify-content: var(--center);
-        height: 100vh;
-      }
+      --box-width: 300px;
+      --box-height: 300px;
+    }
 
-      .box {
-        background-color: var(--white-color);
-        height: var(--box-height);
-        width: var(--box-width);
-        /* rotasi */
-        /* transform: rotate(25deg); */
-        /* miring */
-        /* transform: skew(25deg); */
-        /* diperbesar */
-        /* transform: scale(2); */
-        transition: all 1s ease-in-out;
-      }
+    body {
+      background-color: var(--bg-color);
+      display: var(--flex);
+      align-items: var(--center);
+      justify-content: var(--center);
+      height: 100vh;
+    }
 
-      .box:hover {
-        transform: rotate(180deg) skew(25deg) scale(2);
-        /* transform: translateY(-100px); */
-        /* transform: translateX(100px); */
-        /* transform: translate(100px, 100px); */
-        /* transform: translate3d(100px, 100px, 100px); */
-      }
-    </style>
-  </head>
-  <body>
-    <div class="box"></div>
-  </body>
+    .box {
+      background-color: var(--white-color);
+      height: var(--box-height);
+      width: var(--box-width);
+      /* rotasi */
+      /* transform: rotate(25deg); */
+      /* miring */
+      /* transform: skew(25deg); */
+      /* diperbesar */
+      /* transform: scale(2); */
+      transition: all 1s ease-in-out;
+    }
+
+    .box:hover {
+      transform: rotate(180deg) skew(25deg) scale(2);
+      /* transform: translateY(-100px); */
+      /* transform: translateX(100px); */
+      /* transform: translate(100px, 100px); */
+      /* transform: translate3d(100px, 100px, 100px); */
+    }
+  </style>
+</head>
+
+<body>
+  <div class="box"></div>
+</body>
+
 </html>
