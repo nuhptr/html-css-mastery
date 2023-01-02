@@ -1,59 +1,62 @@
 <!DOCTYPE html>
 <html lang="en">
-  <head>
-    <meta charset="UTF-8" />
-    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
 
-    <meta name="keywords" content="html, css, grid, span" />
-    <meta name="description" content="html css to learn grid span" />
-    <link rel="stylesheet" href="#" />
+<head>
+  <meta charset="UTF-8" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
 
-    <title>Grid Span</title>
+  <meta name="keywords" content="html, css, grid, span" />
+  <meta name="description" content="html css to learn grid span" />
+  <link rel="stylesheet" href="#" />
 
-    <style>
-      .grid {
-        display: grid;
-        grid-template-columns: repeat(4, 1fr);
-      }
+  <title>Grid Span</title>
 
-      .item {
-        padding: 3rem;
-        border: 1px solid #ccc;
-        background-color: #f4f4f4;
-        font-size: 1.3rem;
-        font-weight: bold;
-        text-align: center;
-      }
+  <style>
+    .grid {
+      display: grid;
+      grid-template-columns: repeat(4, 1fr);
+    }
 
-      /* spanning / memperlebar column / row based on 
+    .item {
+      padding: 3rem;
+      border: 1px solid #ccc;
+      background-color: #f4f4f4;
+      font-size: 1.3rem;
+      font-weight: bold;
+      text-align: center;
+    }
+
+    /* spanning / memperlebar column / row based on 
         number grid when fn  + f12 (mac) */
-      .item:first-child {
-        /* grid-column-start: 1;
+    .item:first-child {
+      /* grid-column-start: 1;
         grid-column-end: 4;
         grid-row-start: 1;
         grid-row-end: 3; */
 
-        /* from grid 1 span until 3 grid based on sum of column and row*/
-        grid-column: 1 / span 3;
-        grid-row: 1 / span 2;
-      }
+      /* from grid 1 span until 3 grid based on sum of column and row*/
+      grid-column: 1 / span 3;
+      grid-row: 1 / span 2;
+    }
 
-      .item:nth-child(6) {
-        grid-column: 3 / span 2;
-        grid-row: 3 / span 2;
-      }
-    </style>
-  </head>
-  <body>
-    <div class="grid">
-      <div class="item">Item 1</div>
-      <div class="item">Item 2</div>
-      <div class="item">Item 3</div>
-      <div class="item">Item 4</div>
-      <div class="item">Item 5</div>
-      <div class="item">Item 6</div>
-      <div class="item">Item 7</div>
-    </div>
-  </body>
+    .item:nth-child(6) {
+      grid-column: 3 / span 2;
+      grid-row: 3 / span 2;
+    }
+  </style>
+</head>
+
+<body>
+  <div class="grid">
+    <div class="item">Item 1</div>
+    <div class="item">Item 2</div>
+    <div class="item">Item 3</div>
+    <div class="item">Item 4</div>
+    <div class="item">Item 5</div>
+    <div class="item">Item 6</div>
+    <div class="item">Item 7</div>
+  </div>
+</body>
+
 </html>

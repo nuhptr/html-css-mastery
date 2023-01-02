@@ -1,74 +1,77 @@
 <!DOCTYPE html>
 <html lang="en">
-  <head>
-    <meta charset="UTF-8" />
-    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
 
-    <meta name="description" content="html css to learn grid media queries" />
-    <meta name="keywords" content="html, css, grid, media-queris" />
-    <link rel="stylesheet" href="#" />
+<head>
+  <meta charset="UTF-8" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
 
-    <title>Grid Media Queries</title>
+  <meta name="description" content="html css to learn grid media queries" />
+  <meta name="keywords" content="html, css, grid, media-queris" />
+  <link rel="stylesheet" href="#" />
 
-    <style>
+  <title>Grid Media Queries</title>
+
+  <style>
+    .grid {
+      display: grid;
+      grid-template-columns: repeat(4, auto);
+      gap: 1rem;
+    }
+
+    @media screen and (max-width: 768px) {
       .grid {
-        display: grid;
-        grid-template-columns: repeat(4, auto);
-        gap: 1rem;
+        grid-template-columns: repeat(2, 1fr);
       }
+    }
 
-      @media screen and (max-width: 768px) {
-        .grid {
-          grid-template-columns: repeat(2, 1fr);
-        }
+    @media screen and (max-width: 500px) {
+      .grid {
+        grid-template-columns: 1fr;
       }
+    }
+  </style>
+</head>
 
-      @media screen and (max-width: 500px) {
-        .grid {
-          grid-template-columns: 1fr;
-        }
-      }
-    </style>
-  </head>
-  <body>
-    <div class="grid">
-      <div class="item">
-        <h3>Heading</h3>
-        <p>
-          Lorem ipsum dolor sit amet consectetur adipisicing elit. Velit aliquam
-          consectetur dolores atque veritatis dolor cupiditate maiores explicabo
-          porro soluta. Voluptatum incidunt nostrum magni voluptatem unde iure
-          soluta, animi neque.
-        </p>
-      </div>
-      <div class="item">
-        <h3>Heading</h3>
-        <p>
-          Lorem ipsum dolor sit amet consectetur adipisicing elit. Velit aliquam
-          consectetur dolores atque veritatis dolor cupiditate maiores explicabo
-          porro soluta. Voluptatum incidunt nostrum magni voluptatem unde iure
-          soluta, animi neque.
-        </p>
-      </div>
-      <div class="item">
-        <h3>Heading</h3>
-        <p>
-          Lorem ipsum dolor sit amet consectetur adipisicing elit. Velit aliquam
-          consectetur dolores atque veritatis dolor cupiditate maiores explicabo
-          porro soluta. Voluptatum incidunt nostrum magni voluptatem unde iure
-          soluta, animi neque.
-        </p>
-      </div>
-      <div class="item">
-        <h3>Heading</h3>
-        <p>
-          Lorem ipsum dolor sit amet consectetur adipisicing elit. Velit aliquam
-          consectetur dolores atque veritatis dolor cupiditate maiores explicabo
-          porro soluta. Voluptatum incidunt nostrum magni voluptatem unde iure
-          soluta, animi neque.
-        </p>
-      </div>
+<body>
+  <div class="grid">
+    <div class="item">
+      <h3>Heading</h3>
+      <p>
+        Lorem ipsum dolor sit amet consectetur adipisicing elit. Velit aliquam
+        consectetur dolores atque veritatis dolor cupiditate maiores explicabo
+        porro soluta. Voluptatum incidunt nostrum magni voluptatem unde iure
+        soluta, animi neque.
+      </p>
     </div>
-  </body>
+    <div class="item">
+      <h3>Heading</h3>
+      <p>
+        Lorem ipsum dolor sit amet consectetur adipisicing elit. Velit aliquam
+        consectetur dolores atque veritatis dolor cupiditate maiores explicabo
+        porro soluta. Voluptatum incidunt nostrum magni voluptatem unde iure
+        soluta, animi neque.
+      </p>
+    </div>
+    <div class="item">
+      <h3>Heading</h3>
+      <p>
+        Lorem ipsum dolor sit amet consectetur adipisicing elit. Velit aliquam
+        consectetur dolores atque veritatis dolor cupiditate maiores explicabo
+        porro soluta. Voluptatum incidunt nostrum magni voluptatem unde iure
+        soluta, animi neque.
+      </p>
+    </div>
+    <div class="item">
+      <h3>Heading</h3>
+      <p>
+        Lorem ipsum dolor sit amet consectetur adipisicing elit. Velit aliquam
+        consectetur dolores atque veritatis dolor cupiditate maiores explicabo
+        porro soluta. Voluptatum incidunt nostrum magni voluptatem unde iure
+        soluta, animi neque.
+      </p>
+    </div>
+  </div>
+</body>
+
 </html>
