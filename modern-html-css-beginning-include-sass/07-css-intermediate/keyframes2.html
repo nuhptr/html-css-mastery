@@ -1,70 +1,68 @@
 <!DOCTYPE html>
 <html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
 
-<head>
-  <meta charset="UTF-8" />
-  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name="keywords" content="html, css, keyframes" />
+    <meta name="description" content="learn keyframes 2" />
+    <link rel="stylesheet" href="#" />
 
-  <meta name="keywords" content="html, css, keyframes" />
-  <meta name="description" content="learn keyframes 2" />
-  <link rel="stylesheet" href="#" />
-
-  <title>Keyframes 02</title>
-  <style>
-    :root {
-      --box-width: 200px;
-      --box-height: 200px;
-    }
-
-    body {
-      background-color: #333;
-    }
-
-    .box {
-      background-color: #fff;
-      width: var(--box-width);
-      height: var(--box-height);
-      border-radius: 12px;
-      position: relative;
-      top: 0;
-      left: 0;
-      animation: animate1 5s forwards ease-in-out infinite;
-    }
-
-    @keyframes animate1 {
-      25% {
-        top: 0;
-        left: 300px;
-        background-color: red;
-        border-radius: 50% 0 0 0;
+    <title>Keyframes 02</title>
+    <style>
+      :root {
+        --box-width: 200px;
+        --box-height: 200px;
       }
 
-      50% {
-        top: 300px;
-        left: 300px;
-        background-color: royalblue;
-        border-radius: 50% 50% 0 0;
+      body {
+        background-color: #333;
       }
 
-      75% {
-        top: 300px;
-        left: 0;
-        background-color: rebeccapurple;
-        border-radius: 50% 50% 50% 0;
-      }
-
-      100% {
+      .box {
+        background-color: #fff;
+        width: var(--box-width);
+        height: var(--box-height);
+        border-radius: 12px;
+        position: relative;
         top: 0;
         left: 0;
-        background-color: peachpuff;
+        animation: animate1 5s forwards ease-in-out infinite;
       }
-    }
-  </style>
-</head>
 
-<body>
-  <div class="box"></div>
-</body>
+      @keyframes animate1 {
+        25% {
+          top: 0;
+          left: 300px;
+          background-color: red;
+          border-radius: 50% 0 0 0;
+        }
 
+        50% {
+          top: 300px;
+          left: 300px;
+          background-color: royalblue;
+          border-radius: 50% 50% 0 0;
+        }
+
+        75% {
+          top: 300px;
+          left: 0;
+          background-color: rebeccapurple;
+          border-radius: 50% 50% 50% 0;
+        }
+
+        100% {
+          top: 0;
+          left: 0;
+          background-color: peachpuff;
+        }
+      }
+    </style>
+  </head>
+
+  <body>
+    <div class="box"></div>
+  </body>
 </html>

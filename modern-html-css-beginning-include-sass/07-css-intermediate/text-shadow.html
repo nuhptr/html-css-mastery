@@ -1,50 +1,48 @@
 <!DOCTYPE html>
 <html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
 
-<head>
-  <meta charset="UTF-8" />
-  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name="description" content="Using text shadow" />
+    <meta name="keywords" content="html, css, text shadow" />
+    <link rel="stylesheet" href="#" />
 
-  <meta name="description" content="Using text shadow" />
-  <meta name="keywords" content="html, css, text shadow" />
-  <link rel="stylesheet" href="#" />
+    <title>Text Shadow</title>
+    <style>
+      h1 {
+        font-family: Arial, Helvetica, sans-serif;
+        font-size: 4rem;
+      }
 
-  <title>Text Shadow</title>
-  <style>
-    h1 {
-      font-family: Arial, Helvetica, sans-serif;
-      font-size: 4rem;
-    }
+      h1.a {
+        /* h-shadow | v-shadow | color */
+        text-shadow: 0.2rem 0.2rem blue;
+      }
 
-    h1.a {
-      /* h-shadow | v-shadow | color */
-      text-shadow: 0.2rem 0.2rem blue;
-    }
+      h1.b {
+        /* h-shadow | v-shadow | blur | color */
+        text-shadow: 0.4rem 0.3rem 0.7rem yellow;
+      }
 
-    h1.b {
-      /* h-shadow | v-shadow | blur | color */
-      text-shadow: 0.4rem 0.3rem 0.7rem yellow;
-    }
+      h1.c {
+        /* white text */
+        color: #fff;
+        text-shadow: 0.2rem 0.2rem 1rem yellowgreen;
+      }
 
-    h1.c {
-      /* white text */
-      color: #fff;
-      text-shadow: 0.2rem 0.2rem 1rem yellowgreen;
-    }
+      h1.d {
+        /* Negative value */
+        text-shadow: -0.2rem -0.2rem 0.5rem red;
+      }
+    </style>
+  </head>
 
-    h1.d {
-      /* Negative value */
-      text-shadow: -0.2rem -0.2rem 0.5rem red;
-    }
-  </style>
-</head>
-
-<body>
-  <h1 class="a">Welcome to my course</h1>
-  <h1 class="b">Welcome to my course</h1>
-  <h1 class="c">Welcome to my course</h1>
-  <h1 class="d">Welcome to my course</h1>
-</body>
-
+  <body>
+    <h1 class="a">Welcome to my course</h1>
+    <h1 class="b">Welcome to my course</h1>
+    <h1 class="c">Welcome to my course</h1>
+    <h1 class="d">Welcome to my course</h1>
+  </body>
 </html>

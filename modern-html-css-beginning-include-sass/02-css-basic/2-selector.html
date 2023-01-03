@@ -1,70 +1,71 @@
 <!DOCTYPE html>
 <html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
 
-<head>
-  <meta charset="UTF-8" />
-  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name="keywords" content="html, css, class, id, selector" />
+    <meta
+      name="description"
+      content="css to learn class, id, selector multiple and nested"
+    />
+    <link rel="stylesheet" href="" />
 
-  <meta name="keywords" content="html, css, class, id, selector" />
-  <meta name="description" content="css to learn class, id, selector multiple and nested" />
-  <link rel="stylesheet" href="" />
+    <title>Selector</title>
+    <!-- CSS -->
+    <style>
+      /* . for classes */
+      .primary-heading {
+        color: green;
+      }
 
-  <title>Selector</title>
-  <!-- CSS -->
-  <style>
-    /* . for classes */
-    .primary-heading {
-      color: green;
-    }
+      /* # for IDs */
+      #welcome {
+        background-color: #f4f4f4;
+      }
 
-    /* # for IDs */
-    #welcome {
-      background-color: #f4f4f4;
-    }
+      /* mutiple selector */
+      #welcome,
+      #about {
+        border: 1px solid #ccc;
+        padding: 10px;
+        margin-bottom: 5px;
+      }
 
-    /* mutiple selector */
-    #welcome,
-    #about {
-      border: 1px solid #ccc;
-      padding: 10px;
-      margin-bottom: 5px;
-    }
+      /* Nested Selector */
+      #welcome p {
+        font-size: 16px;
+        line-height: 1.5;
+      }
+    </style>
+  </head>
 
-    /* Nested Selector */
-    #welcome p {
-      font-size: 16px;
-      line-height: 1.5;
-    }
-  </style>
-</head>
+  <body>
+    <!-- HTML -->
+    <div id="welcome">
+      <h2 class="primary-heading">Welcome</h2>
+      <p>
+        Lorem ipsum dolor sit amet consectetur adipisicing elit. Officiis
+        impedit explicabo iusto voluptatum. Error autem, esse, nihil harum sed
+        <br />
+        rem ab odio odit reiciendis totam laudantium in amet praesentium
+        doloribus!
+      </p>
+    </div>
 
-<body>
-  <!-- HTML -->
-  <div id="welcome">
-    <h2 class="primary-heading">Welcome</h2>
-    <p>
-      Lorem ipsum dolor sit amet consectetur adipisicing elit. Officiis
-      impedit explicabo iusto voluptatum. Error autem, esse, nihil harum sed
-      <br />
-      rem ab odio odit reiciendis totam laudantium in amet praesentium
-      doloribus!
-    </p>
-  </div>
+    <div id="about">
+      <h2>About</h2>
+      <p>
+        Lorem ipsum dolor, sit amet consectetur adipisicing elit. Rem voluptate
+        beatae, dignissimos corrupti perferendis itaque, consequatur quasi
+        <br />
+        voluptatem recusandae quia, sed dicta placeat voluptatibus quod ratione
+        quam deleniti labore optio.
+      </p>
+    </div>
 
-  <div id="about">
-    <h2>About</h2>
-    <p>
-      Lorem ipsum dolor, sit amet consectetur adipisicing elit. Rem voluptate
-      beatae, dignissimos corrupti perferendis itaque, consequatur quasi
-      <br />
-      voluptatem recusandae quia, sed dicta placeat voluptatibus quod ratione
-      quam deleniti labore optio.
-    </p>
-  </div>
-
-  <!-- Javascript -->
-  <script></script>
-</body>
-
+    <!-- Javascript -->
+    <script></script>
+  </body>
 </html>

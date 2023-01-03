@@ -1,74 +1,72 @@
 <!DOCTYPE html>
 <html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
 
-<head>
-  <meta charset="UTF-8" />
-  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name="keywords" content="html, css, box-model" />
+    <meta name="description" content="css to learn box-model" />
+    <link rel="stylesheet" href="" />
 
-  <meta name="keywords" content="html, css, box-model" />
-  <meta name="description" content="css to learn box-model" />
-  <link rel="stylesheet" href="" />
+    <title>Box Model, Margin, dan Padding</title>
+    <!-- CSS -->
+    <style>
+      /* CSS Reset */
+      * {
+        margin: 0;
+        padding: 0;
+      }
 
-  <title>Box Model, Margin, dan Padding</title>
-  <!-- CSS -->
-  <style>
-    /* CSS Reset */
-    * {
-      margin: 0;
-      padding: 0;
-    }
+      .box {
+        background: #f4f4f4;
+        border: 2px #777 solid;
+        border-radius: 20px;
 
-    .box {
-      background: #f4f4f4;
-      border: 2px #777 solid;
-      border-radius: 20px;
+        /* Margin on vertical and horizontal */
+        margin: 30px 100px;
 
-      /* Margin on vertical and horizontal */
-      margin: 30px 100px;
+        /* Margin shorthand = top, right, bottom, left */
+        /* Margin shorthand = vertically horizontal */
 
-      /* Margin shorthand = top, right, bottom, left */
-      /* Margin shorthand = vertically horizontal */
+        /* Padding on all side */
+        padding: 30px;
+        line-height: 1.6;
 
-      /* Padding on all side */
-      padding: 30px;
-      line-height: 1.6;
+        /* Padding shorthand = top, right, bottom, left */
+        /* Padding shorthand = vertically horizontal */
+      }
 
-      /* Padding shorthand = top, right, bottom, left */
-      /* Padding shorthand = vertically horizontal */
-    }
+      .box p {
+        margin: 0;
+      }
+    </style>
+  </head>
 
-    .box p {
-      margin: 0;
-    }
-  </style>
-</head>
+  <body>
+    <!-- HTML -->
+    <div class="box">
+      <h3>Box One</h3>
+      <p>
+        Lorem ipsum dolor sit amet, consectetur adipisicing elit. Expedita
+        nulla, asperiores molestiae exercitationem veniam dignissimos in ipsum
+        <br />
+        br accusamus assumenda neque quasi nobis voluptatem quam, aliquid omnis
+        itaque possimus perspiciatis blanditiis.
+      </p>
+    </div>
 
-<body>
-  <!-- HTML -->
-  <div class="box">
-    <h3>Box One</h3>
-    <p>
-      Lorem ipsum dolor sit amet, consectetur adipisicing elit. Expedita
-      nulla, asperiores molestiae exercitationem veniam dignissimos in ipsum
-      <br />
-      br accusamus assumenda neque quasi nobis voluptatem quam, aliquid omnis
-      itaque possimus perspiciatis blanditiis.
-    </p>
-  </div>
+    <div class="box">
+      <h3>Box Two</h3>
+      <p>
+        Lorem ipsum dolor sit amet, consectetur adipisicing elit. Sequi dolore
+        aliquam ipsum consequuntur voluptatibus rerum, blanditiis hic excepturi
+        <br />
+        dolorum distinctio animi quisquam inventore earum quidem quod amet sed
+        totam expedita.
+      </p>
+    </div>
 
-  <div class="box">
-    <h3>Box Two</h3>
-    <p>
-      Lorem ipsum dolor sit amet, consectetur adipisicing elit. Sequi dolore
-      aliquam ipsum consequuntur voluptatibus rerum, blanditiis hic excepturi
-      <br />
-      dolorum distinctio animi quisquam inventore earum quidem quod amet sed
-      totam expedita.
-    </p>
-  </div>
-
-  <!-- Javascript -->
-</body>
-
+    <!-- Javascript -->
+  </body>
 </html>

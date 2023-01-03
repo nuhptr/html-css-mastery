@@ -1,91 +1,90 @@
 <!DOCTYPE html>
 <html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="description" content="before after pseudoclass" />
 
-<head>
-  <meta charset="UTF-8" />
-  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
-  <meta name="description" content="before after pseudoclass" />
+    <meta name="keywords" content="html, css, pseudoclass" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="#" />
 
-  <meta name="keywords" content="html, css, pseudoclass" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <link rel="stylesheet" href="#" />
+    <title>Before and After Pseudoclass</title>
+    <style>
+      body {
+        font-family: Arial, Helvetica, sans-serif;
+        background: #333;
+        color: #fff;
+        padding: 0;
+        margin: 0;
+      }
 
-  <title>Before and After Pseudoclass</title>
-  <style>
-    body {
-      font-family: Arial, Helvetica, sans-serif;
-      background: #333;
-      color: #fff;
-      padding: 0;
-      margin: 0;
-    }
+      header {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        text-align: center;
+        height: 100vh;
+      }
 
-    header {
-      display: flex;
-      flex-direction: column;
-      justify-content: center;
-      align-items: center;
-      text-align: center;
-      height: 100vh;
-    }
+      header::before {
+        content: "";
+        background: url("https://images.unsplash.com/photo-1508138221679-760a23a2285b?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1548&q=80")
+          no-repeat center center/cover;
+        opacity: 0.4;
+        position: absolute;
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: 100%;
+        z-index: -1;
+      }
 
-    header::before {
-      content: "";
-      background: url("https://images.unsplash.com/photo-1508138221679-760a23a2285b?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1548&q=80") no-repeat center center/cover;
-      opacity: 0.4;
-      position: absolute;
-      top: 0;
-      left: 0;
-      width: 100%;
-      height: 100%;
-      z-index: -1;
-    }
+      header > h1 {
+        font-size: 3rem;
+        margin: 1rem;
+      }
 
-    header>h1 {
-      font-size: 3rem;
-      margin: 1rem;
-    }
+      header p {
+        width: 1000px;
+      }
 
-    header p {
-      width: 1000px;
-    }
+      .is-required::after {
+        content: "*";
+        color: red;
+        padding-left: 2px;
+      }
 
-    .is-required::after {
-      content: "*";
-      color: red;
-      padding-left: 2px;
-    }
-
-    /* 
+      /* 
       .is-required::before {
         content: "Required ";
       } */
-  </style>
-  <script src="#"></script>
-</head>
+    </style>
+    <script src="#"></script>
+  </head>
 
-<body>
-  <label for="name" class="is-required">Name</label>
-  <input type="text" />
+  <body>
+    <label for="name" class="is-required">Name</label>
+    <input type="text" />
 
-  <header>
-    <h1>Hello world!</h1>
-    <p>
-      Lorem ipsum dolor sit amet consectetur adipisicing elit. In aspernatur
-      molestiae, nostrum modi iure illo labore? Totam, cupiditate blanditiis
-      officia soluta dicta nobis, ab cum rerum eveniet, ipsa tempora culpa.
-    </p>
-  </header>
+    <header>
+      <h1>Hello world!</h1>
+      <p>
+        Lorem ipsum dolor sit amet consectetur adipisicing elit. In aspernatur
+        molestiae, nostrum modi iure illo labore? Totam, cupiditate blanditiis
+        officia soluta dicta nobis, ab cum rerum eveniet, ipsa tempora culpa.
+      </p>
+    </header>
 
-  <section>
-    <h3>lorem, ipsum dolor</h3>
-    <p>
-      Lorem ipsum dolor sit amet consectetur adipisicing elit. Aliquam hic
-      atque ratione blanditiis voluptates voluptatum? Accusamus veritatis
-      vitae ab, adipisci atque alias optio suscipit, eligendi neque expedita
-      libero sed repellendus!
-    </p>
-  </section>
-</body>
-
+    <section>
+      <h3>lorem, ipsum dolor</h3>
+      <p>
+        Lorem ipsum dolor sit amet consectetur adipisicing elit. Aliquam hic
+        atque ratione blanditiis voluptates voluptatum? Accusamus veritatis
+        vitae ab, adipisci atque alias optio suscipit, eligendi neque expedita
+        libero sed repellendus!
+      </p>
+    </section>
+  </body>
 </html>

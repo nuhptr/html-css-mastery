@@ -1,78 +1,77 @@
 <!DOCTYPE html>
 <html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
 
-<head>
-  <meta charset="UTF-8" />
-  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name="keywords" content="viewporth, height, width, css" />
+    <meta name="description" content="Learn VH and VW css" />
 
-  <meta name="keywords" content="viewporth, height, width, css" />
-  <meta name="description" content="Learn VH and VW css" />
+    <title>Viewport height and width</title>
+    <style>
+      * {
+        box-sizing: border-box;
+        margin: 0;
+        padding: 0;
+      }
 
-  <title>Viewport height and width</title>
-  <style>
-    * {
-      box-sizing: border-box;
-      margin: 0;
-      padding: 0;
-    }
+      body {
+        font-family: "Segoe UI", "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+      }
 
-    body {
-      font-family: "Segoe UI", "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
-    }
+      header {
+        color: black;
+        padding: 1rem;
+        height: 100vh;
+        /* 100% of the viewport height */
 
-    header {
-      color: black;
-      padding: 1rem;
-      height: 100vh;
-      /* 100% of the viewport height */
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        gap: 1rem;
+        transition: all 3s;
+      }
 
-      display: flex;
-      flex-direction: column;
-      align-items: center;
-      justify-content: center;
-      gap: 1rem;
-      transition: all 3s;
-    }
+      header:hover {
+        color: #fff;
+        background: #333 url("https://source.unsplash.com/random/1920x1080")
+          no-repeat center center/cover;
+      }
 
-    header:hover {
-      color: #fff;
-      background: #333 url("https://source.unsplash.com/random/1920x1080") no-repeat center center/cover;
-    }
+      header h1 {
+        width: 50vw;
+        text-align: center;
+      }
 
-    header h1 {
-      width: 50vw;
-      text-align: center;
-    }
+      header p {
+        text-align: center;
+        width: 50vw;
+        line-height: 1.8;
+      }
 
-    header p {
-      text-align: center;
-      width: 50vw;
-      line-height: 1.8;
-    }
+      header a {
+        color: black;
+        text-decoration: underline;
+      }
 
-    header a {
-      color: black;
-      text-decoration: underline;
-    }
+      header a:hover {
+        color: white;
+      }
+    </style>
+  </head>
 
-    header a:hover {
-      color: white;
-    }
-  </style>
-</head>
-
-<body>
-  <header>
-    <h1>Welcome to our Website</h1>
-    <p>
-      Lorem ipsum dolor sit amet consectetur adipisicing elit. Beatae
-      laudantium iste, dolorem distinctio aperiam quidem natus a quaerat
-      repellendus eius rem perferendis provident exercitationem nihil harum
-      qui impedit perspiciatis est?
-    </p>
-    <a href="#" class="btn">Find Out More</a>
-  </header>
-</body>
-
+  <body>
+    <header>
+      <h1>Welcome to our Website</h1>
+      <p>
+        Lorem ipsum dolor sit amet consectetur adipisicing elit. Beatae
+        laudantium iste, dolorem distinctio aperiam quidem natus a quaerat
+        repellendus eius rem perferendis provident exercitationem nihil harum
+        qui impedit perspiciatis est?
+      </p>
+      <a href="#" class="btn">Find Out More</a>
+    </header>
+  </body>
 </html>
