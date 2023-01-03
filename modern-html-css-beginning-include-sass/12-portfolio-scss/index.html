@@ -7,11 +7,53 @@
 
     <meta name="keywords" content="html, css, scss, portfolio" />
     <meta name="description" content="Build portfolio using scss" />
+    <link rel="stylesheet" href="./dist/css/main.css" />
 
-    <link rel="stylesheet" href="" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@300;400;500;600;700&display=swap"
+      rel="stylesheet"
+    />
 
-    <title>Document</title>
+    <title>Adi Nugraha | UI UX Designer & Web Developer</title>
   </head>
 
-  <body></body>
+  <body>
+    <!-- Header -->
+    <header id="header-home">
+      <div class="container">
+        <nav id="main-nav">
+          <img src="./dist/img/logo.png" alt="logo portfolio" id="logo" />
+          <ul>
+            <li><a href="index.html" class="current">Home</a></li>
+            <li><a href="about.html">About</a></li>
+            <li><a href="work.html">Work</a></li>
+            <li><a href="contact.html">Contact</a></li>
+          </ul>
+        </nav>
+        <div class="header-content">
+          <h1>
+            I Am Adi Nugraha The
+            <span
+              class="txt-type"
+              data-wait="3000"
+              data-words='["UI UX Designer", "Web Developer"]'
+            ></span>
+          </h1>
+          <p class="lead">I Specialize in UI UX Designer and Web Developer</p>
+          <a href="work.html" class="btn-light">View My Work</a>
+        </div>
+      </div>
+    </header>
+
+    <script
+      type="module"
+      src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.esm.js"
+    ></script>
+    <script
+      nomodule
+      src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.js"
+    ></script>
+  </body>
 </html>
