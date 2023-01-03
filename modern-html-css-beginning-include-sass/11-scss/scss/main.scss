@@ -1,0 +1,86 @@
+@import "variables";
+@import "functions";
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    background-color: $light-color;
+    color: $dark-color;
+    font-family: $font-stack;
+    line-height: 1.5;
+}
+
+// Nesting and structuring
+header {
+    background-color: $dark-color;
+    color: set-text-color($dark-color);
+    padding: 1rem;
+
+    h1 {
+        text-align: center;
+    }
+}
+
+.section {
+    padding: 2rem 2rem 0 2rem;
+
+    h3 {
+        font-size: 2rem;
+    }
+
+    &-a {
+        background-color: $primary-color;
+        color: #fff;
+    }
+
+    &-b {
+        background-color: $secondary-color;
+        color: #fff;
+    }
+}
+
+a {
+    color: $dark-color;
+    &:hover {
+        color: coral;
+    }
+}
+
+// Inheritance and contrast
+%btn-shared {
+    display: inline-block;
+    padding: 0.7rem 2rem;
+    border: none;
+    cursor: pointer;
+    text-decoration: none;
+    margin-top: 1rem;
+    transition: all 0.6s ease-in-out;
+}
+
+.btn {
+    &-light {
+        @extend %btn-shared;
+        background-color: $light-color;
+        color: set-text-color($light-color);
+
+        &:hover {
+            @include transform(rotate(30deg));
+            background-color: darken($color: $light-color, $amount: 10%);
+        }
+    }
+
+    &-dark {
+        @extend %btn-shared;
+        background-color: $dark-color;
+        color: set-text-color($dark-color);
+
+        &:hover {
+            @include transform(rotate(-30deg));
+            background-color: darken($color: $dark-color, $amount: 10%);
+        }
+    }
+}
