@@ -32,6 +32,15 @@ input[class^=btn-]:hover {
   background-color: #ffbc00;
 }
 
+.lead {
+  font-size: 1.3rem;
+  margin-bottom: 2rem;
+}
+
+.text-center {
+  text-align: center;
+}
+
 * {
   margin: 0;
   padding: 0;
@@ -83,6 +92,7 @@ img {
 }
 #main-nav a {
   text-decoration: none;
+  color: #fff;
   text-transform: uppercase;
   border-bottom: 3px solid transparent;
   padding-bottom: 0.5rem;
@@ -96,8 +106,9 @@ img {
 }
 
 #header-home {
-  background: url("../dist/img/showcase.jpg") no-repeat center right/cover;
+  background: url("../img/showcase.jpg") no-repeat center center/cover;
   height: 100vh;
+  color: #fff;
 }
 #header-home .header-content {
   text-align: center;

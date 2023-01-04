@@ -56,7 +56,7 @@ img {
 
     a {
         text-decoration: none;
-        // color: $white-color;
+        color: $white-color;
         text-transform: uppercase;
         border-bottom: 3px solid transparent;
         padding-bottom: 0.5rem;
@@ -76,9 +76,10 @@ img {
 #header {
     // Header Home
     &-home {
-        background: $bg-image no-repeat center right/cover;
+        // @include background("../img/showcase.jpg");
+        background: $bg-image no-repeat center center/cover;
         height: 100vh;
-        // color: $white-color;
+        color: $white-color;
 
         // Header Content
         .header-content {
