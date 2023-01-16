@@ -5,4 +5,6 @@
 4. add some code to script in package.json
 - "build-sass": "node-sass --include-path scss scss/main.scss dist/css/main.css",
 - "watch-sass": "nodemon -e scss -x \"npm run build-sass\""
+alternative using sass
+- "build-sass" : "sass scss/main.scss dist/css/main.css"
 ```
