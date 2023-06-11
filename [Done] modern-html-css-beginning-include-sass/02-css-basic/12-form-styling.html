@@ -1,160 +1,161 @@
 <!DOCTYPE html>
 <html lang="en">
-  <head>
-    <meta charset="UTF-8" />
-    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
 
-    <link rel="preconnect" href="https://fonts.googleapis.com" />
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
-    <link
-      href="https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300;0,400;0,500;0,600;0,700;1,400&family=Raleway:wght@300;400;500;600;700&display=swap"
-      rel="stylesheet"
-    />
+<head>
+  <meta charset="UTF-8" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
 
-    <meta name="keywords" content="html, css, form, styling" />
-    <meta name="description" content="css to learn form styling" />
-    <link rel="stylesheet" href="" />
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link
+    href="https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300;0,400;0,500;0,600;0,700;1,400&family=Raleway:wght@300;400;500;600;700&display=swap"
+    rel="stylesheet" />
 
-    <title>Form Styling</title>
-    <!-- CSS -->
-    <style>
-      * {
-        box-sizing: border-box;
-        margin: 0;
-        padding: 0;
-      }
+  <meta name="keywords" content="html, css, form, styling" />
+  <meta name="description" content="css to learn form styling" />
+  <link rel="stylesheet" href="" />
 
-      body {
-        font-family: "Raleway", sans-serif;
-        background-color: #344a72;
-        color: #fff;
-        line-height: 1.8;
-      }
+  <title>Form Styling</title>
+  <!-- CSS -->
+  <style>
+    * {
+      box-sizing: border-box;
+      margin: 0;
+      padding: 0;
+    }
 
-      a {
-        text-decoration: none;
-      }
+    body {
+      font-family: "Raleway", sans-serif;
+      background-color: #344a72;
+      color: #fff;
+      line-height: 1.8;
+    }
 
-      #container {
-        margin: 30px auto;
-        max-width: 400px;
-        padding: 20px;
-      }
+    a {
+      text-decoration: none;
+    }
 
-      .form-warp {
-        background-color: #fff;
-        padding: 15px 25px;
-        color: #333;
-        border-radius: 20px;
-      }
+    #container {
+      margin: 30px auto;
+      max-width: 400px;
+      padding: 20px;
+    }
 
-      .form-warp h1,
-      .form-warp p {
-        text-align: center;
-      }
+    .form-warp {
+      background-color: #fff;
+      padding: 15px 25px;
+      color: #333;
+      border-radius: 20px;
+    }
 
-      .form-warp .form-group {
-        margin-top: 10px;
-      }
+    .form-warp h1,
+    .form-warp p {
+      text-align: center;
+    }
 
-      .form-warp .form-group label {
-        display: block;
-        color: #666;
-        margin-bottom: 6px;
-      }
+    .form-warp .form-group {
+      margin-top: 10px;
+    }
 
-      .form-warp .form-group input {
-        width: 100%;
-        padding: 10px;
-        border: 1px solid #ddd;
-        border-radius: 10px;
-      }
+    .form-warp .form-group label {
+      display: block;
+      color: #666;
+      margin-bottom: 6px;
+    }
 
-      .form-warp button {
-        display: block;
-        width: 100%;
-        background-color: #49c1a2;
-        margin-top: 20px;
-        padding: 10px;
-        color: #fff;
-        border: none;
-        border-radius: 10px;
-        cursor: pointer;
-      }
+    .form-warp .form-group input {
+      width: 100%;
+      padding: 10px;
+      border: 1px solid #ddd;
+      border-radius: 10px;
+    }
 
-      .form-warp button:hover {
-        background: #37a08e;
-      }
+    .form-warp button {
+      display: block;
+      width: 100%;
+      background-color: #49c1a2;
+      margin-top: 20px;
+      padding: 10px;
+      color: #fff;
+      border: none;
+      border-radius: 10px;
+      cursor: pointer;
+    }
 
-      .form-warp .bottom-text {
-        font-size: 12px;
-        margin-top: 20px;
-        line-height: 1.8;
-      }
+    .form-warp button:hover {
+      background: #37a08e;
+    }
 
-      .form-warp .bottom-text a {
-        color: red;
-      }
+    .form-warp .bottom-text {
+      font-size: 12px;
+      margin-top: 20px;
+      line-height: 1.8;
+    }
 
-      footer {
-        text-align: center;
-        margin-top: 10px;
-      }
+    .form-warp .bottom-text a {
+      color: red;
+    }
 
-      footer a {
-        color: #49c1a2;
-      }
-    </style>
-  </head>
+    footer {
+      text-align: center;
+      margin-top: 10px;
+    }
 
-  <body>
-    <!-- HTML -->
-    <div id="container">
-      <div class="form-warp">
-        <h1>Sign Up</h1>
-        <p>it's free and only takes a minute</p>
-        <!-- Form -->
-        <form>
-          <div class="form-group">
-            <label for="first-name">First name</label>
-            <input type="text" name="firstName" id="first-name" required />
-          </div>
+    footer a {
+      color: #49c1a2;
+    }
+  </style>
+</head>
 
-          <div class="form-group">
-            <label for="last-name">Last name</label>
-            <input type="text" name="lastName" id="last-name" required />
-          </div>
+<body>
+  <!-- HTML -->
+  <div id="container">
+    <div class="form-warp">
+      <h1>Sign Up</h1>
+      <p>it's free and only takes a minute</p>
+      <!-- Form -->
+      <form>
+        <div class="form-group">
+          <label for="first-name">First name</label>
+          <input type="text" name="firstName" id="first-name" required />
+        </div>
 
-          <div class="form-group">
-            <label for="email">Email</label>
-            <input type="email" name="email" id="email" required />
-          </div>
+        <div class="form-group">
+          <label for="last-name">Last name</label>
+          <input type="text" name="lastName" id="last-name" required />
+        </div>
 
-          <div class="form-group">
-            <label for="password">Password</label>
-            <input type="password" name="password" id="password" required />
-          </div>
+        <div class="form-group">
+          <label for="email">Email</label>
+          <input type="email" name="email" id="email" required />
+        </div>
 
-          <div class="form-group">
-            <label for="confirm-password">Confirm Password</label>
-            <input type="password" name="password2" id="password2" required />
-          </div>
+        <div class="form-group">
+          <label for="password">Password</label>
+          <input type="password" name="password" id="password" required />
+        </div>
 
-          <button type="submit" class="btn">Sign Up</button>
-          <p class="bottom-text">
-            By clicking the Sign Up button, you agree to our
-            <a href="#">Terms & Condition</a>
-            <a href="#">Privacy Policy</a>
-          </p>
-        </form>
-      </div>
-      <footer>
-        <p>Already have an account? <a href="#">Login Here</a></p>
-      </footer>
+        <div class="form-group">
+          <label for="confirm-password">Confirm Password</label>
+          <input type="password" name="password2" id="password2" required />
+        </div>
+
+        <button type="submit" class="btn">Sign Up</button>
+        <p class="bottom-text">
+          By clicking the Sign Up button, you agree to our
+          <a href="#">Terms & Condition</a>
+          <a href="#">Privacy Policy</a>
+        </p>
+      </form>
     </div>
+    <footer>
+      <p>Already have an account? <a href="#">Login Here</a></p>
+    </footer>
+  </div>
 
-    <!-- Javascript -->
-    <script></script>
-  </body>
+  <!-- Javascript -->
+  <script></script>
+</body>
+
 </html>

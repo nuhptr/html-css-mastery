@@ -1,82 +1,84 @@
 <!DOCTYPE html>
 <html lang="en">
-  <head>
-    <meta charset="UTF-8" />
-    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
 
-    <meta name="keywords" content="html, css, positioning" />
-    <meta name="description" content="css to learn postioning" />
-    <link rel="stylesheet" href="" />
+<head>
+  <meta charset="UTF-8" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
 
-    <title>CSS Positioning</title>
-    <!-- CSS -->
-    <style>
-      body {
-        height: 3000px;
-      }
+  <meta name="keywords" content="html, css, positioning" />
+  <meta name="description" content="css to learn postioning" />
+  <link rel="stylesheet" href="" />
 
-      .box {
-        width: 100px;
-        height: 100px;
-      }
+  <title>CSS Positioning</title>
+  <!-- CSS -->
+  <style>
+    body {
+      height: 3000px;
+    }
 
-      .container {
-        position: relative;
-        width: 500px;
-        height: 500px;
-        background: #333;
-        /* z-index: 2; */
-      }
+    .box {
+      width: 100px;
+      height: 100px;
+    }
 
-      #box-1 {
-        position: relative;
-        top: 50px;
-        left: 50px;
-        background: red;
-        /* untuk menampilakan paling atas dari item diatasnya*/
-        z-index: 1;
-      }
+    .container {
+      position: relative;
+      width: 500px;
+      height: 500px;
+      background: #333;
+      /* z-index: 2; */
+    }
 
-      #box-2 {
-        position: absolute;
-        top: 100px;
-        left: 100px;
-        background: yellow;
-      }
+    #box-1 {
+      position: relative;
+      top: 50px;
+      left: 50px;
+      background: red;
+      /* untuk menampilakan paling atas dari item diatasnya*/
+      z-index: 1;
+    }
 
-      #box-3 {
-        position: absolute;
-        bottom: 100px;
-        right: 100px;
-        background: green;
-      }
+    #box-2 {
+      position: absolute;
+      top: 100px;
+      left: 100px;
+      background: yellow;
+    }
 
-      #box-4 {
-        position: fixed;
-        background: blue;
-      }
+    #box-3 {
+      position: absolute;
+      bottom: 100px;
+      right: 100px;
+      background: green;
+    }
 
-      #box-5 {
-        position: sticky;
-        top: 0;
-        background: orange;
-        z-index: -1;
-      }
-    </style>
-  </head>
+    #box-4 {
+      position: fixed;
+      background: blue;
+    }
 
-  <body>
-    <!-- HTML -->
-    <div id="box-1" class="box"></div>
-    <div class="container">
-      <div id="box-2" class="box"></div>
-      <div id="box-3" class="box"></div>
-    </div>
-    <div id="box-4" class="box"></div>
-    <div id="box-5" class="box"></div>
+    #box-5 {
+      position: sticky;
+      top: 0;
+      background: orange;
+      z-index: -1;
+    }
+  </style>
+</head>
 
-    <!-- Javascript -->
-    <script></script>
-  </body>
+<body>
+  <!-- HTML -->
+  <div id="box-1" class="box"></div>
+  <div class="container">
+    <div id="box-2" class="box"></div>
+    <div id="box-3" class="box"></div>
+  </div>
+  <div id="box-4" class="box"></div>
+  <div id="box-5" class="box"></div>
+
+  <!-- Javascript -->
+  <script></script>
+</body>
+
 </html>

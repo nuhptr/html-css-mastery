@@ -1,35 +1,36 @@
 <!DOCTYPE html>
 <html lang="en">
-  <head>
-    <meta charset="UTF-8" />
-    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
 
-    <meta name="description" content="Learn keyframes" />
-    <meta name="keywords" content="html, css, keyframes" />
-    <link rel="stylesheet" href="#" />
+<head>
+  <meta charset="UTF-8" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
 
-    <title>Keyframes 01</title>
-    <style>
-      :root {
-        --bg-color: #333;
-        --white-color: #fff;
+  <meta name="description" content="Learn keyframes" />
+  <meta name="keywords" content="html, css, keyframes" />
+  <link rel="stylesheet" href="#" />
 
-        --box-width: 200px;
-        --box-height: 200px;
-      }
+  <title>Keyframes 01</title>
+  <style>
+    :root {
+      --bg-color: #333;
+      --white-color: #fff;
 
-      body {
-        background-color: var(--bg-color);
-      }
+      --box-width: 200px;
+      --box-height: 200px;
+    }
 
-      .box {
-        background-color: var(--white-color);
-        width: var(--box-width);
-        height: var(--box-height);
-        position: relative;
-        border-radius: 12px;
-        /* animation-name: animate1;
+    body {
+      background-color: var(--bg-color);
+    }
+
+    .box {
+      background-color: var(--white-color);
+      width: var(--box-width);
+      height: var(--box-height);
+      position: relative;
+      border-radius: 12px;
+      /* animation-name: animate1;
         animation-duration: 2s;
         animation-iteration-count: infinite;
         animation-fill-mode: forwards;
@@ -37,28 +38,29 @@
         animation-direction: alternate;
         animation-timing-function: ease-in-out; */
 
-        /* Shorthand Animation */
-        animation: animate1 5s forwards 2s ease-in-out alternate infinite;
+      /* Shorthand Animation */
+      animation: animate1 5s forwards 2s ease-in-out alternate infinite;
+    }
+
+    /* Apply Animation in keyframes */
+    @keyframes animate1 {
+      from {
+        top: 0;
+        left: 0;
       }
 
-      /* Apply Animation in keyframes */
-      @keyframes animate1 {
-        from {
-          top: 0;
-          left: 0;
-        }
-
-        to {
-          width: 600px;
-          background-color: rebeccapurple;
-          left: 200px;
-          top: 300px;
-        }
+      to {
+        width: 600px;
+        background-color: rebeccapurple;
+        left: 200px;
+        top: 300px;
       }
-    </style>
-  </head>
+    }
+  </style>
+</head>
 
-  <body>
-    <div class="box"></div>
-  </body>
+<body>
+  <div class="box"></div>
+</body>
+
 </html>

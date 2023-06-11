@@ -1,106 +1,108 @@
 <!DOCTYPE html>
 <html lang="en">
-  <head>
-    <meta charset="UTF-8" />
-    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
 
-    <meta name="description" content="Media queris" />
-    <meta name="keywords" content="media, responsive, queris" />
+<head>
+  <meta charset="UTF-8" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
 
-    <title>Media Queris</title>
+  <meta name="description" content="Media queris" />
+  <meta name="keywords" content="media, responsive, queris" />
 
-    <style>
+  <title>Media Queris</title>
+
+  <style>
+    body {
+      font-family: Arial, Arial, Helvetica, sans-serif;
+      background-color: gray;
+      color: white;
+      text-align: center;
+      padding-top: 100px;
+    }
+
+    h1 {
+      display: none;
+    }
+
+    /* Smarthphone */
+    @media only screen and (max-width: 500px) {
       body {
-        font-family: Arial, Arial, Helvetica, sans-serif;
-        background-color: gray;
-        color: white;
-        text-align: center;
-        padding-top: 100px;
+        background-color: red;
       }
 
-      h1 {
-        display: none;
+      #smartphone h1 {
+        display: block;
+      }
+    }
+
+    /* Tablet */
+    @media (min-width: 501px) and (max-width: 768px) {
+      body {
+        background-color: blue;
       }
 
-      /* Smarthphone */
-      @media only screen and (max-width: 500px) {
-        body {
-          background-color: red;
-        }
+      #tablet h1 {
+        display: block;
+      }
+    }
 
-        #smartphone h1 {
-          display: block;
-        }
+    /* Normal */
+    @media (min-width: 769px) and (max-width: 1200px) {
+      body {
+        background-color: green;
       }
 
-      /* Tablet */
-      @media (min-width: 501px) and (max-width: 768px) {
-        body {
-          background-color: blue;
-        }
+      #normal h1 {
+        display: block;
+      }
+    }
 
-        #tablet h1 {
-          display: block;
-        }
+    /* Widescreen */
+    @media (min-width: 1201px) {
+      body {
+        background-color: black;
       }
 
-      /* Normal */
-      @media (min-width: 769px) and (max-width: 1200px) {
-        body {
-          background-color: green;
-        }
+      #widescreen h1 {
+        display: block;
+      }
+    }
 
-        #normal h1 {
-          display: block;
-        }
+    /* Landscape */
+    @media (max-height: 500px) {
+      body {
+        background-color: orange;
       }
 
-      /* Widescreen */
-      @media (min-width: 1201px) {
-        body {
-          background-color: black;
-        }
-
-        #widescreen h1 {
-          display: block;
-        }
+      #landscape h1 {
+        display: block;
       }
+    }
+  </style>
 
-      /* Landscape */
-      @media (max-height: 500px) {
-        body {
-          background-color: orange;
-        }
+  <script defer src="#"></script>
+</head>
 
-        #landscape h1 {
-          display: block;
-        }
-      }
-    </style>
+<body>
+  <div id="widescreen">
+    <h1>Widescreen</h1>
+  </div>
 
-    <script defer src="#"></script>
-  </head>
+  <div id="normal">
+    <h1>Normal</h1>
+  </div>
 
-  <body>
-    <div id="widescreen">
-      <h1>Widescreen</h1>
-    </div>
+  <div id="tablet">
+    <h1>Tablet</h1>
+  </div>
 
-    <div id="normal">
-      <h1>Normal</h1>
-    </div>
+  <div id="smartphone">
+    <h1>Smarthphone</h1>
+  </div>
 
-    <div id="tablet">
-      <h1>Tablet</h1>
-    </div>
+  <div id="landscape">
+    <h1>Landscape</h1>
+  </div>
+</body>
 
-    <div id="smartphone">
-      <h1>Smarthphone</h1>
-    </div>
-
-    <div id="landscape">
-      <h1>Landscape</h1>
-    </div>
-  </body>
 </html>

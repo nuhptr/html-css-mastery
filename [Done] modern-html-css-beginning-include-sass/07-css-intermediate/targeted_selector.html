@@ -1,74 +1,72 @@
 <!DOCTYPE html>
 <html lang="en">
-  <head>
-    <meta charset="UTF-8" />
-    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
 
-    <meta name="description" content="Targeted selector" />
-    <meta name="keywords" content="selector, css" />
-    <link rel="stylesheet" href="#" />
+<head>
+  <meta charset="UTF-8" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
 
-    <title>Targeted Selector</title>
-    <style>
-      /* Direct Child */
-      div p {
-        background-color: #ddd;
-      }
+  <meta name="description" content="Targeted selector" />
+  <meta name="keywords" content="selector, css" />
+  <link rel="stylesheet" href="#" />
 
-      /* Directly After */
-      div + p {
-        background-color: #333;
-        color: #fff;
-      }
+  <title>Targeted Selector</title>
+  <style>
+    /* Direct Child */
+    div p {
+      background-color: #ddd;
+    }
 
-      /* By Attribute */
-      a[target="_blank"] {
-        background-color: red;
-        color: #fff;
-      }
+    /* Directly After */
+    div+p {
+      background-color: #333;
+      color: #fff;
+    }
 
-      /* Spesific Attribut values */
-      input {
-        width: 100%;
-        height: 40px;
-        padding: 12px;
-        margin: 12px auto;
-      }
-    </style>
-  </head>
+    /* By Attribute */
+    a[target="_blank"] {
+      background-color: red;
+      color: #fff;
+    }
 
-  <body>
-    <div>
-      <p>Lorem ipsum dolor sit amet.</p>
-      <ul>
-        <li>Item 1</li>
-        <li>
-          <p>Item 2</p>
-        </li>
-        <li>Item 3</li>
-      </ul>
-      <p>Lorem ipsum dolor.</p>
-    </div>
+    /* Spesific Attribut values */
+    input {
+      width: 100%;
+      height: 40px;
+      padding: 12px;
+      margin: 12px auto;
+    }
+  </style>
+</head>
 
-    <p>lorem ipsum dolor sit amet.</p>
+<body>
+  <div>
+    <p>Lorem ipsum dolor sit amet.</p>
+    <ul>
+      <li>Item 1</li>
+      <li>
+        <p>Item 2</p>
+      </li>
+      <li>Item 3</li>
+    </ul>
+    <p>Lorem ipsum dolor.</p>
+  </div>
 
-    <a href="#">Page 1</a>
-    <a href="#" target="_self">Page 2</a>
-    <a
-      href="https://google.com"
-      target="_blank"
-      referrerpolicy="norefferer noopener"
-    >
-      google
-    </a>
+  <p>lorem ipsum dolor sit amet.</p>
 
-    <br />
+  <a href="#">Page 1</a>
+  <a href="#" target="_self">Page 2</a>
+  <a href="https://google.com" target="_blank" referrerpolicy="norefferer noopener">
+    google
+  </a>
 
-    <form action="#">
-      <input type="text" name="name" id="name" placeholder="name" />
-      <input type="email" name="email" id="email" placeholder="email" />
-      <input type="submit" value="Submit" />
-    </form>
-  </body>
+  <br />
+
+  <form action="#">
+    <input type="text" name="name" id="name" placeholder="name" />
+    <input type="email" name="email" id="email" placeholder="email" />
+    <input type="submit" value="Submit" />
+  </form>
+</body>
+
 </html>

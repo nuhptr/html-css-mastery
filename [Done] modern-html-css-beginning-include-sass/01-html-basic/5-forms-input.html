@@ -1,109 +1,100 @@
 <!DOCTYPE html>
 
 <html lang="en">
-  <head>
-    <meta charset="utf-8" />
-    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
-    <meta name="viewport" content="width=device-width, initial-scale=1" />
 
-    <meta name="keywords" content="html, css, forms, input" />
-    <meta name="description" content="html for learn forms and input" />
-    <link rel="stylesheet" href="" />
+<head>
+  <meta charset="utf-8" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
 
-    <title>Forms and Input</title>
-    <!-- CSS -->
-    <style></style>
-  </head>
+  <meta name="keywords" content="html, css, forms, input" />
+  <meta name="description" content="html for learn forms and input" />
+  <link rel="stylesheet" href="" />
 
-  <body>
-    <!-- HTML -->
-    <form action="#">
-      <!-- Text Input -->
-      <div>
-        <label for="name">Name</label> <br />
-        <input type="text" name="name" id="name" value="Jhon Doe" /> <br />
-      </div>
+  <title>Forms and Input</title>
+  <!-- CSS -->
+  <style></style>
+</head>
 
-      <!-- Email Input -->
-      <div>
-        <label for="email">Email</label> <br />
-        <input
-          type="email"
-          name="email"
-          id="email"
-          placeholder="Enter your email"
-        />
-      </div>
-      <br />
+<body>
+  <!-- HTML -->
+  <form action="#">
+    <!-- Text Input -->
+    <div>
+      <label for="name">Name</label> <br />
+      <input type="text" name="name" id="name" value="Jhon Doe" /> <br />
+    </div>
 
-      <!-- Textarea -->
-      <div>
-        <label for="message">Message</label> <br />
-        <textarea name="message" id="message" cols="50" rows="5"></textarea>
-      </div>
-      <br />
+    <!-- Email Input -->
+    <div>
+      <label for="email">Email</label> <br />
+      <input type="email" name="email" id="email" placeholder="Enter your email" />
+    </div>
+    <br />
 
-      <!-- Select Option -->
-      <div>
-        <label for="sex">Gender</label>
-        <select name="sex" id="sex">
-          <option value="male">Male</option>
-          <!-- TODO: selected to make default select -->
-          <option value="female" selected>Female</option>
-          <option value="Unknown">Unknown</option>
-        </select>
-      </div>
-      <br />
+    <!-- Textarea -->
+    <div>
+      <label for="message">Message</label> <br />
+      <textarea name="message" id="message" cols="50" rows="5"></textarea>
+    </div>
+    <br />
 
-      <!-- Number Input -->
-      <div>
-        <label for="age">Age</label> <br />
-        <input type="number" name="age" id="age" />
-      </div>
-      <br />
+    <!-- Select Option -->
+    <div>
+      <label for="sex">Gender</label>
+      <select name="sex" id="sex">
+        <option value="male">Male</option>
+        <!-- TODO: selected to make default select -->
+        <option value="female" selected>Female</option>
+        <option value="Unknown">Unknown</option>
+      </select>
+    </div>
+    <br />
 
-      <div>
-        <label for="birthdate">Birthdate</label>
-        <input type="date" name="birthdate" id="birthdate" />
-      </div>
-      <br />
+    <!-- Number Input -->
+    <div>
+      <label for="age">Age</label> <br />
+      <input type="number" name="age" id="age" />
+    </div>
+    <br />
 
-      <!-- Radio Input -->
-      <div>
-        <label for="membership">Membership</label>
-        <input type="radio" name="membership" id="membership" value="simple" />
-        Simple
-        <!-- TODO: checked to make default selected radio -->
-        <input
-          type="radio"
-          name="membership"
-          id="membership"
-          value="standard"
-          checked
-        />
-        Standard
-        <input type="radio" name="membership" id="membership" value="super" />
-        Super
-      </div>
-      <br />
+    <div>
+      <label for="birthdate">Birthdate</label>
+      <input type="date" name="birthdate" id="birthdate" />
+    </div>
+    <br />
 
-      <!-- Checkbox Input -->
-      <div>
-        <label for="membership">I Like...</label>
-        <input type="checkbox" name="likes" id="likes" value="bike" /> Bike
-        <input type="checkbox" name="likes" id="likes" value="Car" /> Car
-        <input type="checkbox" name="likes" id="likes" value="Boat" /> Boat
-      </div>
-      <br />
+    <!-- Radio Input -->
+    <div>
+      <label for="membership">Membership</label>
+      <input type="radio" name="membership" id="membership" value="simple" />
+      Simple
+      <!-- TODO: checked to make default selected radio -->
+      <input type="radio" name="membership" id="membership" value="standard" checked />
+      Standard
+      <input type="radio" name="membership" id="membership" value="super" />
+      Super
+    </div>
+    <br />
 
-      <!-- Button Submit -->
-      <input type="submit" value="Submit" />
-      <!-- or using button -->
-      <!-- <button type="submit">Submit</button> -->
-      <button type="reset">Reset</button>
-    </form>
+    <!-- Checkbox Input -->
+    <div>
+      <label for="membership">I Like...</label>
+      <input type="checkbox" name="likes" id="likes" value="bike" /> Bike
+      <input type="checkbox" name="likes" id="likes" value="Car" /> Car
+      <input type="checkbox" name="likes" id="likes" value="Boat" /> Boat
+    </div>
+    <br />
 
-    <!-- Javascript -->
-    <script></script>
-  </body>
+    <!-- Button Submit -->
+    <input type="submit" value="Submit" />
+    <!-- or using button -->
+    <!-- <button type="submit">Submit</button> -->
+    <button type="reset">Reset</button>
+  </form>
+
+  <!-- Javascript -->
+  <script></script>
+</body>
+
 </html>
