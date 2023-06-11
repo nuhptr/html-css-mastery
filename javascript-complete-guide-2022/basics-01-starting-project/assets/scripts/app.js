@@ -9,18 +9,13 @@ function getUserNumberInput() {
 }
 
 // generate and write calculation log
-function createAndWriteOutput(operator, resultBeforeCalc, calcNumber) {
+function writeOutputLog(operator, resultBeforeCalc, calcNumber) {
    const calcDescription = `${resultBeforeCalc} ${operator} ${calcNumber}`;
    outputResult(currentResult, calcDescription); // from vendor.js
 }
 
 // function writeToLog
-function writeToLog(
-   operationIdentifier,
-   prevResult,
-   number,
-   newResult
-) {
+function writeToLog(operationIdentifier, prevResult, number, newResult) {
    const logEntry = {
       operation: operationIdentifier,
       prevResult: prevResult,
@@ -38,7 +33,7 @@ function add() {
    const initialResult = currentResult;
    currentResult += enteredNumber;
 
-   createAndWriteOutput("+", initialResult, enteredNumber);
+   writeOutputLog("+", initialResult, enteredNumber);
 
    writeToLog("ADD", initialResult, enteredNumber, currentResult);
 }
@@ -49,7 +44,7 @@ function subtract() {
    const initialResult = currentResult;
    currentResult -= enteredNumber;
 
-   createAndWriteOutput("-", initialResult, enteredNumber);
+   writeOutputLog("-", initialResult, enteredNumber);
 
    writeToLog("SUBTRACT", initialResult, enteredNumber, currentResult);
 }
@@ -60,7 +55,7 @@ function multiply() {
    const initialResult = currentResult;
    currentResult *= enteredNumber;
 
-   createAndWriteOutput("*", initialResult, enteredNumber);
+   writeOutputLog("*", initialResult, enteredNumber);
 
    writeToLog("MULTIPLY", initialResult, enteredNumber, currentResult);
 }
@@ -71,7 +66,7 @@ function divide() {
    const initialResult = currentResult;
    currentResult /= enteredNumber;
 
-   createAndWriteOutput("/", initialResult, enteredNumber);
+   writeOutputLog("/", initialResult, enteredNumber);
 
    writeToLog("DIVIDE", initialResult, enteredNumber, currentResult);
 }
