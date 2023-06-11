@@ -1,19 +1,59 @@
 const defaultResult = 0;
 let currentResult = defaultResult;
 
-// custom function
-function add(num1, num2) {
-   const result = num1 + num2;
-   // alert("The result is " + result);
-   return result;
+function getUserNumberInput() {
+   return parseInt(userInput.value);
 }
 
-add(1, 2);
-add(5, 5);
+function createAndWriteOutput(operator, resultBeforeCalc, calcNumber) {
+   const calcDescription = `${resultBeforeCalc} ${operator} ${calcNumber}`;
+   outputResult(currentResult, calcDescription);
+}
 
-currentResult = ((currentResult + 10) * 3) / 2 - 1;
+// custom function
+function add() {
+   // parse the string to integer
+   const enteredNumber = getUserNumberInput();
+   const initialResult = currentResult;
+   currentResult = currentResult + enteredNumber;
 
-let calculationDescription = `(${defaultResult} + 10) * 3 / 2 - 1`;
+   createAndWriteOutput("+", initialResult, enteredNumber);
+}
+
+function subtract() {
+   const enteredNumber = getUserNumberInput();
+   const initialResult = currentResult;
+   currentResult = currentResult - enteredNumber;
+
+   createAndWriteOutput("-", initialResult, enteredNumber);
+}
+
+function multiply() {
+   const enteredNumber = getUserNumberInput();
+   const initialResult = currentResult;
+   currentResult = currentResult * enteredNumber;
+
+   createAndWriteOutput("*", initialResult, enteredNumber);
+}
+
+function divide() {
+   const enteredNumber = getUserNumberInput();
+   const initialResult = currentResult;
+   currentResult = currentResult / enteredNumber;
+
+   createAndWriteOutput("/", initialResult, enteredNumber);
+}
+
+// alert(result); result is not defined (out of scope)
+
+// const additionResult = add(1, 2);
+
+// currentResult = additionResult;
+
+// let calculationDescription = `${defaultResult} + ${currentResult}`;
 // let errorMessage = "An error \n" + "occurred!";
 
-outputResult(currentResult, calculationDescription);
+addBtn.addEventListener("click", add);
+subtractBtn.addEventListener("click", subtract);
+multiplyBtn.addEventListener("click", multiply);
+divideBtn.addEventListener("click", divide);
