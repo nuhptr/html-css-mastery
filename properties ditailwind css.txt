@@ -1,6 +1,0 @@
-Properties
-mx-auto : mendorong margin x supaya ketengah
-
-kalo mau dibuat base class di .css
-- gunakan @apply lalu diikuti propertiesnya
-- sm: atau md: untuk membuat responsive
