@@ -1,0 +1,10 @@
+1. Primitive Value
+- String, Numbers, Booleans, null, undefined, Symbol
+- Stored in memory (Normally in stack), variable stores
+value itself
+- Copying a variable (=assign to different variable) copies the value
+
+2. Reference Value
+- All other object ("more expensive to create")
+- Stored in memory (heap), variable stores a pointer (address) to location in memory
+- Copying a variable (=assing to different variable) copies the pointer, not the value itself
