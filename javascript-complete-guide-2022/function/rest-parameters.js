@@ -19,8 +19,41 @@ const combine = (resultHandlers, operation, ...numbers) => {
 const showResult = (result, messageText) => {
    console.log(messageText + " " + result);
 };
-sumUp(showResult, 1, 5, 10, -3, 6, 10);
-// console.log(sumUp(1, 5, 10, -3, 6, 10));
+
+// bind
+combine(
+   showResult.bind(this, "The result after adding all the number"),
+   "ADD",
+   1,
+   5,
+   10,
+   -3,
+   6,
+   10,
+   "fdsa"
+);
+combine(
+   showResult.bind(this, `The result after adding all the number`),
+   "ADD",
+   1,
+   5,
+   10,
+   -3,
+   6,
+   10
+);
+combine(
+   showResult.bind(this, "The result after substract all the number"),
+   "SUBTRACT",
+   1,
+   5,
+   10,
+   -3,
+   6,
+   10
+);
+
+// sumUp(showResult, 1, 5, 10, -3, 6, 10);
 
 // const subtractUp = function () {
 //    let sum = 0;
