@@ -29,7 +29,7 @@ function getMin2(numbers) {
 
       for (let j = i + 1; j < numbers.length; j++) {
          let innerElement = numbers[j];
-         
+
          if (outerElement > innerElement) {
             numbers[i] = innerElement;
             numbers[j] = outerElement;
