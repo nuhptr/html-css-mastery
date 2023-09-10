@@ -1,6 +1,6 @@
 function logAndEcho<T>(val: T) {
-   console.log(val);
-   return val;
+  console.log(val)
+  return val
 }
 
-logAndEcho<string>("Hi there!").split(" ");
+logAndEcho<string>('Hi there!').split(' ')
