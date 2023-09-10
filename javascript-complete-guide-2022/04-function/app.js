@@ -1,4 +1,4 @@
-const startGameBtn = document.getElementById("start-game-btn");
+const startGameBtn = document.getElementById('start-game-btn')
 
 // const start = function startGame() {
 //    console.log("Game is starting...");
@@ -7,6 +7,6 @@ const startGameBtn = document.getElementById("start-game-btn");
 // startGameBtn.addEventListener("click", start);
 
 // annonymous function
-startGameBtn.addEventListener("click", function () {
-   console.log("Game is starting...");
-});
+startGameBtn.addEventListener('click', function () {
+  console.log('Game is starting...')
+})
