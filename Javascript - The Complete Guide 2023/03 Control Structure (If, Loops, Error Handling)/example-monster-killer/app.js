@@ -9,6 +9,7 @@ const LOG_EVENT_PLAYER_ATTACK = "PLAYER_ATTACK"
 const LOG_EVENT_PLAYER_STRONG_ATTACK = "PLAYER_STRONG_ATTACK"
 const LOG_EVENT_MONSTER_ATTACK = "MONSTER_ATTACK"
 const LOG_EVENT_PLAYER_HEAL = "PLAYER_HEAL"
+
 const LOG_EVENT_GAME_OVER = "GAME_OVER"
 const LOG_EVENT_BONUS_LIFE = "BONUS_LIFE"
 const LOG_EVENT_PLAYER_WON = "PLAYER_WON"
@@ -39,10 +40,25 @@ function writeToLog(event, value, monsterHealth, playerHealth) {
       target: "",
    }
 
-   if (event === LOG_EVENT_PLAYER_ATTACK) logEntry.target = "MONSTER"
-   else if (event === LOG_EVENT_MONSTER_ATTACK) logEntry.target = "PLAYER"
-   else if (event === LOG_EVENT_PLAYER_STRONG_ATTACK) logEntry.target = "MONSTER"
-   else if (event === LOG_EVENT_PLAYER_HEAL) logEntry.target = "PLAYER"
+   // Using switch case
+   switch (event) {
+      case LOG_EVENT_PLAYER_ATTACK:
+         logEntry.target = "MONSTER"
+         break
+      case LOG_EVENT_PLAYER_STRONG_ATTACK:
+         logEntry.target = "MONSTER"
+         break
+      case LOG_EVENT_MONSTER_ATTACK:
+         logEntry.target = "PLAYER"
+         break
+      case LOG_EVENT_PLAYER_HEAL:
+         logEntry.target = "PLAYER"
+         break
+   }
+   // if (event === LOG_EVENT_PLAYER_ATTACK) logEntry.target = "MONSTER"
+   // else if (event === LOG_EVENT_MONSTER_ATTACK) logEntry.target = "PLAYER"
+   // else if (event === LOG_EVENT_PLAYER_STRONG_ATTACK) logEntry.target = "MONSTER"
+   // else if (event === LOG_EVENT_PLAYER_HEAL) logEntry.target = "PLAYER"
 
    battleLog.push(logEntry)
 }
@@ -109,7 +125,16 @@ const healPlayerHandler = () => {
 const attackHandler = () => attackMonster(MODE_ATTACK)
 const strongAttackHandler = () => attackMonster(MODE_STRONG_ATTACK)
 
-const logHandler = () => console.log(battleLog)
+const logHandler = () => {
+   // implement for loop-of
+   for (const logBattle of battleLog) {
+      console.log(logBattle)
+      // implement for-in
+      // for (const key in logBattle) {
+      //    console.log(`${key} => ${logBattle[key]}`)
+      // }
+   }
+}
 
 attackBtn.addEventListener("click", attackHandler)
 strongAttackBtn.addEventListener("click", strongAttackHandler)
