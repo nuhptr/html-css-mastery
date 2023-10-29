@@ -2,12 +2,44 @@
 const defaultResult = 0
 let currentResult = defaultResult
 
+// splitting function
+function getUserNumberInput() {
+   return parseInt(userInput.value)
+}
+
 // function
 function add() {
-   currentResult = currentResult + parseInt(userInput.value)
-   outputResult(currentResult, "")
+   const enteredNumber = getUserNumberInput()
+
+   const calcDescription = `${currentResult} + ${enteredNumber}`
+   currentResult = currentResult + enteredNumber
+   outputResult(currentResult, calcDescription)
 
    // return result
+}
+
+function substraction() {
+   const enteredNumber = getUserNumberInput()
+
+   const calcDescription = `${currentResult} - ${enteredNumber}`
+   currentResult = currentResult - enteredNumber
+   outputResult(currentResult, calcDescription)
+}
+
+function multiplication() {
+   const enteredNumber = getUserNumberInput()
+
+   const calcDescription = `${currentResult} * ${enteredNumber}`
+   currentResult = currentResult * enteredNumber
+   outputResult(currentResult, calcDescription)
+}
+
+function division() {
+   const enteredNumber = getUserNumberInput()
+
+   const calcDescription = `${currentResult} / ${enteredNumber}`
+   currentResult = currentResult / enteredNumber
+   outputResult(currentResult, calcDescription)
 }
 
 // call function
