@@ -1,3 +1,0 @@
-Data structure => [1,2,3]
-Algorithm => a sequence of steps
-Output => minimum 1
