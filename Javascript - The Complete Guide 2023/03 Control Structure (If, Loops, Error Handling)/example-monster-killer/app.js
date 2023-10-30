@@ -16,11 +16,25 @@ const LOG_EVENT_PLAYER_WON = "PLAYER_WON"
 const LOG_EVENT_PLAYER_LOST = "PLAYER_LOST"
 const LOG_EVENT_DRAW = "DRAW"
 
-const enteredValue = prompt("Maximum life for you and the monster.", "100")
+// Get max life values
+const getMaxLifeValues = () => {
+   const enteredValue = prompt("Maximum life for you and the monster.", "100")
 
-let chosenMaxLife = parseInt(enteredValue)
-if (isNaN(chosenMaxLife) || chosenMaxLife <= 0) {
+   let parsedValue = parseInt(enteredValue)
+   if (isNaN(parsedValue) || parsedValue <= 0) throw { message: "Invalid user input, not a number!" }
+
+   return parsedValue
+}
+
+let chosenMaxLife
+
+// catch the error
+try {
+   chosenMaxLife = getMaxLifeValues()
+} catch (error) {
+   console.log(error)
    chosenMaxLife = 100
+   alert("You entered something wrong, default value of 100 was used.")
 }
 
 let currentMonsterHealth = chosenMaxLife
