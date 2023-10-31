@@ -16,7 +16,7 @@ const LOG_EVENT_PLAYER_WON = "PLAYER_WON"
 const LOG_EVENT_PLAYER_LOST = "PLAYER_LOST"
 const LOG_EVENT_DRAW = "DRAW"
 
-// Get max life values
+//? GET MAX LIFE VALUES
 const getMaxLifeValues = () => {
    const enteredValue = prompt("Maximum life for you and the monster.", "100")
 
@@ -28,7 +28,7 @@ const getMaxLifeValues = () => {
 
 let chosenMaxLife
 
-// catch the error
+//? CAPTURE ERROR
 try {
    chosenMaxLife = getMaxLifeValues()
 } catch (error) {
@@ -44,7 +44,7 @@ let battleLog = []
 
 adjustHealthBars(chosenMaxLife)
 
-// write to log
+//? WRITE TO LOG
 function writeToLog(event, value, monsterHealth, playerHealth) {
    let logEntry = {
       event: event,
@@ -54,7 +54,7 @@ function writeToLog(event, value, monsterHealth, playerHealth) {
       target: "",
    }
 
-   // Using switch case
+   //! SWITCH CASE
    switch (event) {
       case LOG_EVENT_PLAYER_ATTACK:
          logEntry.target = "MONSTER"
@@ -77,21 +77,21 @@ function writeToLog(event, value, monsterHealth, playerHealth) {
    battleLog.push(logEntry)
 }
 
-// Reset game
+//? RESET GAME
 const reset = () => {
    currentMonsterHealth = chosenMaxLife
    currentPlayerHealth = chosenMaxLife
    resetGame(chosenMaxLife)
 }
 
-// End round after the game
+//? END ROUND AFTER ATTACK
 const endRound = () => {
    const initialPlayerHealth = currentPlayerHealth
    const playerDamage = dealPlayerDamage(MONSTER_ATTACK_VALUE)
    currentPlayerHealth -= playerDamage
    writeToLog(LOG_EVENT_MONSTER_ATTACK, playerDamage, currentMonsterHealth, currentPlayerHealth)
 
-   // Bonus life
+   //? BONUS LIFE
    if (currentPlayerHealth <= 0 && hasBonusLife) {
       hasBonusLife = false
       removeBonusLife()
@@ -140,10 +140,10 @@ const attackHandler = () => attackMonster(MODE_ATTACK)
 const strongAttackHandler = () => attackMonster(MODE_STRONG_ATTACK)
 
 const logHandler = () => {
-   // implement for loop-of
+   //? IMPLEMENT FOR-OF
    for (const logBattle of battleLog) {
       console.log(logBattle)
-      // implement for-in
+      //? IMPLEMENT FOR-IN
       // for (const key in logBattle) {
       //    console.log(`${key} => ${logBattle[key]}`)
       // }
