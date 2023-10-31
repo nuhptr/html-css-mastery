@@ -1,4 +1,4 @@
-window.alert("Hello World!")
+// window.alert("Hello World!")
 
 //? WINDOW OBJECT
 console.dir(window.document)
@@ -44,3 +44,14 @@ button.addEventListener("click", () => {
    // footer.classList.toggle("visible")
    footer.classList.toggle("invisible")
 })
+
+// ADDING ELEMENTS VIA CREATE ELEMENT
+const documentUl = document.querySelector("ul")
+const newLi = document.createElement("li")
+documentUl.appendChild(newLi)
+newLi.textContent = "Item 4"
+
+// REMOVE ELEMENTS
+const documentLi = document.querySelector("li")
+documentUl.removeChild(documentUl.children[0])
+documentUl.removeChild(documentUl.children[1])
