@@ -1,12 +1,12 @@
 let j = 0
 
-// while loop
+//? WHILE LOOP
 while (j < 3) {
    console.log(j)
    j++
 }
 
-// do-while loop
+//? DO WHILE LOOP => ALWAYS RUN AT LEAST ONCE
 do {
    console.log(j)
    j++
