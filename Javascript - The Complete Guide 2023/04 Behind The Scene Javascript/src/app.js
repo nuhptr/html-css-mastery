@@ -2,11 +2,11 @@ const addListenerBtn = document.getElementById("add-listener-btn")
 const clickableBtn = document.getElementById("clickable-btn")
 const messageInput = document.getElementById("click-message-input")
 
-// useless variable and make heap
+//! USELESS OBJECT AND MAKE HEAP
 let person = { name: "max" }
 person = null
 
-// useless function and make memory leak
+//! USELESS FUNCTION AND MAKE HEAP
 function printMessage() {
    const value = messageInput.value
    console.log(value || "Clicked me!")
