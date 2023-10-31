@@ -20,14 +20,31 @@ const person = {
 person.greet()
 console.log(typeof startGame)
 
+console.log("=========")
+
+const ADD = "ADD"
+const SUBTRACT = "SUBTRACT"
+
 //? REST PARAMETERS => ALWAYS AT THE END OF THE PARAMETERS
-const sumUp = (a, b, ...numbers) => {
+const combine = (resultHandler, operation, ...numbers) => {
    //? FUNCTION INSIDE A FUNCTION
    const validateNumber = (number) => (isNaN(number) ? 0 : number)
 
-   console.log(a, b)
    let sum = 0
-   for (const num of numbers) sum += validateNumber(num)
-   return sum
+   for (const num of numbers) {
+      if (operation === ADD) sum += validateNumber(num)
+      else sum -= validateNumber(num)
+   }
+
+   //? CALLBACK FUNCTION
+   resultHandler(sum)
 }
-console.log(sumUp("test", "boost", 1, 2, 3, 4, 5))
+
+const showResult = (messageText, result) => {
+   console.log(messageText + "" + result)
+}
+
+//? INVOKE CALLBACK FUNCTION
+//! BIND => PRE-CONFIGURE A FUNCTION TO NEW RETURNED FUNCTION
+combine(showResult.bind(this, "Result after add all: "), ADD, 1, 5, -3, 6, 10)
+combine(showResult.bind(this, "Result after subtract all: "), SUBTRACT, 1, 5, -3, 6, 10)
