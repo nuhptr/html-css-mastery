@@ -4,6 +4,11 @@ let currentResult = defaultResult
 
 let logEntries = []
 
+const ADD = "ADD"
+const SUBTRACT = "SUBTRACT"
+const MULTIPLY = "MULTIPLY"
+const DIVIDE = "DIVIDE"
+
 //? SPLITTING CODE INTO FUNCTIONS
 //? GET USER INPUT
 function getUserNumberInput() {
@@ -23,44 +28,38 @@ function writeToLog(operationType, prevResult, enteredNumber, newResult) {
 }
 
 //? FUNCTION DECLARATION
-function add() {
+//! ADDING BIND TO THIS CALCUATOR
+const calculate = (operation) => {
    const enteredNumber = getUserNumberInput()
    const initialResult = currentResult
+   let operator
 
-   currentResult += enteredNumber
-   createAndWriteOutput("+", initialResult, enteredNumber)
-   writeToLog("ADD", initialResult, enteredNumber, currentResult)
-   // return result
+   switch (operation) {
+      case ADD:
+         currentResult += enteredNumber
+         operator = "+"
+         break
+      case SUBTRACT:
+         currentResult -= enteredNumber
+         operator = "-"
+         break
+      case MULTIPLY:
+         currentResult *= enteredNumber
+         operator = "*"
+         break
+      case DIVIDE:
+         currentResult /= enteredNumber
+         operator = "/"
+         break
+      default:
+         console.log("Invalid operation")
+   }
+
+   createAndWriteOutput(operator, initialResult, enteredNumber)
+   writeToLog(operation, initialResult, enteredNumber, currentResult)
 }
 
-function substraction() {
-   const enteredNumber = getUserNumberInput()
-   const initialResult = currentResult
-
-   currentResult -= enteredNumber
-   createAndWriteOutput("-", initialResult, enteredNumber)
-   writeToLog("SUBSTRACT", initialResult, enteredNumber, currentResult)
-}
-
-function multiplication() {
-   const enteredNumber = getUserNumberInput()
-   const initialResult = currentResult
-
-   currentResult *= enteredNumber
-   createAndWriteOutput("*", initialResult, enteredNumber)
-   writeToLog("MULTIPLY", initialResult, enteredNumber, currentResult)
-}
-
-function division() {
-   const enteredNumber = getUserNumberInput()
-   const initialResult = currentResult
-
-   currentResult /= enteredNumber
-   createAndWriteOutput("/", initialResult, enteredNumber)
-   writeToLog("DIVIDE", initialResult, enteredNumber, currentResult)
-}
-
-addBtn.addEventListener("click", add) // from vendor.js
-subtractBtn.addEventListener("click", substraction) // from vendor.js
-multiplyBtn.addEventListener("click", multiplication) // from vendor.js
-divideBtn.addEventListener("click", division) // from vendor.js
+addBtn.addEventListener("click", calculate.bind(this, ADD)) // from vendor.js
+subtractBtn.addEventListener("click", calculate.bind(this, SUBTRACT)) // from vendor.js
+multiplyBtn.addEventListener("click", calculate.bind(this, MULTIPLY)) // from vendor.js
+divideBtn.addEventListener("click", calculate.bind(this.DIVIDE)) // from vendor.js
