@@ -12,7 +12,8 @@ const confirmAddMovieButton = cancelAddMovieButton.nextElementSibling // element
 const userInput = addMovieModal.querySelectorAll("input")
 const entryTextSection = document.getElementById("entry-text")
 
-startAddMovieButton.addEventListener("click", showMovieModal)
 backdropElement.addEventListener("click", backdropClickHandler)
+startAddMovieButton.addEventListener("click", showMovieModal)
+
 cancelAddMovieButton.addEventListener("click", cancelAddMovieHandler)
 confirmAddMovieButton.addEventListener("click", addMovieHandler)
