@@ -6,15 +6,11 @@
 // })
 
 //? STORING FUNCTIONS IN VARIABLES
-const startGame = () => {
-   console.log("Game is starting...")
-}
+const startGame = () => console.log("Game is starting...")
 
 const person = {
    name: "Max",
-   greet: function greet() {
-      console.log("Hello there!")
-   },
+   greet: () => console.log("Hello there!"),
 }
 
 person.greet()
@@ -26,7 +22,7 @@ const ADD = "ADD"
 const SUBTRACT = "SUBTRACT"
 
 //? REST PARAMETERS => ALWAYS AT THE END OF THE PARAMETERS
-const combine = (resultHandler, operation, ...numbers) => {
+function combine(resultHandler, operation, ...numbers) {
    //? FUNCTION INSIDE A FUNCTION
    const validateNumber = (number) => (isNaN(number) ? 0 : number)
 
@@ -40,7 +36,7 @@ const combine = (resultHandler, operation, ...numbers) => {
    resultHandler(sum)
 }
 
-const showResult = (messageText, result) => {
+function showResult(messageText, result) {
    console.log(messageText + "" + result)
 }
 

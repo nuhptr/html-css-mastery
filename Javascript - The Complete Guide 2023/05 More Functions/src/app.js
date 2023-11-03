@@ -7,7 +7,7 @@ const DEFAULT_USER_CHOICE = ROCK
 
 let gameIsRunning = false
 
-const getPlayerChoice = () => {
+function getPlayerChoice() {
    const selected = prompt(`${ROCK}, ${PAPER} or ${SCISSORS}?`, "").toUpperCase()
 
    if (selected !== ROCK && selected !== PAPER && selected !== SCISSORS) {
@@ -18,7 +18,7 @@ const getPlayerChoice = () => {
    return selected
 }
 
-const getComputerChoice = () => {
+function getComputerChoice() {
    const randomValue = Math.random()
 
    if (randomValue < 0.34) return ROCK
@@ -26,7 +26,7 @@ const getComputerChoice = () => {
    else return SCISSORS
 }
 
-const getWinner = (cChoice, pChoice = DEFAULT_USER_CHOICE) => {
+function getWinner(cChoice, pChoice = DEFAULT_USER_CHOICE) {
    if (cChoice === pChoice) return "Game is DRAW"
    else if (
       (cChoice === ROCK && pChoice === PAPER) ||
@@ -37,7 +37,7 @@ const getWinner = (cChoice, pChoice = DEFAULT_USER_CHOICE) => {
    else return "The Winner is COMPUTER"
 }
 
-const gameHandler = () => {
+function gameHandler() {
    if (gameIsRunning) return
 
    gameIsRunning = true
