@@ -62,4 +62,4 @@ const calculate = (operation) => {
 addBtn.addEventListener("click", calculate.bind(this, ADD)) // from vendor.js
 subtractBtn.addEventListener("click", calculate.bind(this, SUBTRACT)) // from vendor.js
 multiplyBtn.addEventListener("click", calculate.bind(this, MULTIPLY)) // from vendor.js
-divideBtn.addEventListener("click", calculate.bind(this.DIVIDE)) // from vendor.js
+divideBtn.addEventListener("click", calculate.bind(this, DIVIDE)) // from vendor.js
