@@ -20,5 +20,14 @@ const testResults = [1, 5.3, 1.5, 10.99, -5, 10]
 testResults.splice(2, 2, 99) // (Remove 2 item from start index, and insert 99 in index 2)
 // [ 1, 5.3, 99, -5, 10 ]
 testResults.splice(0, 1) // (Remove 1 item from start index = 0)
+// [ 5.3, 99, -5, 10 ]
 
 console.log(testResults)
+
+console.log("===============")
+
+//? SLICE() - COPY ELEMENTS
+const storedResults = testResults.slice(0, 2) // (Copy from index 0 to 2)
+// [ 5.3, 99 ]
+
+console.log(storedResults)
