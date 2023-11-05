@@ -1,7 +1,7 @@
-const movieList = document.getElementById("movie-list")
+// const movieList = document.getElementById("movie-list")
 
-movieList.style["background-color"] = "red"
-movieList.style.display = "block"
+// movieList.style["background-color"] = "red"
+// movieList.style.display = "block"
 
 const person = {
    "first-name": "Max",
