@@ -1,4 +1,3 @@
-//? STORE VALUE PRODUCT IN CLASS
 class Product {
    constructor(title, image, desc, price) {
       this.title = title
@@ -8,7 +7,6 @@ class Product {
    }
 }
 
-//? ELEMENT ATTRIBUTE CLASS STORED VALUE ->  passing to createRootElement
 class ElementAttribute {
    constructor(attrName, attrValue) {
       this.name = attrName
@@ -16,28 +14,31 @@ class ElementAttribute {
    }
 }
 
-//? PARENT COMPONENT CLASS
+// --------------------
+
 class Component {
-   constructor(renderHookId) {
+   constructor(renderHookId, shouldRender = true) {
       this.hookId = renderHookId
+      if (shouldRender) this.render()
    }
+
+   render() {}
 
    createRootElement(tag, cssClasses, attributes) {
       const rootElement = document.createElement(tag)
 
       if (cssClasses) rootElement.className = cssClasses
-
-      if (attributes && attributes.length > 0)
+      if (attributes && attributes.length > 0) {
          for (const attr of attributes) {
             rootElement.setAttribute(attr.name, attr.value)
          }
+      }
 
       document.getElementById(this.hookId).append(rootElement)
       return rootElement
    }
 }
 
-//? CHILD COMPONENT CLASS
 class ShoppingCart extends Component {
    items = []
 
@@ -52,7 +53,12 @@ class ShoppingCart extends Component {
    }
 
    constructor(renderHookId) {
-      super(renderHookId)
+      super(renderHookId, false)
+      this.orderProducts = () => {
+         console.log("Ordering...")
+         console.log(this.items)
+      }
+      this.render()
    }
 
    addProduct(product) {
@@ -64,18 +70,22 @@ class ShoppingCart extends Component {
    render() {
       const cartEl = this.createRootElement("section", "cart")
       cartEl.innerHTML = `
-      <h2>Total: \$${0}</h2>
-      <button>Order Now!</button>
-    `
+          <h2>Total: \$${0}</h2>
+          <button>Order Now!</button>
+      `
+
+      const orderButton = cartEl.querySelector("button")
+      orderButton.addEventListener("click", this.orderProducts)
+
       this.totalOutput = cartEl.querySelector("h2")
    }
 }
 
-//? CHILD COMPONENT CLASS
 class ProductItem extends Component {
    constructor(product, renderHookId) {
-      super(renderHookId)
+      super(renderHookId, false)
       this.product = product
+      this.render()
    }
 
    addToCart() {
@@ -86,13 +96,13 @@ class ProductItem extends Component {
       const prodEl = this.createRootElement("li", "product-item")
       prodEl.innerHTML = `
         <div>
-          <img src="${this.product.imageUrl}" alt="${this.product.title}" >
-          <div class="product-item__content">
-            <h2>${this.product.title}</h2>
-            <h3>\$${this.product.price}</h3>
-            <p>${this.product.description}</p>
-            <button>Add to Cart</button>
-          </div>
+            <img src="${this.product.imageUrl}" alt="${this.product.title}" >
+            <div class="product-item__content">
+                <h2>${this.product.title}</h2>
+                <h3>\$${this.product.price}</h3>
+                <p>${this.product.description}</p>
+                <button>Add to Cart</button>
+           </div>
         </div>
       `
       const addCartButton = prodEl.querySelector("button")
@@ -100,54 +110,60 @@ class ProductItem extends Component {
    }
 }
 
-//? CHILD COMPONENT CLASS
 class ProductList extends Component {
-   products = [
-      new Product(
-         "A Pillow",
-         "https://www.maxpixel.net/static/photo/2x/Soft-Pillow-Green-Decoration-Deco-Snuggle-1241878.jpg",
-         "A soft pillow!",
-         19.99
-      ),
-      new Product(
-         "A Carpet",
-         "https://upload.wikimedia.org/wikipedia/commons/thumb/7/71/Ardabil_Carpet.jpg/397px-Ardabil_Carpet.jpg",
-         "A carpet which you might like - or not.",
-         89.99
-      ),
-   ]
+   products = []
 
    constructor(renderHookId) {
       super(renderHookId)
+      this.fetchProducts()
+   }
+
+   fetchProducts() {
+      this.products = [
+         new Product(
+            "A Pillow",
+            "https://cdn.thewirecutter.com/wp-content/media/2023/01/bedpillows-2048px-9999.jpg",
+            "A soft pillow!",
+            19.99
+         ),
+         new Product(
+            "A Carpet",
+            "https://upload.wikimedia.org/wikipedia/commons/thumb/7/71/Ardabil_Carpet.jpg/397px-Ardabil_Carpet.jpg",
+            "A carpet which you might like - or not.",
+            89.99
+         ),
+      ]
+      this.renderProducts()
+   }
+
+   renderProducts() {
+      for (const prod of this.products) {
+         new ProductItem(prod, "prod-list")
+      }
    }
 
    render() {
       this.createRootElement("ul", "product-list", [new ElementAttribute("id", "prod-list")])
-      for (const prod of this.products) {
-         const productItem = new ProductItem(prod, "prod-list")
-         productItem.render()
-      }
+      if (this.products && this.products.length > 0) this.renderProducts()
    }
 }
 
-//? CALL CHILD COMPONENT CLASS
 class Shop {
+   constructor() {
+      this.render()
+   }
+
    render() {
       this.cart = new ShoppingCart("app")
-      this.cart.render()
-
       this.productList = new ProductList("app")
-      this.productList.render()
    }
 }
 
-//? MAIN CLASS
 class App {
    static cart
 
    static init() {
       const shop = new Shop()
-      shop.render()
       this.cart = shop.cart
    }
 

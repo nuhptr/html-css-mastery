@@ -10,5 +10,3 @@ const prices = [10.99, 5.99, 3.99, 6.59]
 const sum = prices.reduce((previousValue, currentValue) => previousValue + currentValue, 0)
 
 console.log(sum) // 27.56
-
-
