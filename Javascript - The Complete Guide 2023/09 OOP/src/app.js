@@ -111,15 +111,17 @@ class ProductItem extends Component {
 }
 
 class ProductList extends Component {
-   products = []
+  //? MAKE PRIVATE
+   #products = []
 
    constructor(renderHookId) {
-      super(renderHookId)
+      super(renderHookId, false)
+      this.render()
       this.fetchProducts()
    }
 
    fetchProducts() {
-      this.products = [
+      this.#products = [
          new Product(
             "A Pillow",
             "https://cdn.thewirecutter.com/wp-content/media/2023/01/bedpillows-2048px-9999.jpg",
@@ -137,14 +139,14 @@ class ProductList extends Component {
    }
 
    renderProducts() {
-      for (const prod of this.products) {
+      for (const prod of this.#products) {
          new ProductItem(prod, "prod-list")
       }
    }
 
    render() {
       this.createRootElement("ul", "product-list", [new ElementAttribute("id", "prod-list")])
-      if (this.products && this.products.length > 0) this.renderProducts()
+      if (this.#products && this.#products.length > 0) this.renderProducts()
    }
 }
 
