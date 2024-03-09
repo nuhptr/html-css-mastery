@@ -12,8 +12,3 @@ Repository about HTML, CSS, and Javascript Programming Language
 
 -  Link: https://www.udemy.com/course/modern-html-css-from-the-beginning/
 
-<!-- Video 149 -->
-
-## [On Going] Javascript Complete Guide 2022
-
--  Link: https://www.udemy.com/course/javascript-the-complete-guide-2020-beginner-advanced/
