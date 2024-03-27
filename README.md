@@ -1,4 +1,4 @@
-# Learn HTML, CSS, and Javascript From Udemy
+# Learn HTML, CSS From Udemy
 
 Repository about HTML, CSS, and Javascript Programming Language
 
