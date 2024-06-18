@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="en">
+   <head>
+      <meta charset="UTF-8" />
+      <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+      <title>Emmet Plugin</title>
+   </head>
+
+   <body>
+      <!-- you just type .text-xl or p.text-xl and click tab -->
+      <!-- but install emmet plugin first -->
+      <div class="text-xl"></div>
+
+      <div class="text-xl text-center"></div>
+      <div class="" id="main"></div>
+
+      <div id="about" class="section"></div>
+
+      <div class="" id="about">
+         <p class="card"></p>
+      </div>
+
+      <!-- div>p*3 will generate p text 3 times -->
+      <div>
+         <p></p>
+         <p></p>
+         <p></p>
+      </div>
+
+      <!-- ul>li*5 will generate li 5 times -->
+      <ul>
+         <li></li>
+         <li></li>
+         <li></li>
+         <li></li>
+         <li></li>
+      </ul>
+
+      <!-- div+p -->
+      <div></div>
+      <p></p>
+
+      <!-- .card+.card-2 -->
+      <div class="card"></div>
+      <div class="card-2"></div>
+
+      <!-- div>(header>ul>li*2>a)+footer>p -->
+      <div>
+         <header>
+            <ul>
+               <li><a href=""></a></li>
+               <li><a href=""></a></li>
+            </ul>
+         </header>
+         <footer>
+            <p></p>
+         </footer>
+      </div>
+
+      <!-- p{hello world} -->
+      <p>Hello World</p>
+
+      <!-- ul>li{Item}*3 -->
+      <ul>
+         <li>Item</li>
+         <li>Item</li>
+         <li>Item</li>
+      </ul>
+
+      <!-- ul>li{Item $}*3 add $ to add number dynamically  -->
+      <ul>
+         <li>Item 1</li>
+         <li>Item 2</li>
+         <li>Item 3</li>
+      </ul>
+
+      <!-- a:mail will generate under below -->
+      <a href="mailto:"></a>
+   </body>
+</html>
