@@ -1,42 +1,40 @@
-
-
 /* -------- */
 /* NAVBAR   */
 /* -------- */
 #navbar {
-  background: #333;
-  overflow: auto;
+   background: #333;
+   overflow: auto;
 }
 
 #navbar a {
-  color: #fff;
-  text-decoration: none;
+   color: #fff;
+   text-decoration: none;
 }
 
 #navbar h1 {
-  float: left;
-  padding: 20px 0;
+   float: left;
+   padding: 20px 0;
 }
 
 #navbar ul {
-  list-style: none;
-  float: right;
+   list-style: none;
+   float: right;
 }
 
 #navbar ul li {
-  float: left;
+   float: left;
 }
 
 #navbar ul li a {
-  padding: 20px;
-  display: block;
-  text-align: center;
+   padding: 20px;
+   display: block;
+   text-align: center;
 }
 
 #navbar ul li a:hover,
 #navbar ul li a.current {
-  background: rgba(255, 255, 255, 0.1);
-  color: #f7c08a;
+   background: rgba(255, 255, 255, 0.1);
+   color: #f7c08a;
 }
 
 /* ------------ */
@@ -44,30 +42,30 @@
 /* ------------ */
 
 #contact-form .form-group {
-  margin-bottom: 20px;
+   margin-bottom: 20px;
 }
 
 #contact-from label {
-  display: block;
-  margin-bottom: 10px;
+   display: block;
+   margin-bottom: 10px;
 }
 
 #contact-form input,
 #contact-form textarea {
-  width: 100%;
-  padding: 10px;
-  border: 1px solid #ddd;
-  border-radius: 0.5rem;
+   width: 100%;
+   padding: 10px;
+   border: 1px solid #ddd;
+   border-radius: 0.5rem;
 }
 
 #contact-form textarea {
-  height: 200px;
+   height: 200px;
 }
 
 #contact-form input:focus,
 #contact-form textarea:focus {
-  outline: none;
-  border-color: #f7c08a;
+   outline: none;
+   border-color: #f7c08a;
 }
 
 /* -------- */
@@ -75,22 +73,22 @@
 /* -------- */
 
 #contact-info a {
-  text-decoration: none;
-  color: #fff;
-  cursor: pointer;
+   text-decoration: none;
+   color: #fff;
+   cursor: pointer;
 }
 
 .box {
-  float: left;
-  width: 33.33%;
-  padding: 50px;
-  text-align: center;
+   float: left;
+   width: 33.33%;
+   padding: 50px;
+   text-align: center;
 }
 
 .box-icon {
-  width: 30px;
-  height: 30px;
-  margin-bottom: 10px;
+   width: 30px;
+   height: 30px;
+   margin-bottom: 10px;
 }
 
 /* -------- */
@@ -98,8 +96,8 @@
 /* -------- */
 
 #main-footer {
-  text-align: center;
-  background-color: #444;
-  color: #fff;
-  padding: 20px;
+   text-align: center;
+   background-color: #444;
+   color: #fff;
+   padding: 20px;
 }

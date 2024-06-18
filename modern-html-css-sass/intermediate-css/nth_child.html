@@ -1,76 +1,74 @@
 <!DOCTYPE html>
 <html lang="en">
+   <head>
+      <meta charset="UTF-8" />
+      <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+      <meta name="viewport" content="width=device-width, initial-scale=1.0" />
 
-<head>
-  <meta charset="UTF-8" />
-  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+      <meta name="description" content="Leatn nth child pseudoselector" />
+      <meta name="keywords" content="html, css, nth-child" />
+      <link rel="stylesheet" href="#" />
 
-  <meta name="description" content="Leatn nth child pseudoselector" />
-  <meta name="keywords" content="html, css, nth-child" />
-  <link rel="stylesheet" href="#" />
+      <title>Nth Child</title>
 
-  <title>Nth Child</title>
+      <style>
+         li {
+            padding: 0.25rem;
+            margin: 0.25rem;
+            list-style: none;
+         }
 
-  <style>
-    li {
-      padding: 0.25rem;
-      margin: 0.25rem;
-      list-style: none;
-    }
+         /* first child */
+         li:first-child {
+            background-color: red;
+            color: white;
+         }
 
-    /* first child */
-    li:first-child {
-      background-color: red;
-      color: white;
-    }
+         /* last child */
+         li:last-child {
+            background-color: blue;
+            color: white;
+         }
 
-    /* last child */
-    li:last-child {
-      background-color: blue;
-      color: white;
-    }
+         /* position 3 */
+         li:nth-child(3) {
+            background-color: purple;
+         }
 
-    /* position 3 */
-    li:nth-child(3) {
-      background-color: purple;
-    }
+         /* every 3 step */
+         li:nth-child(3n) {
+            background-color: orange;
+         }
 
-    /* every 3 step */
-    li:nth-child(3n) {
-      background-color: orange;
-    }
+         /* every 3 after 7 */
+         li:nth-child(3n + 7) {
+            background-color: yellow;
+         }
 
-    /* every 3 after 7 */
-    li:nth-child(3n + 7) {
-      background-color: yellow;
-    }
+         /* every odd */
+         li:nth-child(odd) {
+            background-color: green;
+            color: #fff;
+         }
 
-    /* every odd */
-    li:nth-child(odd) {
-      background-color: green;
-      color: #fff;
-    }
+         li:nth-child(even) {
+            background-color: greenyellow;
+         }
+      </style>
+   </head>
 
-    li:nth-child(even) {
-      background-color: greenyellow;
-    }
-  </style>
-</head>
-
-<body>
-  <ul>
-    <li>Item 1</li>
-    <li>Item 2</li>
-    <li>Item 3</li>
-    <li>Item 4</li>
-    <li>Item 5</li>
-    <li>Item 6</li>
-    <li>Item 7</li>
-    <li>Item 8</li>
-    <li>Item 9</li>
-    <li>Item 10</li>
-  </ul>
-</body>
-
+   <body>
+      <ul>
+         <li>Item 1</li>
+         <li>Item 2</li>
+         <li>Item 3</li>
+         <li>Item 4</li>
+         <li>Item 5</li>
+         <li>Item 6</li>
+         <li>Item 7</li>
+         <li>Item 8</li>
+         <li>Item 9</li>
+         <li>Item 10</li>
+      </ul>
+   </body>
 </html>

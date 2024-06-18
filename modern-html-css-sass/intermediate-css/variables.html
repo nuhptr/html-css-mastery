@@ -1,99 +1,95 @@
 <!DOCTYPE html>
 <html lang="en">
+   <head>
+      <meta charset="UTF-8" />
+      <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+      <meta name="viewport" content="width=device-width, initial-scale=1.0" />
 
-<head>
-  <meta charset="UTF-8" />
-  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+      <meta name="description" content="CSS Custom variables properties" />
+      <meta name="keywords" content="html, css, variables" />
+      <link rel="stylesheet" href="#" />
 
-  <meta name="description" content="CSS Custom variables properties" />
-  <meta name="keywords" content="html, css, variables" />
-  <link rel="stylesheet" href="#" />
+      <title>Variables CSS (Custom Properties)</title>
+      <style>
+         :root {
+            /* CSS variable properties */
+            --primary-color: steelblue;
+            --secondary-color: skyblue;
+            --light-color: #f4f4f4;
 
-  <title>Variables CSS (Custom Properties)</title>
-  <style>
-    :root {
-      /* CSS variable properties */
-      --primary-color: steelblue;
-      --secondary-color: skyblue;
-      --light-color: #f4f4f4;
+            --max-width: 1100px;
+            --box-1-width: 1;
+            --box-2-width: 2;
+            --box-height: 60vh;
+         }
 
-      --max-width: 1100px;
-      --box-1-width: 1;
-      --box-2-width: 2;
-      --box-height: 60vh;
-    }
+         * {
+            margin: 0;
+            padding: 0;
+         }
 
-    * {
-      margin: 0;
-      padding: 0;
-    }
+         body {
+            font-family: Arial, Helvetica, sans-serif;
+            line-height: 1.4;
+            background-color: var(--light-color);
+         }
 
-    body {
-      font-family: Arial, Helvetica, sans-serif;
-      line-height: 1.4;
-      background-color: var(--light-color);
-    }
+         header {
+            background-color: var(--primary-color);
+            border-bottom: 3px solid var(--secondary-color);
+            color: #fff;
+            text-align: center;
+         }
 
-    header {
-      background-color: var(--primary-color);
-      border-bottom: 3px solid var(--secondary-color);
-      color: #fff;
-      text-align: center;
-    }
+         .container {
+            display: flex;
+            margin: auto;
+            max-width: var(--max-width);
+         }
 
-    .container {
-      display: flex;
-      margin: auto;
-      max-width: var(--max-width);
-    }
+         .box {
+            background-color: var(--primary-color);
+            border-bottom: 3px solid var(--secondary-color);
+            color: #fff;
+            padding: 1rem;
+            margin: 1rem;
+         }
 
-    .box {
-      background-color: var(--primary-color);
-      border-bottom: 3px solid var(--secondary-color);
-      color: #fff;
-      padding: 1rem;
-      margin: 1rem;
-    }
+         .box-1 {
+            flex: var(--box-1-width);
+            height: var(--box-height);
+         }
 
-    .box-1 {
-      flex: var(--box-1-width);
-      height: var(--box-height);
-    }
+         .box-2 {
+            flex: var(--box-2-width);
+            height: var(--box-height);
+         }
+      </style>
+   </head>
 
-    .box-2 {
-      flex: var(--box-2-width);
-      height: var(--box-height);
-    }
-  </style>
-</head>
+   <body>
+      <header>
+         <h1>CSS Variabel</h1>
+      </header>
 
-<body>
-  <header>
-    <h1>CSS Variabel</h1>
-  </header>
+      <div class="container">
+         <div class="box box-1">
+            <h3>Heading</h3>
+            <p>
+               Lorem ipsum dolor sit amet consectetur adipisicing elit. Unde mollitia ullam enim,
+               iste dicta quisquam quae possimus officiis magnam eligendi. Dolore molestiae
+               doloribus vero quibusdam iusto sit asperiores, officia at.
+            </p>
+         </div>
 
-  <div class="container">
-    <div class="box box-1">
-      <h3>Heading</h3>
-      <p>
-        Lorem ipsum dolor sit amet consectetur adipisicing elit. Unde mollitia
-        ullam enim, iste dicta quisquam quae possimus officiis magnam
-        eligendi. Dolore molestiae doloribus vero quibusdam iusto sit
-        asperiores, officia at.
-      </p>
-    </div>
-
-    <div class="box box-2">
-      <h3>Heading</h3>
-      <p>
-        Lorem ipsum dolor sit amet consectetur adipisicing elit. Unde mollitia
-        ullam enim, iste dicta quisquam quae possimus officiis magnam
-        eligendi. Dolore molestiae doloribus vero quibusdam iusto sit
-        asperiores, officia at.
-      </p>
-    </div>
-  </div>
-</body>
-
+         <div class="box box-2">
+            <h3>Heading</h3>
+            <p>
+               Lorem ipsum dolor sit amet consectetur adipisicing elit. Unde mollitia ullam enim,
+               iste dicta quisquam quae possimus officiis magnam eligendi. Dolore molestiae
+               doloribus vero quibusdam iusto sit asperiores, officia at.
+            </p>
+         </div>
+      </div>
+   </body>
 </html>

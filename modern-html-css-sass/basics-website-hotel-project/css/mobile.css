@@ -1,62 +1,62 @@
 #navbar .logo {
-  float: none;
-  text-align: center;
+   float: none;
+   text-align: center;
 }
 
 #navbar ul,
 #navbar ul li {
-  float: none;
+   float: none;
 }
 
 #navbar ul li a {
-  padding: 5px;
-  border-bottom: #444 dotted 1px;
+   padding: 5px;
+   border-bottom: #444 dotted 1px;
 }
 
 /* Showcases */
 #showcases {
-  height: 100%;
+   height: 100%;
 }
 
 #showcases .showcase-content {
-  padding-top: 70px;
-  padding-bottom: 30px;
+   padding-top: 70px;
+   padding-bottom: 30px;
 }
 
 /* Home info */
 #home-info .info-img {
-  display: none;
+   display: none;
 }
 
 #home-info .info-content {
-  float: none;
-  width: 100%;
+   float: none;
+   width: 100%;
 }
 
 /* Boxes */
 .box {
-  float: none;
-  width: 100%;
+   float: none;
+   width: 100%;
 }
 
 /* About */
 #about-info .info-right,
 #about-info .info-left {
-  float: none;
-  width: 100%;
+   float: none;
+   width: 100%;
 }
 
 #about-info .info-right {
-  margin-top: 30px;
+   margin-top: 30px;
 }
 
 .l-heading {
-  text-align: center;
-  padding: 30px;
+   text-align: center;
+   padding: 30px;
 }
 
 /* Contact */
 
 #contact-info .box {
-  border-bottom: #444 dotted 1px;
+   border-bottom: #444 dotted 1px;
 }

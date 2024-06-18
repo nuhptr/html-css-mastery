@@ -2,95 +2,95 @@
 /* NAVBAR   */
 /* -------- */
 #navbar {
-  background: #333;
-  overflow: auto;
+   background: #333;
+   overflow: auto;
 }
 
 #navbar a {
-  color: #fff;
-  text-decoration: none;
+   color: #fff;
+   text-decoration: none;
 }
 
 #navbar h1 {
-  float: left;
-  padding: 20px 0;
+   float: left;
+   padding: 20px 0;
 }
 
 #navbar ul {
-  list-style: none;
-  float: right;
+   list-style: none;
+   float: right;
 }
 
 #navbar ul li {
-  float: left;
+   float: left;
 }
 
 #navbar ul li a {
-  padding: 20px;
-  display: block;
-  text-align: center;
+   padding: 20px;
+   display: block;
+   text-align: center;
 }
 
 #navbar ul li a:hover,
 #navbar ul li a.current {
-  background: rgba(255, 255, 255, 0.1);
-  color: #f7c08a;
+   background: rgba(255, 255, 255, 0.1);
+   color: #f7c08a;
 }
 
 /* ---------- */
 /* ABOUT INFO */
 /* ---------- */
 #about-info .info-right {
-  float: right;
-  width: 50%;
-  min-height: 100%;
+   float: right;
+   width: 50%;
+   min-height: 100%;
 }
 
 #about-info .info-right img {
-  display: block;
-  margin: auto;
-  width: 70%;
-  border-radius: 24px;
+   display: block;
+   margin: auto;
+   width: 70%;
+   border-radius: 24px;
 }
 
 #about-info .info-left {
-  float: left;
-  width: 50%;
-  min-height: 100%;
+   float: left;
+   width: 50%;
+   min-height: 100%;
 }
 
 #about-info .info-left p {
-  line-height: 1.8rem;
-  margin-bottom: 1.2rem;
+   line-height: 1.8rem;
+   margin-bottom: 1.2rem;
 }
 
 /* -------- */
 /* TESTIMONIAL */
 /* -------- */
 #testimonials {
-  height: 100%;
-  background: url(../img/test-bg.jpg) no-repeat center center/cover;
-  padding-top: 100px;
+   height: 100%;
+   background: url(../img/test-bg.jpg) no-repeat center center/cover;
+   padding-top: 100px;
 }
 
 #testimonials .testimonial {
-  padding: 20px;
-  margin-bottom: 40px;
-  border-radius: 12px;
-  opacity: 0.9;
+   padding: 20px;
+   margin-bottom: 40px;
+   border-radius: 12px;
+   opacity: 0.9;
 }
 
 #testimonials .testimonial img {
-  width: 60px;
-  float: left;
-  margin-right: 20px;
-  border-radius: 50%;
+   width: 60px;
+   float: left;
+   margin-right: 20px;
+   border-radius: 50%;
 }
 
 #testimonials h2 {
-  color: #fff;
-  text-align: center;
-  padding-bottom: 40px;
+   color: #fff;
+   text-align: center;
+   padding-bottom: 40px;
 }
 
 /* -------- */
@@ -98,8 +98,8 @@
 /* -------- */
 
 #main-footer {
-  text-align: center;
-  background-color: #444;
-  color: #fff;
-  padding: 20px;
+   text-align: center;
+   background-color: #444;
+   color: #fff;
+   padding: 20px;
 }

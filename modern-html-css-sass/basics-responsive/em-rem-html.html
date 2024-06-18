@@ -1,80 +1,76 @@
 <!DOCTYPE html>
 <html lang="en">
+   <head>
+      <meta charset="UTF-8" />
+      <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+      <meta name="viewport" content="width=device-width, initial-scale=1.0" />
 
-<head>
-  <meta charset="UTF-8" />
-  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+      <meta name="description" content="Using Em and Rem" />
+      <meta name="keywords" content="em, rem, responsive" />
 
-  <meta name="description" content="Using Em and Rem" />
-  <meta name="keywords" content="em, rem, responsive" />
+      <title>Em and Rem</title>
+      <style>
+         #box-1 {
+            font-size: 20px;
+         }
 
-  <title>Em and Rem</title>
-  <style>
-    #box-1 {
-      font-size: 20px;
-    }
+         #box-1 p {
+            font-size: 1.5em;
+            /* 1.5 * 20 (root font size the element) = 30px */
+            padding: 1em;
+         }
 
-    #box-1 p {
-      font-size: 1.5em;
-      /* 1.5 * 20 (root font size the element) = 30px */
-      padding: 1em;
-    }
+         #box-1 ul {
+            font-size: 1.2em;
+            /* 1.2 * 20 = 24px */
+            list-style: none;
+         }
 
-    #box-1 ul {
-      font-size: 1.2em;
-      /* 1.2 * 20 = 24px */
-      list-style: none;
-    }
+         #box-2 h3 {
+            font-size: 2rem;
+            /* 2 * 16 (default root font size) = 32px */
+         }
 
-    #box-2 h3 {
-      font-size: 2rem;
-      /* 2 * 16 (default root font size) = 32px */
-    }
+         #box-2 p {
+            font-size: 1.5rem;
+            /* 1.5 * 16 = 24px */
+            line-height: 1.7rem;
+            /* 1.7 * 16 = 27.2px */
+         }
+      </style>
+   </head>
 
-    #box-2 p {
-      font-size: 1.5rem;
-      /* 1.5 * 16 = 24px */
-      line-height: 1.7rem;
-      /* 1.7 * 16 = 27.2px */
-    }
-  </style>
-</head>
+   <body>
+      <div id="box-1">
+         <h3>Box One</h3>
+         <p>
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Quis, animi nemo! Voluptatibus
+            numquam asperiores sint, maxime, maiores deserunt at quisquam aspernatur assumenda nobis
+            nostrum officiis dignissimos fugit aut tenetur quae.
+         </p>
+         <ul>
+            <li>1</li>
+            <li>2</li>
+            <li>
+               <ul>
+                  <li>1</li>
+                  <li>2</li>
+                  <li>3</li>
+               </ul>
+            </li>
+            <li>4</li>
+         </ul>
+      </div>
 
-<body>
-  <div id="box-1">
-    <h3>Box One</h3>
-    <p>
-      Lorem ipsum dolor sit amet consectetur adipisicing elit. Quis, animi
-      nemo! Voluptatibus numquam asperiores sint, maxime, maiores deserunt at
-      quisquam aspernatur assumenda nobis nostrum officiis dignissimos fugit
-      aut tenetur quae.
-    </p>
-    <ul>
-      <li>1</li>
-      <li>2</li>
-      <li>
-        <ul>
-          <li>1</li>
-          <li>2</li>
-          <li>3</li>
-        </ul>
-      </li>
-      <li>4</li>
-    </ul>
-  </div>
+      <hr />
 
-  <hr />
-
-  <div id="box-2">
-    <h3>Box Two</h3>
-    <p>
-      Lorem ipsum dolor sit amet consectetur adipisicing elit. Quis, animi
-      nemo! Voluptatibus numquam asperiores sint, maxime, maiores deserunt at
-      quisquam aspernatur assumenda nobis nostrum officiis dignissimos fugit
-      aut tenetur quae.
-    </p>
-  </div>
-</body>
-
+      <div id="box-2">
+         <h3>Box Two</h3>
+         <p>
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Quis, animi nemo! Voluptatibus
+            numquam asperiores sint, maxime, maiores deserunt at quisquam aspernatur assumenda nobis
+            nostrum officiis dignissimos fugit aut tenetur quae.
+         </p>
+      </div>
+   </body>
 </html>

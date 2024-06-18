@@ -1,77 +1,77 @@
 * {
-  margin: 0;
-  padding: 0;
-  box-sizing: border-box;
+   margin: 0;
+   padding: 0;
+   box-sizing: border-box;
 }
 
 body {
-  background-color: #f4f4f4;
-  color: #333;
-  font-family: Arial, Helvetica, sans-serif;
-  line-height: 1.5;
+   background-color: #f4f4f4;
+   color: #333;
+   font-family: Arial, Helvetica, sans-serif;
+   line-height: 1.5;
 }
 
 header {
-  background-color: #333;
-  color: #fff;
-  padding: 1rem;
+   background-color: #333;
+   color: #fff;
+   padding: 1rem;
 }
 header h1 {
-  text-align: center;
+   text-align: center;
 }
 
 .section {
-  padding: 2rem 2rem 0 2rem;
+   padding: 2rem 2rem 0 2rem;
 }
 .section h3 {
-  font-size: 2rem;
+   font-size: 2rem;
 }
 .section-a {
-  background-color: blue;
-  color: #fff;
+   background-color: blue;
+   color: #fff;
 }
 .section-b {
-  background-color: skyblue;
-  color: #fff;
+   background-color: skyblue;
+   color: #fff;
 }
 
 a {
-  color: #333;
+   color: #333;
 }
 a:hover {
-  color: coral;
+   color: coral;
 }
 
 .btn-dark,
 .btn-light {
-  display: inline-block;
-  padding: 0.7rem 2rem;
-  border: none;
-  cursor: pointer;
-  text-decoration: none;
-  margin-top: 1rem;
-  transition: all 0.6s ease-in-out;
+   display: inline-block;
+   padding: 0.7rem 2rem;
+   border: none;
+   cursor: pointer;
+   text-decoration: none;
+   margin-top: 1rem;
+   transition: all 0.6s ease-in-out;
 }
 
 .btn-light {
-  background-color: #f4f4f4;
-  color: #333;
+   background-color: #f4f4f4;
+   color: #333;
 }
 .btn-light:hover {
-  -webkit-transform: rotate(30deg);
-  -ms-transform: rotate(30deg);
-  transform: rotate(30deg);
-  background-color: #dbdbdb;
+   -webkit-transform: rotate(30deg);
+   -ms-transform: rotate(30deg);
+   transform: rotate(30deg);
+   background-color: #dbdbdb;
 }
 .btn-dark {
-  background-color: #333;
-  color: #fff;
+   background-color: #333;
+   color: #fff;
 }
 .btn-dark:hover {
-  -webkit-transform: rotate(-30deg);
-  -ms-transform: rotate(-30deg);
-  transform: rotate(-30deg);
-  background-color: #1a1a1a;
+   -webkit-transform: rotate(-30deg);
+   -ms-transform: rotate(-30deg);
+   transform: rotate(-30deg);
+   background-color: #1a1a1a;
 }
 
 /*# sourceMappingURL=main.css.map */

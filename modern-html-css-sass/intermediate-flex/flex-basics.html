@@ -1,67 +1,66 @@
 <!DOCTYPE html>
 <html lang="en">
+   <head>
+      <meta charset="UTF-8" />
+      <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+      <meta name="viewport" content="width=device-width, initial-scale=1.0" />
 
-<head>
-  <meta charset="UTF-8" />
-  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+      <meta name="description" content="Learn Flexbox Basic" />
+      <meta name="keywords" content="flexbox, flex, css, layout" />
+      <link rel="stylesheet" href="#" />
 
-  <meta name="description" content="Learn Flexbox Basic" />
-  <meta name="keywords" content="flexbox, flex, css, layout" />
-  <link rel="stylesheet" href="#" />
+      <title>Flex Basic</title>
 
-  <title>Flex Basic</title>
+      <style>
+         * {
+            padding: 0;
+            margin: 0;
+            box-sizing: border-box;
+         }
 
-  <style>
-    * {
-      padding: 0;
-      margin: 0;
-      box-sizing: border-box;
-    }
+         body {
+            font-family: Arial, Helvetica, sans-serif;
+         }
 
-    body {
-      font-family: Arial, Helvetica, sans-serif;
-    }
+         .flex-container {
+            display: flex;
+            background-color: #f4f4f4;
+            height: 60vh;
+            /* default : row */
+            /* flex-direction: column; */
 
-    .flex-container {
-      display: flex;
-      background-color: #f4f4f4;
-      height: 60vh;
-      /* default : row */
-      /* flex-direction: column; */
+            /* wrap when screen small */
+            /* flex-wrap: wrap; */
 
-      /* wrap when screen small */
-      /* flex-wrap: wrap; */
+            /* Along vertical */
+            align-items: center;
 
-      /* Along vertical */
-      align-items: center;
+            /* Along horizontal */
+            justify-content: space-evenly;
+         }
 
-      /* Along horizontal */
-      justify-content: space-evenly;
-    }
+         .item {
+            background-color: #f4f4f4;
+            border: 2px solid #ccc;
+            margin: 10px;
+            padding: 10px;
+            text-align: center;
+            border-radius: 10px;
 
-    .item {
-      background-color: #f4f4f4;
-      border: 2px solid #ccc;
-      margin: 10px;
-      padding: 10px;
-      text-align: center;
-      border-radius: 10px;
+            /* 20% */
+            /* flex-grow: 1; */
+            /* flex: 1; */
+         }
 
-      /* 20% */
-      /* flex-grow: 1; */
-      /* flex: 1; */
-    }
+         .item-1 {
+            align-self: flex-start;
+         }
 
-    .item-1 {
-      align-self: flex-start;
-    }
+         .item-3 {
+            align-self: flex-end;
+         }
 
-    .item-3 {
-      align-self: flex-end;
-    }
-
-    /* .item-1 {
+         /* .item-1 {
         not change the size
         flex-shrink: 0;
         sets the initial width
@@ -79,23 +78,22 @@
         50%
         flex-grow: 2; 
       } */
-  </style>
+      </style>
 
-  <script src="" defer></script>
-</head>
+      <script src="" defer></script>
+   </head>
 
-<body>
-  <div class="flex-container">
-    <div class="item item-1">
-      <h3>item 1</h3>
-    </div>
-    <div class="item item-2">
-      <h3>item 2</h3>
-    </div>
-    <div class="item item-3">
-      <h3>item 3</h3>
-    </div>
-  </div>
-</body>
-
+   <body>
+      <div class="flex-container">
+         <div class="item item-1">
+            <h3>item 1</h3>
+         </div>
+         <div class="item item-2">
+            <h3>item 2</h3>
+         </div>
+         <div class="item item-3">
+            <h3>item 3</h3>
+         </div>
+      </div>
+   </body>
 </html>
