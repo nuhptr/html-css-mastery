@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+   <head>
+      <meta charset="UTF-8" />
+      <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+      <title>Datalist | Latest</title>
+   </head>
+
+   <body>
+      <h1>Datalist | Latest Update</h1>
+
+      <!-- General List Select -->
+      <label for="favLanguage">Favorite Programming Language</label>
+      <input list="languages" id="favLanguage" name="favLanguage" />
+      <!-- For shadow dropdown -->
+      <datalist id="languages">
+         <option value="Javascript"></option>
+         <option value="PHP"></option>
+         <option value="Python"></option>
+         <option value="Ruby"></option>
+         <option value="C"></option>
+         <option value="C++"></option>
+      </datalist>
+
+      <br />
+      <br />
+
+      <!-- Time Datalist -->
+      <input list="popularHours" type="time" />
+      <datalist id="popularHours">
+         <option value="10.00"></option>
+         <option value="11.00"></option>
+         <option value="12.00"></option>
+      </datalist>
+
+      <!-- Range Datalist -->
+      <label for="tick">Tip Amount</label>
+      <input list="tickmarks" type="range" name="tick" id="tick" min="0" max="100" />
+      <datalist id="tickmarks">
+         <option value="0"></option>
+         <option value="10"></option>
+         <option value="20"></option>
+         <option value="30"></option>
+         <option value="40"></option>
+         <option value="50"></option>
+         <option value="60"></option>
+         <option value="70"></option>
+         <option value="80"></option>
+         <option value="90"></option>
+         <option value="100"></option>
+      </datalist>
+
+      <!-- Color datalist -->
+      <label for="colors">Pick Color</label>
+      <input type="color" name="color" id="colors" list="redColors" />
+      <datalist id="redColors">
+         <option value="#800000"></option>
+         <option value="#8B0000"></option>
+         <option value="#A52a2a"></option>
+         <option value="#DC143C"></option>
+      </datalist>
+   </body>
+</html>

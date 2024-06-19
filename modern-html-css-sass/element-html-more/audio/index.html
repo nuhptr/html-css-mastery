@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+   <head>
+      <meta charset="UTF-8" />
+      <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+      <title>Audio Element | Latest Update</title>
+   </head>
+
+   <body>
+      <h1>Audio Element</h1>
+
+      <audio controls>
+         <source src="./nobody.mp4" type="audio/mp4" />
+         <!-- Fallback -->
+         <p>Your browser does not support the audio element</p>
+      </audio>
+
+      <!-- Autoplay -->
+      <!-- <audio src="./nobody.mp4" autoplay controls></audio> -->
+
+      <!-- Loop -->
+      <audio src="./nobody.mp4" controls loop></audio>
+
+      <!-- fig and figcaption -->
+      <figure>
+         <figcaption>Listen to the song:</figcaption>
+         <audio src="./nobody.mp4" controls></audio>
+         <a href="./nobody.mp4">Download Audio</a>
+      </figure>
+   </body>
+</html>
