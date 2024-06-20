@@ -12,30 +12,32 @@
       <style>
          #box-1 {
             font-size: 20px;
+
+            p {
+               font-size: 1.5em;
+               /* 1.5 * 20 (root font size the element) = 30px */
+               padding: 1em;
+            }
+
+            ul {
+               font-size: 1.2em;
+               /* 1.2 * 20 = 24px */
+               list-style: none;
+            }
          }
 
-         #box-1 p {
-            font-size: 1.5em;
-            /* 1.5 * 20 (root font size the element) = 30px */
-            padding: 1em;
-         }
+         #box-2 {
+            h3 {
+               font-size: 2rem;
+               /* 2 * 16 (default root font size) = 32px */
+            }
 
-         #box-1 ul {
-            font-size: 1.2em;
-            /* 1.2 * 20 = 24px */
-            list-style: none;
-         }
-
-         #box-2 h3 {
-            font-size: 2rem;
-            /* 2 * 16 (default root font size) = 32px */
-         }
-
-         #box-2 p {
-            font-size: 1.5rem;
-            /* 1.5 * 16 = 24px */
-            line-height: 1.7rem;
-            /* 1.7 * 16 = 27.2px */
+            p {
+               font-size: 1.5rem;
+               /* 1.5 * 16 = 24px */
+               line-height: 1.7rem;
+               /* 1.7 * 16 = 27.2px */
+            }
          }
       </style>
    </head>

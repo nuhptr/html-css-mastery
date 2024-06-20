@@ -17,65 +17,65 @@
             color: white;
             text-align: center;
             padding-top: 100px;
+
+            /* Smarthphone */
+            @media screen and (max-width: 500px) {
+               body {
+                  background-color: red;
+               }
+
+               #smartphone h1 {
+                  display: block;
+               }
+            }
+
+            /* Tablet */
+            @media (min-width: 501px) and (max-width: 768px) {
+               body {
+                  background-color: blue;
+               }
+
+               #tablet h1 {
+                  display: block;
+               }
+            }
+
+            /* Normal */
+            @media (min-width: 769px) and (max-width: 1200px) {
+               body {
+                  background-color: green;
+               }
+
+               #normal h1 {
+                  display: block;
+               }
+            }
+
+            /* Widescreen */
+            @media (min-width: 1201px) {
+               body {
+                  background-color: black;
+               }
+
+               #widescreen h1 {
+                  display: block;
+               }
+            }
+
+            /* Landscape */
+            @media (max-height: 500px) {
+               body {
+                  background-color: orange;
+               }
+
+               #landscape h1 {
+                  display: block;
+               }
+            }
          }
 
          h1 {
             display: none;
-         }
-
-         /* Smarthphone */
-         @media only screen and (max-width: 500px) {
-            body {
-               background-color: red;
-            }
-
-            #smartphone h1 {
-               display: block;
-            }
-         }
-
-         /* Tablet */
-         @media (min-width: 501px) and (max-width: 768px) {
-            body {
-               background-color: blue;
-            }
-
-            #tablet h1 {
-               display: block;
-            }
-         }
-
-         /* Normal */
-         @media (min-width: 769px) and (max-width: 1200px) {
-            body {
-               background-color: green;
-            }
-
-            #normal h1 {
-               display: block;
-            }
-         }
-
-         /* Widescreen */
-         @media (min-width: 1201px) {
-            body {
-               background-color: black;
-            }
-
-            #widescreen h1 {
-               display: block;
-            }
-         }
-
-         /* Landscape */
-         @media (max-height: 500px) {
-            body {
-               background-color: orange;
-            }
-
-            #landscape h1 {
-               display: block;
-            }
          }
       </style>
 

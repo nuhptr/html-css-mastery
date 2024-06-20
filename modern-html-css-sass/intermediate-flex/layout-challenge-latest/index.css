@@ -34,6 +34,17 @@ p {
    background-color: coral;
    padding: 40px 20px;
    color: white;
+
+   @media screen and (max-width: 768px) {
+      padding: 20px;
+   }
+
+   h1 {
+      @media screen and (max-width: 768px) {
+         font-size: 1.5rem;
+         text-align: center;
+      }
+   }
 }
 
 .main-menu {
@@ -45,6 +56,24 @@ p {
    a {
       font-size: 20px;
    }
+
+   /* Responsive */
+   @media screen and (max-width: 768px) {
+      flex-direction: column;
+      text-align: center;
+   }
+
+   li {
+      /* Responsive */
+      @media screen and (max-width: 768px) {
+         border-bottom: 1px solid #ccc;
+         padding-bottom: 7px;
+      }
+
+      &.last-list-item {
+         border: none;
+      }
+   }
 }
 
 .main {
@@ -52,12 +81,22 @@ p {
    gap: 70px;
    padding: 40px 20px;
 
+   /* Responsive */
+   @media screen and (max-width: 768px) {
+      flex-direction: column-reverse;
+   }
+
    section {
       flex: 1;
    }
 
    aside {
       width: 300px;
+
+      /* Responsive */
+      @media screen and (max-width: 768px) {
+         width: 100%;
+      }
 
       h3 {
          padding: 10px;

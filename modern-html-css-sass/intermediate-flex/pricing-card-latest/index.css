@@ -31,6 +31,12 @@ li {
    border-radius: 10px;
    margin: 40px auto;
    padding: 70px 60px;
+
+   /* Responsive */
+   @media screen and (max-width: 768px) {
+      margin: 2rem;
+      padding: 40px 30px;
+   }
 }
 
 .pricing {
@@ -38,6 +44,11 @@ li {
    justify-content: space-around;
    gap: 30px;
    flex-wrap: wrap;
+
+   /* Responsive */
+   @media screen and (max-width: 768px) {
+      flex-direction: column;
+   }
 }
 
 .card {
