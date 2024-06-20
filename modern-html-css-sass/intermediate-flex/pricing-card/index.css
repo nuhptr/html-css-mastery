@@ -1,0 +1,142 @@
+* {
+   margin: 0;
+   padding: 0;
+   box-sizing: border-box;
+}
+
+body {
+   font-family: "Montserrat", sans-serif;
+   font-weight: 600;
+   line-height: 160%;
+   background-color: #27264b;
+   color: #433f63;
+}
+
+a {
+   text-decoration: none;
+   color: #007bff;
+}
+
+ul {
+   list-style-type: none;
+}
+
+li {
+   margin-bottom: 10px;
+}
+
+.container {
+   max-width: 1100px;
+   background-color: #f8fafe;
+   border-radius: 10px;
+   margin: 40px auto;
+   padding: 70px 60px;
+}
+
+.pricing {
+   display: flex;
+   justify-content: space-around;
+   gap: 30px;
+   flex-wrap: wrap;
+}
+
+.card {
+   flex: 1;
+   margin-bottom: 20px;
+   padding: 20px;
+   border-radius: 8px;
+   background-color: #fff;
+   text-align: center;
+   box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+
+   h2 {
+      font-size: 18px;
+      text-transform: uppercase;
+      margin-bottom: 10px;
+      padding: 15px;
+      color: #333;
+      background: #f8fafe;
+   }
+
+   .main-text {
+      font-size: 14px;
+      margin-bottom: 50px;
+   }
+
+   ul {
+      text-align: left;
+      margin-top: 50px;
+
+      li i {
+         color: #98ca9e;
+         margin-right: 10px;
+      }
+   }
+
+   .price {
+      font-size: 45px;
+      font-weight: 700;
+      margin-bottom: 20px;
+
+      sup {
+         font-size: 18px;
+         position: relative;
+         left: -5px;
+      }
+
+      span {
+         font-size: 18px;
+         margin-left: 5px;
+      }
+   }
+
+   &.card-pro {
+      h2 {
+         background: linear-gradient(
+            90deg,
+            rgba(194, 227, 255, 1) 13%,
+            rgba(180, 118, 254, 1) 100%
+         );
+         color: white;
+      }
+   }
+
+   &.card-enterprise {
+      h2 {
+         background: linear-gradient(
+            90deg,
+            rgba(255, 177, 194, 1) 13%,
+            rgba(255, 203, 111, 1) 100%
+         );
+         color: white;
+      }
+   }
+}
+
+.btn {
+   width: 100%;
+   display: block;
+   padding: 16px;
+   background-color: white;
+   font-size: 16px;
+   color: #27264b;
+   border: 1px solid #27264b;
+   border-radius: 6px;
+   cursor: pointer;
+
+   &:hover {
+      background-color: #27264b;
+      color: white;
+   }
+}
+
+.btn-primary,
+.btn:hover {
+   background-color: #27264b;
+   color: #fff;
+
+   &:hover {
+      background-color: #fff;
+      color: #27264b;
+   }
+}
