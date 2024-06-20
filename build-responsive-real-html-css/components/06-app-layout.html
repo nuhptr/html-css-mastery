@@ -1,0 +1,124 @@
+<!DOCTYPE html>
+<html lang="en">
+   <head>
+      <meta charset="UTF-8" />
+      <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+      <meta name="description" content="App Layout Component" />
+      <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+      <title>App Layout Component</title>
+
+      <style>
+         * {
+            padding: 0;
+            margin: 0;
+            box-sizing: border-box;
+         }
+
+         body {
+            font-family: sans-serif;
+            color: #343a40;
+            font-size: 24px;
+            height: 100vh;
+            text-align: center;
+            font-weight: bold;
+
+            display: grid;
+            grid-template-columns: 80px 400px 1fr 250px;
+            grid-template-rows: 80px 1fr;
+         }
+
+         nav,
+         section,
+         main,
+         aside {
+            padding-top: 24px;
+         }
+
+         nav {
+            background-color: #343a40;
+            grid-row: 1 / 3;
+            color: #fff;
+         }
+
+         menu {
+            background-color: #7048e8;
+            color: #fff;
+            grid-column: 2 / 5;
+
+            display: flex;
+            align-items: center;
+            gap: 12px;
+            padding: 0 40px;
+         }
+
+         button {
+            display: inline-block;
+            font-size: 16px;
+            font-weight: bold;
+            background-color: #543dc4;
+            border: none;
+            cursor: pointer;
+            color: #fff;
+            padding: 8px 12px;
+
+            &:last-child {
+               background-color: #d6336c;
+               margin-left: auto;
+            }
+         }
+
+         section {
+            background-color: #e9ecef;
+            padding: 40px;
+
+            display: flex;
+            flex-direction: column;
+            gap: 40px;
+
+            overflow: scroll;
+         }
+
+         .email {
+            background-color: #adb5bd;
+            height: 96px;
+
+            display: flex;
+            flex-shrink: 0;
+            align-items: center;
+            justify-content: center;
+         }
+
+         aside {
+            background-color: #e9ecef;
+         }
+      </style>
+
+      <script src="#" defer></script>
+   </head>
+
+   <body>
+      <!-- HTML -->
+      <nav>Nav</nav>
+      <menu>
+         <button>New</button>
+         <button>Reply</button>
+         <button>Forward</button>
+         <button>Mark</button>
+         <button>Trash</button>
+      </menu>
+      <section>
+         <div class="email">Email 1</div>
+         <div class="email">Email 2</div>
+         <div class="email">Email 3</div>
+         <div class="email">Email 4</div>
+         <div class="email">Email 5</div>
+         <div class="email">Email 6</div>
+         <div class="email">Email 7</div>
+         <div class="email">Email 8</div>
+         <div class="email">Email 9</div>
+         <div class="email">Email 10</div>
+      </section>
+      <main>Email</main>
+      <aside>Additional Info</aside>
+   </body>
+</html>

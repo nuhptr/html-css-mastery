@@ -1,0 +1,204 @@
+* {
+   margin: 0;
+   padding: 0;
+}
+
+/* TODO: Page Section */
+body {
+   color: #14213d;
+   font-family: sans-serif;
+}
+
+h1,
+h2,
+h3,
+w h4,
+p,
+li {
+   font-family: sans-serif;
+}
+
+h1,
+h2,
+h3 {
+   color: #14213d;
+}
+
+h1 {
+   font-size: 30px;
+   text-transform: uppercase;
+   font-style: italic;
+}
+
+h2 {
+   font-size: 26px;
+   margin-bottom: 30px;
+}
+
+h3 {
+   font-size: 22px;
+   font-family: sans-serif;
+   margin: 40px 0 15px 0;
+}
+
+h4 {
+   font-size: 20px;
+   text-transform: uppercase;
+   text-align: center;
+}
+
+p {
+   font-size: 16px;
+   line-height: 1.5;
+   margin-bottom: 15px;
+}
+
+ul,
+ol {
+   margin-left: 50px;
+}
+
+li {
+   font-size: 16px;
+   line-height: 1.8;
+}
+
+article {
+   margin: 0 0 40px 0px;
+}
+
+.end-article {
+   margin: 30px 0 0 0;
+}
+
+/* TODO Using id selector : bad practice */
+#author {
+   font-size: 14px;
+   font-style: italic;
+}
+
+#copyright {
+   font-size: 14px;
+   margin: 0 0 30px 0;
+}
+
+.container {
+   width: 1200px;
+   /* centering page */
+   margin: 0 auto;
+}
+
+/* TODO Using class selector : best practice */
+.related-author {
+   font-size: 14px;
+   font-weight: bold;
+}
+
+.related {
+   list-style: none;
+}
+
+.header-section {
+   background-color: #ededed;
+   padding: 40px 30px;
+   margin: 0 0 40px 0;
+}
+
+.header-section h1 {
+   margin-bottom: 10px;
+}
+
+.navItems {
+   color: #7b75f4;
+   margin: 0 0.75rem 0 0;
+}
+
+.post-header {
+   margin-bottom: 40px;
+}
+
+.post-image {
+   width: 100%;
+   height: auto;
+}
+
+aside {
+   background-color: #ededed;
+   border-top: 5px solid #7b75f4;
+   border-bottom: 5px solid #7b75f4;
+   padding: 50px 0;
+   margin: 0 0 30px 0;
+   width: 500px;
+}
+
+/* TODO Pseudoclass */
+li {
+   &:first-child {
+      font-weight: bold;
+   }
+
+   &:last-child {
+      font-style: italic;
+   }
+
+   /* bisa gunakan odd or even */
+   &:nth-child(2) {
+      /* color: red; */
+   }
+}
+
+/* TODO Styling links */
+a {
+   &:link {
+      color: black;
+      text-decoration: none;
+   }
+
+   &:visited {
+      color: grey;
+   }
+
+   &:hover {
+      color: green;
+      font-weight: bold;
+      text-decoration: underline green;
+   }
+
+   &:active {
+      background-color: black;
+      font-style: italic;
+   }
+}
+
+/* TODO: Pseudo-elements */
+h1 {
+   &::first-letter {
+      font-style: normal;
+      margin-right: 5px;
+   }
+}
+
+h2 {
+   position: relative;
+
+   &::first-letter {
+      font-size: 4rem;
+   }
+
+   &::after {
+      content: "Top";
+      display: inline-block;
+      position: absolute;
+      right: 0;
+      top: 0;
+
+      padding: 5px 10px;
+      font-size: 16px;
+      font-weight: bold;
+      background-color: #ffe70e;
+   }
+}
+
+p::first-line {
+   /* color: red; */
+}
