@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en">
+   <head>
+      <meta charset="UTF-8" />
+      <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+      <title>Position Property | Latest Update</title>
+
+      <style>
+         body {
+            font-family: Arial, Helvetica, sans-serif;
+         }
+
+         .box {
+            width: 50%;
+            height: 200px;
+            margin: 10px;
+            border: 1px solid black;
+            background: lightblue;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+
+            &.box-1 {
+               position: static;
+               left: 30px;
+            }
+
+            &.box-2 {
+               position: relative;
+               top: 30px;
+               left: 30px;
+            }
+
+            &.box-3 {
+               position: fixed;
+               top: 0;
+               right: 0;
+            }
+
+            &.box-4 {
+               position: sticky;
+               top: 30px;
+               left: 30px;
+            }
+
+            &.box-5 {
+               position: relative;
+
+               .box-6 {
+                  position: absolute;
+                  top: 30px;
+                  left: 30px;
+               }
+            }
+         }
+      </style>
+   </head>
+   <body>
+      <h1>Position Property | Latest Update</h1>
+
+      <section class="container">
+         <!-- .box.box-$*5 -->
+         <div class="box box-1">Static</div>
+         <div class="box box-2">Relative</div>
+         <div class="box box-3">Fixed</div>
+         <div class="box box-4">Sticky</div>
+         <div class="box box-5">
+            Box 5
+            <div class="box box-6">Absolute</div>
+         </div>
+      </section>
+   </body>
+</html>
