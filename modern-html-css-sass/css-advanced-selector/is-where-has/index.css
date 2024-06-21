@@ -1,0 +1,48 @@
+* {
+   margin: 0;
+   padding: 0;
+   box-sizing: border-box;
+}
+
+body {
+   font-family: "Arial", sans-serif;
+}
+
+/* 
+   The :is() pseudo-class function takes a selector list as its argument and selects any element that can be selected by one of the selectors in that list.
+
+   The :where() pseudo-class function takes a selector list as its argument and selects any element that can be selected by one of the selectors in that list.
+
+   The :has() pseudo-class function selects an element if any of the selectors passed as parameters are valid for the element.
+*/
+
+.container {
+   max-width: 600px;
+   margin: 30px auto;
+
+   &:has(h1 span) {
+      color: red;
+   }
+}
+
+h1:has(+ h2) {
+   color: blue;
+}
+
+a:is(:hover, :focus) {
+   background-color: pink;
+}
+
+/* .container h1,
+  .container h2,
+  .container p {
+    color: red;
+  }
+  
+  .container :is(h1, h2, p) {
+    color: blue;
+  }
+  
+  .container :where(h1, h2, p) {
+    color: green;
+  } */
