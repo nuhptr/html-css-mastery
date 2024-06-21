@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="en">
+   <head>
+      <meta charset="UTF-8" />
+      <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+      <title>Aria Attribute | Latest Update</title>
+   </head>
+
+   <body>
+      <!-- Aria Label -->
+      <a href="#menu" aria-label="Open Menu">
+         <svg viewBox="0 0 100 80" width="40">
+            <rect width="100" height="20"></rect>
+            <rect y="30" width="100" height="20"></rect>
+            <rect y="60" width="100" height="20"></rect>
+         </svg>
+      </a>
+
+      <!-- Aria Hidden -->
+      <p aria-hidden="true">This content is hidden.</p>
+      <p aria-hidden="false">This content is not hidden.</p>
+
+      <!-- Divide -->
+      <header role="banner">
+         <h1>My Website</h1>
+         <p>Welcome to my website</p>
+      </header>
+
+      <main role="main">
+         <h2>My Website</h2>
+      </main>
+
+      <!-- Button -->
+      <a href="/" role="button">Click Me</a>
+
+      <img
+         src="https://picsum.photos/200/300"
+         alt="Random Image"
+         tabindex="0"
+         aria-label="Button to open modal"
+      />
+
+      <!-- ListBox & Option (Aria labeledby) -->
+      <h2>Available Fruits</h2>
+      <ul role="listbox" aria-labelledby="Available Fruits">
+         <li role="option">Apple</li>
+         <li role="option">Grapes</li>
+         <li role="option">Orange</li>
+         <li role="option">Cherry</li>
+      </ul>
+
+      <!-- Region -->
+      <div role="region">
+         <h2>FAQ</h2>
+         <p>This is the FAQ region</p>
+      </div>
+
+      <div role="alert">
+         <p>Post Saved</p>
+      </div>
+
+      <script>
+         document.querySelector("img").addEventListener("click", function () {
+            alert("Image Clicked")
+         })
+      </script>
+   </body>
+</html>

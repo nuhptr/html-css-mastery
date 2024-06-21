@@ -1,0 +1,35 @@
+/* Contact */
+.contact {
+   padding: 3rem 0 4rem;
+
+   p {
+      text-align: center;
+      margin-bottom: 2rem;
+   }
+
+   input,
+   textarea {
+      border: none;
+      border-bottom: 1px #333 solid;
+      width: 100%;
+      font-family: inherit;
+      font-size: inherit;
+      padding-bottom: 1rem;
+
+      &:focus {
+         outline: none;
+      }
+   }
+
+   textarea {
+      height: 200px;
+   }
+
+   button {
+      width: 100%;
+   }
+}
+
+.form-group {
+   margin: 2rem 0;
+}

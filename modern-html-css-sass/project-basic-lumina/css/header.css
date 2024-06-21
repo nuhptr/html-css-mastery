@@ -1,0 +1,37 @@
+/* Header */
+.header {
+   margin: 1.5rem auto;
+
+   .logo {
+      width: 130px;
+   }
+
+   .header-flex {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+
+      @media (max-width: 768px) {
+         flex-direction: column;
+         gap: 1.5rem;
+      }
+   }
+
+   .main-menu {
+      display: flex;
+      gap: 1rem;
+
+      a {
+         padding: 0.5rem 1rem;
+
+         &:hover {
+            background: var(--primary-color);
+         }
+      }
+   }
+}
+
+.current {
+   background: var(--primary-color);
+   font-weight: 600;
+}

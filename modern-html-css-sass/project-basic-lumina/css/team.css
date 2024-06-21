@@ -1,0 +1,18 @@
+/* Team */
+.team {
+   padding: 3rem 0 4rem;
+}
+
+.team-flex {
+   display: flex;
+   gap: 1.4rem;
+
+   @media (max-width: 768px) {
+      flex-direction: column;
+      gap: 1.5rem;
+   }
+}
+
+.team img {
+   border-radius: 10px;
+}

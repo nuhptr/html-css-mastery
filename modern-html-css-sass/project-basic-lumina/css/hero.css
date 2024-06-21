@@ -1,0 +1,22 @@
+/* Hero */
+.hero {
+   height: 500px;
+   display: flex;
+   justify-content: center;
+   align-items: center;
+   text-align: center;
+
+   @media (max-width: 768px) {
+      height: 300px;
+
+      h2 {
+         font-size: 1.8rem;
+      }
+   }
+
+   h2 {
+      font-size: 3rem;
+      line-height: 1.4;
+      font-weight: normal;
+   }
+}
