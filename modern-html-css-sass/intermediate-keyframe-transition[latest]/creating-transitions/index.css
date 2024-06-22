@@ -1,0 +1,30 @@
+body {
+   font-family: Arial, Helvetica, sans-serif;
+}
+
+.container {
+   max-width: 600px;
+   margin: 30px auto;
+}
+
+.btn {
+   width: 200px;
+   padding: 10px 20px;
+   background-color: #007bff;
+   color: white;
+   border: none;
+   border-radius: 5px;
+   cursor: pointer;
+
+   /* transition: background-color 0.8s ease-in-out; */
+   transition: all 0.8s ease-in-out;
+
+   &:hover {
+      width: 400px;
+      border-radius: 50px;
+      opacity: 0.5;
+      box-shadow: 2px 2px 5px rgba(0, 0, 0, 0.5);
+      background-color: #0056b3;
+      color: yellow;
+   }
+}

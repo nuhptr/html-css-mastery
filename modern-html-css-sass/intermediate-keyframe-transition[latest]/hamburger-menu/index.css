@@ -1,0 +1,102 @@
+* {
+   margin: 0;
+   padding: 0;
+   box-sizing: border-box;
+}
+
+body {
+   font-family: "Poppins", sans-serif;
+   overflow-x: hidden;
+}
+
+a {
+   text-decoration: none;
+   color: #333;
+}
+
+li {
+   list-style: none;
+}
+
+img {
+   max-width: 100%;
+}
+
+.navbar {
+   background: lightblue;
+   padding: 1rem 2rem;
+   height: 80px;
+
+   .container {
+      max-width: 1200px;
+      margin: 0 auto;
+      padding: 0 2rem;
+   }
+
+   .navbar-flex {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+   }
+
+   .logo {
+      width: 50px;
+   }
+
+   .main-menu-list {
+      display: flex;
+      gap: 1.5rem;
+      align-items: center;
+   }
+
+   a {
+      &:hover {
+         color: blue;
+      }
+   }
+
+   /* Mobile Menu */
+   .mobile-menu {
+      display: none;
+
+      @media (max-width: 768px) {
+         display: block;
+      }
+   }
+
+   .main-menu {
+      @media (max-width: 768px) {
+         display: none;
+      }
+   }
+
+   .mobile-menu-items {
+      position: absolute;
+      top: 80px;
+      bottom: 0;
+      left: 0;
+      width: 100%;
+      background: rgba(154, 192, 204, 0.5);
+      text-align: center;
+      transition: transform 0.3s ease;
+      transform: translateX(100%);
+
+      &.active {
+         transform: translateX(0);
+      }
+   }
+
+   .mobile-menu-list {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      height: 100%;
+      padding-top: 300px;
+      gap: 2rem;
+      font-size: 1.2rem;
+   }
+
+   .mobile-menu-toggle {
+      cursor: pointer;
+   }
+}
