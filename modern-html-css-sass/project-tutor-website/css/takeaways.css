@@ -1,0 +1,20 @@
+/* Takeaways */
+.takeaways-cards {
+   display: grid;
+   grid-template-columns: repeat(3, 1fr);
+   gap: 2rem;
+   padding: 1.5rem 0;
+
+   @media (max-width: 992px) {
+      grid-template-columns: 1fr;
+   }
+
+   .card {
+      flex-direction: row;
+      text-align: left;
+
+      i {
+         margin-right: 1rem;
+      }
+   }
+}

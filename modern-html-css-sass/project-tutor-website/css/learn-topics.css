@@ -1,0 +1,32 @@
+/* Learn Topics */
+.topics {
+   display: grid;
+   grid-template-columns: repeat(4, 1fr);
+   gap: 2rem;
+
+   @media (max-width: 576px) {
+      grid-template-columns: 1fr;
+   }
+
+   @media (max-width: 992px) {
+      grid-template-columns: repeat(2, 1fr);
+   }
+
+   @media (max-width: 1200px) {
+      grid-template-columns: repeat(3, 1fr);
+   }
+
+   img {
+      transition: transform 0.3s;
+
+      &:hover {
+         transform: scale(1.1);
+      }
+   }
+
+   h3 {
+      font-size: 1rem;
+      font-weight: 700;
+      margin: 0.5rem 0;
+   }
+}

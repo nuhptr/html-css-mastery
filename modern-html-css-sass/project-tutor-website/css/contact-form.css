@@ -1,0 +1,27 @@
+/* Contact Form */
+.contact-form p {
+   margin-bottom: 3rem;
+}
+
+.contact-form input,
+.contact-form textarea {
+   display: block;
+   font-family: inherit;
+   font-size: medium;
+   width: 100%;
+   margin: 1.5rem 0;
+   border: 1px solid #ccc;
+   padding: 1.2rem 1rem;
+}
+
+.contact-form textarea {
+   height: 200px;
+}
+
+.contact-form .btn {
+   display: block;
+   width: 100%;
+   font-size: inherit;
+   font-family: inherit;
+   margin: 0 auto;
+}

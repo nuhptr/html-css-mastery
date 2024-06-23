@@ -1,0 +1,43 @@
+/* Social */
+.social {
+   background: var(--dark-color);
+   color: #fff;
+   padding: 6rem 2rem;
+   text-align: center;
+   font-size: 1.7rem;
+   margin-bottom: 0;
+
+   p {
+      margin-bottom: 2rem;
+
+      @media (max-width: 768px) {
+         font-size: 1.2rem;
+      }
+   }
+
+   .social-icons {
+      display: flex;
+      justify-content: center;
+      gap: 1rem;
+      margin-top: 2rem;
+
+      @media (max-width: 768px) {
+         flex-wrap: wrap;
+      }
+   }
+
+   i {
+      @media (max-width: 768px) {
+         font-size: 2rem;
+      }
+   }
+}
+
+.social a,
+.footer a {
+   color: #fff;
+
+   &:hover {
+      color: var(--secondary-color);
+   }
+}

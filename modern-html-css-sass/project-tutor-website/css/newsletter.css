@@ -1,0 +1,43 @@
+/* Newsletter */
+.newsletter {
+   text-align: center;
+   margin: 0 2rem;
+
+   h2 {
+      font-size: 2rem;
+      font-weight: 700;
+
+      @media (max-width: 576px) {
+         font-size: 1.5rem;
+      }
+   }
+
+   p {
+      max-width: 600px;
+
+      @media (max-width: 576px) {
+         display: none;
+      }
+   }
+}
+
+.newsletter-flex {
+   display: flex;
+   flex-direction: column;
+   justify-content: center;
+   align-items: center;
+   gap: 1rem;
+
+   border: 1px solid #eee;
+   padding: 4rem 2rem;
+   background: var(--light-color);
+}
+
+.newsletter input[type="email"] {
+   max-width: 400px;
+   width: 100%;
+   margin: 1rem 0;
+   padding: 1rem 2rem;
+   border: 1px solid #ccc;
+   border-radius: 32px;
+}

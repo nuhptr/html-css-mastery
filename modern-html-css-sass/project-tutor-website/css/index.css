@@ -1,0 +1,67 @@
+@import "./utilities.css";
+@import "./card.css";
+@import "./section.css";
+
+@import "./navbar.css";
+@import "./mobile-menu.css";
+@import "./hero.css";
+@import "./learn-topics.css";
+@import "./chapter.css";
+@import "./summary.css";
+@import "./info-section.css";
+@import "./takeaways.css";
+@import "./details.css";
+@import "./stats.css";
+@import "./location.css";
+@import "./newsletter.css";
+@import "./contact-form.css";
+@import "./social.css";
+@import "./footer.css";
+
+*,
+*::before,
+*::after {
+   margin: 0;
+   padding: 0;
+   box-sizing: border-box;
+}
+
+:root {
+   --primary-color: #fc5d66;
+   --secondary-color: #ffc05a;
+   --light-color: #f9fafb;
+   --dark-color: #272d35;
+}
+
+html,
+body {
+   font-family: "Open Sans", sans-serif;
+   line-height: 160%;
+   scroll-behavior: smooth;
+}
+
+a {
+   text-decoration: none;
+}
+
+ul {
+   list-style: none;
+}
+
+img {
+   max-width: 100%;
+}
+
+/* Inner Header */
+.inner-header {
+   background: var(--primary-color);
+   color: #fff;
+   height: 250px;
+   padding-top: 8rem;
+}
+
+.inner-header h1 {
+   font-size: 2.5rem;
+   font-weight: 700;
+   margin-bottom: 1rem;
+}

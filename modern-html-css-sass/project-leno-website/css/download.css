@@ -1,0 +1,62 @@
+/* Download */
+.download {
+   background: #000 url("../images/download-background.jpg") center center/cover no-repeat;
+   padding: 11.5rem 2rem 8rem;
+
+   @media (max-width: 992px) {
+      padding-top: 10rem;
+      text-align: center;
+   }
+
+   .download__container {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      gap: 2rem;
+
+      @media (max-width: 992px) {
+         flex-direction: column-reverse;
+      }
+
+      .download__content {
+         max-width: 500px;
+
+         .download__description {
+            font-size: 1.5rem;
+            margin-top: 1.5rem;
+            line-height: 1.6;
+            text-align: center;
+         }
+
+         .download__buttons {
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            gap: 1.5rem;
+            margin-top: 2rem;
+
+            @media (max-width: 992px) {
+               flex-direction: column;
+            }
+
+            .download__button {
+               padding: 1rem 2rem;
+
+               @media (max-width: 992px) {
+                  width: 100%;
+                  padding: 0.7rem;
+               }
+
+               i {
+                  margin-right: 0.5rem;
+               }
+            }
+         }
+      }
+
+      .download__image img {
+         width: 100%;
+         max-width: 500px;
+      }
+   }
+}

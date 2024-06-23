@@ -1,0 +1,38 @@
+/* Utility Classes */
+.container {
+   max-width: 1200px;
+   margin: 0 auto;
+   padding: 0 2rem;
+}
+
+.container-sm {
+   max-width: 1000px;
+   margin: 0 auto;
+   padding: 0 2rem;
+}
+
+.btn {
+   display: inline-block;
+   padding: 1.3rem 2.3rem;
+   border: 1px solid var(--secondary-color);
+   border-radius: 32px;
+   background: var(--secondary-color);
+   color: var(--dark-color);
+   cursor: pointer;
+   transition: all 0.2s;
+
+   &:hover {
+      background: var(--primary-color);
+      color: #fff;
+      border-color: #fff;
+   }
+}
+
+/* Text Classes */
+.text-primary {
+   color: var(--primary-color);
+}
+
+.text-secondary {
+   color: var(--secondary-color);
+}

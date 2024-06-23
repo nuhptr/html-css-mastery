@@ -1,0 +1,30 @@
+.section {
+   margin: 4rem 0;
+}
+
+/* Section Header */
+.section-header {
+   max-width: 750px;
+   margin: 0 auto;
+   text-align: center;
+   margin-bottom: 3rem;
+
+   h2 {
+      font-size: 2rem;
+      font-weight: 700;
+      color: var(--dark-color);
+      margin-bottom: 0.5rem;
+   }
+
+   p {
+      font-size: 1.3rem;
+      color: var(--dark-color);
+   }
+}
+
+.heading-border {
+   width: 64px;
+   height: 4px;
+   margin: 0 auto 2rem;
+   background: var(--primary-color);
+}

@@ -1,0 +1,104 @@
+/* Preview */
+.preview {
+   background: url("../images/video-background.jpg") center center/cover no-repeat;
+}
+
+.preview__container {
+   padding: 6rem 2rem;
+   text-align: center;
+
+   .preview__title {
+      font-size: 2.3rem;
+      margin-bottom: 2rem;
+      text-transform: uppercase;
+   }
+
+   .preview__description {
+      max-width: 600px;
+      margin: 1rem auto 4rem;
+   }
+
+   .preview__video-wrapper {
+      position: relative;
+
+      img {
+         width: 100%;
+         max-width: 900px;
+         border-radius: 10px;
+      }
+   }
+}
+
+/* Play Button Container */
+.preview__video-play-button {
+   position: absolute;
+   top: 48%;
+   left: 50%;
+   transform: translateX(-50%) translateY(-50%);
+   z-index: 10;
+   display: block;
+   box-sizing: content-box;
+   width: 2rem;
+   height: 2.75rem;
+   border-radius: 50%;
+   cursor: pointer;
+   padding: 1.25rem 1.25rem 1.25rem 1.75rem;
+
+   /* Play Button Circle */
+   &::after {
+      content: "";
+      position: absolute;
+      top: 50%;
+      left: 50%;
+      transform: translateX(-50%) translateY(-50%);
+      z-index: 1;
+      background: #00c9db;
+      height: 4.375rem;
+      width: 4.375rem;
+      border-radius: 50%;
+      display: block;
+      transition: all 200ms;
+   }
+
+   /* Play Button Triangle */
+   span {
+      position: relative;
+      display: block;
+      z-index: 3;
+      top: 0.375rem;
+      left: 0.25rem;
+      width: 0;
+      height: 0;
+      border-left: 1.625rem solid #fff;
+      border-top: 1rem solid transparent;
+      border-bottom: 1rem solid transparent;
+   }
+
+   /* Play Button Animation */
+   &::before {
+      content: "";
+      position: absolute;
+      top: 50%;
+      left: 50%;
+      transform: translateX(-50%) translateY(-50%);
+      z-index: 0;
+      display: block;
+      width: 4.75rem;
+      height: 4.75rem;
+      background: #00c9db;
+      border-radius: 50%;
+      animation: pulse-border 1500ms ease-out infinite;
+   }
+}
+
+@keyframes pulse-border {
+   0% {
+      transform: translateX(-50%) translateY(-50%) scale(1);
+      opacity: 1;
+   }
+
+   100% {
+      transform: translateX(-50%) translateY(-50%) scale(1.5);
+      opacity: 0;
+   }
+}

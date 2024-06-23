@@ -1,0 +1,62 @@
+/* Stats */
+.stats {
+   background: #000 url("../images/stats-background.jpg") center center/cover no-repeat;
+   color: #fff;
+
+   img {
+      width: 100%;
+      max-width: 500px;
+   }
+
+   .btn {
+      display: block;
+      margin: 0 auto;
+      text-align: center;
+      width: 200px;
+   }
+
+   .stats-numbers {
+      display: flex;
+      gap: 2rem;
+      margin: 2rem 0;
+      text-align: center;
+      justify-content: center;
+      align-items: center;
+      flex-wrap: wrap;
+
+      @media (max-width: 576px) {
+         flex-direction: column;
+      }
+
+      h3 {
+         font-size: 3rem;
+         font-weight: 700;
+      }
+
+      p {
+         font-size: 0.8rem;
+      }
+   }
+
+   .stats-text {
+      font-size: 1.2rem;
+      margin-bottom: 2rem;
+      text-align: center;
+   }
+}
+
+.stats-flex {
+   display: flex;
+   justify-content: space-between;
+   align-items: center;
+   padding: 4rem 2rem;
+
+   @media (max-width: 992px) {
+      flex-direction: column;
+      gap: 2rem;
+   }
+}
+
+.stats-content {
+   max-width: 500px;
+}

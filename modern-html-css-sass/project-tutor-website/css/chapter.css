@@ -1,0 +1,22 @@
+/* Chapter Cards */
+.chapter-cards {
+   display: grid;
+   grid-template-columns: repeat(3, 1fr);
+   gap: 2rem;
+   padding: 1rem 0 4rem;
+
+   @media (max-width: 992px) {
+      grid-template-columns: 1fr;
+   }
+
+   img {
+      width: 130px;
+      margin-top: 1rem;
+   }
+
+   h3 {
+      font-size: 1.25rem;
+      font-weight: 700;
+      margin: 1rem 0;
+   }
+}
