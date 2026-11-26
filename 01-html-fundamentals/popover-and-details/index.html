@@ -1,0 +1,70 @@
+<!doctype html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <title>Popover API and Details</title>
+        <link rel="stylesheet" href="../../styles/lesson-base.css" />
+        <link rel="stylesheet" href="style.css" />
+    </head>
+
+    <body>
+        <nav class="lesson-topbar" aria-label="Breadcrumb">
+            <a class="lesson-topbar__back" href="../../index.html">&larr; Back to Curriculum Hub</a>
+            <span class="lesson-topbar__module">01 &middot; HTML Fundamentals</span>
+        </nav>
+
+        <main class="lesson-shell">
+            <h1>Native Popover API &amp; Disclosures</h1>
+
+            <section class="lesson-card">
+                <h2>Declarative Popovers</h2>
+                <div class="popover-actions">
+                    <button type="button" popovertarget="popover-1">Open Popover 1</button>
+                    <button type="button" popovertarget="popover-2">Open Popover 2</button>
+                </div>
+
+                <div popover="auto" id="popover-1" class="popover-box">
+                    This is a light-dismiss native popover with zero JavaScript.
+                </div>
+
+                <div popover="auto" id="popover-2" class="popover-box">
+                    <h3>Structured Popover</h3>
+                    <p>Click outside or press Escape to dismiss.</p>
+                </div>
+            </section>
+
+            <section class="lesson-card">
+                <h2>
+                    Native
+                    <code>&lt;details&gt;</code>
+                    Disclosures
+                </h2>
+                <div class="details-stack">
+                    <details name="lesson-faq">
+                        <summary>
+                            What is the
+                            <code>&lt;details&gt;</code>
+                            element?
+                        </summary>
+                        <p>
+                            It provides a native disclosure widget that reveals additional content
+                            when toggled open.
+                        </p>
+                    </details>
+
+                    <details name="lesson-faq">
+                        <summary>How does exclusive accordion grouping work?</summary>
+                        <p>
+                            Giving sibling
+                            <code>&lt;details&gt;</code>
+                            elements the same
+                            <code>name</code>
+                            attribute ensures only one stays open at a time.
+                        </p>
+                    </details>
+                </div>
+            </section>
+        </main>
+    </body>
+</html>

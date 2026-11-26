@@ -1,0 +1,61 @@
+<!doctype html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <title>:is(), :where(), and :has() Selectors</title>
+        <link rel="stylesheet" href="../../styles/lesson-base.css" />
+        <link rel="stylesheet" href="style.css" />
+    </head>
+
+    <body>
+        <nav class="lesson-topbar" aria-label="Breadcrumb">
+            <a class="lesson-topbar__back" href="../../index.html">&larr; Back to Curriculum Hub</a>
+            <span class="lesson-topbar__module">04 &middot; Selectors &amp; Modern CSS</span>
+        </nav>
+
+        <main class="lesson-shell">
+            <h1>
+                Modern Relational Selectors:
+                <code>:is()</code>
+                ,
+                <code>:where()</code>
+                ,
+                <code>:has()</code>
+            </h1>
+
+            <section class="lesson-card card-demo">
+                <h2>
+                    Parent Followed by Subtitle (
+                    <code>h2:has(+ h3)</code>
+                    )
+                </h2>
+                <h3>Matched adjacent subtitle</h3>
+                <p>
+                    Hover or focus this
+                    <a href="#demo-1">interactive link</a>
+                    styled with
+                    <code>a:is(:hover, :focus-visible)</code>
+                    .
+                </p>
+            </section>
+
+            <section class="lesson-card card-demo">
+                <h2>
+                    <span>Highlighted</span>
+                    Card via
+                    <code>:has(h2 span)</code>
+                </h2>
+                <p>
+                    Because this card contains a
+                    <code>&lt;span&gt;</code>
+                    inside its heading,
+                    <code>.card-demo:has(h2 span)</code>
+                    styles the entire parent card automatically —
+                    <a href="#demo-2">zero JavaScript needed</a>
+                    .
+                </p>
+            </section>
+        </main>
+    </body>
+</html>

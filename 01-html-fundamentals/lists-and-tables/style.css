@@ -1,0 +1,17 @@
+.lists-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(180px, 1fr));
+    gap: 1.25rem;
+}
+
+.table-wrap {
+    overflow-x: auto;
+}
+
+.col-first {
+    background-color: rgb(251 146 60 / 0.14);
+}
+
+.col-last {
+    background-color: rgb(74 222 128 / 0.14);
+}

@@ -1,0 +1,60 @@
+<!doctype html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <title>Checkboxes and Radio Buttons</title>
+        <link rel="stylesheet" href="../../styles/lesson-base.css" />
+        <link rel="stylesheet" href="style.css" />
+    </head>
+
+    <body>
+        <nav class="lesson-topbar" aria-label="Breadcrumb">
+            <a class="lesson-topbar__back" href="../../index.html">&larr; Back to Curriculum Hub</a>
+            <span class="lesson-topbar__module">02 &middot; HTML Forms</span>
+        </nav>
+
+        <main class="lesson-shell">
+            <h1>Checkboxes &amp; Radio Buttons</h1>
+
+            <form action="#" class="choice-form">
+                <fieldset class="choice-group">
+                    <legend>Favorite Programming Languages</legend>
+                    <div class="choice-option">
+                        <input type="checkbox" name="languages" id="html" value="html" disabled />
+                        <label for="html">HTML (disabled)</label>
+                    </div>
+                    <div class="choice-option">
+                        <input type="checkbox" name="languages" id="css" value="css" checked />
+                        <label for="css">CSS</label>
+                    </div>
+                    <div class="choice-option">
+                        <input
+                            type="checkbox"
+                            name="languages"
+                            id="javascript"
+                            value="javascript"
+                            checked />
+                        <label for="javascript">JavaScript</label>
+                    </div>
+                </fieldset>
+
+                <fieldset class="choice-group">
+                    <legend>Product Size</legend>
+                    <div class="choice-option">
+                        <input type="radio" name="size" id="small" value="small" />
+                        <label for="small">Small</label>
+                    </div>
+                    <div class="choice-option">
+                        <input type="radio" name="size" id="medium" value="medium" checked />
+                        <label for="medium">Medium</label>
+                    </div>
+                    <div class="choice-option">
+                        <input type="radio" name="size" id="large" value="large" />
+                        <label for="large">Large</label>
+                    </div>
+                </fieldset>
+            </form>
+        </main>
+    </body>
+</html>

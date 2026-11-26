@@ -1,0 +1,59 @@
+<!doctype html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <title>Links and Images</title>
+        <link rel="stylesheet" href="../../styles/lesson-base.css" />
+        <link rel="stylesheet" href="style.css" />
+    </head>
+
+    <body>
+        <nav class="lesson-topbar" aria-label="Breadcrumb">
+            <a class="lesson-topbar__back" href="../../index.html">&larr; Back to Curriculum Hub</a>
+            <span class="lesson-topbar__module">01 &middot; HTML Fundamentals</span>
+        </nav>
+
+        <main class="lesson-shell">
+            <h1>Links &amp; Images</h1>
+
+            <section class="lesson-card">
+                <h2>Navigation Links</h2>
+                <ul class="link-list">
+                    <li><a href="https://google.com">Google (Same Tab)</a></li>
+                    <li>
+                        <a href="https://google.com" target="_blank" rel="noopener noreferrer">
+                            Google (New Tab)
+                        </a>
+                    </li>
+                    <li><a href="../typography/index.html">Internal Lesson: Typography</a></li>
+                    <li><a href="blog.html">Sample Subpage: Blog</a></li>
+                </ul>
+            </section>
+
+            <section class="lesson-card">
+                <h2>Local &amp; Remote Images</h2>
+                <div class="media-grid">
+                    <figure>
+                        <img
+                            src="./img_images1.jpg"
+                            alt="UI and UX design workspace with sketches"
+                            width="400"
+                            height="267" />
+                        <figcaption>Local image asset</figcaption>
+                    </figure>
+
+                    <figure>
+                        <img
+                            src="https://images.unsplash.com/photo-1657299171054-e679f630a776?auto=format&fit=crop&w=800&q=80"
+                            alt="Freshly plated meal on a table"
+                            width="400"
+                            height="267"
+                            loading="lazy" />
+                        <figcaption>Remote image with lazy loading</figcaption>
+                    </figure>
+                </div>
+            </section>
+        </main>
+    </body>
+</html>

@@ -1,0 +1,88 @@
+<!doctype html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <title>ARIA Attributes &amp; Accessible Landmarks</title>
+        <link rel="stylesheet" href="../../styles/lesson-base.css" />
+        <link rel="stylesheet" href="style.css" />
+        <script src="script.js" defer></script>
+    </head>
+
+    <body>
+        <nav class="lesson-topbar" aria-label="Breadcrumb">
+            <a class="lesson-topbar__back" href="../../index.html">&larr; Back to Curriculum Hub</a>
+            <span class="lesson-topbar__module">09 &middot; Web Accessibility</span>
+        </nav>
+
+        <div class="lesson-shell">
+            <header>
+                <h1>ARIA Attributes &amp; Semantic Alternatives</h1>
+                <button type="button" class="icon-btn" aria-label="Open menu">
+                    <svg viewBox="0 0 100 80" width="24" height="20" aria-hidden="true">
+                        <rect width="100" height="16" rx="8" fill="currentColor"></rect>
+                        <rect y="32" width="100" height="16" rx="8" fill="currentColor"></rect>
+                        <rect y="64" width="100" height="16" rx="8" fill="currentColor"></rect>
+                    </svg>
+                </button>
+            </header>
+
+            <main>
+                <section class="lesson-card">
+                    <h2>
+                        <code>aria-hidden</code>
+                        for Decorative vs. Readable Text
+                    </h2>
+                    <p aria-hidden="true">Decorative text hidden from assistive technologies.</p>
+                    <p>Visible and readable text announced normally by screen readers.</p>
+                </section>
+
+                <section class="lesson-card">
+                    <h2>
+                        Native
+                        <code>&lt;button&gt;</code>
+                        &amp; Accessible Image Trigger
+                    </h2>
+                    <div class="action-row">
+                        <button type="button" id="demo-action">Trigger Action</button>
+                        <button
+                            type="button"
+                            id="img-trigger"
+                            class="img-btn"
+                            aria-label="Open sample preview">
+                            <img
+                                src="https://picsum.photos/id/1015/200/120"
+                                alt=""
+                                width="200"
+                                height="120" />
+                        </button>
+                    </div>
+                    <p id="status-live" role="status" aria-live="polite" class="status-msg"></p>
+                </section>
+
+                <section class="lesson-card" aria-labelledby="fruits-heading">
+                    <h2 id="fruits-heading">
+                        Available Fruits (
+                        <code>aria-labelledby</code>
+                        )
+                    </h2>
+                    <ul role="listbox" aria-labelledby="fruits-heading" class="fruit-list">
+                        <li role="option" aria-selected="false">Apple</li>
+                        <li role="option" aria-selected="false">Grapes</li>
+                        <li role="option" aria-selected="false">Orange</li>
+                        <li role="option" aria-selected="false">Cherry</li>
+                    </ul>
+                </section>
+
+                <section class="lesson-card" aria-labelledby="faq-heading">
+                    <h2 id="faq-heading">FAQ Region</h2>
+                    <p>
+                        Using
+                        <code>aria-labelledby</code>
+                        references a visible heading ID directly.
+                    </p>
+                </section>
+            </main>
+        </div>
+    </body>
+</html>

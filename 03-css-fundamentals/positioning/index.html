@@ -1,0 +1,39 @@
+<!doctype html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <title>CSS Positioning: Static, Relative, Absolute, Fixed, Sticky</title>
+        <link rel="stylesheet" href="../../styles/lesson-base.css" />
+        <link rel="stylesheet" href="style.css" />
+    </head>
+
+    <body>
+        <nav class="lesson-topbar" aria-label="Breadcrumb">
+            <a class="lesson-topbar__back" href="../../index.html">&larr; Back to Curriculum Hub</a>
+            <span class="lesson-topbar__module">03 &middot; CSS Fundamentals</span>
+        </nav>
+
+        <main class="lesson-shell position-page">
+            <h1>CSS Positioning</h1>
+            <p>
+                Scroll down to observe
+                <code>sticky</code>
+                and
+                <code>fixed</code>
+                behavior.
+            </p>
+
+            <div class="box box-static">Static (default)</div>
+            <div class="box box-relative">Relative (+24px offset, z-index: 1)</div>
+
+            <section class="stage" aria-label="Absolute positioning container">
+                <div class="stage-box stage-top-left">Absolute (top/left)</div>
+                <div class="stage-box stage-bottom-right">Absolute (bottom/right)</div>
+            </section>
+
+            <div class="box box-sticky">Sticky (sticks at top: 1rem)</div>
+            <div class="box box-fixed">Fixed (bottom-right)</div>
+        </main>
+    </body>
+</html>

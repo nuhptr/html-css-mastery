@@ -1,0 +1,131 @@
+*,
+*::before,
+*::after {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: "Poppins", system-ui, sans-serif;
+    line-height: 1.65;
+    background: #f8fafc;
+    color: #0f172a;
+}
+
+ul {
+    list-style-type: none;
+}
+
+a {
+    text-decoration: none;
+    color: #334155;
+
+    &:hover {
+        color: #ea580c;
+    }
+}
+
+.header {
+    background: linear-gradient(135deg, #f97316, #ea580c);
+    padding: 2rem 1.5rem;
+    color: #ffffff;
+}
+
+.header-inner {
+    max-inline-size: 68rem;
+    margin-inline: auto;
+    display: grid;
+    gap: 0.5rem;
+}
+
+.back-link {
+    color: rgb(255 255 255 / 0.9);
+    font-size: 0.875rem;
+    font-weight: 600;
+    justify-self: start;
+
+    &:hover {
+        color: #ffffff;
+        text-decoration: underline;
+    }
+}
+
+.main-menu {
+    display: flex;
+    gap: 1.25rem;
+    padding: 1rem 1.5rem;
+    background-color: #e2e8f0;
+    justify-content: flex-start;
+
+    a {
+        font-size: 1.05rem;
+        font-weight: 600;
+    }
+
+    @media screen and (max-width: 768px) {
+        flex-direction: column;
+        text-align: center;
+        gap: 0.65rem;
+
+        li:not(.last-list-item) {
+            border-block-end: 1px solid #cbd5e1;
+            padding-block-end: 0.5rem;
+        }
+    }
+}
+
+.main {
+    max-inline-size: 68rem;
+    margin-inline: auto;
+    display: flex;
+    gap: 3rem;
+    padding: 2.5rem 1.5rem;
+
+    @media screen and (max-width: 768px) {
+        flex-direction: column-reverse;
+        gap: 2rem;
+    }
+
+    section {
+        flex: 1;
+        background: #ffffff;
+        padding: 1.75rem;
+        border-radius: 0.75rem;
+        border: 1px solid #e2e8f0;
+
+        h2 {
+            margin-block-end: 1rem;
+        }
+
+        p + p {
+            margin-block-start: 1rem;
+        }
+    }
+
+    aside {
+        inline-size: 300px;
+
+        @media screen and (max-width: 768px) {
+            inline-size: 100%;
+        }
+
+        h3 {
+            padding: 0.85rem 1rem;
+            background-color: #f97316;
+            color: #ffffff;
+            border-radius: 0.5rem 0.5rem 0 0;
+        }
+
+        li {
+            padding: 0.75rem 1rem;
+            background-color: #ffffff;
+            border: 1px solid #e2e8f0;
+            border-block-start: none;
+        }
+
+        li:last-child {
+            border-radius: 0 0 0.5rem 0.5rem;
+        }
+    }
+}

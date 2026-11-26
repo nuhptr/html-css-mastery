@@ -1,0 +1,40 @@
+<!doctype html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <title>Flexbox Visual Order</title>
+        <link rel="stylesheet" href="../../styles/lesson-base.css" />
+        <link rel="stylesheet" href="style.css" />
+    </head>
+
+    <body>
+        <nav class="lesson-topbar" aria-label="Breadcrumb">
+            <a class="lesson-topbar__back" href="../../index.html">&larr; Back to Curriculum Hub</a>
+            <span class="lesson-topbar__module">05 &middot; CSS Flexbox</span>
+        </nav>
+
+        <main class="lesson-shell">
+            <h1>
+                Flexbox
+                <code>order</code>
+                Property
+            </h1>
+            <p>
+                Notice how DOM items 1–6 render visually in reordered positions via CSS
+                <code>order</code>
+                (note: avoid reordering interactive controls so keyboard tab order matches visual
+                flow).
+            </p>
+
+            <div class="flex-container">
+                <div class="flex-item item-1">DOM 1 (order: 2)</div>
+                <div class="flex-item item-2">DOM 2 (order: 1)</div>
+                <div class="flex-item item-3">DOM 3 (order: 3)</div>
+                <div class="flex-item item-4">DOM 4 (order: 6)</div>
+                <div class="flex-item item-5">DOM 5 (order: 5)</div>
+                <div class="flex-item item-6">DOM 6 (order: 4)</div>
+            </div>
+        </main>
+    </body>
+</html>

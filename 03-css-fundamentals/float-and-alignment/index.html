@@ -1,0 +1,61 @@
+<!doctype html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <title>Float, Clearfix, and Text Alignment</title>
+        <link rel="stylesheet" href="../../styles/lesson-base.css" />
+        <link rel="stylesheet" href="style.css" />
+    </head>
+
+    <body>
+        <nav class="lesson-topbar" aria-label="Breadcrumb">
+            <a class="lesson-topbar__back" href="../../index.html">&larr; Back to Curriculum Hub</a>
+            <span class="lesson-topbar__module">03 &middot; CSS Fundamentals</span>
+        </nav>
+
+        <main class="lesson-shell">
+            <h1>Float, Clearfix &amp; Alignment</h1>
+
+            <article class="box" id="box-1">
+                <h2>Full-Width Header Block</h2>
+                <p>
+                    Before Flexbox and CSS Grid, multi-column layouts relied on
+                    <code>float</code>
+                    and clearfix pseudo-elements (
+                    <code>::after { clear: both; }</code>
+                    ).
+                </p>
+            </article>
+
+            <div class="clearfix">
+                <article class="box" id="box-2">
+                    <h2>Main Column (65% Float Left)</h2>
+                    <p>
+                        Lorem ipsum dolor sit amet, consectetur adipisicing elit. Rem ipsa pariatur
+                        laudantium officiis eveniet porro repellendus aspernatur facere culpa non
+                        eligendi assumenda, voluptatum quas architecto inventore.
+                    </p>
+                </article>
+
+                <aside class="box" id="box-3">
+                    <h2>Sidebar (32% Float Right)</h2>
+                    <p>
+                        Floated side-by-side using legacy float widths and a parent
+                        <code>.clearfix</code>
+                        container.
+                    </p>
+                </aside>
+            </div>
+
+            <article class="box" id="box-4">
+                <h2>Cleared Footer Block</h2>
+                <p>
+                    Because the parent row uses
+                    <code>.clearfix::after</code>
+                    , this block sits cleanly below both floated columns without overlapping.
+                </p>
+            </article>
+        </main>
+    </body>
+</html>

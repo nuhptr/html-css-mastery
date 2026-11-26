@@ -1,0 +1,35 @@
+<!doctype html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <title>Progress and Meter Elements</title>
+        <link rel="stylesheet" href="../../styles/lesson-base.css" />
+        <link rel="stylesheet" href="style.css" />
+    </head>
+
+    <body>
+        <nav class="lesson-topbar" aria-label="Breadcrumb">
+            <a class="lesson-topbar__back" href="../../index.html">&larr; Back to Curriculum Hub</a>
+            <span class="lesson-topbar__module">01 &middot; HTML Fundamentals</span>
+        </nav>
+
+        <main class="lesson-shell">
+            <h1>Native Progress &amp; Meter</h1>
+
+            <section class="lesson-card meter-grid">
+                <div class="meter-row">
+                    <label for="file">File Upload Progress (50%):</label>
+                    <progress id="file" max="100" value="50">50%</progress>
+                </div>
+
+                <div class="meter-row">
+                    <label for="fuel">Fuel Gauge (Optimal range 80):</label>
+                    <meter id="fuel" min="0" max="100" low="30" high="90" optimum="80" value="50">
+                        50 / 100
+                    </meter>
+                </div>
+            </section>
+        </main>
+    </body>
+</html>

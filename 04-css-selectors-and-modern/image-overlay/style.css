@@ -1,0 +1,94 @@
+*,
+*::before,
+*::after {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: "Poppins", system-ui, sans-serif;
+}
+
+.top-nav {
+    position: fixed;
+    inset-block-start: 0;
+    inset-inline: 0;
+    z-index: 10;
+    padding: 1rem 1.5rem;
+}
+
+.top-nav a {
+    color: #f8fafc;
+    text-decoration: none;
+    font-size: 0.875rem;
+    font-weight: 600;
+    background: rgb(15 23 42 / 0.55);
+    padding: 0.45rem 0.85rem;
+    border-radius: 999px;
+    backdrop-filter: blur(8px);
+}
+
+.hero {
+    position: relative;
+    min-block-size: 100dvh;
+    background: url("./img_background.jpg") center / cover no-repeat;
+    color: #ffffff;
+    text-align: center;
+    display: grid;
+    place-items: center;
+    isolation: isolate;
+
+    &::before {
+        content: "";
+        position: absolute;
+        inset: 0;
+        background: linear-gradient(rgb(15 23 42 / 0.45), rgb(15 23 42 / 0.72));
+        z-index: -1;
+    }
+}
+
+.container {
+    max-inline-size: 56rem;
+    padding-inline: 1.5rem;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 1.5rem;
+}
+
+.hero h1 {
+    font-size: clamp(2rem, 4.5vw, 3.35rem);
+    line-height: 1.2;
+}
+
+.hero p {
+    font-size: clamp(1rem, 2vw, 1.35rem);
+    max-inline-size: 46ch;
+    color: #e2e8f0;
+}
+
+.btn {
+    display: inline-block;
+    text-decoration: none;
+    color: #ffffff;
+    padding: 0.9rem 2rem;
+    background: rgb(15 23 42 / 0.75);
+    border: 1.5px solid #ffffff;
+    border-radius: 0.5rem;
+    font-weight: 600;
+    transition:
+        background-color 0.2s ease,
+        transform 0.15s ease;
+
+    &:hover {
+        background: #ffffff;
+        color: #0f172a;
+    }
+}
+
+.btn:focus-visible,
+.top-nav a:focus-visible {
+    outline: 2px solid #ffffff;
+    outline-offset: 3px;
+}

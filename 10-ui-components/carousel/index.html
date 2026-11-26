@@ -1,0 +1,100 @@
+<!doctype html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <title>Testimonial Carousel Component</title>
+        <link rel="preconnect" href="https://fonts.googleapis.com" />
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+        <link
+            href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap"
+            rel="stylesheet" />
+        <link rel="stylesheet" href="style.css" />
+        <script src="script.js" defer></script>
+    </head>
+
+    <body>
+        <nav class="back-bar" aria-label="Breadcrumb">
+            <a href="../../index.html">&larr; Back to Curriculum Hub</a>
+        </nav>
+
+        <main class="page">
+            <section
+                class="carousel"
+                aria-label="Customer testimonials"
+                aria-roledescription="carousel">
+                <img
+                    src="img_maria.jpg"
+                    alt="Portrait of Maria Christie"
+                    class="testimonial-avatar"
+                    width="200"
+                    height="200" />
+
+                <blockquote class="testimonial" aria-live="polite">
+                    <p class="testimonial-text" id="quote-text">
+                        "Our design studio switched every workstation to these ergonomic chairs last
+                        spring. Back fatigue disappeared within two weeks and the craftsmanship
+                        still looks brand new."
+                    </p>
+                    <footer>
+                        <p class="testimonial-author" id="quote-author">Maria Christie</p>
+                        <p class="testimonial-job" id="quote-role">
+                            Senior Product Manager at EDP Commercial
+                        </p>
+                    </footer>
+                </blockquote>
+
+                <button
+                    type="button"
+                    class="btn btn--left"
+                    id="prev-slide"
+                    aria-label="Previous testimonial">
+                    <svg
+                        xmlns="http://www.w3.org/2000/svg"
+                        fill="none"
+                        viewBox="0 0 24 24"
+                        stroke-width="2.2"
+                        stroke="currentColor"
+                        class="btn-icon"
+                        aria-hidden="true">
+                        <path
+                            stroke-linecap="round"
+                            stroke-linejoin="round"
+                            d="M15.75 19.5L8.25 12l7.5-7.5" />
+                    </svg>
+                </button>
+
+                <button
+                    type="button"
+                    class="btn btn--right"
+                    id="next-slide"
+                    aria-label="Next testimonial">
+                    <svg
+                        xmlns="http://www.w3.org/2000/svg"
+                        fill="none"
+                        viewBox="0 0 24 24"
+                        stroke-width="2.2"
+                        stroke="currentColor"
+                        class="btn-icon"
+                        aria-hidden="true">
+                        <path
+                            stroke-linecap="round"
+                            stroke-linejoin="round"
+                            d="M8.25 4.5l7.5 7.5-7.5 7.5" />
+                    </svg>
+                </button>
+
+                <div class="dots" role="tablist" aria-label="Choose testimonial slide">
+                    <button
+                        type="button"
+                        class="dot dot--fill"
+                        data-index="0"
+                        aria-label="Slide 1"
+                        aria-current="true"></button>
+                    <button type="button" class="dot" data-index="1" aria-label="Slide 2"></button>
+                    <button type="button" class="dot" data-index="2" aria-label="Slide 3"></button>
+                </div>
+            </section>
+        </main>
+    </body>
+</html>

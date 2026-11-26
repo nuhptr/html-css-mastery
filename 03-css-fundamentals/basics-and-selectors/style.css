@@ -1,0 +1,26 @@
+.primary-heading {
+    color: #15803d;
+}
+
+.intro-text {
+    color: #dc2626;
+    font-weight: 500;
+}
+
+#welcome,
+#about {
+    border: 1px solid var(--color-border);
+    border-radius: var(--radius-md);
+    padding: 1.25rem;
+    margin-block-end: 1rem;
+    background: var(--color-surface);
+}
+
+#welcome {
+    background-color: #f1f5f9;
+
+    p {
+        font-size: 1rem;
+        line-height: 1.6;
+    }
+}

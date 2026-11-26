@@ -1,0 +1,13 @@
+.box {
+    background: var(--color-surface);
+    border: 2px solid #475569;
+    border-radius: 1rem;
+    margin-block: 1.75rem;
+    margin-inline: clamp(0rem, 4vw, 3.5rem);
+    padding: 1.75rem;
+    box-shadow: var(--shadow-sm);
+
+    p {
+        margin: 0;
+    }
+}

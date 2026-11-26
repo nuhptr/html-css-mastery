@@ -1,0 +1,95 @@
+<!doctype html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <title>SVG and Image Map</title>
+        <link rel="stylesheet" href="../../styles/lesson-base.css" />
+        <link rel="stylesheet" href="style.css" />
+    </head>
+
+    <body>
+        <nav class="lesson-topbar" aria-label="Breadcrumb">
+            <a class="lesson-topbar__back" href="../../index.html">&larr; Back to Curriculum Hub</a>
+            <span class="lesson-topbar__module">01 &middot; HTML Fundamentals</span>
+        </nav>
+
+        <main class="lesson-shell">
+            <h1>Inline SVG &amp; Image Map</h1>
+
+            <section class="lesson-card">
+                <h2>Inline SVG Graphics</h2>
+                <div class="svg-row">
+                    <svg
+                        width="160"
+                        height="160"
+                        role="img"
+                        aria-label="Blue circle badge with SVG text">
+                        <circle
+                            cx="80"
+                            cy="80"
+                            r="68"
+                            fill="#2563eb"
+                            stroke="#0f172a"
+                            stroke-width="5" />
+                        <text
+                            x="80"
+                            y="88"
+                            text-anchor="middle"
+                            font-family="sans-serif"
+                            font-weight="700"
+                            font-size="24"
+                            fill="#ffffff">
+                            SVG
+                        </text>
+                    </svg>
+
+                    <svg width="180" height="180" viewBox="0 0 200 200" aria-hidden="true">
+                        <path
+                            fill="#08bdba"
+                            d="M40.5,-42.4C54.9,-36.2,70.6,-25.7,74.2,-12.1C77.9,1.6,69.4,18.4,60.5,36C51.6,53.6,42.2,71.9,28.9,74.7C15.6,77.5,-1.6,64.7,-18,55.9C-34.4,47.2,-49.8,42.4,-62.9,30.9C-76,19.4,-86.8,1.1,-81.9,-12.3C-77,-25.7,-56.4,-34.3,-40.2,-40.2C-23.9,-46.1,-12,-49.3,0.5,-50C13.1,-50.6,26.1,-48.7,40.5,-42.4Z"
+                            transform="translate(100 100)" />
+                    </svg>
+                </div>
+            </section>
+
+            <section class="lesson-card">
+                <h2>Interactive Image Map</h2>
+                <p>
+                    Click regions on the image below to jump to the corresponding section anchors.
+                </p>
+                <img
+                    src="./have-fun.avif"
+                    alt="Illustration with clickable hotspots"
+                    width="640"
+                    height="427"
+                    usemap="#havefunmap"
+                    class="mapped-image" />
+                <map name="havefunmap">
+                    <area
+                        shape="rect"
+                        coords="34,44,270,350"
+                        href="#have-fun"
+                        alt="Have Fun region" />
+                    <area shape="rect" coords="290,172,333,250" href="#fun" alt="Fun region" />
+                    <area shape="circle" coords="337,300,45" href="#have" alt="Have region" />
+                </map>
+
+                <div class="anchor-notes">
+                    <p id="have-fun">
+                        <strong>#have-fun:</strong>
+                        Primary rectangular hotspot selected.
+                    </p>
+                    <p id="fun">
+                        <strong>#fun:</strong>
+                        Secondary rectangular hotspot selected.
+                    </p>
+                    <p id="have">
+                        <strong>#have:</strong>
+                        Circular hotspot selected.
+                    </p>
+                </div>
+            </section>
+        </main>
+    </body>
+</html>

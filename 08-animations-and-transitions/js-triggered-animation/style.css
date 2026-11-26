@@ -1,0 +1,28 @@
+body {
+    transition:
+        background-color 0.35s ease,
+        color 0.35s ease;
+}
+
+.dark {
+    background-color: #0f172a;
+    color: #f8fafc;
+
+    .lesson-card {
+        background-color: #1e293b;
+        border-color: #334155;
+    }
+
+    .lesson-card p {
+        color: #cbd5e1;
+    }
+
+    .lesson-topbar {
+        background-color: #1e293b;
+        border-color: #334155;
+    }
+}
+
+.yellow {
+    color: #facc15 !important;
+}

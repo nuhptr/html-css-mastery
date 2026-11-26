@@ -1,0 +1,53 @@
+<!doctype html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <title>CSS Custom Properties (Variables)</title>
+        <link rel="stylesheet" href="style.css" />
+    </head>
+
+    <body>
+        <nav class="back-bar" aria-label="Breadcrumb">
+            <a href="../../index.html">&larr; Back to Curriculum Hub</a>
+        </nav>
+
+        <header class="hero-bar">
+            <h1>
+                CSS Custom Properties (
+                <code>:root</code>
+                Variables)
+            </h1>
+        </header>
+
+        <main class="container">
+            <article class="box box-1">
+                <h2>
+                    1fr Column (
+                    <code>--box-1-width: 1</code>
+                    )
+                </h2>
+                <p>
+                    Design tokens declared on
+                    <code>:root</code>
+                    centralize colors, spacing, and proportions so theme updates happen in one
+                    place.
+                </p>
+            </article>
+
+            <article class="box box-2">
+                <h2>
+                    2fr Column (
+                    <code>--box-2-width: 2</code>
+                    )
+                </h2>
+                <p>
+                    This column uses
+                    <code>flex: var(--box-2-width)</code>
+                    to stay twice as wide as its sibling while sharing the exact same palette
+                    variables.
+                </p>
+            </article>
+        </main>
+    </body>
+</html>

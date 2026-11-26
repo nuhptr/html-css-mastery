@@ -1,0 +1,143 @@
+*,
+*::before,
+*::after {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: "Roboto", system-ui, sans-serif;
+    background: #e2e8f0;
+    color: #0f172a;
+    line-height: 1.5;
+}
+
+.back-bar {
+    max-inline-size: 36rem;
+    margin-inline: auto;
+    padding: 1rem 1.25rem 0;
+}
+
+.back-bar a {
+    color: #0f172a;
+    text-decoration: none;
+    font-size: 0.875rem;
+    font-weight: 600;
+}
+
+.container {
+    max-inline-size: 36rem;
+    margin: 1.5rem auto 4rem;
+    padding-inline: 1.25rem;
+    display: grid;
+    gap: 1.25rem;
+}
+
+.page-heading {
+    font-size: 1.5rem;
+    color: #1e293b;
+}
+
+.card {
+    background-color: #ffffff;
+    padding: 1.75rem;
+    border-radius: 0.875rem;
+    box-shadow: 0 10px 26px rgb(15 23 42 / 0.08);
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 1.25rem;
+    transition:
+        transform 0.2s ease,
+        box-shadow 0.2s ease;
+
+    &:hover {
+        transform: translateY(-3px);
+        box-shadow: 0 16px 34px rgb(15 23 42 / 0.12);
+    }
+
+    h2 {
+        font-size: 1.5rem;
+        margin-block-end: 0.45rem;
+    }
+
+    p {
+        font-size: 1rem;
+        color: #475569;
+        margin-block-end: 1.25rem;
+        max-inline-size: 28ch;
+    }
+
+    a {
+        display: inline-block;
+        text-decoration: none;
+        padding: 0.65rem 1.25rem;
+        font-size: 0.95rem;
+        font-weight: 600;
+        color: #ffffff;
+        border-radius: 0.45rem;
+        transition: filter 0.15s ease;
+
+        &:hover {
+            filter: brightness(1.1);
+        }
+    }
+}
+
+.card-art {
+    inline-size: 6.5rem;
+    block-size: 6.5rem;
+    flex-shrink: 0;
+}
+
+.card-sporty {
+    border-inline-start: 6px solid #e11d48;
+
+    h2,
+    .card-art {
+        color: #e11d48;
+    }
+
+    a {
+        background-color: #e11d48;
+    }
+}
+
+.card-casual {
+    border-inline-start: 6px solid #1d4ed8;
+
+    h2,
+    .card-art {
+        color: #1d4ed8;
+    }
+
+    a {
+        background-color: #1d4ed8;
+    }
+}
+
+.card-formal {
+    border-inline-start: 6px solid #572d21;
+
+    h2,
+    .card-art {
+        color: #572d21;
+    }
+
+    a {
+        background-color: #572d21;
+    }
+}
+
+@media (max-width: 480px) {
+    .card {
+        flex-direction: column-reverse;
+        text-align: center;
+    }
+}
+
+:where(a:any-link):focus-visible {
+    outline: 2px solid #0f172a;
+    outline-offset: 2px;
+}

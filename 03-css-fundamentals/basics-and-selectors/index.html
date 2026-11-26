@@ -1,0 +1,57 @@
+<!doctype html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <title>CSS Basics and Selectors</title>
+        <link rel="stylesheet" href="../../styles/lesson-base.css" />
+        <link rel="stylesheet" href="style.css" />
+    </head>
+
+    <body>
+        <nav class="lesson-topbar" aria-label="Breadcrumb">
+            <a class="lesson-topbar__back" href="../../index.html">&larr; Back to Curriculum Hub</a>
+            <span class="lesson-topbar__module">03 &middot; CSS Fundamentals</span>
+        </nav>
+
+        <main class="lesson-shell">
+            <h1>CSS Basics &amp; Core Selectors</h1>
+
+            <section class="lesson-card selector-panel">
+                <h2 class="primary-heading">Element, Class &amp; ID Selectors</h2>
+                <p class="intro-text">
+                    External stylesheets separate presentation from markup. Classes (
+                    <code>.class</code>
+                    ) target reusable components, while IDs (
+                    <code>#id</code>
+                    ) target unique elements.
+                </p>
+            </section>
+
+            <section id="welcome" class="selector-panel">
+                <h2 class="primary-heading">
+                    Welcome Panel (
+                    <code>#welcome</code>
+                    )
+                </h2>
+                <p>
+                    This card demonstrates an ID selector combined with native CSS nesting for
+                    descendant paragraphs.
+                </p>
+            </section>
+
+            <section id="about" class="selector-panel">
+                <h2>
+                    About Panel (
+                    <code>#about</code>
+                    )
+                </h2>
+                <p>
+                    Grouped selector syntax (
+                    <code>#welcome, #about</code>
+                    ) shares borders, padding, and spacing without duplicating rules.
+                </p>
+            </section>
+        </main>
+    </body>
+</html>

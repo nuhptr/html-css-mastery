@@ -1,0 +1,79 @@
+:root {
+    --primary-color: #2563eb;
+    --secondary-color: #38bdf8;
+    --light-color: #f1f5f9;
+    --max-width: 68rem;
+    --box-1-width: 1;
+    --box-2-width: 2;
+    --box-min-height: 18rem;
+}
+
+*,
+*::before,
+*::after {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    font-family:
+        system-ui,
+        -apple-system,
+        sans-serif;
+    line-height: 1.6;
+    background-color: var(--light-color);
+    color: #0f172a;
+}
+
+.back-bar {
+    padding: 0.9rem 1.5rem;
+}
+
+.back-bar a {
+    color: var(--primary-color);
+    font-weight: 600;
+    font-size: 0.875rem;
+    text-decoration: none;
+}
+
+.hero-bar {
+    background-color: var(--primary-color);
+    border-block-end: 4px solid var(--secondary-color);
+    color: #ffffff;
+    text-align: center;
+    padding: 1.5rem 1rem;
+    margin-block-end: 2rem;
+}
+
+.container {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 1.5rem;
+    margin-inline: auto;
+    padding-inline: 1.5rem;
+    max-inline-size: var(--max-width);
+}
+
+.box {
+    background-color: var(--primary-color);
+    border-block-end: 4px solid var(--secondary-color);
+    border-radius: 0.75rem;
+    color: #ffffff;
+    padding: 1.5rem;
+    min-block-size: var(--box-min-height);
+    box-shadow: 0 10px 24px rgb(37 99 235 / 0.2);
+
+    h2 {
+        margin-block-end: 0.75rem;
+        font-size: 1.25rem;
+    }
+
+    &.box-1 {
+        flex: var(--box-1-width) 1 240px;
+    }
+
+    &.box-2 {
+        flex: var(--box-2-width) 1 320px;
+    }
+}

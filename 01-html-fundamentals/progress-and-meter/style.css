@@ -1,0 +1,16 @@
+.meter-grid {
+    display: grid;
+    gap: 1.25rem;
+}
+
+.meter-row {
+    display: grid;
+    gap: 0.4rem;
+}
+
+progress,
+meter {
+    inline-size: 100%;
+    block-size: 1.25rem;
+    accent-color: var(--color-accent);
+}

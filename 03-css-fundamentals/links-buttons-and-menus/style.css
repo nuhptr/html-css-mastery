@@ -1,0 +1,107 @@
+.control-row {
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    gap: 1.25rem;
+}
+
+.styled-link {
+    color: var(--color-text);
+    text-decoration: none;
+    font-weight: 600;
+    transition: color 0.15s ease;
+
+    &:hover {
+        color: #ea580c;
+        text-decoration: underline;
+    }
+
+    &:active {
+        color: #dc2626;
+    }
+}
+
+.btn-demo {
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    background: #3b5998;
+    color: #ffffff !important;
+    border: none;
+    font-size: 0.95rem;
+    font-weight: 600;
+    padding: 0.65rem 1.25rem;
+    border-radius: 0.5rem;
+    text-decoration: none;
+    cursor: pointer;
+    transition:
+        background-color 0.15s ease,
+        transform 0.1s ease;
+
+    &:hover {
+        background: #283e6e;
+    }
+}
+
+.btn-demo--secondary {
+    background: #0f766e;
+
+    &:hover {
+        background: #115e59;
+    }
+}
+
+.menu-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(260px, 1fr));
+    gap: 1.75rem;
+}
+
+.side-menu {
+    list-style: none;
+    border: 1px solid var(--color-border);
+    border-radius: var(--radius-md);
+    padding: 0.5rem 1rem;
+    margin: 0;
+    background: var(--color-surface-subtle);
+
+    li:not(:last-child) {
+        border-block-end: 1px dotted var(--color-border);
+    }
+
+    a {
+        display: block;
+        padding-block: 0.65rem;
+        text-decoration: none;
+        color: var(--color-text);
+        font-weight: 500;
+
+        &:hover {
+            color: #ea580c;
+        }
+    }
+}
+
+.navbar {
+    list-style: none;
+    margin: 0;
+    padding: 0.25rem;
+    background-color: #3b5998;
+    border-radius: var(--radius-md);
+    display: flex;
+    flex-wrap: wrap;
+    gap: 0.25rem;
+
+    a {
+        color: #ffffff !important;
+        text-decoration: none;
+        display: block;
+        padding: 0.6rem 1rem;
+        border-radius: var(--radius-sm);
+        font-weight: 500;
+
+        &:hover {
+            background-color: #283e6e;
+        }
+    }
+}

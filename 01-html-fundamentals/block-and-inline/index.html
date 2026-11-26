@@ -1,0 +1,47 @@
+<!doctype html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <title>Block and Inline Elements</title>
+        <link rel="stylesheet" href="../../styles/lesson-base.css" />
+        <link rel="stylesheet" href="style.css" />
+    </head>
+
+    <body>
+        <nav class="lesson-topbar" aria-label="Breadcrumb">
+            <a class="lesson-topbar__back" href="../../index.html">&larr; Back to Curriculum Hub</a>
+            <span class="lesson-topbar__module">01 &middot; HTML Fundamentals</span>
+        </nav>
+
+        <main class="lesson-shell">
+            <h1>Block vs. Inline Elements</h1>
+
+            <section class="lesson-card">
+                <h2>Block Elements</h2>
+                <p class="block-demo">
+                    Block elements like
+                    <code>&lt;p&gt;</code>
+                    start on a new line and occupy the full available inline width of their parent
+                    container.
+                </p>
+                <p class="block-demo">
+                    Notice how this second paragraph stacks vertically below the first.
+                </p>
+            </section>
+
+            <section class="lesson-card">
+                <h2>Inline Elements</h2>
+                <p>
+                    Inline elements flow side-by-side within a line:
+                    <a class="inline-demo" href="#inline-a"><strong>Inline Link 1</strong></a>
+                    <a class="inline-demo" href="#inline-b"><strong>Inline Link 2</strong></a>
+                </p>
+                <ul>
+                    <li>List item 1 (block-level list item)</li>
+                    <li>List item 2 (block-level list item)</li>
+                </ul>
+            </section>
+        </main>
+    </body>
+</html>

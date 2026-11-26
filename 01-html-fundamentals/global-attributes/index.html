@@ -1,0 +1,65 @@
+<!doctype html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <title>Global HTML Attributes</title>
+        <link rel="stylesheet" href="../../styles/lesson-base.css" />
+        <link rel="stylesheet" href="style.css" />
+    </head>
+
+    <body>
+        <nav class="lesson-topbar" aria-label="Breadcrumb">
+            <a class="lesson-topbar__back" href="../../index.html">&larr; Back to Curriculum Hub</a>
+            <span class="lesson-topbar__module">01 &middot; HTML Fundamentals</span>
+        </nav>
+
+        <main class="lesson-shell">
+            <h1>Global HTML Attributes</h1>
+
+            <section class="lesson-card">
+                <h2 class="text-xl">Class &amp; ID Attributes</h2>
+                <p id="main-heading" class="highlight-note">
+                    Elements accept global
+                    <code>class</code>
+                    ,
+                    <code>id</code>
+                    , and
+                    <code>data-*</code>
+                    attributes across all HTML tags.
+                </p>
+            </section>
+
+            <section class="lesson-card demo-stack">
+                <h2>Interactive Global Attributes</h2>
+                <div hidden>This element uses the native hidden attribute.</div>
+
+                <div class="button-row">
+                    <button type="button" id="home-btn" accesskey="h">Home (Accesskey H)</button>
+                    <button type="button" tabindex="0">Natural Tab Order</button>
+                </div>
+
+                <div class="editable-box" contenteditable="true">
+                    This block uses
+                    <code>contenteditable="true"</code>
+                    — click to edit this text.
+                </div>
+
+                <div class="draggable-box" draggable="true">
+                    This box uses
+                    <code>draggable="true"</code>
+                    .
+                </div>
+
+                <div>
+                    <label for="quick-input">
+                        Input with
+                        <code>autofocus</code>
+                        :
+                    </label>
+                    <input id="quick-input" type="text" placeholder="Focused on load" autofocus />
+                </div>
+            </section>
+        </main>
+    </body>
+</html>

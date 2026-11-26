@@ -1,0 +1,68 @@
+<!doctype html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <title>Specialized HTML Input Types</title>
+        <link rel="stylesheet" href="../../styles/lesson-base.css" />
+    </head>
+
+    <body>
+        <nav class="lesson-topbar" aria-label="Breadcrumb">
+            <a class="lesson-topbar__back" href="../../index.html">&larr; Back to Curriculum Hub</a>
+            <span class="lesson-topbar__module">02 &middot; HTML Forms</span>
+        </nav>
+
+        <main class="lesson-shell">
+            <h1>Specialized HTML Input Types</h1>
+
+            <form action="#">
+                <div>
+                    <label for="color">Color</label>
+                    <input type="color" name="color" id="color" value="#4f46e5" />
+                </div>
+
+                <div>
+                    <label for="date">Date</label>
+                    <input type="date" name="date" id="date" />
+                </div>
+
+                <div>
+                    <label for="time">Time</label>
+                    <input type="time" name="time" id="time" />
+                </div>
+
+                <div>
+                    <label for="week">Week</label>
+                    <input type="week" name="week" id="week" />
+                </div>
+
+                <div>
+                    <label for="month">Month</label>
+                    <input type="month" name="month" id="month" />
+                </div>
+
+                <div>
+                    <label for="range">Range (step 5)</label>
+                    <input
+                        type="range"
+                        name="range"
+                        id="range"
+                        min="0"
+                        max="100"
+                        step="5"
+                        value="50" />
+                </div>
+
+                <div>
+                    <label for="url">Website URL</label>
+                    <input type="url" name="url" id="url" placeholder="https://example.com" />
+                </div>
+
+                <div>
+                    <button type="submit">Submit</button>
+                </div>
+            </form>
+        </main>
+    </body>
+</html>

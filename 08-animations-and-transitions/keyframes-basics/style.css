@@ -1,0 +1,34 @@
+.stage {
+    position: relative;
+    min-block-size: 20rem;
+    overflow: hidden;
+}
+
+.box {
+    position: relative;
+    inline-size: 6rem;
+    block-size: 6rem;
+    border-radius: var(--radius-md);
+    background: #f97316;
+    animation: animate-slide 2.5s ease-in-out alternate infinite;
+}
+
+@keyframes animate-slide {
+    from {
+        inline-size: 6rem;
+        background-color: #f97316;
+        transform: translateY(0);
+    }
+
+    to {
+        inline-size: min(100%, 26rem);
+        background-color: #6366f1;
+        transform: translateY(10rem);
+    }
+}
+
+@media (prefers-reduced-motion: reduce) {
+    .box {
+        animation: none;
+    }
+}

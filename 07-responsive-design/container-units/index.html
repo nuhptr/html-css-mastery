@@ -1,0 +1,62 @@
+<!doctype html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <title>CSS Container Query Units (cqi / cqw)</title>
+        <link rel="stylesheet" href="../../styles/lesson-base.css" />
+        <link rel="stylesheet" href="style.css" />
+    </head>
+
+    <body>
+        <nav class="lesson-topbar" aria-label="Breadcrumb">
+            <a class="lesson-topbar__back" href="../../index.html">&larr; Back to Curriculum Hub</a>
+            <span class="lesson-topbar__module">07 &middot; Responsive Design</span>
+        </nav>
+
+        <main class="lesson-shell cq-root">
+            <h1>
+                Container Query Units (
+                <code>cqi</code>
+                &amp;
+                <code>cqw</code>
+                )
+            </h1>
+            <p>
+                Cards below size their width and fluid headings relative to their parent container.
+            </p>
+
+            <section class="cq-stage">
+                <article class="card card-1">
+                    <h2>
+                        Card 1 (
+                        <code>50cqi</code>
+                        &rarr;
+                        <code>95cqi</code>
+                        )
+                    </h2>
+                    <p>
+                        Adapts smoothly inside the container and expands to
+                        <code>95cqi</code>
+                        when the container narrows below
+                        <code>600px</code>
+                        .
+                    </p>
+                </article>
+
+                <article class="card card-2">
+                    <h2>
+                        Card 2 (
+                        <code>75cqi</code>
+                        )
+                    </h2>
+                    <p>
+                        Heading typography scales fluidly with
+                        <code>clamp(1.1rem, 3cqi, 1.75rem)</code>
+                        bound strictly to container width.
+                    </p>
+                </article>
+            </section>
+        </main>
+    </body>
+</html>

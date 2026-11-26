@@ -1,0 +1,114 @@
+*,
+*::before,
+*::after {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    font-family:
+        system-ui,
+        -apple-system,
+        sans-serif;
+    background: #0f172a;
+    color: #f8fafc;
+    line-height: 1.6;
+}
+
+.back-bar {
+    position: relative;
+    z-index: 2;
+    padding: 0.9rem 1.5rem;
+}
+
+.back-bar a {
+    color: #e2e8f0;
+    text-decoration: none;
+    font-size: 0.875rem;
+    font-weight: 600;
+}
+
+.hero {
+    position: relative;
+    min-block-size: 62dvh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    padding: 3rem 1.5rem;
+    isolation: isolate;
+
+    &::before {
+        content: "";
+        position: absolute;
+        inset: 0;
+        background:
+            linear-gradient(rgb(15 23 42 / 0.55), rgb(15 23 42 / 0.85)),
+            url("https://images.unsplash.com/photo-1508138221679-760a23a2285b?auto=format&fit=crop&w=1548&q=80")
+                no-repeat center / cover;
+        z-index: -1;
+    }
+
+    > h1 {
+        font-size: clamp(2.25rem, 5vw, 3.5rem);
+        margin-block-end: 0.75rem;
+    }
+
+    p {
+        max-inline-size: 46ch;
+        color: #cbd5e1;
+        font-size: 1.1rem;
+    }
+}
+
+.content {
+    max-inline-size: 48rem;
+    margin: 2rem auto 4rem;
+    padding-inline: 1.5rem;
+    display: grid;
+    gap: 1.5rem;
+}
+
+.form-box,
+.info-box {
+    background: #1e293b;
+    padding: 1.5rem;
+    border-radius: 0.75rem;
+    border: 1px solid #334155;
+}
+
+.is-required::after {
+    content: " *";
+    color: #f87171;
+}
+
+label {
+    display: block;
+    font-weight: 600;
+    margin-block-end: 0.5rem;
+}
+
+input {
+    inline-size: 100%;
+    padding: 0.65rem 0.85rem;
+    border-radius: 0.5rem;
+    border: 1px solid #475569;
+    background: #0f172a;
+    color: #ffffff;
+    font: inherit;
+}
+
+input:focus-visible {
+    outline: 2px solid #818cf8;
+    outline-offset: 2px;
+}
+
+.info-box h2 {
+    margin-block-end: 0.5rem;
+}
+
+.info-box p {
+    color: #cbd5e1;
+}

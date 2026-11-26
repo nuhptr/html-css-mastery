@@ -1,0 +1,120 @@
+<!doctype html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <title>Accordion Component (Native Details)</title>
+        <link rel="preconnect" href="https://fonts.googleapis.com" />
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+        <link
+            href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap"
+            rel="stylesheet" />
+        <link rel="stylesheet" href="style.css" />
+    </head>
+
+    <body>
+        <nav class="back-bar" aria-label="Breadcrumb">
+            <a href="../../index.html">&larr; Back to Curriculum Hub</a>
+        </nav>
+
+        <main class="page">
+            <section class="accordion" aria-labelledby="faq-heading">
+                <h1 id="faq-heading" class="visually-hidden">Frequently Asked Questions</h1>
+
+                <details class="item" name="faq">
+                    <summary class="item-summary">
+                        <span class="number">01</span>
+                        <span class="text">Where are these chairs assembled?</span>
+                        <svg
+                            xmlns="http://www.w3.org/2000/svg"
+                            class="icon"
+                            fill="none"
+                            viewBox="0 0 24 24"
+                            stroke-width="2"
+                            stroke="currentColor"
+                            aria-hidden="true">
+                            <path
+                                stroke-linecap="round"
+                                stroke-linejoin="round"
+                                d="M19.5 8.25l-7.5 7.5-7.5-7.5" />
+                        </svg>
+                    </summary>
+                    <div class="hidden-box">
+                        <p>
+                            Every chair frame is crafted from FSC-certified European beechwood and
+                            assembled by hand in our Lisbon workshop before rigorous quality
+                            inspection.
+                        </p>
+                        <ul>
+                            <li>Kiln-dried solid timber joinery for zero creaking.</li>
+                            <li>Water-based matte finishes safe for indoor living spaces.</li>
+                            <li>Individually load-tested prior to packaging.</li>
+                        </ul>
+                    </div>
+                </details>
+
+                <details class="item" name="faq" open>
+                    <summary class="item-summary">
+                        <span class="number">02</span>
+                        <span class="text">How long do I have to return my chair?</span>
+                        <svg
+                            xmlns="http://www.w3.org/2000/svg"
+                            class="icon"
+                            fill="none"
+                            viewBox="0 0 24 24"
+                            stroke-width="2"
+                            stroke="currentColor"
+                            aria-hidden="true">
+                            <path
+                                stroke-linecap="round"
+                                stroke-linejoin="round"
+                                d="M19.5 8.25l-7.5 7.5-7.5-7.5" />
+                        </svg>
+                    </summary>
+                    <div class="hidden-box">
+                        <p>
+                            Try your chair at home for up to 30 days. If it does not fit your space
+                            or posture, schedule a complimentary courier pickup for a full refund.
+                        </p>
+                        <ul>
+                            <li>30-day risk-free home trial from delivery date.</li>
+                            <li>Free return shipping within the EU &amp; UK.</li>
+                            <li>5-year structural frame warranty included.</li>
+                        </ul>
+                    </div>
+                </details>
+
+                <details class="item" name="faq">
+                    <summary class="item-summary">
+                        <span class="number">03</span>
+                        <span class="text">Do you ship to countries outside the EU?</span>
+                        <svg
+                            xmlns="http://www.w3.org/2000/svg"
+                            class="icon"
+                            fill="none"
+                            viewBox="0 0 24 24"
+                            stroke-width="2"
+                            stroke="currentColor"
+                            aria-hidden="true">
+                            <path
+                                stroke-linecap="round"
+                                stroke-linejoin="round"
+                                d="M19.5 8.25l-7.5 7.5-7.5-7.5" />
+                        </svg>
+                    </summary>
+                    <div class="hidden-box">
+                        <p>
+                            Yes — we ship worldwide via climate-neutral freight partners to North
+                            America, Japan, Singapore, and Australia with tracked doorstep delivery.
+                        </p>
+                        <ul>
+                            <li>International transit averages 7–12 business days.</li>
+                            <li>Flat-rate protective crating for multi-chair orders.</li>
+                            <li>Customs duties calculated transparently at checkout.</li>
+                        </ul>
+                    </div>
+                </details>
+            </section>
+        </main>
+    </body>
+</html>

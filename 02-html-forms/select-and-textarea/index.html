@@ -1,0 +1,45 @@
+<!doctype html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <title>Select and Textarea Controls</title>
+        <link rel="stylesheet" href="../../styles/lesson-base.css" />
+    </head>
+
+    <body>
+        <nav class="lesson-topbar" aria-label="Breadcrumb">
+            <a class="lesson-topbar__back" href="../../index.html">&larr; Back to Curriculum Hub</a>
+            <span class="lesson-topbar__module">02 &middot; HTML Forms</span>
+        </nav>
+
+        <main class="lesson-shell">
+            <h1>Tech Support &mdash; Select &amp; Textarea</h1>
+
+            <form action="#">
+                <div>
+                    <label for="product">Product (multi-select)</label>
+                    <select name="product" id="product" multiple size="4">
+                        <option value="iphone">iPhone</option>
+                        <option value="imac" selected>iMac</option>
+                        <option value="macbook">MacBook Air</option>
+                        <option value="macbook-pro">MacBook Pro</option>
+                    </select>
+                </div>
+
+                <div>
+                    <label for="message">Message</label>
+                    <textarea
+                        name="message"
+                        id="message"
+                        placeholder="Describe your issue..."
+                        rows="5"></textarea>
+                </div>
+
+                <div>
+                    <button type="submit">Submit Ticket</button>
+                </div>
+            </form>
+        </main>
+    </body>
+</html>

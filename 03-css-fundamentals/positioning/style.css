@@ -1,0 +1,83 @@
+.position-page {
+    min-block-size: 160dvh;
+}
+
+.box {
+    inline-size: min(100%, 16rem);
+    block-size: 5.5rem;
+    border-radius: var(--radius-md);
+    display: grid;
+    place-items: center;
+    font-weight: 600;
+    font-size: 0.9rem;
+    color: #ffffff;
+    padding: 0.75rem;
+    text-align: center;
+    margin-block-end: 1rem;
+    box-shadow: var(--shadow-md);
+}
+
+.box-static {
+    position: static;
+    background: #475569;
+}
+
+.box-relative {
+    position: relative;
+    inset-block-start: 1.5rem;
+    inset-inline-start: 1.5rem;
+    background: #dc2626;
+    z-index: 1;
+}
+
+.stage {
+    position: relative;
+    inline-size: 100%;
+    block-size: 20rem;
+    background: #1e293b;
+    border-radius: var(--radius-lg);
+    margin-block: 2rem;
+}
+
+.stage-box {
+    position: absolute;
+    inline-size: 9.5rem;
+    block-size: 5.5rem;
+    border-radius: var(--radius-md);
+    display: grid;
+    place-items: center;
+    font-weight: 600;
+    font-size: 0.85rem;
+    text-align: center;
+    padding: 0.5rem;
+}
+
+.stage-top-left {
+    inset-block-start: 2rem;
+    inset-inline-start: 2rem;
+    background: #facc15;
+    color: #0f172a;
+}
+
+.stage-bottom-right {
+    inset-block-end: 2rem;
+    inset-inline-end: 2rem;
+    background: #16a34a;
+    color: #ffffff;
+}
+
+.box-sticky {
+    position: sticky;
+    inset-block-start: 1rem;
+    background: #ea580c;
+}
+
+.box-fixed {
+    position: fixed;
+    inset-block-end: 1.25rem;
+    inset-inline-end: 1.25rem;
+    inline-size: 10rem;
+    block-size: 3.5rem;
+    background: #2563eb;
+    margin: 0;
+}

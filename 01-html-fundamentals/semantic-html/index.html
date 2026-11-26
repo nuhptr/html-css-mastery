@@ -1,0 +1,102 @@
+<!doctype html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <title>Semantic HTML Landmarks</title>
+        <link rel="stylesheet" href="../../styles/lesson-base.css" />
+        <link rel="stylesheet" href="style.css" />
+    </head>
+
+    <body>
+        <nav class="lesson-topbar" aria-label="Breadcrumb">
+            <a class="lesson-topbar__back" href="../../index.html">&larr; Back to Curriculum Hub</a>
+            <span class="lesson-topbar__module">01 &middot; HTML Fundamentals</span>
+        </nav>
+
+        <div class="lesson-shell">
+            <header class="semantic-header">
+                <div>
+                    <h1>Semantic HTML Landmarks</h1>
+                    <p class="semantic-subtitle">
+                        Clean document structure using
+                        <code>&lt;header&gt;</code>
+                        ,
+                        <code>&lt;nav&gt;</code>
+                        ,
+                        <code>&lt;main&gt;</code>
+                        ,
+                        <code>&lt;section&gt;</code>
+                        ,
+                        <code>&lt;article&gt;</code>
+                        ,
+                        <code>&lt;aside&gt;</code>
+                        , and
+                        <code>&lt;footer&gt;</code>
+                        .
+                    </p>
+                </div>
+                <nav aria-label="Lesson navigation">
+                    <ul class="semantic-nav">
+                        <li><a href="#about">About</a></li>
+                        <li><a href="#blog">Blog</a></li>
+                        <li><a href="article.html">Code Magazine Demo</a></li>
+                    </ul>
+                </nav>
+            </header>
+
+            <div class="semantic-grid">
+                <main class="semantic-main">
+                    <section id="about" class="lesson-card">
+                        <h2>Section One: Why Semantics Matter</h2>
+                        <p>
+                            Semantic elements convey structural meaning to browsers, search engines,
+                            and assistive technologies without extra ARIA roles.
+                        </p>
+                    </section>
+
+                    <section id="blog" class="lesson-card">
+                        <h2>From Our Blog</h2>
+                        <article class="post-snippet">
+                            <h3>Article One</h3>
+                            <p>
+                                Self-contained content such as blog posts, news items, or forum
+                                entries belongs inside an
+                                <code>&lt;article&gt;</code>
+                                element.
+                            </p>
+                        </article>
+                        <article class="post-snippet">
+                            <h3>Article Two</h3>
+                            <p>
+                                View the full
+                                <a href="article.html">The Code Magazine semantic article</a>
+                                exercise for a complete multi-section example.
+                            </p>
+                        </article>
+                    </section>
+                </main>
+
+                <aside class="lesson-card semantic-aside">
+                    <h2>Contact &amp; Info</h2>
+                    <ul class="contact-list">
+                        <li>
+                            <strong>Address:</strong>
+                            50 Main St, Boston MA
+                        </li>
+                        <li>
+                            <strong>Phone:</strong>
+                            (555) 555-5555
+                        </li>
+                        <li>
+                            <strong>Email:</strong>
+                            hello@example.com
+                        </li>
+                    </ul>
+                </aside>
+            </div>
+
+            <footer class="semantic-footer">&copy; 2026 HTML &amp; CSS Mastery</footer>
+        </div>
+    </body>
+</html>

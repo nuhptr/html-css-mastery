@@ -1,0 +1,58 @@
+<!doctype html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <title>CSS Container Queries</title>
+        <link rel="stylesheet" href="../../styles/lesson-base.css" />
+        <link rel="stylesheet" href="style.css" />
+    </head>
+
+    <body>
+        <nav class="lesson-topbar" aria-label="Breadcrumb">
+            <a class="lesson-topbar__back" href="../../index.html">&larr; Back to Curriculum Hub</a>
+            <span class="lesson-topbar__module">07 &middot; Responsive Design</span>
+        </nav>
+
+        <div class="lesson-shell">
+            <h1>
+                CSS Container Queries (
+                <code>@container</code>
+                )
+            </h1>
+            <p>
+                Components query their own named ancestor container width (
+                <code>inline-size</code>
+                ) rather than the browser viewport.
+            </p>
+
+            <div class="cq-layout">
+                <main class="cq-main">
+                    <p>
+                        <strong>
+                            Main container (
+                            <code>container-name: main</code>
+                            ):
+                        </strong>
+                        turns warm peach when its own inline size drops below
+                        <code>600px</code>
+                        , otherwise renders mint green.
+                    </p>
+                </main>
+
+                <aside class="cq-aside">
+                    <p>
+                        <strong>
+                            Sidebar container (
+                            <code>container-name: aside</code>
+                            ):
+                        </strong>
+                        turns emerald tint when its inline size drops below
+                        <code>300px</code>
+                        .
+                    </p>
+                </aside>
+            </div>
+        </div>
+    </body>
+</html>

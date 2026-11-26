@@ -1,0 +1,75 @@
+<!doctype html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <title>Screen Reader Testing &amp; Landmarks</title>
+        <link
+            rel="stylesheet"
+            href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css"
+            integrity="sha512-SnH5WK+bZxgPHs44uWIX+LLJAJ9/2PkPKZ5QiAj6Ta86w+fsb2TkcmfRyVX3pBnMFcV7oQPJkl9QevSCWr3W6A=="
+            crossorigin="anonymous"
+            referrerpolicy="no-referrer" />
+        <link rel="stylesheet" href="style.css" />
+    </head>
+
+    <body>
+        <a href="#main-content" class="skip-link">Skip to main content</a>
+
+        <header class="header">
+            <div class="header-inner">
+                <a href="../../index.html" class="logo">My Website</a>
+                <nav class="nav" aria-label="Primary">
+                    <ul>
+                        <li><a href="#home">Home</a></li>
+                        <li><a href="#about">About</a></li>
+                        <li><a href="#contact">Contact</a></li>
+                        <li>
+                            <a href="#social" aria-label="Follow us on Facebook">
+                                <i class="fa-brands fa-facebook" aria-hidden="true"></i>
+                            </a>
+                        </li>
+                    </ul>
+
+                    <search>
+                        <form class="search" action="#search">
+                            <label for="search-input" class="visually-hidden">Search site</label>
+                            <input
+                                type="search"
+                                id="search-input"
+                                name="q"
+                                placeholder="Search..." />
+                            <button type="submit">Search</button>
+                        </form>
+                    </search>
+                </nav>
+            </div>
+        </header>
+
+        <main id="main-content" class="container">
+            <h1 id="home">Welcome To Screen Reader Testing</h1>
+            <section id="about" class="card">
+                <h2>About Landmark Navigation</h2>
+                <p>
+                    Screen reader users jump directly between landmarks like
+                    <code>&lt;header&gt;</code>
+                    ,
+                    <code>&lt;nav&gt;</code>
+                    ,
+                    <code>&lt;search&gt;</code>
+                    , and
+                    <code>&lt;main&gt;</code>
+                    .
+                </p>
+            </section>
+            <section id="contact" class="card">
+                <h2>Contact &amp; Skip Link</h2>
+                <p>
+                    Press
+                    <kbd>Tab</kbd>
+                    when loading the page to reveal the accessible Skip to main content link.
+                </p>
+            </section>
+        </main>
+    </body>
+</html>

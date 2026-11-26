@@ -1,0 +1,77 @@
+<!doctype html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <title>CSS Display: Block, Inline, Inline-Block &amp; Visibility</title>
+        <link rel="stylesheet" href="../../styles/lesson-base.css" />
+        <link rel="stylesheet" href="style.css" />
+    </head>
+
+    <body>
+        <nav class="lesson-topbar" aria-label="Breadcrumb">
+            <a class="lesson-topbar__back" href="../../index.html">&larr; Back to Curriculum Hub</a>
+            <span class="lesson-topbar__module">03 &middot; CSS Fundamentals</span>
+        </nav>
+
+        <main class="lesson-shell">
+            <h1>Display: Inline, Block &amp; Inline-Block</h1>
+
+            <section class="lesson-card">
+                <h2>Inline Navigation List</h2>
+                <ul class="inline-nav">
+                    <li><a href="#tech">Technology</a></li>
+                    <li><a href="#fashion">Fashion</a></li>
+                    <li><a href="#business">Business</a></li>
+                </ul>
+
+                <img
+                    class="centered-img"
+                    src="./dark.jpg"
+                    alt="Minimal dark textured wall"
+                    width="320"
+                    height="180" />
+            </section>
+
+            <section class="lesson-card">
+                <h2>Inline-Block Card Row</h2>
+                <div class="inline-cards">
+                    <article class="box">
+                        <h3>Column One</h3>
+                        <p>
+                            Sized with
+                            <code>display: inline-block</code>
+                            and
+                            <code>border-box</code>
+                            .
+                        </p>
+                    </article>
+                    <article class="box">
+                        <h3>Column Two</h3>
+                        <p>
+                            Accepts explicit width, height, and vertical padding unlike pure inline.
+                        </p>
+                    </article>
+                    <article class="box">
+                        <h3>Column Three</h3>
+                        <p>Modern grids and flexboxes replace inline-block column hacks.</p>
+                    </article>
+                </div>
+            </section>
+
+            <section class="lesson-card">
+                <h2>
+                    <code>display: none</code>
+                    vs.
+                    <code>visibility: hidden</code>
+                </h2>
+                <p class="none-el">This element uses display: none (removed from flow).</p>
+                <p class="hidden-el">
+                    This element uses visibility: hidden (still occupies space).
+                </p>
+                <p class="inline-para">Inline paragraph A &middot;</p>
+                <p class="inline-para">Inline paragraph B</p>
+            </section>
+        </main>
+    </body>
+</html>

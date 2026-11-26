@@ -1,0 +1,44 @@
+<!doctype html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <title>Freelancer Quote Card</title>
+        <link rel="preconnect" href="https://fonts.googleapis.com" />
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+        <link
+            href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700&display=swap"
+            rel="stylesheet" />
+        <link rel="stylesheet" href="style.css" />
+    </head>
+
+    <body>
+        <nav class="back-bar" aria-label="Breadcrumb">
+            <a href="../../index.html">&larr; Back to Curriculum Hub</a>
+        </nav>
+
+        <main class="container">
+            <section class="card" aria-labelledby="freelancer-title">
+                <h1 id="freelancer-title">Need to hire a freelancer?</h1>
+                <p>Sign up, describe what you need, and receive free quotes in seconds.</p>
+
+                <form action="#">
+                    <div class="form-group">
+                        <label for="project-task" class="visually-hidden">
+                            Project description
+                        </label>
+                        <input
+                            type="text"
+                            id="project-task"
+                            name="projectTask"
+                            placeholder="What do you need done?"
+                            required />
+                    </div>
+                    <div class="form-group">
+                        <button type="submit">Post a Project</button>
+                    </div>
+                </form>
+            </section>
+        </main>
+    </body>
+</html>

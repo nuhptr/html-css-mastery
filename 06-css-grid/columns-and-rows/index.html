@@ -1,0 +1,59 @@
+<!doctype html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <title>Grid Columns and Rows</title>
+        <link rel="stylesheet" href="../../styles/lesson-base.css" />
+        <link rel="stylesheet" href="style.css" />
+    </head>
+
+    <body>
+        <nav class="lesson-topbar" aria-label="Breadcrumb">
+            <a class="lesson-topbar__back" href="../../index.html">&larr; Back to Curriculum Hub</a>
+            <span class="lesson-topbar__module">06 &middot; CSS Grid</span>
+        </nav>
+
+        <main class="lesson-shell">
+            <h1>
+                Grid Columns &amp; Rows (
+                <code>fr</code>
+                &amp;
+                <code>grid-auto-rows</code>
+                )
+            </h1>
+
+            <section class="lesson-card">
+                <h2>
+                    Column Fractions (
+                    <code>2fr 1fr 1fr</code>
+                    )
+                </h2>
+                <div class="item-grid cols-demo">
+                    <div class="item">Item 1 (2fr)</div>
+                    <div class="item">Item 2 (1fr)</div>
+                    <div class="item">Item 3 (1fr)</div>
+                    <div class="item">Item 4</div>
+                    <div class="item">Item 5</div>
+                    <div class="item">Item 6</div>
+                </div>
+            </section>
+
+            <section class="lesson-card">
+                <h2>
+                    Explicit Rows +
+                    <code>grid-auto-rows</code>
+                </h2>
+                <div class="item-grid rows-demo">
+                    <div class="item">Row 1 (1fr)</div>
+                    <div class="item">Row 1</div>
+                    <div class="item">Row 1</div>
+                    <div class="item">Row 2 (2fr)</div>
+                    <div class="item">Row 2</div>
+                    <div class="item">Row 2</div>
+                    <div class="item">Implicit Row (auto 80px)</div>
+                </div>
+            </section>
+        </main>
+    </body>
+</html>

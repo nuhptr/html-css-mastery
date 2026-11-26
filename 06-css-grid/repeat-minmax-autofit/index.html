@@ -1,0 +1,56 @@
+<!doctype html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <title>repeat(), minmax(), auto-fit, and auto-fill</title>
+        <link rel="stylesheet" href="../../styles/lesson-base.css" />
+        <link rel="stylesheet" href="style.css" />
+    </head>
+
+    <body>
+        <nav class="lesson-topbar" aria-label="Breadcrumb">
+            <a class="lesson-topbar__back" href="../../index.html">&larr; Back to Curriculum Hub</a>
+            <span class="lesson-topbar__module">06 &middot; CSS Grid</span>
+        </nav>
+
+        <main class="lesson-shell">
+            <h1>
+                <code>repeat()</code>
+                ,
+                <code>minmax()</code>
+                &amp;
+                <code>auto-fit</code>
+                /
+                <code>auto-fill</code>
+            </h1>
+
+            <section class="lesson-card">
+                <h2><code>repeat(auto-fit, minmax(150px, 1fr))</code></h2>
+                <p>Resize the viewport to watch tracks wrap fluidly without media queries.</p>
+                <div class="item-grid autofit-grid">
+                    <div class="item">Item 1</div>
+                    <div class="item">Item 2</div>
+                    <div class="item">Item 3</div>
+                    <div class="item">Item 4</div>
+                    <div class="item">Item 5</div>
+                    <div class="item">Item 6</div>
+                </div>
+            </section>
+
+            <section class="lesson-card">
+                <h2><code>repeat(auto-fill, minmax(120px, 1fr))</code></h2>
+                <p>
+                    Notice how
+                    <code>auto-fill</code>
+                    preserves empty ghost column tracks on wider screens.
+                </p>
+                <div class="item-grid autofill-grid">
+                    <div class="item">Item A</div>
+                    <div class="item">Item B</div>
+                    <div class="item">Item C</div>
+                </div>
+            </section>
+        </main>
+    </body>
+</html>
