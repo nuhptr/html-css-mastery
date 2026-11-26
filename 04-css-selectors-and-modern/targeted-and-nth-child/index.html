@@ -1,0 +1,80 @@
+<!doctype html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <title>Targeted &amp; :nth-child Selectors</title>
+        <link rel="stylesheet" href="../../styles/lesson-base.css" />
+        <link rel="stylesheet" href="style.css" />
+    </head>
+
+    <body>
+        <nav class="lesson-topbar" aria-label="Breadcrumb">
+            <a class="lesson-topbar__back" href="../../index.html">&larr; Back to Curriculum Hub</a>
+            <span class="lesson-topbar__module">04 &middot; Selectors &amp; Modern CSS</span>
+        </nav>
+
+        <main class="lesson-shell">
+            <h1>
+                Targeted &amp;
+                <code>:nth-child()</code>
+                Selectors
+            </h1>
+
+            <section class="lesson-card">
+                <h2>Combinators &amp; Attribute Selectors</h2>
+                <div class="combinator-box">
+                    <p>
+                        Direct child &amp; descendant paragraph inside
+                        <code>.combinator-box</code>
+                        .
+                    </p>
+                    <ul>
+                        <li>List Item 1</li>
+                        <li><p>Nested paragraph inside list item</p></li>
+                        <li>List Item 3</li>
+                    </ul>
+                    <p>
+                        Another paragraph inside
+                        <code>.combinator-box</code>
+                        .
+                    </p>
+                </div>
+
+                <p class="sibling-note">
+                    Adjacent sibling paragraph matched with
+                    <code>.combinator-box + p</code>
+                    .
+                </p>
+
+                <div class="link-row">
+                    <a href="#local">Same-tab link</a>
+                    <a href="#self" target="_self"><code>target="_self"</code></a>
+                    <a href="https://google.com" target="_blank" rel="noopener noreferrer">
+                        <code>target="_blank"</code>
+                        badge
+                    </a>
+                </div>
+            </section>
+
+            <section class="lesson-card">
+                <h2>
+                    <code>:nth-child()</code>
+                    Patterns
+                </h2>
+                <ul class="nth-list">
+                    <li>Item 1 (:first-child)</li>
+                    <li>Item 2 (even)</li>
+                    <li>Item 3 (3rd &amp; 3n)</li>
+                    <li>Item 4 (even)</li>
+                    <li>Item 5 (odd)</li>
+                    <li>Item 6 (3n)</li>
+                    <li>Item 7 (3n + 7)</li>
+                    <li>Item 8 (even)</li>
+                    <li>Item 9 (3n)</li>
+                    <li>Item 10 (:last-child)</li>
+                </ul>
+            </section>
+        </main>
+    </body>
+</html>

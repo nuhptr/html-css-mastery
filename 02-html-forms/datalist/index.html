@@ -1,0 +1,81 @@
+<!doctype html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <title>HTML Datalist Suggestions</title>
+        <link rel="stylesheet" href="../../styles/lesson-base.css" />
+    </head>
+
+    <body>
+        <nav class="lesson-topbar" aria-label="Breadcrumb">
+            <a class="lesson-topbar__back" href="../../index.html">&larr; Back to Curriculum Hub</a>
+            <span class="lesson-topbar__module">02 &middot; HTML Forms</span>
+        </nav>
+
+        <main class="lesson-shell">
+            <h1>
+                HTML
+                <code>&lt;datalist&gt;</code>
+                Autocomplete
+            </h1>
+
+            <form action="#">
+                <div>
+                    <label for="fav-language">Favorite Programming Language</label>
+                    <input
+                        list="languages"
+                        id="fav-language"
+                        name="favLanguage"
+                        placeholder="Type or select a language" />
+                    <datalist id="languages">
+                        <option value="JavaScript"></option>
+                        <option value="PHP"></option>
+                        <option value="Python"></option>
+                        <option value="Ruby"></option>
+                        <option value="C"></option>
+                        <option value="C++"></option>
+                    </datalist>
+                </div>
+
+                <div>
+                    <label for="popular-time">Preferred Time</label>
+                    <input list="popular-hours" id="popular-time" name="popularTime" type="time" />
+                    <datalist id="popular-hours">
+                        <option value="10:00"></option>
+                        <option value="11:00"></option>
+                        <option value="12:00"></option>
+                    </datalist>
+                </div>
+
+                <div>
+                    <label for="tick">Tip Amount (0–100)</label>
+                    <input list="tickmarks" type="range" name="tick" id="tick" min="0" max="100" />
+                    <datalist id="tickmarks">
+                        <option value="0"></option>
+                        <option value="25"></option>
+                        <option value="50"></option>
+                        <option value="75"></option>
+                        <option value="100"></option>
+                    </datalist>
+                </div>
+
+                <div>
+                    <label for="colors">Pick Preset Color</label>
+                    <input
+                        type="color"
+                        name="color"
+                        id="colors"
+                        list="red-colors"
+                        value="#dc143c" />
+                    <datalist id="red-colors">
+                        <option value="#800000"></option>
+                        <option value="#8B0000"></option>
+                        <option value="#A52A2A"></option>
+                        <option value="#DC143C"></option>
+                    </datalist>
+                </div>
+            </form>
+        </main>
+    </body>
+</html>

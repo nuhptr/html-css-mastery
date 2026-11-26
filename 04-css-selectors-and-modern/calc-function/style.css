@@ -1,0 +1,30 @@
+:root {
+    --calc-gap: 0.75rem;
+}
+
+.calc-container {
+    background: #0f172a;
+    inline-size: 100%;
+    min-block-size: 13rem;
+    padding: var(--calc-gap);
+    border-radius: var(--radius-lg);
+    display: flex;
+    flex-wrap: wrap;
+    gap: var(--calc-gap);
+}
+
+.calc-item {
+    flex: 1 1 calc((100% / 5) - var(--calc-gap));
+    min-inline-size: 7rem;
+    background: #f97316;
+    color: #ffffff;
+    border-radius: var(--radius-md);
+    display: grid;
+    place-items: center;
+    font-weight: 700;
+
+    p {
+        margin: 0;
+        color: #ffffff;
+    }
+}

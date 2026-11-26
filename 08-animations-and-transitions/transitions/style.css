@@ -1,0 +1,45 @@
+.btn-transition {
+    inline-size: 13rem;
+    padding: 0.85rem 1.5rem !important;
+    background-color: #2563eb !important;
+    color: #ffffff !important;
+    border-radius: 0.5rem !important;
+    transition:
+        inline-size 0.5s ease-in-out,
+        border-radius 0.5s ease-in-out,
+        background-color 0.4s ease,
+        box-shadow 0.4s ease !important;
+
+    &:hover,
+    &:focus-visible {
+        inline-size: min(100%, 24rem);
+        border-radius: 999px !important;
+        background-color: #1d4ed8 !important;
+        box-shadow: 0 12px 24px rgb(37 99 235 / 0.35);
+    }
+}
+
+.morph-box {
+    background-color: #0f172a;
+    color: #ffffff;
+    inline-size: 7rem;
+    block-size: 7rem;
+    border-radius: 0.75rem;
+    display: grid;
+    place-items: center;
+    font-weight: 600;
+    font-size: 0.875rem;
+    cursor: pointer;
+    transition:
+        inline-size 0.7s ease-in-out,
+        block-size 0.7s ease-in-out,
+        border-radius 0.7s ease-in-out,
+        background-color 0.7s ease-in-out;
+
+    &:hover {
+        background-color: #dc2626;
+        border-radius: 50%;
+        inline-size: 12rem;
+        block-size: 12rem;
+    }
+}

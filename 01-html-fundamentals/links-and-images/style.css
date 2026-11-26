@@ -1,0 +1,28 @@
+.link-list {
+    display: grid;
+    gap: 0.5rem;
+    padding-inline-start: 1.25rem;
+}
+
+.media-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+    gap: 1.25rem;
+}
+
+.media-grid figure {
+    margin: 0;
+}
+
+.media-grid img {
+    border-radius: var(--radius-md);
+    object-fit: cover;
+    inline-size: 100%;
+    block-size: 200px;
+}
+
+.media-grid figcaption {
+    margin-block-start: 0.5rem;
+    font-size: 0.875rem;
+    color: var(--color-muted);
+}

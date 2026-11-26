@@ -1,0 +1,64 @@
+<!doctype html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <title>Native CSS Nesting</title>
+        <link rel="preconnect" href="https://fonts.googleapis.com" />
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+        <link
+            href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700&display=swap"
+            rel="stylesheet" />
+        <link rel="stylesheet" href="style.css" />
+    </head>
+
+    <body>
+        <nav class="back-bar" aria-label="Breadcrumb">
+            <a href="../../index.html">&larr; Back to Curriculum Hub</a>
+        </nav>
+
+        <header class="hero">
+            <h1>Welcome Aboard</h1>
+            <p>
+                Native CSS nesting keeps component rules grouped without needing Sass or a build
+                step.
+            </p>
+            <a class="hero-cta" href="#main">Explore Cards &darr;</a>
+        </header>
+
+        <main id="main">
+            <div class="container">
+                <section class="section">
+                    <article class="card">
+                        <h2>Component Nesting</h2>
+                        <p>
+                            Nesting child selectors and media queries directly inside
+                            <code>.card</code>
+                            makes responsive breakpoints easy to read.
+                        </p>
+                    </article>
+                </section>
+                <section class="section">
+                    <article class="card">
+                        <h2>Pseudo-class Nesting</h2>
+                        <p>
+                            Use
+                            <code>&amp;:hover</code>
+                            and
+                            <code>&amp;:focus-visible</code>
+                            right inside interactive elements.
+                        </p>
+                    </article>
+                </section>
+                <section class="section">
+                    <article class="card">
+                        <h2>Baseline Widely Available</h2>
+                        <p>
+                            Supported across all modern evergreen browsers natively in standard CSS.
+                        </p>
+                    </article>
+                </section>
+            </div>
+        </main>
+    </body>
+</html>

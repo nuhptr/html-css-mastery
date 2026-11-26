@@ -1,0 +1,40 @@
+.swatch-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(180px, 1fr));
+    gap: 1rem;
+}
+
+.swatch {
+    padding: 1.25rem;
+    border-radius: var(--radius-md);
+    display: grid;
+    gap: 0.35rem;
+}
+
+.swatch-named {
+    background-color: yellowgreen;
+    color: #0f172a;
+}
+
+.swatch-rgb {
+    background-color: rgb(37, 99, 235);
+    color: #ffffff;
+}
+
+.swatch-hex {
+    background-color: #0f172a;
+    color: #ffffff;
+}
+
+.swatch code {
+    background: rgb(255 255 255 / 0.22);
+    color: inherit;
+}
+
+.font-demo {
+    font-family: "Poppins", system-ui, sans-serif;
+}
+
+.font-demo p {
+    line-height: 1.65;
+}

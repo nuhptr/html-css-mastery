@@ -1,0 +1,68 @@
+<!doctype html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <title>Classes, IDs, Divs, and Spans</title>
+        <link rel="stylesheet" href="../../styles/lesson-base.css" />
+        <link rel="stylesheet" href="style.css" />
+    </head>
+
+    <body>
+        <nav class="lesson-topbar" aria-label="Breadcrumb">
+            <a class="lesson-topbar__back" href="../../index.html">&larr; Back to Curriculum Hub</a>
+            <span class="lesson-topbar__module">01 &middot; HTML Fundamentals</span>
+        </nav>
+
+        <div class="lesson-shell">
+            <header id="page-header" class="site-header">
+                <h1>
+                    Classes, IDs,
+                    <code>&lt;div&gt;</code>
+                    &amp;
+                    <code>&lt;span&gt;</code>
+                </h1>
+                <nav aria-label="In-page navigation">
+                    <ul class="nav-list">
+                        <li><a href="#section-one">Section One</a></li>
+                        <li><a href="#section-two">Section Two</a></li>
+                    </ul>
+                </nav>
+            </header>
+
+            <main>
+                <section id="section-one" class="card">
+                    <h2 class="text-lg">Section One</h2>
+                    <p>
+                        This paragraph highlights
+                        <span class="primary-text">a primary inline span</span>
+                        for reusable class styling.
+                    </p>
+                    <p>
+                        This paragraph highlights
+                        <span class="secondary-text">a secondary inline span</span>
+                        inside a generic section card.
+                    </p>
+                </section>
+
+                <section id="section-two" class="card">
+                    <h2 class="text-xl">Section Two</h2>
+                    <p class="card-lead">
+                        Unique elements can use
+                        <code>id</code>
+                        anchors while shared visual styles use reusable
+                        <code>class</code>
+                        tokens.
+                    </p>
+                    <p>
+                        Second paragraph with
+                        <span class="secondary-text">consistent class styling</span>
+                        .
+                    </p>
+                </section>
+            </main>
+
+            <footer class="site-footer">&copy; 2026 HTML &amp; CSS Mastery</footer>
+        </div>
+    </body>
+</html>

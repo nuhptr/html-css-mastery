@@ -1,0 +1,48 @@
+<!doctype html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <title>HTML Audio and Video Elements</title>
+        <link rel="stylesheet" href="../../styles/lesson-base.css" />
+        <link rel="stylesheet" href="style.css" />
+    </head>
+
+    <body>
+        <nav class="lesson-topbar" aria-label="Breadcrumb">
+            <a class="lesson-topbar__back" href="../../index.html">&larr; Back to Curriculum Hub</a>
+            <span class="lesson-topbar__module">01 &middot; HTML Fundamentals</span>
+        </nav>
+
+        <main class="lesson-shell">
+            <h1>Native Audio &amp; Video Elements</h1>
+
+            <section class="lesson-card">
+                <h2>Video Element</h2>
+                <figure class="media-figure">
+                    <video controls width="640" height="360">
+                        <source src="./stay-amv-anime.mp4" type="video/mp4" />
+                        Your browser does not support embedded videos.
+                    </video>
+                    <figcaption>
+                        AMV Stay &mdash; HTML5
+                        <code>&lt;video&gt;</code>
+                        with native controls
+                    </figcaption>
+                </figure>
+            </section>
+
+            <section class="lesson-card">
+                <h2>Audio Element</h2>
+                <figure class="media-figure">
+                    <figcaption>Listen to the audio track:</figcaption>
+                    <audio controls>
+                        <source src="./nobody.mp4" type="audio/mp4" />
+                        Your browser does not support the audio element.
+                    </audio>
+                    <p><a href="./nobody.mp4" download>Download Audio</a></p>
+                </figure>
+            </section>
+        </main>
+    </body>
+</html>

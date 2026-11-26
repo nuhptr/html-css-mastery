@@ -1,0 +1,64 @@
+<!doctype html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <title>Text and Basic Form Inputs</title>
+        <link rel="stylesheet" href="../../styles/lesson-base.css" />
+    </head>
+
+    <body>
+        <nav class="lesson-topbar" aria-label="Breadcrumb">
+            <a class="lesson-topbar__back" href="../../index.html">&larr; Back to Curriculum Hub</a>
+            <span class="lesson-topbar__module">02 &middot; HTML Forms</span>
+        </nav>
+
+        <main class="lesson-shell">
+            <h1>Text &amp; Basic Form Inputs</h1>
+            <form action="#" method="post">
+                <div>
+                    <label for="name">Name</label>
+                    <input
+                        type="text"
+                        id="name"
+                        name="name"
+                        placeholder="Enter name"
+                        value="John Doe"
+                        autocomplete="name"
+                        required
+                        minlength="3"
+                        maxlength="40" />
+                </div>
+
+                <div>
+                    <label for="email">Email (disabled example)</label>
+                    <input
+                        type="email"
+                        id="email"
+                        name="email"
+                        placeholder="Enter email"
+                        value="test@example.com"
+                        autocomplete="email"
+                        required
+                        disabled />
+                </div>
+
+                <div>
+                    <label for="password">Password</label>
+                    <input
+                        type="password"
+                        id="password"
+                        name="password"
+                        placeholder="Enter password"
+                        autocomplete="new-password"
+                        minlength="8"
+                        required />
+                </div>
+
+                <div>
+                    <button type="submit">Submit</button>
+                </div>
+            </form>
+        </main>
+    </body>
+</html>

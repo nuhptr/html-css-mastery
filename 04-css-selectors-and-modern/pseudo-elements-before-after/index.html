@@ -1,0 +1,41 @@
+<!doctype html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <title>::before and ::after Pseudo-elements</title>
+        <link rel="stylesheet" href="style.css" />
+    </head>
+
+    <body>
+        <nav class="back-bar" aria-label="Breadcrumb">
+            <a href="../../index.html">&larr; Back to Curriculum Hub</a>
+        </nav>
+
+        <header class="hero">
+            <h1>Hello World!</h1>
+            <p>
+                Demonstrating atmospheric hero backgrounds using
+                <code>::before</code>
+                and required field asterisks using
+                <code>::after</code>
+                .
+            </p>
+        </header>
+
+        <main class="content">
+            <section class="form-box">
+                <label for="name" class="is-required">Name</label>
+                <input type="text" id="name" name="name" placeholder="Enter your name" />
+            </section>
+
+            <section class="info-box">
+                <h2>Generated Content Best Practices</h2>
+                <p>
+                    Use pseudo-elements for decorative badges, overlays, and visual markers without
+                    cluttering the DOM with extra elements.
+                </p>
+            </section>
+        </main>
+    </body>
+</html>

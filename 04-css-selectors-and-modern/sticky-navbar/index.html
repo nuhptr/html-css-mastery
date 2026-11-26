@@ -1,0 +1,82 @@
+<!doctype html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <title>Sticky Navbar on Scroll</title>
+        <link rel="preconnect" href="https://fonts.googleapis.com" />
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+        <link
+            href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700&display=swap"
+            rel="stylesheet" />
+        <link rel="stylesheet" href="style.css" />
+        <script src="./script.js" defer></script>
+    </head>
+
+    <body>
+        <header class="header">
+            <nav class="menu" aria-label="Sticky navigation">
+                <ul>
+                    <li><a href="../../index.html">&larr; Hub</a></li>
+                    <li><a href="#home">Home</a></li>
+                    <li><a href="#project-1">Project 1</a></li>
+                    <li><a href="#project-2">Project 2</a></li>
+                    <li><a href="#project-3">Project 3</a></li>
+                </ul>
+            </nav>
+        </header>
+
+        <main class="container">
+            <section class="section" id="home">
+                <h1>Sticky Glassmorphic Navbar</h1>
+                <p>
+                    Scroll down to see JavaScript toggle the
+                    <code>.transparent</code>
+                    class on the sticky header, enabling a blurred translucent surface.
+                </p>
+            </section>
+
+            <section class="section" id="project-1">
+                <h2>Project 1</h2>
+                <img
+                    src="./images/img_project1.jpg"
+                    alt="Project 1 preview"
+                    width="700"
+                    height="420" />
+                <p>
+                    Using
+                    <code>position: sticky</code>
+                    keeps the header in document flow at scroll 0 while pinning it seamlessly to the
+                    top edge on scroll.
+                </p>
+            </section>
+
+            <section class="section" id="project-2">
+                <h2>Project 2</h2>
+                <img
+                    src="./images/img_project2.jpg"
+                    alt="Project 2 preview"
+                    width="700"
+                    height="420" />
+                <p>
+                    Combine
+                    <code>backdrop-filter: blur(12px)</code>
+                    with semi-transparent background colors for crisp legibility over scrolling
+                    imagery.
+                </p>
+            </section>
+
+            <section class="section" id="project-3">
+                <h2>Project 3</h2>
+                <img
+                    src="./images/img_project3.jpg"
+                    alt="Project 3 preview"
+                    width="700"
+                    height="420" />
+                <p>
+                    Works cleanly across desktop and mobile viewports with zero horizontal overflow.
+                </p>
+            </section>
+        </main>
+    </body>
+</html>

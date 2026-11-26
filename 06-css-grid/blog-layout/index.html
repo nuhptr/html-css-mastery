@@ -1,0 +1,156 @@
+<!doctype html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <title>CSS Grid Blog Layout: The Code Magazine</title>
+        <link rel="stylesheet" href="style.css" />
+    </head>
+
+    <body>
+        <nav class="back-bar" aria-label="Breadcrumb">
+            <a href="../../index.html">&larr; Back to Curriculum Hub</a>
+        </nav>
+
+        <div class="container">
+            <header class="main-header">
+                <h1>The Code Magazine</h1>
+                <nav aria-label="Primary">
+                    <a
+                        class="nav-item"
+                        href="../../01-html-fundamentals/links-and-images/blog.html">
+                        Blog
+                    </a>
+                    <a class="nav-item" href="../../10-ui-components/product-card/index.html">
+                        Challenges
+                    </a>
+                    <a class="nav-item" href="../../05-css-flexbox/blog-layout/index.html">
+                        Flexbox
+                    </a>
+                    <a
+                        class="nav-item"
+                        href="../../03-css-fundamentals/blog-article-styled/index.html">
+                        CSS Basics
+                    </a>
+                </nav>
+            </header>
+
+            <article>
+                <header class="post-header">
+                    <h2>The Basic Language of the Web: HTML</h2>
+
+                    <div class="author-box">
+                        <img
+                            src="./img/img_laura-jones.jpeg"
+                            alt="Portrait of Laura Jones"
+                            width="50"
+                            height="50" />
+                        <p class="author">
+                            Posted by
+                            <strong>Laura Jones</strong>
+                            on Monday, June 21st 2027
+                        </p>
+                    </div>
+                    <img
+                        src="./img/img_post-img.jpeg"
+                        alt="HTML code displayed on screen"
+                        class="post-image"
+                        width="800"
+                        height="320" />
+                </header>
+
+                <p>
+                    All modern websites and web applications are built using three
+                    <em>fundamental</em>
+                    technologies: HTML, CSS, and JavaScript. These are the languages of the web.
+                </p>
+                <p>
+                    In this post, let's focus on HTML. We will learn what HTML is all about, and why
+                    you too should learn it.
+                </p>
+
+                <h3>What is HTML?</h3>
+                <p>
+                    HTML stands for
+                    <strong>H</strong>
+                    yper
+                    <strong>T</strong>
+                    ext
+                    <strong>M</strong>
+                    arkup
+                    <strong>L</strong>
+                    anguage. It's a markup language that web developers use to structure and
+                    describe the content of a webpage.
+                </p>
+                <p>In HTML, each element is made up of 3 parts:</p>
+                <ol>
+                    <li>The opening tag</li>
+                    <li>The closing tag</li>
+                    <li>The actual element</li>
+                </ol>
+
+                <p>
+                    You can learn more at
+                    <a
+                        href="https://developer.mozilla.org/en-US/"
+                        target="_blank"
+                        rel="noopener noreferrer">
+                        MDN Web Docs
+                    </a>
+                    .
+                </p>
+
+                <h3>Why should you learn HTML?</h3>
+                <ul>
+                    <li>To use the fundamental web development language</li>
+                    <li>To hand-craft websites instead of relying on WordPress or Wix</li>
+                    <li>To build web applications</li>
+                    <li>To architect 2D page layouts cleanly with CSS Grid</li>
+                </ul>
+            </article>
+
+            <aside>
+                <h4>Related posts</h4>
+                <ul class="related">
+                    <li class="related-post">
+                        <img
+                            src="./img/img_related-1.jpeg"
+                            alt="Person programming on laptop"
+                            width="75"
+                            height="75" />
+                        <div class="link-author">
+                            <a href="#" class="related-link">How To Learn Web Development</a>
+                            <p class="related-author">By Jonas Schmedtmann</p>
+                        </div>
+                    </li>
+                    <li class="related-post">
+                        <img
+                            src="./img/img_related-2.jpeg"
+                            alt="Lightning illustration"
+                            width="75"
+                            height="75" />
+                        <div class="link-author">
+                            <a href="#" class="related-link">The Unknown Powers of CSS</a>
+                            <p class="related-author">By Jim Dillon</p>
+                        </div>
+                    </li>
+                    <li class="related-post">
+                        <img
+                            src="./img/img_related-3.jpeg"
+                            alt="JavaScript code on screen"
+                            width="75"
+                            height="75" />
+                        <div class="link-author">
+                            <a href="#" class="related-link">Why JavaScript Is Awesome</a>
+                            <p class="related-author">By Matilda</p>
+                        </div>
+                    </li>
+                </ul>
+            </aside>
+
+            <footer>
+                <p class="copyright">Copyright &copy; 2027 by The Code Magazine</p>
+            </footer>
+        </div>
+    </body>
+</html>

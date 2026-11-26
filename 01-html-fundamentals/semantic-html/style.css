@@ -1,0 +1,54 @@
+.semantic-header {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    align-items: flex-end;
+    gap: 1rem;
+    padding-block-end: 1.25rem;
+    border-block-end: 1px solid var(--color-border);
+}
+
+.semantic-subtitle {
+    margin: 0;
+}
+
+.semantic-nav {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 1rem;
+    list-style: none;
+    margin: 0;
+    padding: 0;
+}
+
+.semantic-grid {
+    display: grid;
+    grid-template-columns: 2fr 1fr;
+    gap: 1.5rem;
+    align-items: start;
+}
+
+@media (max-width: 720px) {
+    .semantic-grid {
+        grid-template-columns: 1fr;
+    }
+}
+
+.post-snippet + .post-snippet {
+    margin-block-start: 1.25rem;
+    padding-block-start: 1.25rem;
+    border-block-start: 1px solid var(--color-border);
+}
+
+.contact-list {
+    display: grid;
+    gap: 0.5rem;
+    padding-inline-start: 1.1rem;
+}
+
+.semantic-footer {
+    margin-block-start: 2rem;
+    text-align: center;
+    color: var(--color-muted);
+    font-size: 0.875rem;
+}

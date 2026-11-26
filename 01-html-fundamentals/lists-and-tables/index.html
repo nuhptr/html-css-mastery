@@ -1,0 +1,105 @@
+<!doctype html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <title>Lists and Tables</title>
+        <link rel="stylesheet" href="../../styles/lesson-base.css" />
+        <link rel="stylesheet" href="style.css" />
+    </head>
+
+    <body>
+        <nav class="lesson-topbar" aria-label="Breadcrumb">
+            <a class="lesson-topbar__back" href="../../index.html">&larr; Back to Curriculum Hub</a>
+            <span class="lesson-topbar__module">01 &middot; HTML Fundamentals</span>
+        </nav>
+
+        <main class="lesson-shell">
+            <h1>Lists &amp; Semantic Tables</h1>
+
+            <section class="lesson-card lists-grid">
+                <div>
+                    <h2>Unordered List</h2>
+                    <ul>
+                        <li>HTML Structure</li>
+                        <li>CSS Styling</li>
+                        <li>Accessibility</li>
+                    </ul>
+                </div>
+
+                <div>
+                    <h2>Ordered List</h2>
+                    <ol>
+                        <li>Define semantic markup</li>
+                        <li>Add layout &amp; design tokens</li>
+                        <li>Verify keyboard navigation</li>
+                    </ol>
+                </div>
+
+                <div>
+                    <h2>Nested List</h2>
+                    <ul>
+                        <li>
+                            Frontend Core
+                            <ul>
+                                <li>Semantic HTML5</li>
+                                <li>Modern CSS Grid &amp; Flex</li>
+                            </ul>
+                        </li>
+                        <li>Progressive Enhancement</li>
+                    </ul>
+                </div>
+            </section>
+
+            <section class="lesson-card">
+                <h2>
+                    Data Table with
+                    <code>&lt;colgroup&gt;</code>
+                    &amp;
+                    <code>colspan</code>
+                </h2>
+                <div class="table-wrap">
+                    <table>
+                        <caption>Contact Directory</caption>
+                        <colgroup>
+                            <col class="col-first" />
+                            <col class="col-last" />
+                            <col span="3" />
+                        </colgroup>
+                        <thead>
+                            <tr>
+                                <th scope="col">First Name</th>
+                                <th scope="col">Last Name</th>
+                                <th scope="col">Email</th>
+                                <th scope="col" colspan="2">Telephone Numbers</th>
+                            </tr>
+                        </thead>
+                        <tbody>
+                            <tr>
+                                <td>John</td>
+                                <td>Doe</td>
+                                <td>john@example.com</td>
+                                <td>555-0101</td>
+                                <td>555-0102</td>
+                            </tr>
+                            <tr>
+                                <td>Harry</td>
+                                <td>Maguire</td>
+                                <td>harry@example.com</td>
+                                <td>555-0199</td>
+                                <td>555-0144</td>
+                            </tr>
+                            <tr>
+                                <td>Michael</td>
+                                <td>Schmedtmann</td>
+                                <td>michael@example.com</td>
+                                <td>555-0177</td>
+                                <td>555-0188</td>
+                            </tr>
+                        </tbody>
+                    </table>
+                </div>
+            </section>
+        </main>
+    </body>
+</html>

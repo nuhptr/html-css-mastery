@@ -1,0 +1,21 @@
+.item-grid {
+    background: var(--color-surface-subtle);
+    padding: 1rem;
+    border-radius: var(--radius-md);
+    min-block-size: 32rem;
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-template-rows: 1fr 2fr 3fr;
+    grid-auto-rows: 4fr;
+    gap: 0.75rem;
+
+    .item {
+        background-color: #f97316;
+        color: #ffffff;
+        font-weight: 600;
+        padding: 1rem;
+        border-radius: var(--radius-sm);
+        display: grid;
+        place-items: center;
+    }
+}

@@ -1,0 +1,57 @@
+<!doctype html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <title>Flexbox Layout Challenge</title>
+        <link rel="stylesheet" href="style.css" />
+    </head>
+
+    <body>
+        <header class="header">
+            <div class="header-inner">
+                <a class="back-link" href="../../index.html">&larr; Back to Curriculum Hub</a>
+                <h1>Flexbox Layout Challenge</h1>
+            </div>
+        </header>
+
+        <nav aria-label="Main navigation">
+            <ul class="main-menu">
+                <li><a href="#home">Home</a></li>
+                <li><a href="#about">About</a></li>
+                <li><a href="#services">Services</a></li>
+                <li class="last-list-item"><a href="#contact">Contact</a></li>
+            </ul>
+        </nav>
+
+        <main class="main">
+            <section>
+                <h2>Responsive Main &amp; Sidebar Pattern</h2>
+                <p>
+                    This classic two-column layout flexes cleanly on desktop (
+                    <code>flex: 1</code>
+                    main area + fixed
+                    <code>300px</code>
+                    sidebar) and stacks into a column below
+                    <code>768px</code>
+                    .
+                </p>
+                <p>
+                    Navigation links use flexbox spacing on desktop and cleanly stack with dividers
+                    on smaller screens.
+                </p>
+            </section>
+
+            <aside>
+                <h3>Recent Posts</h3>
+                <ul>
+                    <li><a href="#post-1">Post 1: Flex Direction &amp; Wrap</a></li>
+                    <li><a href="#post-2">Post 2: Justify &amp; Align</a></li>
+                    <li><a href="#post-3">Post 3: Auto Margins</a></li>
+                    <li><a href="#post-4">Post 4: Responsive Cards</a></li>
+                    <li><a href="#post-5">Post 5: Flexbox vs Grid</a></li>
+                </ul>
+            </aside>
+        </main>
+    </body>
+</html>

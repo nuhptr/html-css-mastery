@@ -1,0 +1,63 @@
+<!doctype html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <title>Spanning Items and Named Grid Lines</title>
+        <link rel="stylesheet" href="../../styles/lesson-base.css" />
+        <link rel="stylesheet" href="style.css" />
+    </head>
+
+    <body>
+        <nav class="lesson-topbar" aria-label="Breadcrumb">
+            <a class="lesson-topbar__back" href="../../index.html">&larr; Back to Curriculum Hub</a>
+            <span class="lesson-topbar__module">06 &middot; CSS Grid</span>
+        </nav>
+
+        <main class="lesson-shell">
+            <h1>Spanning Items &amp; Named Grid Lines</h1>
+
+            <section class="lesson-card">
+                <h2>
+                    Line Spanning (
+                    <code>grid-column: span 2</code>
+                    /
+                    <code>grid-row: span 2</code>
+                    )
+                </h2>
+                <div class="item-grid span-grid">
+                    <div class="item item-1">Item 1 (span 2 cols)</div>
+                    <div class="item item-2">Item 2</div>
+                    <div class="item item-3">Item 3 (span 2 rows)</div>
+                    <div class="item item-4">Item 4</div>
+                    <div class="item item-5">Item 5</div>
+                    <div class="item item-6">Item 6</div>
+                    <div class="item item-7">Item 7</div>
+                    <div class="item item-8">Item 8</div>
+                    <div class="item item-9">Item 9 (span 2 cols)</div>
+                </div>
+            </section>
+
+            <section class="lesson-card">
+                <h2>
+                    Named Grid Lines (
+                    <code>[col-1-start]</code>
+                    ...
+                    <code>[col-2-end]</code>
+                    )
+                </h2>
+                <div class="item-grid named-grid">
+                    <div class="item item-1">Item 1 (col-1-start / col-2-end)</div>
+                    <div class="item item-2">Item 2</div>
+                    <div class="item item-3">Item 3 (row-2-start / row-3-end)</div>
+                    <div class="item item-4">Item 4</div>
+                    <div class="item item-5">Item 5</div>
+                    <div class="item item-6">Item 6</div>
+                    <div class="item item-7">Item 7</div>
+                    <div class="item item-8">Item 8</div>
+                    <div class="item item-9">Item 9 (col-2-start / col-3-end)</div>
+                </div>
+            </section>
+        </main>
+    </body>
+</html>

@@ -1,0 +1,37 @@
+.box-1 {
+    background-color: #e2e8f0;
+    border: 3px solid #94a3b8;
+    border-radius: 0.75rem;
+    margin-block-end: 1.25rem;
+    padding: 1.5rem;
+}
+
+.box-2 {
+    background: #15803d;
+    color: #ffffff;
+    border-block-start: 4px solid #38bdf8;
+    border-start-start-radius: 0.75rem;
+    border-start-end-radius: 0.75rem;
+    padding: 1.5rem;
+    margin-block-end: 1.25rem;
+}
+
+.box-2 :is(h2, p) {
+    color: #ffffff;
+}
+
+.box-3 {
+    background:
+        linear-gradient(rgb(15 23 42 / 0.55), rgb(15 23 42 / 0.75)),
+        url("./dark.jpg") no-repeat center / cover;
+    border-radius: 0.75rem;
+    padding: 2rem;
+    color: #ffffff;
+    min-block-size: 16rem;
+    display: grid;
+    align-content: end;
+}
+
+.box-3 :is(h2, p) {
+    color: #ffffff;
+}

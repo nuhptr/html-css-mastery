@@ -1,0 +1,878 @@
+<!doctype html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <title>HTML &amp; CSS Mastery &mdash; Curriculum Hub</title>
+        <link rel="preconnect" href="https://fonts.googleapis.com" />
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+        <link
+            href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&family=JetBrains+Mono:wght@500;600&display=swap"
+            rel="stylesheet" />
+        <link rel="stylesheet" href="styles/hub.css" />
+
+        <script src="scripts/hub.js" defer></script>
+    </head>
+
+    <body>
+        <header class="hero">
+            <div class="container hero-inner">
+                <div class="hero-copy">
+                    <p class="eyebrow">Refactored Curriculum &amp; Clean Code Archive</p>
+                    <h1>HTML &amp; CSS Mastery</h1>
+                    <p class="lead">
+                        All lessons, interactive UI components, and full-scale websites consolidated
+                        into 11 topic-based modules with modern semantic HTML, CSS architecture, and
+                        accessible controls.
+                    </p>
+                </div>
+
+                <dl class="stats-grid" aria-label="Curriculum statistics">
+                    <div class="stat-card">
+                        <dt>Modules</dt>
+                        <dd>11</dd>
+                    </div>
+                    <div class="stat-card">
+                        <dt>Core Lessons</dt>
+                        <dd>75</dd>
+                    </div>
+                    <div class="stat-card">
+                        <dt>UI Components</dt>
+                        <dd>9</dd>
+                    </div>
+                    <div class="stat-card">
+                        <dt>Full Projects</dt>
+                        <dd>6</dd>
+                    </div>
+                </dl>
+            </div>
+        </header>
+
+        <main class="container main-content">
+            <section class="controls-bar" aria-label="Filter curriculum">
+                <search>
+                    <form class="search-form" id="search-form" role="search">
+                        <label for="lesson-search" class="visually-hidden">
+                            Search lessons and projects
+                        </label>
+                        <input
+                            type="search"
+                            id="lesson-search"
+                            placeholder="Search topics (e.g. grid, popover, accordion, flexbox, aria)..."
+                            autocomplete="off" />
+                    </form>
+                </search>
+
+                <div class="filter-pills" role="group" aria-label="Filter by category">
+                    <button
+                        type="button"
+                        class="pill is-active"
+                        data-filter="all"
+                        aria-pressed="true">
+                        All (11)
+                    </button>
+                    <button type="button" class="pill" data-filter="html" aria-pressed="false">
+                        HTML &amp; Forms
+                    </button>
+                    <button type="button" class="pill" data-filter="css" aria-pressed="false">
+                        CSS &amp; Animations
+                    </button>
+                    <button type="button" class="pill" data-filter="layouts" aria-pressed="false">
+                        Flex, Grid &amp; Responsive
+                    </button>
+                    <button
+                        type="button"
+                        class="pill"
+                        data-filter="components"
+                        aria-pressed="false">
+                        UI Components
+                    </button>
+                    <button type="button" class="pill" data-filter="projects" aria-pressed="false">
+                        Full Projects
+                    </button>
+                </div>
+            </section>
+
+            <section
+                class="projects-showcase"
+                id="featured-projects"
+                aria-labelledby="projects-heading">
+                <div class="section-head">
+                    <h2 id="projects-heading">Featured Full Projects</h2>
+                    <span class="section-tag">Module 11 &middot; Complete Websites</span>
+                </div>
+
+                <div class="projects-grid">
+                    <a class="project-card" href="11-projects/chair-shop/index.html">
+                        <span class="project-badge">Build Responsive &middot; Landing</span>
+                        <h3>Chair Shop</h3>
+                        <p>
+                            Lisbon ergonomic chair storefront with feature grid, testimonials &amp;
+                            catalog.
+                        </p>
+                    </a>
+
+                    <a class="project-card" href="11-projects/bono-signup/index.html">
+                        <span class="project-badge">Modern HTML/CSS &middot; Sign-Up</span>
+                        <h3>Bono App Sign Up</h3>
+                        <p>
+                            Responsive gradient waitlist page with glassmorphic developer contact
+                            form.
+                        </p>
+                    </a>
+
+                    <a class="project-card" href="11-projects/lumina-creative/index.html">
+                        <span class="project-badge">Modern HTML/CSS &middot; Multi-Page</span>
+                        <h3>Lumina Creative</h3>
+                        <p>
+                            Creative agency portfolio with lightbox gallery, About &amp; Contact
+                            pages.
+                        </p>
+                    </a>
+
+                    <a class="project-card" href="11-projects/edgeledger-finance/index.html">
+                        <span class="project-badge">Modern HTML/CSS &middot; Flexbox</span>
+                        <h3>EdgeLedger Finance</h3>
+                        <p>
+                            Financial consultancy site with smooth scroll, case lightbox, and blog.
+                        </p>
+                    </a>
+
+                    <a class="project-card" href="11-projects/leno-app/index.html">
+                        <span class="project-badge">Modern HTML/CSS &middot; Product</span>
+                        <h3>Leno App</h3>
+                        <p>
+                            Health &amp; productivity app landing page with interactive video modal
+                            &amp; pricing.
+                        </p>
+                    </a>
+
+                    <a class="project-card" href="11-projects/tutor-courses/index.html">
+                        <span class="project-badge">Modern HTML/CSS &middot; Platform</span>
+                        <h3>Tutor Courses</h3>
+                        <p>
+                            Open-source video course landing page with chapters, stats, and contact
+                            map.
+                        </p>
+                    </a>
+                </div>
+            </section>
+
+            <p class="empty-state" id="empty-state" hidden>
+                No matching lessons or modules found. Try clearing your search filter.
+            </p>
+
+            <section class="modules-grid" id="modules-grid" aria-label="All curriculum modules">
+                <!-- 01 -->
+                <article class="module-card" data-category="html">
+                    <header class="module-head">
+                        <span class="module-num">01</span>
+                        <div>
+                            <h2>HTML Fundamentals</h2>
+                            <p>
+                                14 lessons &middot; Both Courses &middot; Semantics, tables &amp;
+                                media
+                            </p>
+                        </div>
+                    </header>
+                    <ul class="lesson-list">
+                        <li>
+                            <a href="01-html-fundamentals/basic-structure/index.html">
+                                Basic Structure
+                            </a>
+                        </li>
+                        <li>
+                            <a href="01-html-fundamentals/typography/index.html">
+                                Typography &amp; Headings
+                            </a>
+                        </li>
+                        <li>
+                            <a href="01-html-fundamentals/links-and-images/index.html">
+                                Links &amp; Images
+                            </a>
+                        </li>
+                        <li>
+                            <a href="01-html-fundamentals/lists-and-tables/index.html">
+                                Lists &amp; Tables
+                            </a>
+                        </li>
+                        <li>
+                            <a href="01-html-fundamentals/block-and-inline/index.html">
+                                Block &amp; Inline Elements
+                            </a>
+                        </li>
+                        <li>
+                            <a href="01-html-fundamentals/classes-ids-and-divs/index.html">
+                                Classes, IDs, Divs &amp; Spans
+                            </a>
+                        </li>
+                        <li>
+                            <a href="01-html-fundamentals/entities-and-emmet/index.html">
+                                Entities &amp; Emmet
+                            </a>
+                        </li>
+                        <li>
+                            <a href="01-html-fundamentals/semantic-html/index.html">
+                                Semantic Landmarks
+                            </a>
+                        </li>
+                        <li>
+                            <a href="01-html-fundamentals/semantic-html/article.html">
+                                Semantic Blog Article
+                            </a>
+                        </li>
+                        <li>
+                            <a href="01-html-fundamentals/global-attributes/index.html">
+                                Global Attributes
+                            </a>
+                        </li>
+                        <li>
+                            <a href="01-html-fundamentals/media-audio-video/index.html">
+                                Audio &amp; Video Media
+                            </a>
+                        </li>
+                        <li>
+                            <a href="01-html-fundamentals/svg-and-image-map/index.html">
+                                Inline SVG &amp; Image Map
+                            </a>
+                        </li>
+                        <li>
+                            <a href="01-html-fundamentals/iframe/index.html">Iframe &amp; Embeds</a>
+                        </li>
+                        <li>
+                            <a href="01-html-fundamentals/popover-and-details/index.html">
+                                Popover API &amp; Details
+                            </a>
+                        </li>
+                        <li>
+                            <a href="01-html-fundamentals/progress-and-meter/index.html">
+                                Progress &amp; Meter
+                            </a>
+                        </li>
+                    </ul>
+                </article>
+
+                <!-- 02 -->
+                <article class="module-card" data-category="html">
+                    <header class="module-head">
+                        <span class="module-num">02</span>
+                        <div>
+                            <h2>HTML Forms</h2>
+                            <p>
+                                9 lessons &middot; Modern HTML &amp; CSS &middot; Controls &amp;
+                                validation
+                            </p>
+                        </div>
+                    </header>
+                    <ul class="lesson-list">
+                        <li>
+                            <a href="02-html-forms/text-and-basic-inputs/index.html">
+                                Text &amp; Basic Inputs
+                            </a>
+                        </li>
+                        <li>
+                            <a href="02-html-forms/checkboxes-and-radios/index.html">
+                                Checkboxes &amp; Radios
+                            </a>
+                        </li>
+                        <li>
+                            <a href="02-html-forms/select-and-textarea/index.html">
+                                Select &amp; Textarea
+                            </a>
+                        </li>
+                        <li>
+                            <a href="02-html-forms/datalist/index.html">Datalist Suggestions</a>
+                        </li>
+                        <li>
+                            <a href="02-html-forms/other-input-types/index.html">
+                                Other Input Types
+                            </a>
+                        </li>
+                        <li>
+                            <a href="02-html-forms/form-challenge/index.html">
+                                Apartment Search Challenge
+                            </a>
+                        </li>
+                        <li>
+                            <a href="02-html-forms/signup-form-styling/index.html">
+                                Sign Up Form Styling
+                            </a>
+                        </li>
+                        <li>
+                            <a href="02-html-forms/freelancer-form-card/index.html">
+                                Freelancer Quote Card
+                            </a>
+                        </li>
+                        <li>
+                            <a href="02-html-forms/advanced-form-styling/index.html">
+                                Advanced Form Pseudo-Classes
+                            </a>
+                        </li>
+                    </ul>
+                </article>
+
+                <!-- 03 -->
+                <article class="module-card" data-category="css">
+                    <header class="module-head">
+                        <span class="module-num">03</span>
+                        <div>
+                            <h2>CSS Fundamentals</h2>
+                            <p>
+                                11 lessons &middot; Both Courses &middot; Box model, positioning
+                                &amp; float
+                            </p>
+                        </div>
+                    </header>
+                    <ul class="lesson-list">
+                        <li>
+                            <a href="03-css-fundamentals/basics-and-selectors/index.html">
+                                Basics &amp; Core Selectors
+                            </a>
+                        </li>
+                        <li>
+                            <a href="03-css-fundamentals/colors-and-fonts/index.html">
+                                Colors &amp; Google Fonts
+                            </a>
+                        </li>
+                        <li>
+                            <a href="03-css-fundamentals/backgrounds-and-borders/index.html">
+                                Backgrounds &amp; Borders
+                            </a>
+                        </li>
+                        <li>
+                            <a href="03-css-fundamentals/box-model/index.html">
+                                Box Model, Margin &amp; Padding
+                            </a>
+                        </li>
+                        <li>
+                            <a href="03-css-fundamentals/blog-article-styled/index.html">
+                                Styled Magazine Article
+                            </a>
+                        </li>
+                        <li>
+                            <a href="03-css-fundamentals/display-and-inline-block/index.html">
+                                Display &amp; Inline-Block
+                            </a>
+                        </li>
+                        <li>
+                            <a href="03-css-fundamentals/positioning/index.html">
+                                Positioning (Relative/Absolute/Sticky)
+                            </a>
+                        </li>
+                        <li>
+                            <a href="03-css-fundamentals/float-and-alignment/index.html">
+                                Float, Clearfix &amp; Alignment
+                            </a>
+                        </li>
+                        <li>
+                            <a href="03-css-fundamentals/links-buttons-and-menus/index.html">
+                                Links, Buttons &amp; Menus
+                            </a>
+                        </li>
+                        <li>
+                            <a href="03-css-fundamentals/shadows-and-filters/index.html">
+                                Box Shadows, Text Shadows &amp; Filters
+                            </a>
+                        </li>
+                        <li>
+                            <a href="03-css-fundamentals/visibility-and-order/index.html">
+                                Cascade Order &amp; Negative Margin
+                            </a>
+                        </li>
+                    </ul>
+                </article>
+
+                <!-- 04 -->
+                <article class="module-card" data-category="css">
+                    <header class="module-head">
+                        <span class="module-num">04</span>
+                        <div>
+                            <h2>Selectors &amp; Modern CSS</h2>
+                            <p>
+                                10 lessons &middot; Modern HTML &amp; CSS &middot; :has(), nesting
+                                &amp; calc()
+                            </p>
+                        </div>
+                    </header>
+                    <ul class="lesson-list">
+                        <li>
+                            <a href="04-css-selectors-and-modern/targeted-and-nth-child/index.html">
+                                Targeted &amp; :nth-child()
+                            </a>
+                        </li>
+                        <li>
+                            <a href="04-css-selectors-and-modern/is-where-has/index.html">
+                                :is(), :where() &amp; :has()
+                            </a>
+                        </li>
+                        <li>
+                            <a
+                                href="04-css-selectors-and-modern/pseudo-elements-before-after/index.html">
+                                ::before &amp; ::after Pseudo-elements
+                            </a>
+                        </li>
+                        <li>
+                            <a href="04-css-selectors-and-modern/image-overlay/index.html">
+                                Hero Image Overlay
+                            </a>
+                        </li>
+                        <li>
+                            <a href="04-css-selectors-and-modern/custom-properties/index.html">
+                                CSS Custom Properties
+                            </a>
+                        </li>
+                        <li>
+                            <a href="04-css-selectors-and-modern/calc-function/index.html">
+                                calc() Function
+                            </a>
+                        </li>
+                        <li>
+                            <a href="04-css-selectors-and-modern/css-nesting/index.html">
+                                Native CSS Nesting
+                            </a>
+                        </li>
+                        <li>
+                            <a href="04-css-selectors-and-modern/smooth-scrolling/index.html">
+                                Smooth Scrolling
+                            </a>
+                        </li>
+                        <li>
+                            <a href="04-css-selectors-and-modern/sticky-navbar/index.html">
+                                Sticky Glassmorphic Navbar
+                            </a>
+                        </li>
+                        <li>
+                            <a href="04-css-selectors-and-modern/selectors-challenge/index.html">
+                                Selectors Challenge
+                            </a>
+                        </li>
+                    </ul>
+                </article>
+
+                <!-- 05 -->
+                <article class="module-card" data-category="layouts">
+                    <header class="module-head">
+                        <span class="module-num">05</span>
+                        <div>
+                            <h2>CSS Flexbox</h2>
+                            <p>
+                                4 lessons &middot; Both Courses &middot; 1D alignment &amp; layouts
+                            </p>
+                        </div>
+                    </header>
+                    <ul class="lesson-list">
+                        <li>
+                            <a href="05-css-flexbox/basics/index.html">
+                                Flexbox Basics &amp; Alignment
+                            </a>
+                        </li>
+                        <li>
+                            <a href="05-css-flexbox/flex-order/index.html">Flex Visual Order</a>
+                        </li>
+                        <li>
+                            <a href="05-css-flexbox/blog-layout/index.html">Flexbox Blog Layout</a>
+                        </li>
+                        <li>
+                            <a href="05-css-flexbox/layout-challenge/index.html">
+                                Responsive Layout Challenge
+                            </a>
+                        </li>
+                    </ul>
+                </article>
+
+                <!-- 06 -->
+                <article class="module-card" data-category="layouts">
+                    <header class="module-head">
+                        <span class="module-num">06</span>
+                        <div>
+                            <h2>CSS Grid</h2>
+                            <p>
+                                10 lessons &middot; Both Courses &middot; 2D tracks, areas &amp;
+                                auto-fit
+                            </p>
+                        </div>
+                    </header>
+                    <ul class="lesson-list">
+                        <li>
+                            <a href="06-css-grid/basics/index.html">Grid Basics &amp; Placement</a>
+                        </li>
+                        <li>
+                            <a href="06-css-grid/columns-and-rows/index.html">
+                                Columns, Rows &amp; fr Units
+                            </a>
+                        </li>
+                        <li>
+                            <a href="06-css-grid/align-and-justify/index.html">
+                                Align &amp; Justify Items
+                            </a>
+                        </li>
+                        <li>
+                            <a href="06-css-grid/spanning-and-named-lines/index.html">
+                                Spanning &amp; Named Grid Lines
+                            </a>
+                        </li>
+                        <li>
+                            <a href="06-css-grid/template-areas/index.html">Grid Template Areas</a>
+                        </li>
+                        <li>
+                            <a href="06-css-grid/repeat-minmax-autofit/index.html">
+                                repeat(), minmax() &amp; auto-fit
+                            </a>
+                        </li>
+                        <li>
+                            <a href="06-css-grid/responsive-grid/index.html">
+                                Responsive Media Query Grid
+                            </a>
+                        </li>
+                        <li>
+                            <a href="06-css-grid/blog-layout/index.html">CSS Grid Blog Layout</a>
+                        </li>
+                        <li><a href="06-css-grid/challenge-1/index.html">Grid Challenge 1</a></li>
+                        <li><a href="06-css-grid/challenge-2/index.html">Grid Challenge 2</a></li>
+                    </ul>
+                </article>
+
+                <!-- 07 -->
+                <article class="module-card" data-category="layouts">
+                    <header class="module-head">
+                        <span class="module-num">07</span>
+                        <div>
+                            <h2>Responsive Design</h2>
+                            <p>
+                                5 lessons &middot; Modern HTML &amp; CSS &middot; dvh &amp;
+                                container queries
+                            </p>
+                        </div>
+                    </header>
+                    <ul class="lesson-list">
+                        <li>
+                            <a href="07-responsive-design/em-rem-units/index.html">
+                                em vs. rem Relative Units
+                            </a>
+                        </li>
+                        <li>
+                            <a href="07-responsive-design/viewport-units/index.html">
+                                Dynamic Viewport Units (dvh)
+                            </a>
+                        </li>
+                        <li>
+                            <a href="07-responsive-design/media-queries/index.html">
+                                Responsive Media Queries
+                            </a>
+                        </li>
+                        <li>
+                            <a href="07-responsive-design/container-queries/index.html">
+                                CSS Container Queries
+                            </a>
+                        </li>
+                        <li>
+                            <a href="07-responsive-design/container-units/index.html">
+                                Container Query Units (cqi/cqw)
+                            </a>
+                        </li>
+                    </ul>
+                </article>
+
+                <!-- 08 -->
+                <article class="module-card" data-category="css">
+                    <header class="module-head">
+                        <span class="module-num">08</span>
+                        <div>
+                            <h2>Animations &amp; Transitions</h2>
+                            <p>
+                                9 lessons &middot; Modern HTML &amp; CSS &middot; 2D/3D transforms
+                                &amp; keyframes
+                            </p>
+                        </div>
+                    </header>
+                    <ul class="lesson-list">
+                        <li>
+                            <a href="08-animations-and-transitions/transitions/index.html">
+                                CSS Transitions
+                            </a>
+                        </li>
+                        <li>
+                            <a href="08-animations-and-transitions/transforms-2d/index.html">
+                                2D Transforms
+                            </a>
+                        </li>
+                        <li>
+                            <a href="08-animations-and-transitions/absolute-centering/index.html">
+                                Absolute Centering Translate
+                            </a>
+                        </li>
+                        <li>
+                            <a href="08-animations-and-transitions/transforms-3d/index.html">
+                                3D Card Flip
+                            </a>
+                        </li>
+                        <li>
+                            <a href="08-animations-and-transitions/rotating-cube-3d/index.html">
+                                3D Rotating Cube
+                            </a>
+                        </li>
+                        <li>
+                            <a href="08-animations-and-transitions/keyframes-basics/index.html">
+                                Keyframes Basics
+                            </a>
+                        </li>
+                        <li>
+                            <a href="08-animations-and-transitions/keyframes-advanced/index.html">
+                                Advanced Keyframes &amp; Loader
+                            </a>
+                        </li>
+                        <li>
+                            <a
+                                href="08-animations-and-transitions/js-triggered-animation/index.html">
+                                JS-Triggered Transitions
+                            </a>
+                        </li>
+                        <li>
+                            <a href="08-animations-and-transitions/hamburger-menu/index.html">
+                                Slide-In Hamburger Menu
+                            </a>
+                        </li>
+                    </ul>
+                </article>
+
+                <!-- 09 -->
+                <article class="module-card" data-category="html">
+                    <header class="module-head">
+                        <span class="module-num">09</span>
+                        <div>
+                            <h2>Web Accessibility</h2>
+                            <p>
+                                3 lessons &middot; Modern HTML &amp; CSS &middot; ARIA &amp; screen
+                                reader flow
+                            </p>
+                        </div>
+                    </header>
+                    <ul class="lesson-list">
+                        <li>
+                            <a href="09-web-accessibility/aria-attributes/index.html">
+                                ARIA Attributes &amp; Landmarks
+                            </a>
+                        </li>
+                        <li>
+                            <a href="09-web-accessibility/aria-expanded/index.html">
+                                Accessible aria-expanded Disclosure
+                            </a>
+                        </li>
+                        <li>
+                            <a href="09-web-accessibility/screen-reader-testing/index.html">
+                                Screen Reader Testing &amp; Skip Link
+                            </a>
+                        </li>
+                    </ul>
+                </article>
+
+                <!-- 10 -->
+                <article class="module-card" data-category="components">
+                    <header class="module-head">
+                        <span class="module-num">10</span>
+                        <div>
+                            <h2>UI Components</h2>
+                            <p>
+                                9 components &middot; Both Courses &middot; Polished interactive
+                                blocks
+                            </p>
+                        </div>
+                    </header>
+                    <ul class="lesson-list">
+                        <li>
+                            <a href="10-ui-components/accordion/index.html">
+                                Exclusive Accordion (&lt;details&gt;)
+                            </a>
+                        </li>
+                        <li>
+                            <a href="10-ui-components/carousel/index.html">Testimonial Carousel</a>
+                        </li>
+                        <li>
+                            <a href="10-ui-components/data-table/index.html">
+                                Responsive Data Table
+                            </a>
+                        </li>
+                        <li>
+                            <a href="10-ui-components/pagination/index.html">
+                                Interactive Pagination
+                            </a>
+                        </li>
+                        <li>
+                            <a href="10-ui-components/hero-section/index.html">
+                                Omnifood Hero Section
+                            </a>
+                        </li>
+                        <li>
+                            <a href="10-ui-components/app-layout/index.html">Webmail App Shell</a>
+                        </li>
+                        <li>
+                            <a href="10-ui-components/product-card/index.html">
+                                Converse Product Card
+                            </a>
+                        </li>
+                        <li>
+                            <a href="10-ui-components/shoe-collection-cards/index.html">
+                                Shoe Collection Cards
+                            </a>
+                        </li>
+                        <li>
+                            <a href="10-ui-components/pricing-cards/index.html">
+                                SaaS Pricing Cards
+                            </a>
+                        </li>
+                    </ul>
+                </article>
+
+                <!-- 11 -->
+                <article class="module-card" data-category="projects">
+                    <header class="module-head">
+                        <span class="module-num">11</span>
+                        <div>
+                            <h2>Full Projects</h2>
+                            <p>
+                                6 websites &middot; Both Courses &middot; Landing pages &amp;
+                                multi-page apps
+                            </p>
+                        </div>
+                    </header>
+                    <ul class="lesson-list">
+                        <li>
+                            <a href="11-projects/chair-shop/index.html">Chair Shop Landing Page</a>
+                        </li>
+                        <li><a href="11-projects/bono-signup/index.html">Bono App Sign Up</a></li>
+                        <li>
+                            <a href="11-projects/lumina-creative/index.html">
+                                Lumina Creative Agency
+                            </a>
+                        </li>
+                        <li>
+                            <a href="11-projects/edgeledger-finance/index.html">
+                                EdgeLedger Finance
+                            </a>
+                        </li>
+                        <li><a href="11-projects/leno-app/index.html">Leno Productivity App</a></li>
+                        <li>
+                            <a href="11-projects/tutor-courses/index.html">Tutor Video Courses</a>
+                        </li>
+                    </ul>
+                </article>
+            </section>
+
+            <section class="notes-section" aria-labelledby="notes-heading">
+                <div class="section-head">
+                    <h2 id="notes-heading">Study Notes, Diagrams &amp; PDFs</h2>
+                    <span class="section-tag">notes/ &middot; Consolidated References</span>
+                </div>
+
+                <div class="notes-grid">
+                    <div class="notes-box">
+                        <h3>Design &amp; Theory PDFs</h3>
+                        <ul>
+                            <li>
+                                <a href="notes/pdfs/all-design-guidelines.pdf">
+                                    All Design Guidelines (PDF)
+                                </a>
+                            </li>
+                            <li>
+                                <a href="notes/pdfs/theory-lectures-v2-compressed.pdf">
+                                    Theory Lectures v2 (PDF)
+                                </a>
+                            </li>
+                            <li>
+                                <a href="notes/pdfs/types-category-design.pdf">
+                                    Web Design Categories (PDF)
+                                </a>
+                            </li>
+                        </ul>
+                    </div>
+
+                    <div class="notes-box">
+                        <h3>Markdown Study Notes</h3>
+                        <ul>
+                            <li><a href="notes/markdown/css-notes.md">CSS Notes Overview</a></li>
+                            <li>
+                                <a href="notes/markdown/beda-em-dan-rem.md">Perbedaan em dan rem</a>
+                            </li>
+                            <li>
+                                <a href="notes/markdown/position-description.md">
+                                    CSS Position Reference
+                                </a>
+                            </li>
+                            <li>
+                                <a href="notes/markdown/size.md">Sizing &amp; Viewport Units</a>
+                            </li>
+                            <li>
+                                <a href="notes/markdown/html-forms-notes.md">HTML Forms Notes</a>
+                            </li>
+                            <li>
+                                <a href="notes/markdown/list-semantic-element.md">
+                                    Semantic Elements List
+                                </a>
+                            </li>
+                            <li>
+                                <a href="notes/markdown/block-and-inline-notes.md">
+                                    Block vs Inline Notes
+                                </a>
+                            </li>
+                            <li><a href="notes/markdown/vendor-prefixes.md">Vendor Prefixes</a></li>
+                        </ul>
+                    </div>
+
+                    <div class="notes-box">
+                        <h3>Visual Diagrams</h3>
+                        <ul>
+                            <li>
+                                <a href="notes/diagrams/html-css-fundamentals/box-model.png">
+                                    CSS Box Model Diagram
+                                </a>
+                            </li>
+                            <li>
+                                <a
+                                    href="notes/diagrams/html-css-fundamentals/conflict-between-selectors.png">
+                                    Selector Specificity Conflict
+                                </a>
+                            </li>
+                            <li>
+                                <a
+                                    href="notes/diagrams/html-css-fundamentals/different-semantic-with-non-semantic.png">
+                                    Semantic vs Non-Semantic
+                                </a>
+                            </li>
+                            <li>
+                                <a href="notes/diagrams/animations/transition-vs-animations.png">
+                                    Transitions vs Keyframes
+                                </a>
+                            </li>
+                            <li>
+                                <a href="notes/diagrams/animations/transform-property.png">
+                                    CSS Transform Property
+                                </a>
+                            </li>
+                            <li>
+                                <a
+                                    href="notes/diagrams/accessibility/aria-attributes/role-categories.png">
+                                    ARIA Role Categories
+                                </a>
+                            </li>
+                            <li>
+                                <a
+                                    href="notes/diagrams/accessibility/web-accessibility/accessibility-strategy.png">
+                                    Accessibility Strategy
+                                </a>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+            </section>
+        </main>
+
+        <footer class="hub-footer">
+            <div class="container">
+                <p>
+                    HTML &amp; CSS Mastery &mdash; Organized, Refactored &amp; Polished for Clean
+                    Reference
+                </p>
+            </div>
+        </footer>
+    </body>
+</html>

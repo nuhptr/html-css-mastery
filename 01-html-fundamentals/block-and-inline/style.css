@@ -1,0 +1,14 @@
+.block-demo {
+    border: 2px solid #16a34a;
+    background: rgb(22 163 74 / 0.08);
+    padding: 0.75rem 1rem;
+    border-radius: var(--radius-sm);
+}
+
+.inline-demo {
+    border: 2px solid #dc2626;
+    background: rgb(220 38 38 / 0.08);
+    padding: 0.15rem 0.45rem;
+    border-radius: var(--radius-sm);
+    margin-inline: 0.25rem;
+}

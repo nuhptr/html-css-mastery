@@ -1,0 +1,137 @@
+*,
+*::before,
+*::after {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: "Poppins", system-ui, sans-serif;
+    overflow-x: hidden;
+    background: #f8fafc;
+    color: #0f172a;
+}
+
+a {
+    text-decoration: none;
+    color: inherit;
+}
+
+li {
+    list-style: none;
+}
+
+.navbar {
+    background: #0f172a;
+    color: #ffffff;
+    padding-block: 0.9rem;
+    position: relative;
+    z-index: 20;
+}
+
+.container {
+    max-inline-size: 72rem;
+    margin-inline: auto;
+    padding-inline: 1.5rem;
+}
+
+.navbar-flex {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.brand-link {
+    display: flex;
+    align-items: center;
+    gap: 0.65rem;
+    font-size: 0.875rem;
+    font-weight: 600;
+    color: #cbd5e1;
+}
+
+.logo {
+    inline-size: 42px;
+    block-size: auto;
+}
+
+.main-menu-list {
+    display: flex;
+    gap: 1.5rem;
+    align-items: center;
+
+    a {
+        color: #f8fafc;
+        font-weight: 500;
+
+        &:hover {
+            color: #38bdf8;
+        }
+    }
+}
+
+.mobile-menu {
+    display: none;
+}
+
+.mobile-menu-toggle {
+    background: transparent;
+    border: 1px solid #334155;
+    color: #ffffff;
+    padding: 0.5rem 0.7rem;
+    border-radius: 0.5rem;
+    cursor: pointer;
+}
+
+.mobile-menu-items {
+    position: fixed;
+    inset-block: 4.5rem 0;
+    inset-inline: 0;
+    background: rgb(15 23 42 / 0.96);
+    backdrop-filter: blur(10px);
+    display: grid;
+    place-items: center;
+    transition: transform 0.3s ease;
+    transform: translateX(100%);
+    visibility: hidden;
+
+    &.active {
+        transform: translateX(0);
+        visibility: visible;
+    }
+}
+
+.mobile-menu-list {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 1.75rem;
+    font-size: 1.25rem;
+    font-weight: 600;
+}
+
+@media (max-width: 768px) {
+    .main-menu {
+        display: none;
+    }
+
+    .mobile-menu {
+        display: block;
+    }
+}
+
+.content-preview {
+    max-inline-size: 46rem;
+    margin: 4rem auto;
+    padding-inline: 1.5rem;
+    text-align: center;
+}
+
+.content-preview h1 {
+    margin-block-end: 0.75rem;
+}
+
+.content-preview p {
+    color: #475569;
+}

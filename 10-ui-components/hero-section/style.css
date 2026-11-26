@@ -1,0 +1,113 @@
+*,
+*::before,
+*::after {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: "Rubik", system-ui, sans-serif;
+    color: #1e293b;
+    line-height: 1.6;
+}
+
+.container {
+    inline-size: min(100% - 2.5rem, 72rem);
+    margin-inline: auto;
+}
+
+.hero {
+    min-block-size: 100dvh;
+    display: grid;
+    grid-template-rows: auto 1fr;
+    background:
+        linear-gradient(105deg, rgb(15 23 42 / 0.82) 0%, rgb(15 23 42 / 0.42) 100%),
+        url("./img_hero.jpg") center / cover no-repeat;
+    color: #ffffff;
+}
+
+.top-nav {
+    font-size: 1.05rem;
+    font-weight: 600;
+    padding-block: 1.75rem;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    align-items: center;
+    gap: 1rem;
+}
+
+.top-nav a {
+    text-decoration: none;
+    color: #ffffff;
+}
+
+.nav-links {
+    display: flex;
+    gap: 1.5rem;
+}
+
+.hero-body {
+    display: flex;
+    align-items: center;
+    padding-block: 3rem;
+}
+
+.hero-copy {
+    max-inline-size: 38rem;
+}
+
+.hero-copy h1 {
+    font-size: clamp(2.15rem, 4.8vw, 3.35rem);
+    line-height: 1.1;
+    margin-block-end: 1.5rem;
+}
+
+.hero-copy p {
+    font-size: clamp(1rem, 1.8vw, 1.25rem);
+    line-height: 1.6;
+    margin-block-end: 2.25rem;
+    color: #e2e8f0;
+}
+
+.btn {
+    display: inline-block;
+    font-size: 1.125rem;
+    font-weight: 600;
+    background-color: #e67e22;
+    color: #ffffff;
+    text-decoration: none;
+    padding: 0.95rem 2rem;
+    border-radius: 0.75rem;
+    transition:
+        background-color 0.2s ease,
+        transform 0.15s ease;
+
+    &:hover {
+        background-color: #cf711f;
+        transform: translateY(-2px);
+    }
+}
+
+.info-section {
+    padding-block: 5rem;
+    background-color: #f8fafc;
+}
+
+.info-section h2 {
+    font-size: clamp(1.75rem, 3vw, 2.5rem);
+    margin-block-end: 1rem;
+    color: #0f172a;
+}
+
+.info-section p {
+    font-size: 1.1rem;
+    max-inline-size: 56ch;
+    color: #475569;
+}
+
+:where(a:any-link):focus-visible {
+    outline: 2px solid #f59e0b;
+    outline-offset: 3px;
+}

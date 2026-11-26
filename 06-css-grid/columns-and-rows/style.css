@@ -1,0 +1,26 @@
+.item-grid {
+    display: grid;
+    gap: 1rem;
+    background: var(--color-surface-subtle);
+    padding: 1rem;
+    border-radius: var(--radius-md);
+
+    .item {
+        padding: 1rem;
+        border-radius: var(--radius-sm);
+        text-align: center;
+        font-weight: 600;
+        background-color: #f97316;
+        color: #ffffff;
+    }
+}
+
+.cols-demo {
+    grid-template-columns: 2fr 1fr 1fr;
+}
+
+.rows-demo {
+    grid-template-columns: 1fr 2fr 3fr;
+    grid-template-rows: 1fr 2fr;
+    grid-auto-rows: 80px;
+}

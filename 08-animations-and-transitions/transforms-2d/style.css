@@ -1,0 +1,38 @@
+.transform-stage {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-evenly;
+    align-items: center;
+    gap: 3rem;
+    min-block-size: 20rem;
+}
+
+.logo {
+    inline-size: 9rem;
+    block-size: auto;
+    transition: transform 0.5s ease;
+    cursor: pointer;
+
+    &:hover {
+        transform: rotate(90deg) scale(1.35);
+    }
+}
+
+.transform-box {
+    inline-size: 11rem;
+    block-size: 11rem;
+    background: linear-gradient(135deg, #4f46e5, #7c3aed);
+    color: #ffffff;
+    border-radius: var(--radius-md);
+    display: grid;
+    place-items: center;
+    text-align: center;
+    padding: 1rem;
+    font-weight: 600;
+    cursor: pointer;
+    transition: transform 0.7s ease-in-out;
+
+    &:hover {
+        transform: rotate(180deg) skew(15deg) scale(1.25);
+    }
+}

@@ -1,0 +1,105 @@
+*,
+*::before,
+*::after {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family:
+        system-ui,
+        -apple-system,
+        sans-serif;
+    color: #0f172a;
+    background: #f8fafc;
+}
+
+.container {
+    min-block-size: 100dvh;
+    padding: 1rem;
+    display: grid;
+    gap: 1rem;
+    grid-template-columns: 1fr 1fr 280px;
+    grid-template-rows: auto auto 1fr auto;
+    grid-template-areas:
+        "header  header  search"
+        "nav     nav     nav"
+        "main    main    aside"
+        "footer  footer  footer";
+
+    @media (max-width: 768px) {
+        grid-template-columns: 1fr;
+        grid-template-areas:
+            "header"
+            "search"
+            "nav"
+            "main"
+            "aside"
+            "footer";
+    }
+
+    header {
+        grid-area: header;
+        padding: 1.25rem;
+        border-radius: 0.5rem;
+        color: #ffffff;
+        background-color: #1e293b;
+        display: flex;
+        align-items: center;
+        gap: 1rem;
+    }
+
+    .back-link {
+        color: #93c5fd;
+        text-decoration: none;
+        font-weight: 600;
+        font-size: 0.9rem;
+    }
+
+    .search {
+        grid-area: search;
+        padding: 1.25rem;
+        border-radius: 0.5rem;
+        background-color: #334155;
+        color: #ffffff;
+        display: grid;
+        align-items: center;
+        font-weight: 600;
+    }
+
+    nav {
+        grid-area: nav;
+        padding: 1rem 1.25rem;
+        border-radius: 0.5rem;
+        color: #ffffff;
+        background-color: #4f46e5;
+        font-weight: 600;
+    }
+
+    main {
+        grid-area: main;
+        padding: 1.5rem;
+        border-radius: 0.5rem;
+        background-color: #ffffff;
+        border: 1px solid #e2e8f0;
+        font-weight: 600;
+    }
+
+    aside {
+        grid-area: aside;
+        padding: 1.5rem;
+        border-radius: 0.5rem;
+        background-color: #e2e8f0;
+        font-weight: 600;
+    }
+
+    footer {
+        grid-area: footer;
+        padding: 1.25rem;
+        border-radius: 0.5rem;
+        background-color: #475569;
+        color: #ffffff;
+        font-weight: 600;
+    }
+}

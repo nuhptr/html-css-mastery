@@ -1,0 +1,140 @@
+<!doctype html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <title>CSS Selectors Challenge</title>
+        <link rel="preconnect" href="https://fonts.googleapis.com" />
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+        <link
+            href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700&display=swap"
+            rel="stylesheet" />
+        <link rel="stylesheet" href="style.css" />
+    </head>
+
+    <body>
+        <header class="header">
+            <nav class="menu" aria-label="Project sections">
+                <ul>
+                    <li><a href="../../index.html">&larr; Hub</a></li>
+                    <li><a href="#home">Home</a></li>
+                    <li><a href="#project-1">Project 1</a></li>
+                    <li><a href="#project-2">Project 2</a></li>
+                    <li><a href="#project-3">Project 3</a></li>
+                    <li><a href="#project-4">Project 4</a></li>
+                </ul>
+            </nav>
+        </header>
+
+        <main class="container">
+            <section id="home" class="section">
+                <h1>CSS Selectors Challenge</h1>
+                <p>
+                    Each section applies advanced CSS selector rules:
+                    <code>p:first-of-type</code>
+                    ,
+                    <code>li:nth-child(odd/even)</code>
+                    ,
+                    <code>:has(img)</code>
+                    ,
+                    <code>ul + p</code>
+                    , and external link attribute matching (
+                    <a href="https://traversymedia.com" target="_blank" rel="noopener noreferrer">
+                        Traversy Media
+                    </a>
+                    ).
+                </p>
+            </section>
+
+            <section id="project-1" class="section">
+                <h2>Project 1</h2>
+                <img
+                    src="./images/img_project1.jpg"
+                    alt="Project 1 showcase"
+                    width="700"
+                    height="420" />
+                <p>
+                    First paragraph highlighted with a soft warm tint via
+                    <code>p:first-of-type</code>
+                    , while external
+                    <a href="https://example.com">links</a>
+                    receive a distinct accent color.
+                </p>
+                <p>
+                    Second paragraph of Project 1 demonstrates
+                    <code>.section:nth-of-type(2)</code>
+                    bold emphasis.
+                </p>
+                <ul>
+                    <li>Item One</li>
+                    <li>Item Two</li>
+                    <li>Item Three</li>
+                    <li>Item Four</li>
+                </ul>
+            </section>
+
+            <section id="project-2" class="section">
+                <h2>Project 2</h2>
+                <img
+                    src="./images/img_project2.jpg"
+                    alt="Project 2 showcase"
+                    width="700"
+                    height="420" />
+                <p>
+                    Section automatically receives surface background and padding because it matches
+                    <code>.section:has(img)</code>
+                    .
+                </p>
+                <p>Standard follow-up paragraph cleanly spaced inside the card container.</p>
+            </section>
+
+            <section id="project-3" class="section">
+                <h2>Project 3</h2>
+                <img
+                    src="./images/img_project3.jpg"
+                    alt="Project 3 showcase"
+                    width="700"
+                    height="420" />
+                <p>
+                    Lists alternate stripe backgrounds via
+                    <code>li:nth-child(odd)</code>
+                    and
+                    <code>li:nth-child(even)</code>
+                    .
+                </p>
+                <ul>
+                    <li>Item One</li>
+                    <li>Item Two</li>
+                    <li>Item Three</li>
+                    <li>Item Four</li>
+                </ul>
+                <p>
+                    This paragraph immediately follows a
+                    <code>&lt;ul&gt;</code>
+                    , matching
+                    <code>ul + p</code>
+                    for dark contrast styling.
+                </p>
+            </section>
+
+            <section id="project-4" class="section">
+                <h2>Project 4</h2>
+                <img
+                    src="./images/img_project4.jpg"
+                    alt="Project 4 showcase"
+                    width="700"
+                    height="420" />
+                <p>
+                    Demonstrates clean multi-selector composition without adding extra utility
+                    classes to markup.
+                </p>
+                <ul>
+                    <li>Item One</li>
+                    <li>Item Two</li>
+                    <li>Item Three</li>
+                    <li>Item Four</li>
+                </ul>
+            </section>
+        </main>
+    </body>
+</html>

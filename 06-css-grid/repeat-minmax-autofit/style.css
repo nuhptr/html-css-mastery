@@ -1,0 +1,28 @@
+.item-grid {
+    display: grid;
+    gap: 1rem;
+    padding: 1rem;
+    background: var(--color-surface-subtle);
+    border-radius: var(--radius-md);
+
+    .item {
+        padding: 1.25rem 1rem;
+        border-radius: var(--radius-sm);
+        text-align: center;
+        font-weight: 600;
+        background-color: #f97316;
+        color: #ffffff;
+    }
+}
+
+.autofit-grid {
+    grid-template-columns: repeat(auto-fit, minmax(150px, 1fr));
+}
+
+.autofill-grid {
+    grid-template-columns: repeat(auto-fill, minmax(120px, 1fr));
+
+    .item {
+        background-color: #2563eb;
+    }
+}

@@ -1,0 +1,44 @@
+<!doctype html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <title>CSS Specificity, Order &amp; Negative Margins</title>
+        <link rel="stylesheet" href="../../styles/lesson-base.css" />
+        <link rel="stylesheet" href="style.css" />
+    </head>
+
+    <body>
+        <nav class="lesson-topbar" aria-label="Breadcrumb">
+            <a class="lesson-topbar__back" href="../../index.html">&larr; Back to Curriculum Hub</a>
+            <span class="lesson-topbar__module">03 &middot; CSS Fundamentals</span>
+        </nav>
+
+        <main class="lesson-shell">
+            <h1>Cascade Order, Specificity &amp; Negative Margins</h1>
+
+            <section class="lesson-card">
+                <h2 class="hello">
+                    Specificity &amp;
+                    <code>!important</code>
+                </h2>
+                <p>
+                    Even though
+                    <code>.hello</code>
+                    has higher specificity than a bare element selector,
+                    <code>!important</code>
+                    or cascade layers control which declaration wins.
+                </p>
+            </section>
+
+            <section class="lesson-card overlap-stage">
+                <h2>Negative Margin Overlap</h2>
+                <div class="base-panel">Base Panel</div>
+                <div class="pulled-panel">
+                    Pulled upward with
+                    <code>margin-block-start: -1.5rem</code>
+                </div>
+            </section>
+        </main>
+    </body>
+</html>

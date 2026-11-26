@@ -1,0 +1,164 @@
+:root {
+    --bg-gradient-start: #1e293b;
+    --bg-gradient-end: #0f172a;
+    --surface: #ffffff;
+    --text: #0f172a;
+    --muted: #64748b;
+    --border: #cbd5e1;
+    --accent: #10b981;
+    --accent-hover: #059669;
+}
+
+*,
+*::before,
+*::after {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    min-block-size: 100dvh;
+    font-family: "Inter", system-ui, sans-serif;
+    background: radial-gradient(circle at top, #334155 0%, var(--bg-gradient-end) 70%);
+    color: #f8fafc;
+    line-height: 1.6;
+    display: grid;
+    grid-template-rows: auto 1fr;
+}
+
+.back-bar {
+    padding: 0.9rem 1.5rem;
+}
+
+.back-bar a {
+    color: #cbd5e1;
+    text-decoration: none;
+    font-size: 0.875rem;
+    font-weight: 500;
+}
+
+.back-bar a:hover {
+    color: #ffffff;
+}
+
+.auth-shell {
+    display: grid;
+    place-content: center;
+    padding: 1.5rem;
+    gap: 1.25rem;
+}
+
+.form-card {
+    inline-size: min(100%, 27rem);
+    background: var(--surface);
+    color: var(--text);
+    padding: 2rem;
+    border-radius: 1rem;
+    box-shadow: 0 20px 45px rgb(2 6 23 / 0.45);
+}
+
+.form-card h1 {
+    text-align: center;
+    font-size: 1.65rem;
+    margin-block-end: 0.25rem;
+}
+
+.subtitle {
+    text-align: center;
+    color: var(--muted);
+    font-size: 0.95rem;
+    margin-block-end: 1.5rem;
+}
+
+.form-row {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 0.75rem;
+}
+
+@media (max-width: 460px) {
+    .form-row {
+        grid-template-columns: 1fr;
+    }
+}
+
+.form-group {
+    margin-block-end: 1rem;
+}
+
+.form-group label {
+    display: block;
+    font-size: 0.875rem;
+    font-weight: 600;
+    color: #334155;
+    margin-block-end: 0.35rem;
+}
+
+.form-group input {
+    inline-size: 100%;
+    padding: 0.65rem 0.85rem;
+    border: 1px solid var(--border);
+    border-radius: 0.5rem;
+    font: inherit;
+    font-size: 0.95rem;
+    transition:
+        border-color 0.15s ease,
+        box-shadow 0.15s ease;
+}
+
+.form-group input:focus-visible {
+    outline: none;
+    border-color: var(--accent);
+    box-shadow: 0 0 0 3px rgb(16 185 129 / 0.2);
+}
+
+.btn-submit {
+    inline-size: 100%;
+    padding: 0.75rem 1rem;
+    border: none;
+    border-radius: 0.5rem;
+    background: var(--accent);
+    color: #ffffff;
+    font: inherit;
+    font-weight: 600;
+    cursor: pointer;
+    margin-block-start: 0.25rem;
+    transition:
+        background-color 0.15s ease,
+        transform 0.1s ease;
+}
+
+.btn-submit:hover {
+    background: var(--accent-hover);
+}
+
+.btn-submit:focus-visible {
+    outline: 2px solid #ffffff;
+    outline-offset: 2px;
+}
+
+.bottom-text {
+    text-align: center;
+    font-size: 0.8rem;
+    color: var(--muted);
+    margin-block-start: 1rem;
+}
+
+.bottom-text a,
+.auth-footer a {
+    color: var(--accent);
+    font-weight: 600;
+    text-decoration: none;
+}
+
+.bottom-text a:hover,
+.auth-footer a:hover {
+    text-decoration: underline;
+}
+
+.auth-footer {
+    text-align: center;
+    font-size: 0.9rem;
+    color: #cbd5e1;
+}

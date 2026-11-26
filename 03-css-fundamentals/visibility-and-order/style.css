@@ -1,0 +1,30 @@
+h2.hello {
+    color: #dc2626;
+}
+
+.overlap-stage {
+    display: grid;
+    gap: 0.5rem;
+}
+
+.base-panel {
+    background: #e2e8f0;
+    padding: 2rem 1.25rem;
+    border-radius: var(--radius-md);
+    font-weight: 600;
+}
+
+.pulled-panel {
+    background: #4f46e5;
+    color: #ffffff;
+    padding: 1rem 1.25rem;
+    border-radius: var(--radius-md);
+    margin-block-start: -1.5rem;
+    margin-inline-start: 1.5rem;
+    box-shadow: var(--shadow-md);
+}
+
+.pulled-panel code {
+    background: rgb(255 255 255 / 0.2);
+    color: #ffffff;
+}

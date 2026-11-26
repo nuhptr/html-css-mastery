@@ -1,0 +1,75 @@
+<!doctype html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <title>HTML Entities and Emmet Abbreviations</title>
+        <link rel="stylesheet" href="../../styles/lesson-base.css" />
+        <link rel="stylesheet" href="style.css" />
+    </head>
+
+    <body>
+        <nav class="lesson-topbar" aria-label="Breadcrumb">
+            <a class="lesson-topbar__back" href="../../index.html">&larr; Back to Curriculum Hub</a>
+            <span class="lesson-topbar__module">01 &middot; HTML Fundamentals</span>
+        </nav>
+
+        <main class="lesson-shell">
+            <h1>HTML Entities &amp; Emmet Snippets</h1>
+
+            <section class="lesson-card">
+                <h2>Common HTML Entities</h2>
+                <div class="entity-grid">
+                    <div class="entity-item">
+                        <span class="entity-glyph">&gt; &amp; &lt;</span>
+                        <code>&amp;gt; &amp;amp; &amp;lt;</code>
+                        <span>Comparison &amp; ampersand</span>
+                    </div>
+                    <div class="entity-item">
+                        <span class="entity-glyph">&copy; &reg;</span>
+                        <code>&amp;copy; &amp;reg;</code>
+                        <span>Copyright &amp; registered</span>
+                    </div>
+                    <div class="entity-item">
+                        <span class="entity-glyph">&cent; &yen; &pound; &dollar;</span>
+                        <code>&amp;cent; &amp;yen; &amp;pound; &amp;dollar;</code>
+                        <span>Currency symbols</span>
+                    </div>
+                    <div class="entity-item">
+                        <span class="entity-glyph">&spades; &clubs; &hearts; &diams;</span>
+                        <code>&amp;spades; &amp;clubs; &amp;hearts; &amp;diams;</code>
+                        <span>Card suits</span>
+                    </div>
+                </div>
+                <p class="spacing-note">Non-breaking space example: Hello,&nbsp;Brad!</p>
+            </section>
+
+            <section class="lesson-card">
+                <h2>Emmet Abbreviation Patterns</h2>
+                <ul class="emmet-list">
+                    <li>
+                        <code>.card.text-center</code>
+                        &rarr; element with multiple classes
+                    </li>
+                    <li>
+                        <code>#about.section</code>
+                        &rarr; element with ID and class
+                    </li>
+                    <li>
+                        <code>ul&gt;li{Item $}*3</code>
+                        &rarr; numbered list items
+                    </li>
+                    <li>
+                        <code>header+main+footer</code>
+                        &rarr; sibling landmark layout
+                    </li>
+                    <li>
+                        <code>a:mail</code>
+                        &rarr;
+                        <code>&lt;a href="mailto:"&gt;&lt;/a&gt;</code>
+                    </li>
+                </ul>
+            </section>
+        </main>
+    </body>
+</html>

@@ -1,0 +1,70 @@
+<!doctype html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <title>Relative Units: em vs. rem</title>
+        <link rel="stylesheet" href="../../styles/lesson-base.css" />
+        <link rel="stylesheet" href="style.css" />
+    </head>
+
+    <body>
+        <nav class="lesson-topbar" aria-label="Breadcrumb">
+            <a class="lesson-topbar__back" href="../../index.html">&larr; Back to Curriculum Hub</a>
+            <span class="lesson-topbar__module">07 &middot; Responsive Design</span>
+        </nav>
+
+        <main class="lesson-shell">
+            <h1>
+                Relative Units:
+                <code>em</code>
+                vs.
+                <code>rem</code>
+            </h1>
+
+            <section id="box-1" class="lesson-card">
+                <h2>
+                    Parent-Relative
+                    <code>em</code>
+                    (Compounds in Nested Lists)
+                </h2>
+                <p>
+                    This container sets
+                    <code>font-size: 20px</code>
+                    , so
+                    <code>1.2em</code>
+                    on this paragraph computes to
+                    <code>24px</code>
+                    .
+                </p>
+                <ul>
+                    <li>Level 1 item (1.2em = 24px)</li>
+                    <li>
+                        Nested list compounds:
+                        <ul>
+                            <li>Level 2 item (1.2em &times; 1.2em = 28.8px)</li>
+                            <li>Level 2 item</li>
+                        </ul>
+                    </li>
+                </ul>
+            </section>
+
+            <section id="box-2" class="lesson-card">
+                <h2>
+                    Root-Relative
+                    <code>rem</code>
+                    (Consistent Scale)
+                </h2>
+                <p>
+                    Using
+                    <code>rem</code>
+                    always references the root
+                    <code>&lt;html&gt;</code>
+                    font size (typically
+                    <code>16px</code>
+                    ), preventing compounding surprises in nested components.
+                </p>
+            </section>
+        </main>
+    </body>
+</html>

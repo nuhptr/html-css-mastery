@@ -1,0 +1,76 @@
+<!doctype html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <title>Box Shadows, Text Shadows, and CSS Filters</title>
+        <link rel="stylesheet" href="../../styles/lesson-base.css" />
+        <link rel="stylesheet" href="style.css" />
+    </head>
+
+    <body>
+        <nav class="lesson-topbar" aria-label="Breadcrumb">
+            <a class="lesson-topbar__back" href="../../index.html">&larr; Back to Curriculum Hub</a>
+            <span class="lesson-topbar__module">03 &middot; CSS Fundamentals</span>
+        </nav>
+
+        <main class="lesson-shell">
+            <h1>Shadows &amp; CSS Filters</h1>
+
+            <section class="lesson-card">
+                <h2>Box Shadows</h2>
+                <div class="shadow-grid">
+                    <div class="shadow-card shadow-sharp">Hard Offset Shadow</div>
+                    <div class="shadow-card shadow-soft">Soft Elevated Shadow</div>
+                    <div class="shadow-card shadow-inset">Inset Inner Shadow</div>
+                </div>
+            </section>
+
+            <section class="lesson-card">
+                <h2>Text Shadows</h2>
+                <div class="text-shadow-stack">
+                    <p class="ts-a">Offset Blue Text Shadow</p>
+                    <p class="ts-b">Warm Soft Glow Shadow</p>
+                    <p class="ts-c">White Text with Emerald Glow</p>
+                    <p class="ts-d">Negative Offset Crimson Shadow</p>
+                </div>
+            </section>
+
+            <section class="lesson-card">
+                <h2>CSS Image Filters</h2>
+                <div class="filter-grid">
+                    <figure>
+                        <img
+                            src="./image/img_car.avif"
+                            alt="Original sports car"
+                            width="320"
+                            height="213" />
+                        <figcaption>
+                            Original (
+                            <code>filter: none</code>
+                            )
+                        </figcaption>
+                    </figure>
+                    <figure>
+                        <img
+                            class="filter-bw"
+                            src="./image/img_car.avif"
+                            alt="Grayscale and high contrast car"
+                            width="320"
+                            height="213" />
+                        <figcaption><code>grayscale(100%) contrast(120%)</code></figcaption>
+                    </figure>
+                    <figure>
+                        <img
+                            class="filter-warm"
+                            src="./image/img_car.avif"
+                            alt="Sepia and saturated car"
+                            width="320"
+                            height="213" />
+                        <figcaption><code>sepia(65%) saturate(150%)</code></figcaption>
+                    </figure>
+                </div>
+            </section>
+        </main>
+    </body>
+</html>

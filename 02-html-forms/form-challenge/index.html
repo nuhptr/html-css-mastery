@@ -1,0 +1,70 @@
+<!doctype html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <title>Apartment Search Form Challenge</title>
+        <link rel="stylesheet" href="../../styles/lesson-base.css" />
+    </head>
+
+    <body>
+        <nav class="lesson-topbar" aria-label="Breadcrumb">
+            <a class="lesson-topbar__back" href="../../index.html">&larr; Back to Curriculum Hub</a>
+            <span class="lesson-topbar__module">02 &middot; HTML Forms</span>
+        </nav>
+
+        <main class="lesson-shell">
+            <h1>Apartment Search</h1>
+
+            <form action="#">
+                <div>
+                    <label for="location">Location</label>
+                    <input
+                        type="text"
+                        name="location"
+                        id="location"
+                        placeholder="City or neighborhood"
+                        autocomplete="address-level2"
+                        required />
+                </div>
+
+                <div>
+                    <label for="price">Max Monthly Budget</label>
+                    <input type="range" name="price" id="price" min="500" max="5000" step="100" />
+                </div>
+
+                <div>
+                    <label for="bedrooms">Bedrooms</label>
+                    <input type="number" name="bedrooms" id="bedrooms" min="0" max="10" value="2" />
+                </div>
+
+                <div>
+                    <label for="bathrooms">Bathrooms</label>
+                    <input
+                        type="number"
+                        name="bathrooms"
+                        id="bathrooms"
+                        min="1"
+                        max="10"
+                        value="1" />
+                </div>
+
+                <div>
+                    <label for="pets">
+                        <input type="checkbox" name="pets" id="pets" />
+                        Pets Allowed
+                    </label>
+                </div>
+
+                <div>
+                    <label for="date">Date Available</label>
+                    <input type="date" name="date" id="date" />
+                </div>
+
+                <div>
+                    <button type="submit">Search Apartments</button>
+                </div>
+            </form>
+        </main>
+    </body>
+</html>

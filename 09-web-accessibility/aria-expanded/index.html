@@ -1,0 +1,58 @@
+<!doctype html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <title>Accessible Disclosure with aria-expanded</title>
+        <link rel="stylesheet" href="../../styles/lesson-base.css" />
+        <link rel="stylesheet" href="style.css" />
+        <script src="script.js" defer></script>
+    </head>
+
+    <body>
+        <nav class="lesson-topbar" aria-label="Breadcrumb">
+            <a class="lesson-topbar__back" href="../../index.html">&larr; Back to Curriculum Hub</a>
+            <span class="lesson-topbar__module">09 &middot; Web Accessibility</span>
+        </nav>
+
+        <main class="lesson-shell">
+            <h1>
+                Accessible Accordion:
+                <code>aria-expanded</code>
+                &amp;
+                <code>aria-controls</code>
+            </h1>
+
+            <div class="accordion">
+                <h2 class="accordion-title">
+                    <button
+                        type="button"
+                        class="accordion-header"
+                        id="accordion-heading"
+                        aria-controls="accordion-content"
+                        aria-expanded="false">
+                        <span>Section 1: Introduction</span>
+                        <span class="accordion-indicator" aria-hidden="true">+</span>
+                    </button>
+                </h2>
+
+                <div
+                    class="accordion-content"
+                    id="accordion-content"
+                    role="region"
+                    aria-labelledby="accordion-heading"
+                    hidden>
+                    <p>
+                        This disclosure pairs a native
+                        <code>&lt;button&gt;</code>
+                        inside a heading with
+                        <code>aria-expanded</code>
+                        and
+                        <code>aria-controls</code>
+                        so screen readers announce both the heading level and open/collapsed state.
+                    </p>
+                </div>
+            </div>
+        </main>
+    </body>
+</html>

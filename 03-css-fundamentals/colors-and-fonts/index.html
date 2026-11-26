@@ -1,0 +1,58 @@
+<!doctype html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <title>CSS Colors and Typography Fonts</title>
+        <link rel="preconnect" href="https://fonts.googleapis.com" />
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+        <link
+            href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700&display=swap"
+            rel="stylesheet" />
+        <link rel="stylesheet" href="../../styles/lesson-base.css" />
+        <link rel="stylesheet" href="style.css" />
+    </head>
+
+    <body>
+        <nav class="lesson-topbar" aria-label="Breadcrumb">
+            <a class="lesson-topbar__back" href="../../index.html">&larr; Back to Curriculum Hub</a>
+            <span class="lesson-topbar__module">03 &middot; CSS Fundamentals</span>
+        </nav>
+
+        <main class="lesson-shell">
+            <h1>CSS Colors &amp; Google Fonts</h1>
+
+            <section class="lesson-card swatch-grid">
+                <div class="swatch swatch-named">
+                    <strong>Named Color</strong>
+                    <code>yellowgreen</code>
+                </div>
+                <div class="swatch swatch-rgb">
+                    <strong>RGB Value</strong>
+                    <code>rgb(37, 99, 235)</code>
+                </div>
+                <div class="swatch swatch-hex">
+                    <strong>Hex Value</strong>
+                    <code>#0f172a</code>
+                </div>
+            </section>
+
+            <section class="lesson-card font-demo">
+                <h2>Poppins Font &amp; Relative Line Height</h2>
+                <p class="welcome">
+                    Using
+                    <code>line-height: 1.65</code>
+                    (unitless) scales naturally with the element's own font size instead of
+                    hardcoding pixel heights.
+                </p>
+                <p class="about">
+                    Combining
+                    <strong>strong emphasis</strong>
+                    and
+                    <em>italic voice</em>
+                    creates clear visual hierarchy when paired with Google Fonts.
+                </p>
+            </section>
+        </main>
+    </body>
+</html>

@@ -1,0 +1,130 @@
+<!doctype html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <title>Webmail App Layout Component</title>
+        <link rel="preconnect" href="https://fonts.googleapis.com" />
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+        <link
+            href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap"
+            rel="stylesheet" />
+        <link rel="stylesheet" href="style.css" />
+        <script src="script.js" defer></script>
+    </head>
+
+    <body>
+        <nav class="rail" aria-label="Workspace navigation">
+            <a
+                class="rail-brand"
+                href="../../index.html"
+                title="Back to Curriculum Hub"
+                aria-label="Back to Curriculum Hub">
+                &larr;
+            </a>
+            <button type="button" class="rail-btn is-active" aria-label="Inbox">In</button>
+            <button type="button" class="rail-btn" aria-label="Starred">St</button>
+            <button type="button" class="rail-btn" aria-label="Sent">Sn</button>
+            <button type="button" class="rail-btn" aria-label="Archive">Ar</button>
+        </nav>
+
+        <menu class="toolbar" aria-label="Message actions">
+            <li><button type="button" class="tool-btn">New</button></li>
+            <li><button type="button" class="tool-btn">Reply</button></li>
+            <li><button type="button" class="tool-btn">Forward</button></li>
+            <li><button type="button" class="tool-btn">Mark Unread</button></li>
+            <li class="toolbar-end">
+                <button type="button" class="tool-btn tool-btn--danger">Trash</button>
+            </li>
+        </menu>
+
+        <section class="inbox-list" aria-label="Inbox messages">
+            <button type="button" class="email-item is-selected" data-id="0">
+                <div class="email-top">
+                    <strong>Design System Sync</strong>
+                    <time>09:42</time>
+                </div>
+                <p class="email-subject">Updated spacing &amp; color tokens for v2.4</p>
+                <p class="email-preview">Hey team, I pushed the updated CSS custom properties...</p>
+            </button>
+
+            <button type="button" class="email-item" data-id="1">
+                <div class="email-top">
+                    <strong>Laura Jones</strong>
+                    <time>08:15</time>
+                </div>
+                <p class="email-subject">Code Magazine Layout Review</p>
+                <p class="email-preview">Looks super clean! Let's ship the CSS Grid variant...</p>
+            </button>
+
+            <button type="button" class="email-item" data-id="2">
+                <div class="email-top">
+                    <strong>Jonas Schmedtmann</strong>
+                    <time>Yesterday</time>
+                </div>
+                <p class="email-subject">Component accessibility checklist</p>
+                <p class="email-preview">
+                    Make sure all dialog and disclosure controls use native...
+                </p>
+            </button>
+
+            <button type="button" class="email-item" data-id="3">
+                <div class="email-top">
+                    <strong>GitHub Actions</strong>
+                    <time>Nov 24</time>
+                </div>
+                <p class="email-subject">Build #184 passed all link checks</p>
+                <p class="email-preview">Zero broken assets across 11 curriculum modules...</p>
+            </button>
+
+            <button type="button" class="email-item" data-id="4">
+                <div class="email-top">
+                    <strong>Cloudflare Pages</strong>
+                    <time>Nov 22</time>
+                </div>
+                <p class="email-subject">Production preview deployed</p>
+                <p class="email-preview">Your static bundle finished building in 1.4 seconds...</p>
+            </button>
+        </section>
+
+        <main class="reading-pane" id="reading-pane">
+            <header class="reading-header">
+                <h1 id="mail-subject">Updated spacing &amp; color tokens for v2.4</h1>
+                <p class="reading-meta" id="mail-meta">From Design System Sync &middot; 09:42</p>
+            </header>
+            <div class="reading-body" id="mail-body">
+                <p>
+                    Hey team, I pushed the updated CSS custom properties for surfaces, borders, and
+                    focus rings. All components now share consistent spacing and accessible contrast
+                    ratios out of the box.
+                </p>
+                <p>
+                    Let me know if any card variants need additional elevation tokens before
+                    Friday's release.
+                </p>
+            </div>
+        </main>
+
+        <aside class="info-sidebar" aria-label="Thread details">
+            <h2>Thread Info</h2>
+            <dl class="meta-list">
+                <div>
+                    <dt>Folder</dt>
+                    <dd>Inbox</dd>
+                </div>
+                <div>
+                    <dt>Sender</dt>
+                    <dd id="aside-sender">Design System Sync</dd>
+                </div>
+                <div>
+                    <dt>Priority</dt>
+                    <dd>Normal</dd>
+                </div>
+                <div>
+                    <dt>Layout</dt>
+                    <dd>CSS Grid 4-Column Shell</dd>
+                </div>
+            </dl>
+        </aside>
+    </body>
+</html>

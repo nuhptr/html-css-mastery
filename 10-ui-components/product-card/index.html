@@ -1,0 +1,111 @@
+<!doctype html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <title>Converse Product Card Component</title>
+        <link rel="preconnect" href="https://fonts.googleapis.com" />
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+        <link
+            href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap"
+            rel="stylesheet" />
+        <link rel="stylesheet" href="style.css" />
+        <script src="script.js" defer></script>
+    </head>
+
+    <body>
+        <nav class="back-bar" aria-label="Breadcrumb">
+            <a href="../../index.html">&larr; Back to Curriculum Hub</a>
+        </nav>
+
+        <main class="page">
+            <article class="product">
+                <span class="sale-badge">Sale</span>
+
+                <header class="product-header">
+                    <h1 class="product-title">Converse Chuck Taylor All Star Low Top</h1>
+                </header>
+
+                <div class="product-grid">
+                    <div class="product-media">
+                        <img
+                            src="img_challenge.jpeg"
+                            alt="Black Converse Chuck Taylor All Star Low Top sneaker"
+                            width="320"
+                            height="320" />
+                    </div>
+
+                    <div class="product-info">
+                        <div class="price-row">
+                            <p class="price">$65.00</p>
+                            <p class="shipping">Free Shipping</p>
+                        </div>
+
+                        <p class="description">
+                            Ready to dress up or down, these classic canvas Chucks are an everyday
+                            wardrobe staple.
+                        </p>
+
+                        <a class="more-info" href="#details">More information &rarr;</a>
+
+                        <div class="swatch-section">
+                            <p class="swatch-label">
+                                Color:
+                                <strong id="selected-color">Classic Black</strong>
+                            </p>
+                            <div class="colors" role="group" aria-label="Choose sneaker color">
+                                <button
+                                    type="button"
+                                    class="color is-active"
+                                    data-color="Classic Black"
+                                    aria-label="Classic Black"
+                                    aria-pressed="true"></button>
+                                <button
+                                    type="button"
+                                    class="color color-blue"
+                                    data-color="Cobalt Blue"
+                                    aria-label="Cobalt Blue"
+                                    aria-pressed="false"></button>
+                                <button
+                                    type="button"
+                                    class="color color-red"
+                                    data-color="Crimson Red"
+                                    aria-label="Crimson Red"
+                                    aria-pressed="false"></button>
+                                <button
+                                    type="button"
+                                    class="color color-green"
+                                    data-color="Forest Green"
+                                    aria-label="Forest Green"
+                                    aria-pressed="false"></button>
+                                <button
+                                    type="button"
+                                    class="color color-purple"
+                                    data-color="Royal Purple"
+                                    aria-label="Royal Purple"
+                                    aria-pressed="false"></button>
+                                <button
+                                    type="button"
+                                    class="color color-orange"
+                                    data-color="Sunset Orange"
+                                    aria-label="Sunset Orange"
+                                    aria-pressed="false"></button>
+                            </div>
+                        </div>
+                    </div>
+
+                    <section id="details" class="product-details">
+                        <h2 class="details-title">Product details</h2>
+                        <ul class="details-list">
+                            <li>Lightweight, durable canvas sneaker</li>
+                            <li>Lightly padded footbed for added comfort</li>
+                            <li>Iconic Chuck Taylor ankle patch</li>
+                        </ul>
+                    </section>
+                </div>
+
+                <button type="button" class="btn-cart" id="add-to-cart">Add to cart</button>
+            </article>
+        </main>
+    </body>
+</html>

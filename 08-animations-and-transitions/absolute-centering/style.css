@@ -1,0 +1,18 @@
+.center-stage {
+    position: relative;
+    inline-size: 100%;
+    block-size: 24rem;
+    background: var(--color-surface);
+    border: 1px solid var(--color-border);
+    border-radius: var(--radius-lg);
+    box-shadow: var(--shadow-sm);
+}
+
+.center-stage .logo {
+    max-inline-size: 10rem;
+    block-size: auto;
+    position: absolute;
+    inset-block-start: 50%;
+    inset-inline-start: 50%;
+    transform: translate(-50%, -50%);
+}
